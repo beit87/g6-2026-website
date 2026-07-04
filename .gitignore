@@ -6,5 +6,6 @@ _site/
 .bundle/
 vendor/
 .idea/
+.claude/
 
 **/.DS_Store

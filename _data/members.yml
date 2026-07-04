@@ -23,21 +23,24 @@
   role: tutor
   home: true
 
-- name: First Name Last Name
+- name: Santina Capalbo
   github: https://kdd.isti.cnr.it/people/student-1
   role: student
-- name: First Name Last Name
+- name: Alessia Niotta
   github: https://kdd.isti.cnr.it/people/student-2
   role: student
-- name: First Name Last Name
+- name: Luisa Mancone
   github: https://kdd.isti.cnr.it/people/student-3
   role: student
-- name: First Name Last Name
+- name: Alessio Cioli
   github: https://kdd.isti.cnr.it/people/student-4
   role: student
-- name: First Name Last Name
+- name: Stefano Macchiavelli
   github: https://kdd.isti.cnr.it/people/student-5
   role: student
-- name: First Name Last Name
+- name: Gianni Coia
   github: https://kdd.isti.cnr.it/people/student-6
+  role: student
+- name: Giuseppe Pascuzzi
+  github: https://kdd.isti.cnr.it/people/student-7
   role: student
