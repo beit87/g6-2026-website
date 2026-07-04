@@ -27,8 +27,8 @@ description: >- # ignora i ritorni a capo fino a "baseurl:"
 # Riportare il github del gruppo di progetto e quello del sito web (se differente).
 # Tali informazioni appariranno nel Footer del sito.
 github_repo:
-  - name: "Template per i Progettoni del Master SoBigData"
-    url: "https://github.com/danielefadda/master-projects-template-2026/"
+  - name: "Non solo giochi"
+    url: "https://beit87.github.io/g6-2026-website/"
 
 markdown: kramdown
 
