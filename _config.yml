@@ -32,9 +32,9 @@ github_repo:
 
 markdown: kramdown
 
-baseurl: "/master-projects-template-2026"
+baseurl: "/g6-2026-website"
 #baseurl: ""
-url: "https://danielefadda.github.io" # il dominio principale del sito senza barra finale (in questo caso il tuo username.github.io)
+url: "https://beit87.github.io" # il dominio principale del sito senza barra finale (in questo caso il tuo username.github.io)
 
 #################################
 #    Configurazione navigazione #
