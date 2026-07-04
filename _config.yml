@@ -47,21 +47,23 @@ navbar:
     img: "./assets/images/Logo_masthead.png" # non modificare
     url: /
   nav:
+    - title : Home
+      url: /
     - title: L'Idea
-    - url: /
+      url: /idea.html
     - title: Le Analisi
       url: /
       child:
-      - title: Uno
+      - title: Analisi
         url: /
-      - title: Due
+      - title: Analisi
         url: /
-      - title: Tre
+      - title: Analisi
         url: /
       - title: Successo Maschile e Femminile
         url: /successo_maschile_femminile.html
     - title: Data Preparation
-      url: /
+      url: /data_preparation.html
 
 
     - title: SBD Master # deve essere sempre l'ultimo elemento della navbar, non modificarlo
