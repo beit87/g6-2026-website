@@ -71,8 +71,9 @@ Il confronto diretto tra medaglie maschili e femminili rende visibile questa div
 
 <br/>
 
+<div>
 <p> Il risultato più interessante è la **somiglianza** tra i due generi: il PIL assoluto (in scala logaritmica) è il predittore più forte per entrambi, con correlazioni quasi identiche (r ≈ 0,55 per il maschile, r ≈ 0,53 per il femminile), seguito dalla popolazione. Nessun indicatore mostra un comportamento radicalmente diverso tra i due medaglieri.</p>
-
+</div>
 <div style="height: 500px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/stefano/07_correlazioni_indicatori_barre.json" style="width: 100%; height: 100%"></vegachart>
 </div>
