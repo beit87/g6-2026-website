@@ -62,6 +62,8 @@ navbar:
         url: /
       - title: Successo Maschile e Femminile
         url: /successo_maschile_femminile.html
+      - title: Perché l'Italia è una potenza nella scherma?
+        url: /text_analysis.html
     - title: Data Preparation
       url: /data_preparation.html
 
