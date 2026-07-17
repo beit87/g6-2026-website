@@ -4,7 +4,7 @@ title: "Data Preparation"
 subtitle: "Come sono stati costruiti i dataset di analisi"
 ---
 
-# Data Preparation
+{% include page-hero.html %}
 
 Tutte le analisi del progetto **"Non solo Giochi"** si basano su un dataset comune che unisce i medaglieri delle Olimpiadi estive con gli indicatori socio-economici dei paesi partecipanti. In questa pagina descriviamo come questo dataset è stato costruito: le fonti utilizzate, i passaggi di pulizia e arricchimento e gli output prodotti.
 

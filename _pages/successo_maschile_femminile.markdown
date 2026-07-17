@@ -5,7 +5,7 @@ subtitle: "Il medagliere olimpico letto attraverso il genere"
 vega: true
 ---
 
-# Successo maschile e femminile alle Olimpiadi
+{% include page-hero.html title="Successo maschile e femminile alle Olimpiadi" %}
 
 In questa analisi scomponiamo il medagliere **per genere**, confrontando i risultati negli eventi maschili e femminili delle Olimpiadi estive dal 1964 al 2020. Le domande a cui vogliamo rispondere sono tre:
 

@@ -1,0 +1,21 @@
+{%- comment -%}
+Banda hero di pagina: immagine di sfondo (fiaccola a destra) con titolo e
+sottotitolo sull'area bianca a sinistra. Va inserito in cima al contenuto
+della pagina, quindi vive dentro <main>.
+
+Uso:   {% include page-hero.html %}
+Parametri (tutti opzionali):
+  title    — default: page.title
+  subtitle — default: page.subtitle
+  img      — default: /assets/images/sfondo2.png
+{%- endcomment -%}
+{%- assign hero_img = include.img | default: "/assets/images/sfondo2.png" -%}
+<div class="full-width-wrapper page-hero" style="--page-hero-img: url('{{ hero_img | relative_url }}')">
+    <div class="container-lg page-hero-inner">
+        <h1 class="page-hero-title">{{ include.title | default: page.title }}</h1>
+        {%- assign hero_subtitle = include.subtitle | default: page.subtitle -%}
+        {%- if hero_subtitle -%}
+        <p class="page-hero-subtitle">{{ hero_subtitle }}</p>
+        {%- endif -%}
+    </div>
+</div>

@@ -4,7 +4,7 @@ title: "Perché l'Italia è una potenza nella scherma?"
 subtitle: "Un approccio orientato alla Text Analysis"
 ---
 
-#  Perché l’Italia della scherma è una potenza sportiva?
+{% include page-hero.html title="Perché l’Italia della scherma è una potenza sportiva?" %}
 
 ## I paesi “specializzati”
 Fra i paesi che prendono parte ai Giochi Olimpici esiste un gruppo che, storicamente, si è specializzato in alcune discipline, ottenendo così la gran parte dei suoi successi all’interno di tale ristretto ambito. Non solo, ma si è potuto osservare che il livello di specializzazione tende a mantenersi nel tempo, gettando la base di ulteriori successi. Come dice il proverbio inglese: “success brings success”.

@@ -495,6 +495,59 @@ html {
 }
 
 // ---------------------------------------------------------------------------
+// 9b. Hero di pagina (include page-hero.html): sfondo con fiaccola a destra,
+//     titolo e sottotitolo sull'area bianca a sinistra. L'immagine arriva
+//     dall'include via custom property --page-hero-img; il gradiente chiaro
+//     da sinistra garantisce la leggibilità del testo quando, su schermi
+//     stretti, il ritaglio porta la fiaccola sotto il titolo.
+// ---------------------------------------------------------------------------
+.page-hero {
+  display: flex;
+  align-items: center;
+  height: clamp(220px, 34vh, 400px);
+  background-image:
+    linear-gradient(90deg, rgba(251, 250, 248, .92) 0%, rgba(251, 250, 248, .55) 45%, rgba(251, 250, 248, 0) 70%),
+    var(--page-hero-img);
+  background-repeat: no-repeat;
+  background-position: right center; // la fiaccola resta sempre inquadrata
+  background-size: cover;
+  border-bottom: 1px solid var(--nsg-line);
+  margin-bottom: 2.5rem;
+}
+
+.page-hero-title {
+  font-size: 2.4rem;
+  color: var(--nsg-ink);
+  margin: 0;
+  max-width: 60%; // il testo non invade la zona della fiaccola
+}
+
+.page-hero-subtitle {
+  font-family: "Space Mono", monospace;
+  font-size: 1.02rem;
+  color: var(--nsg-crimson);
+  margin: .75rem 0 0;
+  max-width: 60%;
+}
+
+@media (max-width: 767px) {
+  // su schermi stretti il testo occupa tutta la banda e finisce sopra la
+  // fiaccola: velo più coprente per mantenere la leggibilità
+  .page-hero {
+    background-image:
+      linear-gradient(90deg, rgba(251, 250, 248, .94) 0%, rgba(251, 250, 248, .8) 60%, rgba(251, 250, 248, .45) 100%),
+      var(--page-hero-img);
+  }
+  .page-hero-title {
+    font-size: 1.6rem;
+    max-width: 100%;
+  }
+  .page-hero-subtitle {
+    max-width: 100%;
+  }
+}
+
+// ---------------------------------------------------------------------------
 // 10. Header hero (usato es. dalla pagina "L'Idea" con il logo come sfondo)
 //     L'immagine è chiara (velo chiaro nell'include headers.html), quindi
 //     titolo e sottotitolo tornano in inchiostro/cremisi.
