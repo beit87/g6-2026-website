@@ -47,9 +47,7 @@ navbar:
     img: "./assets/images/Logo_masthead.png" # non modificare
     url: /
   nav:
-    - title : Home
-      url: /
-    - title: L'Idea
+    - title: Non solo Giochi
       url: /idea.html
     - title: Data Preparation
       url: /data_preparation.html

@@ -1,19 +1,12 @@
 ---
 layout: default
-title: "L'Idea"
-subtitle: "Perché il medagliere olimpico non racconta solo lo sport"
+title: "Non solo Giochi"
+subtitle: "I fattori socio-economici dietro il successo olimpico"
 ---
 
-<div class="full-width-wrapper">
-    <img src="{{ site.baseurl }}/assets/images/sfondo2.png" alt="Non solo Giochi" class="full-width-image full-width-image-sm">
-</div>
+{% include page-hero.html %}
 
-# L'idea
-
-Perché il medagliere olimpico non racconta solo lo sport
-{: .page-subtitle}
-
-Ogni quattro anni il medagliere olimpico diventa una classifica tra nazioni. Ma cosa c'è dietro quella classifica? Perché alcuni paesi vincono sistematicamente più di altri, anche a parità di popolazione? E quanto contano ricchezza, istruzione, salute e investimenti pubblici nel produrre campioni?
+**Il medagliere olimpico non racconta solo lo sport.** Ogni quattro anni diventa una classifica tra nazioni. Ma cosa c'è dietro quella classifica? Perché alcuni paesi vincono sistematicamente più di altri, anche a parità di popolazione? E quanto contano ricchezza, istruzione, salute e investimenti pubblici nel produrre campioni?
 
 **"Non solo Giochi"** nasce da queste domande: è un progetto di analisi dati che mette in relazione i risultati delle **Olimpiadi estive dal 1964 al 2020** con gli **indicatori socio-economici** dei paesi partecipanti, per capire quali fattori strutturali accompagnano — e in parte spiegano — il successo sportivo.
 
