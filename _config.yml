@@ -51,6 +51,8 @@ navbar:
       url: /
     - title: L'Idea
       url: /idea.html
+    - title: Data Preparation
+      url: /data_preparation.html
     - title: Le Analisi
       url: /
       child:
@@ -64,8 +66,6 @@ navbar:
         url: /successo_maschile_femminile.html
       - title: Perché l'Italia è una potenza nella scherma?
         url: /text_analysis.html
-    - title: Data Preparation
-      url: /data_preparation.html
 
 
     - title: SBD Master # deve essere sempre l'ultimo elemento della navbar, non modificarlo
@@ -80,9 +80,11 @@ navbar:
 #  - url: "https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 #  - url: "https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&1,700&display=swap"
 
-## Esempio Google Fonts per importare Space Mono
+## Font del sito: Space Mono per i titoli (come il lettering del logo),
+## Inter per il corpo testo.
 googlefonts:
   - url: "https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  - url: "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
 
 chulapa-skin:
   skin:  "sbd" # temi disponibili: "sbd" "pixel" "graymor" "gitdev-dark" "gitdev" "universal" "academia" "gitdev" "towards" "pear" "twitter-lights-out" "twitter-dim" "wandoo" "lymcha" "twitter" "chulapa" "sunset" "minty" "lux" "journal" "deeply"

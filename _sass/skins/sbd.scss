@@ -1,202 +1,63 @@
-/*! Sobigdata Theme  */
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+/*! Skin "Non solo Giochi" — design tokens derivati dal logo (assets/images/logo.png)
+ *
+ * Questo file definisce SOLO le variabili SCSS con cui vengono compilati
+ * Bootstrap e il tema Chulapa (palette, tipografia, raggi, navbar/footer).
+ * Tutta la stilizzazione dei componenti vive in assets/css/custom.scss,
+ * che viene caricato dopo main.css.
+ *
+ * Palette (dal logo: torcia olimpica):
+ *   ink     #1B2140  blu inchiostro — base della torcia, testi forti, navbar/footer
+ *   blue    #2270A8  blu torcia    — primario, pulsanti, elementi informativi
+ *   crimson #B8325A  cremisi       — petali della fiamma, link e accenti
+ *   amber   #E89B3C  ambra         — fiamma, highlight e stati hover
+ *   paper   #FBFAF8  carta calda   — sfondo pagina
+ */
 
+// ---------------------------------------------------------------------------
+// Colori Bootstrap
+// ---------------------------------------------------------------------------
+$primary:   #2270A8 !default; // blu torcia
+$secondary: #B8325A !default; // cremisi
+$success:   #3E8E7E !default;
+$danger:    #C24141 !default;
+$info:      #6FA8CE !default; // blu torcia, tenue (usato dalle big-numbers card)
+$warning:   #E89B3C !default; // ambra fiamma
+$light:     #F4F2EE !default;
+$dark:      #1B2140 !default; // blu inchiostro
 
-$primary: #07286E !default;
-$secondary: #de1f36 !default;
-$success: #420084 !default;
-$danger: #f2460d !default;
-$info: #7ebcfa !default;
-$warning: #ff9933 !default;
-$light: #eef0f2 !default;
-$dark: #000633 !default;
-$white: #fff !default;
+$white:     #fff !default;
 
+// ---------------------------------------------------------------------------
+// Corpo pagina e link
+// ---------------------------------------------------------------------------
+$body-color: #2C3247 !default;  // grigio-ardesia scuro: più leggibile del blu pieno
+$body-bg:    #FBFAF8 !default;  // carta calda, come lo sfondo del logo
 
-$body-color: $primary !default;
-$body-bg: $white !default;
-$footer-chulapa-bg-color: $primary !default;
-$footer-chulapa-text-color: $white !default;
-$navbar-chulapa-bg-color: $primary !default;
-$navbar-chulapa-text-color: $white !default;
-$link-color: #9b1626 !default;
-$link-hover-color: $secondary !default;
-$link-decoration: underline !default;
-$headings-font-family: Rajdhani !default;
+$link-color:       #B8325A !default;
+$link-hover-color: #8E2445 !default;
+$link-decoration:  none !default; // la sottolineatura dei link nei testi è gestita in custom.scss
 
-// SBD customizations
+// ---------------------------------------------------------------------------
+// Tipografia
+//   Space Mono = titoli e dettagli "tecnici" (stesso lettering del logo)
+//   Inter      = corpo testo (caricato via googlefonts in _config.yml)
+// ---------------------------------------------------------------------------
+$font-family-base:     "Inter", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-family: "Space Mono", "SFMono-Regular", Consolas, monospace !default;
+$headings-font-weight: 700 !default;
+$line-height-base:     1.7 !default;
 
-.hero-chulapa-image {
-  background-position: top;
-  z-index: 100; }
+// ---------------------------------------------------------------------------
+// Angoli arrotondati (leggeri) e ombre disattivate di default
+// ---------------------------------------------------------------------------
+$border-radius:    .4rem !default;
+$border-radius-lg: .6rem !default;
+$border-radius-sm: .3rem !default;
 
-.hero-chulapa-image h1 {
-  font-size: 4rem;
-  font-weight: 500 !important;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 0 0.5rem; }
-
-.hero-chulapa-image .p-summary {
-  background-color: #ffffff !important;
-  text-shadow: none;
-  padding: 0 0.5rem;
-  font-size: 1.3rem;
-  font-weight: 500; }
-
-.hero-chulapa-image .p-dates {
-  background-color: var(--primary) !important;
-  color: #ffffff !important;
-  text-shadow: none;
-  padding: 0 0.5rem;
-  font-size: 1.5rem; }
-
-.modal {
-  z-index: 100; }
-
-.modal-backdrop {
-  z-index: 99; }
-
-.sticky-top {
-  z-index: 98; }
-
-@media (min-width: 576px) {
-  .card-container .card {
-    flex: 1 1 calc(50% - 1rem);
-    /* 2 cards per row on small screens */
-    max-width: calc(50% - 1rem); } }
-@media (min-width: 768px) {
-  .card-container .card {
-    flex: 1 1 calc(33.33% - 1rem);
-    /* 3 cards per row on medium screens */
-    max-width: calc(33.33% - 1rem); } }
-@media (min-width: 992px) {
-  .card-container .card {
-    flex: 1 1 calc(25% - 1rem);
-    /* 4 cards per row on large screens */
-    max-width: calc(25% - 1rem); } }
-@media (min-width: 1200px) {
-  .card-container .card {
-    flex: 1 1 calc(20% - 1rem);
-    /* 5 cards per row on extra-large screens */
-    max-width: calc(20% - 1rem); } }
-.badge-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 1rem; }
-
-.comic-neue-regular {
-  font-family: "Comic Neue", cursive;
-  font-weight: 400;
-  font-style: normal; }
-
-.comic-neue-bold {
-  font-family: "Comic Neue", cursive;
-  font-weight: 700;
-  font-style: normal; }
-
-.bg-color-full {
-  clip-path: inset(0 -100vmax);
-  box-shadow: 0 0 0 100vmax #07286E; }
-
-.bg-color {
-  background-color: #07286E; }
-
-iframe {
-  border: 0; }
-
-.tech-wrench .fa-wrench:hover {
-  transform: scale(1, 1) !important; }
-
-.navbar-brand {
-  text-decoration: none; }
-
-.navbar {
-  border-bottom: 1px solid white;
-  z-index: 1000; }
-
-.navbar a.nav-link:hover {
-  background-color: #de1f36 !important; }
-
-.navbar a.dropdown-item:hover {
-  background-color: #de1f36 !important; }
-
-ul {
-  list-style-type: square; }
-
-.project {
-  border: 1px solid lightgrey; }
-
-.project:hover {
-  border: 1px solid #de1f36; }
-
-#projects-container a:hover {
-  text-decoration: none;
-  color: #07286E; }
-
-#projects-container h5 {
-  margin-top: 0;
-  font-weight: 700; }
-
-.project {
-  background-color: whitesmoke; }
-
-.nav-item:last-child {
-  background-color: #de1f36;
-  border-radius: 0;
-  padding-inline-start: 0.4em;
-  padding-inline-end: 0.4em;
-  color: #de1f36; }
-
-.nav-link:last-child {
-  color: lightgray !important; }
-
-.fas {
-  color: grey; }
-
-.nav-link:last-child:hover {
-  color: #fff !important; }
-
-.header-chulapa h1 {
-  margin-top: 2rem; }
-
-.chulapa-subtitle {
-  color: #de1f36 !important; }
-
-h3 {
-  color: #de1f36; }
-
-:target {
-  scroll-margin-top: 80px;
-  /* altezza della tua navbar */ }
-
-footer {
-  hr {
-   background-color:  white !important;
-  }
-}
-
-
-// Button back to top
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  background-color: $secondary;
-  color: $white;
-  border: none;
-  padding: 10px 14px;
-  font-size: 14px;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  display: none; /* Nascondi inizialmente */
-}
-
-#scrollToTopBtn:hover {
-  background-color: $primary;
-}
+// ---------------------------------------------------------------------------
+// Navbar e footer Chulapa: stessa tinta inchiostro per coerenza header/footer
+// ---------------------------------------------------------------------------
+$navbar-chulapa-bg-color:   #1B2140 !default;
+$navbar-chulapa-text-color: #F3F1EC !default;
+$footer-chulapa-bg-color:   #1B2140 !default;
+$footer-chulapa-text-color: #C9CDDE !default;

@@ -2,49 +2,610 @@
 ---
 
 @charset "utf-8";
-// Your custom css /scss here
 
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+// Font legacy usato solo dalle pagine dimostrative in _pages/old/
+// (gli @import CSS devono precedere ogni altra regola)
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+// ===========================================================================
+// "Non solo Giochi" — livello di presentazione
+// ---------------------------------------------------------------------------
+// Caricato dopo main.css: qui vive tutta la stilizzazione dei componenti.
+// Le variabili di compilazione (palette Bootstrap, font, radius) sono nello
+// skin _sass/skins/sbd.scss. I colori sono ripetuti qui come custom property
+// CSS per poterli usare anche in gradienti e stati hover.
+// ===========================================================================
+
+// ---------------------------------------------------------------------------
+// 1. Design token (palette derivata da assets/images/logo.png)
+// ---------------------------------------------------------------------------
+:root {
+  --nsg-ink:      #1B2140; // blu inchiostro (base torcia): navbar, footer, titoli
+  --nsg-blue:     #2270A8; // blu torcia: primario
+  --nsg-crimson:  #B8325A; // cremisi (petali): link e accenti
+  --nsg-amber:    #E89B3C; // ambra (fiamma): highlight e hover
+  --nsg-paper:    #FBFAF8; // sfondo pagina
+  --nsg-card:     #FFFFFF; // superfici in rilievo
+  --nsg-line:     #E7E3DC; // bordi e separatori
+  --nsg-text:     #2C3247; // testo corrente
+  --nsg-muted:    #6B7285; // testo secondario
+  // "linea della torcia": firma grafica che lega header e footer
+  --nsg-torch-gradient: linear-gradient(90deg, var(--nsg-blue), var(--nsg-crimson) 55%, var(--nsg-amber));
+  // ombra molto leggera per card e superfici
+  --nsg-shadow: 0 1px 2px rgba(27, 33, 64, .05), 0 4px 12px rgba(27, 33, 64, .05);
+}
+
+::selection {
+  background: rgba(232, 155, 60, .35);
+}
+
+// ---------------------------------------------------------------------------
+// 2. Tipografia e gerarchia dei titoli
+//    Space Mono (come il lettering del logo) per i titoli, Inter per il testo.
+// ---------------------------------------------------------------------------
 strong {
   font-weight: 600;
 }
 
-// pattern full width
+h1, h2, h3, h4, h5, h6 {
+  color: var(--nsg-ink);
+  letter-spacing: -.02em;
+}
+
+// nel corpo pagina i titoli scandiscono le sezioni: molta aria sopra, poca sotto
+#maincontent {
+  h1 {
+    font-size: 2.1rem;
+    margin: 2.5rem 0 1.25rem;
+  }
+
+  // h2 = sezione: separatore sottile in stile documentazione
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 3.25rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--nsg-line);
+  }
+
+  // h3 = sottosezione: accento cremisi, come i petali del logo
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 2.25rem;
+    color: var(--nsg-crimson);
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-top: 1.75rem;
+  }
+
+  p, li {
+    max-width: 72ch; // riga di lettura confortevole
+  }
+
+  li {
+    margin-bottom: .35rem;
+  }
+
+  // marcatori delle liste in cremisi tenue: dettaglio grafico senza peso
+  ul li::marker {
+    color: var(--nsg-crimson);
+  }
+
+  ol li::marker {
+    color: var(--nsg-muted);
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 767px) {
+  #maincontent h1 {
+    font-size: 1.7rem;
+  }
+  #maincontent h2 {
+    font-size: 1.3rem;
+  }
+}
+
+// sottotitolo di pagina: riga mono cremisi subito sotto l'h1
+// (uso: paragrafo markdown seguito da "{: .page-subtitle}")
+.page-subtitle {
+  font-family: "Space Mono", monospace;
+  font-size: 1.02rem;
+  color: var(--nsg-crimson);
+  margin-top: -.75rem;
+  margin-bottom: 2rem;
+}
+
+// ---------------------------------------------------------------------------
+// 3. Link nei contenuti: sottolineatura tenue che si accende all'hover
+// ---------------------------------------------------------------------------
+#maincontent a:not(.btn) {
+  color: var(--nsg-crimson);
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 50, 90, .35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: #8E2445;
+    text-decoration-color: currentColor;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 4. Navbar: inchiostro, sobria, con la "linea della torcia" come firma
+// ---------------------------------------------------------------------------
+.navbar-brand {
+  text-decoration: none;
+}
+
+.navbar {
+  z-index: 1000;
+}
+
+.navbar-chulapa {
+  border-bottom: 3px solid;
+  border-image: var(--nsg-torch-gradient) 1;
+  box-shadow: 0 1px 8px rgba(27, 33, 64, .18);
+
+  .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .8);
+    font-size: .85rem;
+    letter-spacing: .07em;
+    padding-top: .65rem;
+    padding-bottom: .65rem;
+    transition: color .15s ease;
+
+    &:hover,
+    &:focus {
+      color: var(--nsg-amber);
+    }
+
+    &.active {
+      color: #fff;
+      box-shadow: inset 0 -2px 0 var(--nsg-amber); // indicatore pagina corrente
+    }
+  }
+}
+
+// menu a tendina: card bianca, angoli arrotondati, ombra leggera
+.navbar-chulapa .dropdown-menu {
+  background: var(--nsg-card);
+  border: 1px solid var(--nsg-line);
+  border-radius: .5rem;
+  box-shadow: 0 10px 28px rgba(27, 33, 64, .16);
+  padding: .4rem;
+  margin-top: .5rem;
+
+  .dropdown-item {
+    color: var(--nsg-text);
+    border-radius: .35rem;
+    font-size: .82rem;
+    padding: .5rem .75rem;
+
+    &:hover,
+    &:focus {
+      background: var(--nsg-paper);
+      color: var(--nsg-crimson);
+    }
+
+    &.active {
+      background: transparent;
+      color: var(--nsg-crimson);
+    }
+  }
+}
+
+// ultima voce del menu (link istituzionale SBD Master): pillola ambra
+.navbar-chulapa .nav-item:last-child {
+  border: 1px solid rgba(232, 155, 60, .65);
+  border-radius: 999px;
+  padding-inline: .5em;
+
+  .nav-link:hover {
+    color: var(--nsg-amber);
+  }
+}
+
+// navbar mobile (stile "fab" del tema): stessa pillola per l'ultima voce
+.navbar-chulapa-fab-nav .nav-item:last-child {
+  border: 1px solid rgba(232, 155, 60, .65);
+  border-radius: 999px;
+}
+
+// ---------------------------------------------------------------------------
+// 5. Footer: stessa tinta e stessa linea della navbar (coerenza header/footer)
+// ---------------------------------------------------------------------------
+.footer-chulapa {
+  border-top: 3px solid;
+  border-image: var(--nsg-torch-gradient) 1;
+  font-size: .9rem;
+
+  // titoli di colonna: mono maiuscolo con accento ambra
+  .footer-col-title {
+    font-family: "Space Mono", monospace;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--nsg-amber);
+  }
+
+  hr {
+    background-color: rgba(255, 255, 255, .15);
+  }
+
+  a {
+    color: rgba(255, 255, 255, .78);
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+      color: var(--nsg-amber);
+    }
+  }
+
+  // elenchi di persone: niente numeri, solo aria
+  ol {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: .4rem;
+    }
+  }
+
+  // icone social: cerchio appena percettibile, ambra all'hover
+  .fa-stack .fa-circle {
+    color: rgba(255, 255, 255, .14);
+    transition: color .15s ease;
+  }
+
+  .chulapa-footer-sociallink:hover .fa-circle,
+  .chulapa-footer-sociallink:focus .fa-circle {
+    color: var(--nsg-amber);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 6. Card e superfici: angoli morbidi, ombre molto leggere
+// ---------------------------------------------------------------------------
+.card {
+  border: 1px solid var(--nsg-line);
+  border-radius: .6rem;
+  box-shadow: var(--nsg-shadow);
+}
+
+// griglia card del tema (usata dagli include img-*-cards)
+@media (min-width: 576px) {
+  .card-container .card {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+@media (min-width: 768px) {
+  .card-container .card {
+    flex: 1 1 calc(33.33% - 1rem);
+    max-width: calc(33.33% - 1rem);
+  }
+}
+@media (min-width: 992px) {
+  .card-container .card {
+    flex: 1 1 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+}
+
+// griglia dei "big numbers"
+.badge-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+// riquadri progetto della home del tema
+.project {
+  background-color: var(--nsg-card);
+  border: 1px solid var(--nsg-line);
+  border-radius: .6rem;
+
+  &:hover {
+    border-color: var(--nsg-crimson);
+  }
+}
+
+#projects-container {
+  a:hover {
+    text-decoration: none;
+    color: var(--nsg-ink);
+  }
+
+  h5 {
+    margin-top: 0;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 767px) {
+  #projects-container {
+    h5 {
+      margin-top: 2rem;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 7. Pulsanti
+// ---------------------------------------------------------------------------
+.btn {
+  border-radius: .45rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+// ---------------------------------------------------------------------------
+// 8. Contenuti: tabelle, citazioni, codice, immagini, grafici
+// ---------------------------------------------------------------------------
+
+// tabelle markdown in stile "report di analisi"
+#maincontent table {
+  display: block; // consente lo scroll orizzontale su schermi stretti
+  overflow-x: auto;
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+  font-size: .9rem;
+  font-variant-numeric: tabular-nums; // numeri allineati, da data table
+
+  th {
+    font-family: "Space Mono", monospace;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--nsg-ink);
+    border-bottom: 2px solid var(--nsg-ink);
+    padding: .5rem .75rem;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: .55rem .75rem;
+    border-bottom: 1px solid var(--nsg-line);
+  }
+
+  tbody tr:hover {
+    background: rgba(34, 112, 168, .05);
+  }
+}
+
+// citazioni: bordo ambra, fondo carta appena più caldo
+blockquote {
+  margin: 1.75rem 0;
+  padding: .75rem 1.25rem;
+  border-left: 3px solid var(--nsg-amber);
+  border-radius: 0 .5rem .5rem 0;
+  background: rgba(232, 155, 60, .07);
+  color: var(--nsg-muted);
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// codice inline e blocchi
+#maincontent code {
+  color: var(--nsg-crimson);
+  background: rgba(184, 50, 90, .07);
+  border-radius: .3rem;
+  padding: .1em .35em;
+  font-size: .875em;
+}
+
+#maincontent pre {
+  border: 1px solid var(--nsg-line);
+  border-radius: .5rem;
+  padding: 1rem 1.25rem;
+
+  code {
+    color: inherit;
+    background: none;
+    padding: 0;
+  }
+}
+
+// immagini nei contenuti: angoli morbidi e aria intorno
+#maincontent img {
+  max-width: 100%;
+  height: auto;
+  border-radius: .5rem;
+  margin: 1rem 0;
+}
+
+// separatori
+#maincontent hr {
+  border: 0;
+  height: 1px;
+  background: var(--nsg-line);
+  margin: 3rem 0;
+}
+
+// grafici Vega-Lite / justcharts: centrati, con aria sopra e sotto
+vegachart {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+}
+
+// grafici Plotly
+.plot-container {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  border: 0;
+}
+
+// ---------------------------------------------------------------------------
+// 9. Pattern a piena larghezza (hero della home con il logo)
+// ---------------------------------------------------------------------------
+
+// il wrapper 100vw sborda della larghezza della scrollbar: il clip sul
+// viewport evita lo scroll orizzontale senza rompere la navbar sticky
+html {
+  overflow-x: hidden;
+}
+
 .full-width-wrapper {
-            width: 100vw;
-            position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            margin-bottom: 5vw;
-        }
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--nsg-line);
+}
 
 .full-width-image {
-  min-width: 100%;
+  display: block;
+  width: 100%;
   object-fit: cover;
-  margin-top: -0.8rem;
+  object-position: top; // il lettering "Non solo Giochi" sta in alto: mai tagliarlo
   z-index: 0;
 }
 
-.green {
-  color: #4f9f56;
+// su schermi larghi il logo non deve occupare tutta la viewport
+@media (min-width: 992px) {
+  .full-width-image {
+    max-height: 62vh;
+  }
 }
 
+// variante compatta: banda immagine più bassa per le pagine interne (es. L'Idea)
+.full-width-image-sm {
+  max-height: 45vh;
+}
 
-.rotated {
-transform: rotate(180deg);
-        }
-
-// hero image (header)
+// ---------------------------------------------------------------------------
+// 10. Header hero (usato es. dalla pagina "L'Idea" con il logo come sfondo)
+//     L'immagine è chiara (velo chiaro nell'include headers.html), quindi
+//     titolo e sottotitolo tornano in inchiostro/cremisi.
+// ---------------------------------------------------------------------------
 .hero-chulapa-image {
-    background-position: top;
+  background-position: center top; // inquadra il lettering del logo, mai tagliarlo
+  background-size: cover;
+  min-height: 42vh;
+  // niente z-index: l'header deve restare SOTTO la navbar sticky (z-index 98)
+  // e sotto i suoi menu a tendina, altrimenti li copre durante lo scroll
+  border-bottom: 1px solid var(--nsg-line);
+
+  h1 {
+    color: var(--nsg-ink);
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-shadow: none;
+  }
+
+  // trattino separatore sotto il titolo: cremisi, corto
+  hr {
+    background-color: var(--nsg-crimson);
+    width: 64px;
+    height: 2px;
+    opacity: 1;
+  }
+
+  // sottotitolo (div .p-dates): mono piccolo, senza sfondi colorati
+  .chulapa-subtitle {
+    font-size: 1.05rem;
+    font-weight: 400;
+    background: transparent;
+    color: var(--nsg-crimson);
+    padding: 0 .5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-chulapa-image h1 {
+    font-size: 1.9rem;
+  }
+}
+
+.chulapa-subtitle {
+  color: var(--nsg-crimson);
+}
+
+// ---------------------------------------------------------------------------
+// 11. Indice dei contenuti (show_toc)
+// ---------------------------------------------------------------------------
+.chulapa-toc-wrapper .list-group-item {
+  border-color: var(--nsg-line);
+  font-size: .9rem;
+}
+
+// ---------------------------------------------------------------------------
+// 12. Utilità e dettagli
+// ---------------------------------------------------------------------------
+
+// ancoraggi: compensa l'altezza della navbar sticky
+:target {
+  scroll-margin-top: 80px;
+}
+
+// z-index coerenti tra modali del tema e navbar
+.modal {
   z-index: 100;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.modal-backdrop {
+  z-index: 99;
+}
 
+.sticky-top {
+  z-index: 98;
+}
+
+// pulsante "torna su": disco inchiostro, cremisi all'hover
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 42px;
+  height: 42px;
+  background-color: var(--nsg-ink);
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: var(--nsg-shadow);
+  display: none; // mostrato via JS dopo lo scroll
+
+  &:hover {
+    background-color: var(--nsg-crimson);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+// ---------------------------------------------------------------------------
+// 13. Legacy: classi usate solo dalle pagine dimostrative in _pages/old/
+// ---------------------------------------------------------------------------
 .comic-neue-regular {
   font-family: "Comic Neue", cursive;
   font-weight: 400;
@@ -57,44 +618,6 @@ transform: rotate(180deg);
   font-style: normal;
 }
 
-// iframe :
-iframe {
-  border: 0;
-}
-
-.navbar-brand {
-  text-decoration: none;
-}
-.navbar {
-  //border-bottom: 1px solid white;
-  z-index: 1000;
-}
-
-.nav-item:last-child {
-  border: 1px solid var(--secondary);
-  padding-inline-start: 0.4em;
-  padding-inline-end: 0.4em;
-}
-
-@media (max-width: 767px) {
-  #projects-container {
-    h5 {
-      margin-top: 2rem;
-    }
-    img {
-      max-width: 100%
-    }
-  }
-
-}
-
-:target {
-  scroll-margin-top: 80px; /* height of the navbar */
-}
-
-
-// Plotly charts
-.plot-container {
-  display: flex;
-  justify-content: center;
+.green {
+  color: #4f9f56;
 }

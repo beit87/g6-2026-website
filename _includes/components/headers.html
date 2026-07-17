@@ -22,7 +22,8 @@
 </header>
 {%- elsif include.headertype == "hero" -%}
   {%- if include.imghero -%}
-<header class="d-flex align-items-center hero-chulapa-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)), url('{{ include.imghero | absolute_url }}')">
+<!-- velo chiaro sull'immagine: il logo è su fondo chiaro, il titolo resta in inchiostro -->
+<header class="d-flex align-items-center hero-chulapa-image" style="background-image: linear-gradient(rgba(251, 250, 248, 0.5), rgba(251, 250, 248, 0.82)), url('{{ include.imghero | absolute_url }}')">
   {%- else -%}
 <header class="d-flex align-items-center hero-chulapa-image">
   {%- endif -%}

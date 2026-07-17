@@ -4,7 +4,14 @@ title: "L'Idea"
 subtitle: "Perché il medagliere olimpico non racconta solo lo sport"
 ---
 
+<div class="full-width-wrapper">
+    <img src="{{ site.baseurl }}/assets/images/sfondo2.png" alt="Non solo Giochi" class="full-width-image full-width-image-sm">
+</div>
+
 # L'idea
+
+Perché il medagliere olimpico non racconta solo lo sport
+{: .page-subtitle}
 
 Ogni quattro anni il medagliere olimpico diventa una classifica tra nazioni. Ma cosa c'è dietro quella classifica? Perché alcuni paesi vincono sistematicamente più di altri, anche a parità di popolazione? E quanto contano ricchezza, istruzione, salute e investimenti pubblici nel produrre campioni?
 
