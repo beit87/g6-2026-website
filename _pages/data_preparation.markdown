@@ -15,7 +15,7 @@ Il dataset di analisi nasce dall'integrazione di due famiglie di fonti:
 - **Dati olimpici** :
   - `Olympic_Medal_Tally_History_definitivo.csv`: il medagliere per paese e per edizione (ori, argenti, bronzi, totale);
   - `Olympic_Games_Summary.csv`: le informazioni su ogni edizione dei Giochi (anno, paese e città ospitante).
-- **Indicatori socio-economici** — le serie storiche della [World Bank (Data360)](https://data360.worldbank.org/en/search), scaricate tramite chiamate API (utilizzando la libreria Python `wbgapi`): PIL, PIL pro capite, popolazione, urbanizzazione, aspettativa di vita, istruzione, spesa militare, indicatori di governance e molti altri.
+- **Indicatori socio-economici** — le serie storiche della [World Bank (Data360)](https://data360.worldbank.org/en/search), scaricate tramite chiamate API (utilizzando la libreria Python [wbgapi](https://pypi.org/project/wbgapi/)): PIL, PIL pro capite, popolazione, urbanizzazione, aspettativa di vita, istruzione, spesa militare, indicatori di governance e molti altri.
 
 La lista degli indicatori è stata costruita in modo collaborativo: utilizzando la libreria `wbgapi` è stato creato un file excel con tutti gli indicatori disponibili, nei vari database disponibili su WorldBank. Ogni partecipante al gruppo ha quindi esplorato e proposto un insieme di indicatori coerente con la propria analisi (istruzione, salute, macroeconomia, governance, demografia). Le liste sono state poi unite e deduplicate in un unico catalogo (una sessantina di serie World Bank). Avendo riscontrato una forte presenza di valori nulli, molti indicatori sono stati scartati dal stataset finale
 
@@ -26,7 +26,7 @@ Abbiamo creato diversi script per interagire con i database di WorldBank
 Uno script che occupa di scaricare le serie storiche dalla World Bank:
 
 1. **Selezione dei paesi**: si parte dalla lista dei codici ISO dei paesi e si verifica quali codici esistono effettivamente nella nomenclatura World Bank. I codici validi vengono salvati in cache per evitare di ripetere il controllo a ogni esecuzione.
-2. **Download per paese**: per ciascun paese vengono scaricate tutte serie del catalogo per il periodo **1960–2019**, e salvate in un file CSV per paese:  oltre 200 file con una riga per anno e una colonna per indicatore.
+2. **Download per paese**: per ciascun paese vengono scaricate tutte serie del catalogo per il periodo **1960–2020**, e salvate in un file CSV per paese:  oltre 200 file con una riga per anno e una colonna per indicatore.
 3. **Robustezza**: l'API World Bank ha limiti e chiusure di connessione impreviste, quindi lo script introduce ritardi casuali tra le richieste, gestisce gli errori di rete con tentativi ripetuti e, in caso di interruzione, riprende dal primo paese non ancora salvato su disco.
 
 ## Pulizia dei dati
@@ -63,4 +63,4 @@ La pipeline produce un dataset in fomrato CSV, usato come base ion diversi noteb
 
 - **Finestra temporale pre-olimpica**: gli indicatori sono aggregati sui 4 anni precedenti ciascuna edizione. Il valore è un parametro dello script e può essere modificato per analisi di sensibilità.
 - **Valori mancanti**: la media è calcolata sui soli anni disponibili nella finestra (`skipna`); se nessun anno è disponibile la cella resta vuota. Nessun valore viene imputato in questa fase: le scelte di imputazione sono lasciate alle singole analisi.
-- **Paesi non riconosciuti**: alcuni codici ISO non esistono nella nomenclatura World Bank (per esempio comitati olimpici storici o territori particolari); Per questi casi si è proveduto a adeguare e rilanciare manualmente gli script.
+- **Paesi non riconosciuti**: alcuni codici ISO non esistono nella nomenclatura World Bank (per esempio comitati olimpici storici o territori particolari); Per questi casi si è proveduto ad adeguare il dataset "manualmente" attraverso Jupyter Notebook e pandas.

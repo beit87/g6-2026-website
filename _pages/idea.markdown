@@ -41,7 +41,7 @@ Il progetto è il lavoro collettivo del **Gruppo 6** del Master SoBigData. Ogni 
 
 - **Giuseppe Pascuzzi** ha costruito modelli predittivi (dalla regressione ai Random Forest) per stimare i medaglieri, ha analizzato l'effetto causale degli investimenti nello sport d'élite — che risultano un predittore più forte del semplice PIL — e ha misurato il vantaggio del paese ospitante, arrivando a una previsione del medagliere di Los Angeles 2028.
 
-- **Stefano Macchiavelli** ha curato la costruzione del dataset comune (medaglieri + indicatori World Bank) e ha analizzato il medagliere attraverso la lente del genere: la crescita del successo femminile dal 1964 a oggi e il confronto tra risultati maschili e femminili in relazione agli indicatori socio-economici ([leggi l'analisi]({{site.baseurl}}/successo_maschile_femminile.html)).
+- **Stefano Macchiavelli** ha curato la costruzione del dataset comune (medaglieri + indicatori World Bank) e ha analizzato il medagliere attraverso la lente del genere: la crescita del successo femminile dal 1964 a oggi e il confronto tra risultati maschili e femminili in relazione agli indicatori socio-economici ([leggi l'analisi]({{site.baseurl}}/successo_maschile_femminile2.html)).
 
 - **Alessio Cioli** ha curato il download dei dati e ha aggiunto una prospettiva qualitativa, raccogliendo con tecniche di web scraping gli articoli della stampa italiana sulla scherma olimpica per analizzare come i media raccontano il successo sportivo.
 

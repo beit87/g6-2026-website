@@ -505,12 +505,16 @@ html {
   display: flex;
   align-items: center;
   height: clamp(220px, 34vh, 400px);
+  // "contain" mostra l'immagine INTERA (niente ritagli) ancorata a destra;
+  // la parte di banda non coperta resta bianca e si fonde col lato bianco
+  // dell'immagine stessa
+  background-color: #fff;
   background-image:
     linear-gradient(90deg, rgba(251, 250, 248, .92) 0%, rgba(251, 250, 248, .55) 45%, rgba(251, 250, 248, 0) 70%),
     var(--page-hero-img);
   background-repeat: no-repeat;
-  background-position: right center; // la fiaccola resta sempre inquadrata
-  background-size: cover;
+  background-position: left center, right center;
+  background-size: 100% 100%, contain; // il velo copre tutta la banda, l'immagine no
   border-bottom: 1px solid var(--nsg-line);
   margin-bottom: 2.5rem;
 }
