@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Successo Maschile e Femminile 3"
-subtitle: "La partecipazione maschile e femminile nel medagliere olimpico, 1964-2020"
+subtitle: "La crescita dello sport femminile nel medagliere olimpico, 1964-2020"
 vega: true
 ---
 
