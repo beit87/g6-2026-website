@@ -5,7 +5,7 @@ subtitle: "La crescita dello sport femminile nel medagliere olimpico, 1964-2020"
 vega: true
 ---
 
-{% include page-hero.html title="La crescita dello sport femminile alle Olimpiadi" %}
+{% include page-hero.html %}
 
 In questa analisi raccontiamo come è cambiato il peso dello sport femminile alle Olimpiadi estive dal **1964 al 2020**, rispondendo a tre domande:
 
