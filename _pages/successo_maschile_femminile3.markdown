@@ -17,7 +17,7 @@ I dati provengono dal dataset storico dei risultati olimpici (dettaglio atleta-e
 
 ## La partecipazione femminile
 
-Nel 1964 le donne erano circa il **13%** dei partecipanti; a Tokyo 2020 quasi il **48%**. La crescita è continua, senza inversioni, e accelera dagli anni '80. Il numero di atleti uomini è sostanzialmente stabile dagli anni '90 (il CIO ha fissato un tetto ai partecipanti): la crescita femminile è avvenuta soprattutto **ampliando il programma di gare femminili**, non ingrandendo i Giochi.
+Nel 1964 le donne erano circa il **13%** dei partecipanti; a Tokyo 2020 quasi il **48%**. La crescita è continua, senza inversioni, e accelera dagli anni '80. Il numero di atleti uomini è più o meno stabile dagli anni '90.
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/01_partecipazione_e_quota.json" style="width: 100%; height: 100%"></vegachart>
@@ -27,7 +27,7 @@ Nel 1964 le donne erano circa il **13%** dei partecipanti; a Tokyo 2020 quasi il
 
 ## L'evoluzione del medagliere
 
-La quota di medaglie femminili passa dal **21%** del 1964 a oltre il **48%** del 2020, e la sua curva ricalca quella della partecipazione: quando il programma offre più gare femminili, arrivano più medaglie femminili. Gran parte della crescita del medagliere femminile è quindi la crescita delle **opportunità di gara** decisa dal CIO, più che un cambiamento nel rendimento delle atlete. La flessione intorno al 1980-1984 riflette anche i boicottaggi, di cui parliamo più sotto.
+La quota di medaglie femminili passa dal **21%** del 1964 a oltre il **48%** del 2020, e la sua curva ricalca quella della partecipazione: quando il programma offre più gare femminili, arrivano più medaglie femminili. Gran parte della crescita del medagliere femminile è quindi la crescita delle **opportunità di gara** decisa dal CIO, più che un cambiamento nel rendimento delle atlete. La flessione intorno al 1976-1984 riflette anche i boicottaggi, di cui parliamo più sotto.
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/02_medagliere_e_quota.json" style="width: 100%; height: 100%"></vegachart>
