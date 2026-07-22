@@ -110,4 +110,4 @@ I boicottaggi perturbano proprio le serie mostrate in questa pagina: nel 1980 e 
 
 ### Nota metodologica
 
-Il genere degli eventi è ricavato dal parsing testuale del nome della gara; gli eventi misti sono tenuti separati e non redistribuiti. Le medaglie di squadra contano una volta per squadra; il medagliere ricostruito coincide esattamente con quello ufficiale del CIO. Gli indicatori provengono dalla versione corretta del dataset di progetto (mappatura NOC↔ISO3 esplicita, nessuna riga duplicata); le correlazioni presentate sono descrittive e non implicano relazioni causali, e alcuni indicatori hanno il 20-40% di valori mancanti (quelli con copertura peggiore sono stati esclusi).
+Il genere degli eventi è ricavato dal parsing testuale del nome della gara; gli eventi misti sono tenuti separati e non redistribuiti. Le medaglie di squadra contano una volta per squadra; il medagliere ricostruito coincide esattamente con quello ufficiale del CIO. 
