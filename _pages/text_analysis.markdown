@@ -40,3 +40,13 @@ Sei un traduttore professionista. Traduci il contenuto del tag 	&lt;source&gt; i
 La presenza del tag ha reso più chiaro, per il modello, scopo e oggetto del compito.
 
 Si sono così salvati i testi in inglese in un nuovo dataset in *repubblica_clean_en.json*, con la stessa struttura di quello in italiano; i testi tradotti sono poi stati passati a ROBERTA che, ha determinato il valore emotivo di ogni articolo attribuendo un punteggio compreso fra 0 e 1 per ogni emozione. Il tutto è stato salvato in un nuovo e definitivo dataset, *repubblica_emotions.json*, derivato da *repubblica_clean_en.json* con l’aggiunta di 27 colonne, una per emozione. Ovviamente all’intersezione delle nuove colonne con le righe esistenti, è stato salvato il punteggio dell’emozione corrispondente.
+
+## Conclusioni
+
+Infine, è possibile mostrare in un grafico riassuntivo l’andamento nel tempo dell’interesse dello stato d’animo della stampa italiana nei confronti della scherma. Se definiamo l’emozione “enthusiasm” come la somma aritmetica di “admiration” e “approval” è possibile ottenere un grafico a dispersione in cui ogni punto rappresenta un articolo, avendo in ascisse il momento della pubblicazione e in ordinata il livello di “entusiasmo” espresso.
+
+![img](img_italy_kmeans.png)
+
+Come si può vedere, gli articoli possono essere raggruppati in diversi cluster, ovviamente in base alla data di pubblicazione ma anche del punteggio emotivo. È interessante notare come nel tempo sia aumentato il numero di articoli dedicati alla scherma e come anche il cluster 4, che rappresenta il gruppo di articoli entusiastici di epoche più recenti, sia più denso e abbia al suo interno articoli con punteggi fra i più alti in assoluto.
+
+Un andamento che sembra confermare la storia che tutti conosciamo: l’esplosione della scherma italiana grazie a diverse generazioni di atleti (specialmente nella squadra femminile) che proprio dagli anni Duemila, e specialmente dalle Olimpiadi del 2004, hanno mietuto moltissimi successi: chi era un adolescente a quell’epoca ricorderà senz’altro i nomi di Valentina Vezzali, Giovanna Trillini, Margherita Granbassi, Salvatore Sanzo e tanti altri ancora.
