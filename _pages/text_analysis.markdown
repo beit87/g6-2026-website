@@ -4,9 +4,10 @@ title: "Perché l'Italia è una potenza nella scherma?"
 subtitle: "Un approccio orientato alla Text Analysis"
 ---
 
-{% include page-hero.html title="Perché l’Italia della scherma è una potenza sportiva?" %}
 
-# Approfondimento tecnico
+# Perché l’Italia della scherma è una potenza sportiva? Approfondimento tecnico
+
+![img](img_italy_wordcloud.png)
 
 ## La pipeline di Text Analysis
 
@@ -26,7 +27,7 @@ Ovviamente, Llama non doveva cercare la risposta all’interno della conoscenza 
 
 Tuttavia, per quanto la dimensione del contesto di Llama fosse generosa, sarebbe stato impossibile passare al modello tutti e 400 gli articoli di giornale. Si è dovuto quindi implementare un semplice sistema di Information Retrieval in modo da selezionare gli articoli più rilevanti (molti, per esempio, si limitavano a enunciare i risultati ottenuti dagli atleti).
 
-Si è usato un language model (GTE base) in modo da poter formulare query semantiche e non lessicali, cosa che sarebbe stata troppo limitante. A GTE è stata poi passata la seguente query: “Quali articoli spiegano le ragioni dei successi dell'Italia nella scherma?”; il modello ha trovato, all’interno del corpus di Repubblica, i 40 articoli più rilevanti e li ha passati a Llama. La risposta completa data dall'LLM può essere consultata [qui](doc_italy_success.pdf)
+Si è usato un language model (GTE base) in modo da poter formulare query semantiche e non lessicali, cosa che sarebbe stata troppo limitante. A GTE è stata poi passata la seguente query: “Quali articoli spiegano le ragioni dei successi dell'Italia nella scherma?”; il modello ha trovato, all’interno del corpus di Repubblica, i 40 articoli più rilevanti e li ha passati a Llama. La risposta completa data dall'LLM può essere consultata [qui](doc_italy_success.pdf).
 
 ## La pipeline di Sentiment Analysis
 
