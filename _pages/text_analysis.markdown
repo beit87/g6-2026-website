@@ -6,25 +6,29 @@ subtitle: "Un approccio orientato alla Text Analysis"
 
 {% include page-hero.html title="Perché l’Italia della scherma è una potenza sportiva?" %}
 
-## I paesi “specializzati”
-Fra i paesi che prendono parte ai Giochi Olimpici esiste un gruppo che, storicamente, si è specializzato in alcune discipline, ottenendo così la gran parte dei suoi successi all’interno di tale ristretto ambito. Non solo, ma si è potuto osservare che il livello di specializzazione tende a mantenersi nel tempo, gettando la base di ulteriori successi. Come dice il proverbio inglese: “success brings success”.
+# Approfondimento tecnico
 
-Al gruppo delle “potenze sportive specializzate” appartiene anche l’Italia. È noto a tutti che la scherma, nelle sue varie branche, è una delle discipline in cui l’Italia eccelle, cosa confermata dai nostri dati. La domanda generale che ci eravamo posti nel progetto l’abbiamo dunque riformulata ad hoc per l’Italia: quali sono le ragioni del successo italiano nella scherma?
+## La pipeline di Text Analysis
 
-## La risposta attraverso la Text Analysis
-Per rispondere al quesito, però, questa volta abbiamo adottato un approccio diverso: non ci siamo rivolti ai dati statistici ma ai testi. Abbiamo scaricato e processato circa 400 articoli di giornale, compresi in un intervallo temporale dal 2000 al 2024; l’idea è che all’interno del dibattito pubblico intorno alla scherma si possano trovare sufficienti informazioni per rispondere al quesito. Ciò fatto, si è implementato un semplice sistema RAG (Retrieved Augmented Generation) e la selezione di articoli è stata data un LLM, nella fattispecie Llama, affinché l’intelligenza artificiale trovasse all’interno del corpus le ragioni del successo italiano nella scherma.
+Per la prima parte della Text Analysis, ovviamente, si è dovuto innanzitutto scaricare gli articoli della *Repubblica* attraverso un semplice algoritmo di scraping. I testi così scaricati sono stati poi puliti (rimozione dei caratteri mal codificati) e se ne è acquisita la data di redazione (in alcuni casi la data era contenuta nell’url stesso dell’articolo, altre volte, invece, era rintracciabile nel corpo del testo). Ciò fatto, gli articoli sono stati salvati in un file *repubblica_clean.json*: una lista di dizionari con chiavi *title*, *date*, *url* e *text*. Ogni dizionario viene così a rappresentare un articolo.
 
-La risposta ottenuta, in sintesi, mette in evidenza i seguenti concetti chiave:
-- esistenza di una lunga tradizione di schermidori
-- supporto da parte di FIS (Federazione Italiana Scherma) e governo nell’implementazione di efficaci politiche sportive, in particolare per quanto riguarda la formazione degli atleti e la qualità dell’allenamento
-- presenza di molti atleti di alto livello che hanno creato squadre forti nel temporale
-- forte esposizione mediatica della scherma.
+I testi sono stati poi passati al modello Llama 3.1 con 8 miliardi di parametri nella versione quantizzata a 4 bit. La relativamente piccola dimensione di questo modello è apparsa molto appropriata in quanto ha consentito:
+- di far girare il modello in locale su un pc equipaggiato con una GPU Nvidia RTX 5060 Ti con 16 GB di memoria VRAM;
+- di impostare un contesto molto grande (64000 token) senza saturare la memoria della GPU;
+- di avere libera memoria VRAM per caricare altri language model senza smontare Llama (vedi sotto).
 
-Naturalmente, alla risposta data da un LLM, per quanto ottenuta con mezzi allo stato dell’arte, non va dato credito a prescindere, ragion per cui abbiamo provveduto a intervistare un esperto per capire se le conclusioni dell’IA fossero verosimili.
+Il prompt passato a Llama per scoprire le ragioni del successo dell’Italia nella scherma è stato così formulato: “Rispondi alla domanda dell'utente con un testo continuo e articolato. Non rispondere in maniera schematica.  Cita nomi di personaggi importanti relativi all'argomento trattato, se ce ne sono; se essi hanno ottenuto risultati importanti, fai qualche esempio. Produci un testo di almeno 500 parole”.
 
-## Sentiment Analysis: la scherma non è un semplice “fatto”
-Ma perché limitare l’indagine testuale a un’unica domanda? La potenza degli LLM, infatti, può anche essere usata per addentrarsi nell’ambito della Sentiment Analysis; in particolare, esistono modelli già addestrati per riconoscere il valore “emotivo” di un testo. Un modello come ROBERTA è in grado di riconoscere 26 emozioni e di assegnare al testo, per ognuna di essa, un punteggio fra 0 e 1.
+Ovviamente, Llama non doveva cercare la risposta all’interno della conoscenza che ha incorporata: la risposta non sarebbe stata affidabile né controllabile. Occorreva, dunque, impostare una semplice pipeline RAG, cioè fornire a Llama gli articoli di giornale come contesto della risposta.
 
-Facendo una media per ogni emozione rilevata dal modello, si può vedere che gli articoli sono “neutrali” al 51%, ma emozioni come “approvazione” (11%), “ammirazione” ecc. ottengono comunque punteggi rilevanti. Questo risultato è tanto più sorprendente se si considera che la funzione primaria degli organi di stampa è quella di informare; in linea teorica, dunque, ci si aspetta che riporti dei fatti in maniera oggettiva. Il fatto che, invece, le vicende della scherma italiana siano emotivamente connotate è assolutamente degno di nota.
-![img.png](img_emotion_table.png)
-La conclusione che si può tirare, compatibile con l’interpretazione data da Llama, è che la scherma italiana, in virtù della sua consolidata tradizione di successi, è più di un semplice sport. La scherma è entrata a far parte dell’identità non solo sportiva dell’Italia, cosa testimoniata anche dall’interesse delle istituzioni pubbliche, ed è caricata di significati e aspettative che vanno al di là della performance sportiva. Ecco che, allora, parlare di scherma non è un semplice “resoconto” ma una narrazione tesa a confermare (o smentire) un pezzo importante dell’identità nazionale.  
+Tuttavia, per quanto la dimensione del contesto di Llama fosse generosa, sarebbe stato impossibile passare al modello tutti e 400 gli articoli di giornale. Si è dovuto quindi implementare un semplice sistema di Information Retrieval in modo da selezionare gli articoli più rilevanti (molti, per esempio, si limitavano a enunciare i risultati ottenuti dagli atleti).
+
+Si è usato un language model (GTE base) in modo da poter formulare query semantiche e non lessicali, cosa che sarebbe stata troppo limitante. A GTE è stata poi passata la seguente query: “Quali articoli spiegano le ragioni dei successi dell'Italia nella scherma?”; il modello ha trovato, all’interno del corpus di Repubblica, i 40 articoli più rilevanti e li ha passati a Llama. La risposta completa data dall'LLM può essere consultata [qui](doc_italy_success.pdf)
+
+## La pipeline di Sentiment Analysis
+
+L’analisi del sentiment ha posto delle sfide particolari, in quanto ad oggi non risultano modelli addestrati sull’italiano. Il modello più valido è ROBERTA, uno dei modelli derivati da BERT, in grado di riconoscere ben 27 emozioni in un testo; tuttavia, il modello è stato addestrato solo in inglese. Per aggirare l’ostacolo, dunque, Llama ha tradotto in inglese tutti gli articoli di *Repubblica*.
+
+Il file *repubblica_clean.json* è stato caricato in un DataFrame per ogni record, il campo *text* è stato inserito in un tag *<source> … </source>* e poi passato a Llama con l’ordine di tradurlo in inglese: “Sei un traduttore professionista. Traduci il contenuto del tag <source> in inglese. Non aggiungere commenti o spiegazioni”. La presenza del tag ha reso più chiaro, per il modello, scopo e oggetto del compito.
+
+Si sono così salvati i testi in inglese in un nuovo dataset in *repubblica_clean_en.json*, con la stessa struttura di quello in italiano; i testi tradotti sono poi stati passati a ROBERTA che, ha determinato il valore emotivo di ogni articolo attribuendo un punteggio compreso fra 0 e 1 per ogni emozione. Il tutto è stato salvato in un nuovo e definitivo dataset, *repubblica_emotions.json*, derivato da *repubblica_clean_en.json* con l’aggiunta di 27 colonne, una per emozione. Ovviamente all’intersezione delle nuove colonne con le righe esistenti, è stato salvato il punteggio dell’emozione corrispondente.
