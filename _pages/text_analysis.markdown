@@ -10,14 +10,17 @@ subtitle: "Un approccio orientato alla Text Analysis"
 
 ## La pipeline di Text Analysis
 
-Per la prima parte della Text Analysis, ovviamente, si è dovuto innanzitutto scaricare gli articoli della *Repubblica* attraverso un semplice algoritmo di scraping. I testi così scaricati sono stati poi puliti (rimozione dei caratteri mal codificati) e se ne è acquisita la data di redazione (in alcuni casi la data era contenuta nell’url stesso dell’articolo, altre volte, invece, era rintracciabile nel corpo del testo). Ciò fatto, gli articoli sono stati salvati in un file *repubblica_clean.json*: una lista di dizionari con chiavi *title*, *date*, *url* e *text*. Ogni dizionario viene così a rappresentare un articolo.
+Per la prima parte della Text Analysis si è dovuto innanzitutto scaricare gli articoli della *Repubblica* attraverso un semplice algoritmo di scraping. I testi così scaricati sono stati poi puliti (rimozione dei caratteri mal codificati) e se ne è acquisita la data di redazione (in alcuni casi la data era contenuta nell’url stesso dell’articolo, altre volte, invece, era rintracciabile nel corpo del testo). Ciò fatto, gli articoli sono stati salvati in un file *repubblica_clean.json*: una lista di dizionari con chiavi *title*, *date*, *url* e *text*. Ogni dizionario viene così a rappresentare un articolo.
 
 I testi sono stati poi passati al modello Llama 3.1 con 8 miliardi di parametri nella versione quantizzata a 4 bit. La relativamente piccola dimensione di questo modello è apparsa molto appropriata in quanto ha consentito:
 - di far girare il modello in locale su un pc equipaggiato con una GPU Nvidia RTX 5060 Ti con 16 GB di memoria VRAM;
 - di impostare un contesto molto grande (64000 token) senza saturare la memoria della GPU;
-- di avere libera memoria VRAM per caricare altri language model senza smontare Llama (vedi sotto).
+- di avere libera memoria VRAM per caricare altri language model senza smontare Llama (vedi oltre).
 
-Il prompt passato a Llama per scoprire le ragioni del successo dell’Italia nella scherma è stato così formulato: “Rispondi alla domanda dell'utente con un testo continuo e articolato. Non rispondere in maniera schematica.  Cita nomi di personaggi importanti relativi all'argomento trattato, se ce ne sono; se essi hanno ottenuto risultati importanti, fai qualche esempio. Produci un testo di almeno 500 parole”.
+Il prompt passato a Llama per scoprire le ragioni del successo dell’Italia nella scherma è stato così formulato:
+<blockquote>
+Rispondi alla domanda dell'utente con un testo continuo e articolato. Non rispondere in maniera schematica.  Cita nomi di personaggi importanti relativi all'argomento trattato, se ce ne sono; se essi hanno ottenuto risultati importanti, fai qualche esempio. Produci un testo di almeno 500 parole.
+</blockquote>
 
 Ovviamente, Llama non doveva cercare la risposta all’interno della conoscenza che ha incorporata: la risposta non sarebbe stata affidabile né controllabile. Occorreva, dunque, impostare una semplice pipeline RAG, cioè fornire a Llama gli articoli di giornale come contesto della risposta.
 
@@ -29,6 +32,10 @@ Si è usato un language model (GTE base) in modo da poter formulare query semant
 
 L’analisi del sentiment ha posto delle sfide particolari, in quanto ad oggi non risultano modelli addestrati sull’italiano. Il modello più valido è ROBERTA, uno dei modelli derivati da BERT, in grado di riconoscere ben 27 emozioni in un testo; tuttavia, il modello è stato addestrato solo in inglese. Per aggirare l’ostacolo, dunque, Llama ha tradotto in inglese tutti gli articoli di *Repubblica*.
 
-Il file *repubblica_clean.json* è stato caricato in un DataFrame per ogni record, il campo *text* è stato inserito in un tag *<source> … </source>* e poi passato a Llama con l’ordine di tradurlo in inglese: “Sei un traduttore professionista. Traduci il contenuto del tag <source> in inglese. Non aggiungere commenti o spiegazioni”. La presenza del tag ha reso più chiaro, per il modello, scopo e oggetto del compito.
+Il file *repubblica_clean.json* è stato caricato in un DataFrame per ogni record, il campo *text* è stato inserito in un tag *<source> … </source>* e poi passato a Llama con l’ordine di tradurlo in inglese: 
+<blockquote>
+Sei un traduttore professionista. Traduci il contenuto del tag <source> in inglese. Non aggiungere commenti o spiegazioni.
+</blockquote>
+La presenza del tag ha reso più chiaro, per il modello, scopo e oggetto del compito.
 
 Si sono così salvati i testi in inglese in un nuovo dataset in *repubblica_clean_en.json*, con la stessa struttura di quello in italiano; i testi tradotti sono poi stati passati a ROBERTA che, ha determinato il valore emotivo di ogni articolo attribuendo un punteggio compreso fra 0 e 1 per ogni emozione. Il tutto è stato salvato in un nuovo e definitivo dataset, *repubblica_emotions.json*, derivato da *repubblica_clean_en.json* con l’aggiunta di 27 colonne, una per emozione. Ovviamente all’intersezione delle nuove colonne con le righe esistenti, è stato salvato il punteggio dell’emozione corrispondente.
