@@ -32,9 +32,9 @@ Si è usato un language model (GTE base) in modo da poter formulare query semant
 
 L’analisi del sentiment ha posto delle sfide particolari, in quanto ad oggi non risultano modelli addestrati sull’italiano. Il modello più valido è ROBERTA, uno dei modelli derivati da BERT, in grado di riconoscere ben 27 emozioni in un testo; tuttavia, il modello è stato addestrato solo in inglese. Per aggirare l’ostacolo, dunque, Llama ha tradotto in inglese tutti gli articoli di *Repubblica*.
 
-Il file *repubblica_clean.json* è stato caricato in un DataFrame per ogni record, il campo *text* è stato inserito in un tag *<source> … </source>* e poi passato a Llama con l’ordine di tradurlo in inglese: 
+Il file *repubblica_clean.json* è stato caricato in un DataFrame per ogni record, il campo *text* è stato inserito in un tag *&lt;source&gt;* e poi passato a Llama con l’ordine di tradurlo in inglese: 
 <blockquote>
-Sei un traduttore professionista. Traduci il contenuto del tag <source> in inglese. Non aggiungere commenti o spiegazioni.
+Sei un traduttore professionista. Traduci il contenuto del tag 	&lt;source&gt; in inglese. Non aggiungere commenti o spiegazioni.
 </blockquote>
 La presenza del tag ha reso più chiaro, per il modello, scopo e oggetto del compito.
 
