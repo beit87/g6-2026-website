@@ -28,7 +28,7 @@ Nel 1964 le donne erano circa il **13%** dei partecipanti; a Tokyo 2020 quasi il
 
 ## L'evoluzione del medagliere
 
-La quota di medaglie femminili passa dal **21%** del 1964 a oltre il **48%** del 2020, e la sua curva ricalca quella della partecipazione: quando il programma offre più gare femminili, arrivano più medaglie femminili. Gran parte della crescita del medagliere femminile è quindi la crescita delle **opportunità di gara** decisa dal CIO, più che un cambiamento nel rendimento delle atlete. La flessione intorno al 1976-1984 riflette anche i boicottaggi, di cui parliamo più sotto.
+La quota di medaglie femminili passa dal **21%** del 1964 a oltre il **48%** del 2020, e la sua curva ricalca quella della partecipazione.
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/02_medagliere_e_quota.json" style="width: 100%; height: 100%"></vegachart>
@@ -38,7 +38,7 @@ La quota di medaglie femminili passa dal **21%** del 1964 a oltre il **48%** del
 
 ## I paesi che dipendono di più dalle medaglie femminili
 
-Aggregando l'intero periodo 1964-2020 e considerando solo i paesi con almeno 30 medaglie di genere, i paesi oltre la linea del 50% hanno vinto **più medaglie con le donne che con gli uomini** in oltre mezzo secolo di Giochi. Il gruppo di testa è eterogeneo: potenze dello sprint come la **Giamaica** (62,5%), paesi con sistemi sportivi statali che hanno investito presto sullo sport femminile (Cina, Romania, ex DDR) e paesi occidentali come Paesi Bassi e Canada. Questa eterogeneità è già un indizio per la terza domanda: non sembra esserci un unico profilo socio-economico che produce un medagliere "femminile".
+Aggregando l'intero periodo 1964-2020 e considerando solo i paesi con almeno 30 medaglie di genere, i paesi oltre la linea del 50% hanno vinto **più medaglie con le donne che con gli uomini** in oltre mezzo secolo di Giochi. Il gruppo di testa è eterogeneo: potenze dello sprint come la **Giamaica** (62,5%), paesi con sistemi sportivi statali che hanno investito presto sullo sport femminile (Cina, Romania, ex DDR) e paesi occidentali come Paesi Bassi e Canada. 
 
 <div style="height: 460px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/03_top15_quota_femminile_paesi.json" style="width: 100%; height: 100%"></vegachart>
@@ -58,7 +58,7 @@ Un'assenza che colpisce: le due superpotenze del medagliere non compaiono nella 
 | 31ª | Squadra Unificata (EUN) | 75 | 37 | 33,0% |
 | 40ª | URSS (URS) | 507 | 191 | 27,4% |
 
-Due fattori spiegano il risultato. Il primo è l'**effetto storico del programma gare**: USA e URSS vincono moltissimo fin dal 1964, quando gli eventi femminili valevano solo il 21% delle medaglie, e quel bottino degli anni '60-'80 — strutturalmente sbilanciato sul maschile — abbassa la quota aggregata sull'intero periodo. Non a caso, nel periodo 2000-2020 (grafico successivo) gli USA hanno *più* medaglie femminili che maschili.
+Due fattori spiegano il risultato. Il primo è l'**effetto storico del programma gare**: USA e URSS vincono moltissimo fin dal 1964, quando gli eventi femminili valevano solo il 21% delle medaglie, e quel bottino degli anni '60-'80 — strutturalmente sbilanciato sul maschile — abbassa la quota aggregata sull'intero periodo. 
 
 Il secondo è la frammentazione dei **NOC storici**: il dataset segue il medagliere ufficiale del CIO, in cui ogni Comitato Olimpico Nazionale è un'entità distinta. La "Russia" è quindi spezzata su quattro sigle: **URS** (l'Unione Sovietica, fino al 1988), **EUN** (la *Squadra Unificata* delle 12 ex repubbliche sovietiche a Barcellona 1992), **RUS** (la Federazione Russa, dal 1996) e **ROC** (il *Russian Olympic Committee* di Tokyo 2020, quando la Russia era squalificata per il doping di stato e i suoi atleti gareggiarono senza bandiera né inno). Un pezzo di "Russia" in Top 15 c'è: ROC, che però rappresenta la sola edizione 2020. Lo stesso vale per la Germania (GER, FRG, GDR, EUA).
 
@@ -74,7 +74,7 @@ Restringendo lo sguardo al periodo recente (2000-2020, quando il programma femmi
 
 ## Uomini e donne rispondono agli stessi fattori socio-economici?
 
-Mettiamo in relazione le medaglie con gli indicatori World Bank su un panel paese-edizione (3.126 righe, una per paese-edizione) che include anche i paesi senza medaglie, usando come misura di successo log(1 + medaglie) per attenuare il peso dei paesi dominanti. Con il dataset corretto anche le squadre russe EUN (1992) e ROC (2020) entrano nell'analisi con medaglie e indicatori insieme, mentre l'URSS resta dichiaratamente senza indicatori (la World Bank non copre l'Unione Sovietica). Gli indicatori di **dimensione** — PIL assoluto e popolazione — sono i più associati al numero di medaglie, e questo vale per entrambi i generi: nel grafico, il punto maschile e quello femminile di ogni indicatore sono quasi sovrapposti (differenza media assoluta di appena 0,02). La crescita del PIL è invece scorrelata: vince chi è grande, non chi cresce in fretta.
+Mettiamo in relazione le medaglie con gli indicatori World Bank su un panel paese-edizione (3.126 righe, una per paese-edizione) che include anche i paesi senza medaglie, usando come misura di successo log(1 + medaglie) per attenuare il peso dei paesi dominanti.  Gli indicatori di **dimensione** — PIL assoluto e popolazione — sono i più associati al numero di medaglie, e questo vale per entrambi i generi: nel grafico, il punto maschile e quello femminile di ogni indicatore sono quasi sovrapposti (differenza media assoluta di appena 0,02). La crescita del PIL è invece scorrelata: vince chi è grande, non chi cresce in fretta.
 
 <div style="height: 400px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/04_correlazioni_indicatori_per_genere.json" style="width: 100%; height: 100%"></vegachart>
