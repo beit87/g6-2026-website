@@ -13,7 +13,8 @@ In questa analisi raccontiamo come è cambiato il peso dello sport femminile all
 2. Quali paesi costruiscono una parte rilevante del proprio medagliere sulle competizioni femminili?
 3. I risultati maschili e femminili rispondono agli stessi fattori socio-economici?
 
-I dati provengono dal dataset storico dei risultati olimpici (dettaglio atleta-evento e biografie degli atleti) incrociato con la **versione corretta** del dataset degli indicatori socio-economici World Bank, rigenerato con la mappatura esplicita dei codici NOC↔ISO3 (niente righe duplicate, ogni paese con i propri indicatori). Il genere di ogni evento è ricavato dal nome della gara (eventi *maschili*, *femminili* e *misti*), e negli sport di squadra ogni squadra conta una sola medaglia. La ricostruzione del medagliere coincide **perfettamente** con quello ufficiale (r=1.0, scarto nullo).
+I dati provengono dal dataset storico dei risultati olimpici (dettaglio atleta-evento e biografie degli atleti) incrociato con il dataset degli indicatori socio-economici World Bank, utilizzanto ance in altre analisi del progetto, costruito nella fase di [data preparation]({{site.baseurl}}/data_preparation.html). 
+Il genere di ogni evento è ricavato dal nome della gara (eventi *maschili*, *femminili* e *misti*), e negli sport di squadra ogni squadra conta una sola medaglia.
 
 ## La partecipazione femminile
 
