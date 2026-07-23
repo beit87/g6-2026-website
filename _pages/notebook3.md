@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Chi salirà sul podio a Los Angeles?"
+header_title: "Chi salirà sul podio a Los Angeles?"
 subtitle: "Machine Learning, causalità e previsioni per i Giochi Olimpici del 2028"
 header_type: hero
 header_img: "assets/images/img_olimpiadi.jpg"
