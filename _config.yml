@@ -43,11 +43,11 @@ url: "https://beit87.github.io" # il dominio principale del sito senza barra fin
 navbar:
   style :  dual # non modificarlo: imposta lo stile della navbar.
   brand: # brand della navbar, mostrato a sinistra.
-    title :  ""
+    title :  "Non solo Giochi"
     img: "./assets/images/Logo_masthead.png" # non modificare
-    url: /
+    url: /idea.html
   nav:
-    - title: Non solo Giochi
+    - title: L'idea
       url: /idea.html
     - title: Data Preparation
       url: /data_preparation.html

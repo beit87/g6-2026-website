@@ -103,6 +103,14 @@ Guardando nel dettaglio la relazione più nota — quella con la ricchezza — l
 <p>------------</p>
 <br/>
 
+### Come leggere la retta di regressione
+
+Ogni puntino del grafico è un paese in una singola edizione (2000-2020): sull'asse orizzontale la sua ricchezza media, su quello verticale le medaglie vinte (entrambe in scala logaritmica, solo per rendere leggibile la nuvola). La **retta di regressione** è la linea che riassume tutti quei punti: tra tutte le rette possibili, è quella che passa il più vicino possibile a ogni puntino. In pratica risponde alla domanda *"conoscendo la ricchezza di un paese, quante medaglie mi aspetto in media?"*.
+
+La cosa da guardare è la **pendenza**: se la retta sale verso destra, più ricchezza si associa a più medaglie; se è piatta, la ricchezza non conta. Qui entrambe le rette salgono, con pendenza quasi identica per uomini (≈0,18) e donne (≈0,17), e sono praticamente sovrapposte — la traduzione visiva del fatto che **a parità di ricchezza i due generi vincono un numero simile di medaglie**.
+
+Due avvertenze per leggerla con onestà. Primo: i punti sono molto **dispersi** attorno alle rette (la correlazione è debole, r≈0,3), quindi la retta indica una *tendenza media*, non una previsione — ci sono paesi ricchi che vincono poco e paesi non ricchi che vincono molto. Secondo: si tratta di un'**associazione descrittiva, non di un rapporto di causa-effetto**. La ricchezza appare come una condizione che aiuta, non come una spiegazione completa del successo olimpico.
+
 ## I boicottaggi: una perturbazione da tenere presente
 
 Tre edizioni del periodo analizzato sono state segnate da boicottaggi di massa. Il numero esatto di atleti esclusi non è documentato in modo uniforme, quindi riportiamo il numero stimato di paesi coinvolti.
