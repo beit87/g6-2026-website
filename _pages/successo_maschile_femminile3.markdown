@@ -16,9 +16,22 @@ In questa analisi raccontiamo come è cambiato il peso dello sport femminile all
 I dati provengono dal dataset storico dei risultati olimpici (dettaglio atleta-evento e biografie degli atleti) incrociato con il dataset degli indicatori socio-economici World Bank, utilizzanto ance in altre analisi del progetto, costruito nella fase di [data preparation]({{site.baseurl}}/data_preparation.html). 
 Il genere di ogni evento è ricavato dal nome della gara (eventi *maschili*, *femminili* e *misti*), e negli sport di squadra ogni squadra conta una sola medaglia.
 
+## Un po' di storia
+
+La presenza femminile ai Giochi olimpici non è stata prevista fin dall'inizio, anzi...la prima olimpiade moderna ammetteva solo atleti di sesso maschile 
+
+| Anno | Edizione | Evidenza                                                                                                                                                                                                          |
+|------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1896 | Atene | Nessuna donna ammessa. [Pierre de Coubertin](https://it.wikipedia.org/wiki/Pierre_de_Coubertin), fondatore delle Olimpiadi moderne, riteneva che le donne dovessero limitarsi ad assistere e premiare gli atleti. |
+| 1900 | Parigi | Partecipano per la prima volta 22 donne su circa 1.000 atleti, in soli cinque sport (tennis, golf, vela, croquet ed equitazione).                                                                                 |
+| 1928 | Amsterdam | Entra l'atletica femminile, dopo anni di dibattiti e resistenze.                                                                                                                                                  |
+| 1950-1990 | Seconda metà del Novecento | Il **CIO** (Comitato Olimpico Internazionale) aggiunge progressivamente discipline femminili in quasi tutti gli sport.                                                                                            |
+| 2012 | Londra | Per la prima volta ogni sport del programma olimpico prevede almeno una gara femminile. Inoltre tutti i Paesi partecipanti schierano almeno una donna.                                                            |
+| 2024 | Parigi | Viene raggiunta la sostanziale parità numerica, con circa il 50% di atlete donne.                                                                                                                                 |
+
 ## La partecipazione femminile
 
-Nel 1964 le donne erano circa il **13%** dei partecipanti; a Tokyo 2020 quasi il **48%**. La crescita è continua, senza inversioni, e accelera dagli anni '80. Il numero di atleti uomini è più o meno stabile dagli anni '90.
+All'inizio del nostro periodo di analisi, nel 1964, le donne erano circa il **13%** dei partecipanti; a Tokyo 2020 quasi il **48%**. La crescita è continua, senza inversioni, e accelera dagli anni '80. Il numero di atleti uomini è più o meno stabile dagli anni '90.
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/01_partecipazione_e_quota.json" style="width: 100%; height: 100%"></vegachart>
