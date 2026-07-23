@@ -6,44 +6,39 @@ subtitle: "Oltre il PIL: quanto costa davvero vincere una medaglia olimpica?"
 header_type: hero
 header_img: "assets/images/img_olimpiadi.jpg"
 vega: true
-scrollama: true
 custom_css: /assets/css/g6-charts.css
 ---
 
-Le analisi esplorative hanno mostrato che il PIL totale correla con le medaglie (r = 0.58), ma lasciano aperta la domanda più importante: è il PIL in sé che produce medaglie, o è quello che ci si fa sopra — cioè quanto si investe direttamente nello sport élite? In questa sezione utilizziamo dati reali di spesa sportiva per rispondere.
+Il PIL totale correla con le medaglie olimpiche (r = 0.58), ma non spiega tutto. Cosa succede se guardiamo direttamente quanto ogni paese investe nello sport d'élite, invece che alla sua ricchezza complessiva?
 {: .lead}
-
-Le domande che guidano questa analisi:
-
-1. La spesa sportiva élite spiega le medaglie meglio del PIL?
-2. I paesi che aumentano i finanziamenti migliorano davvero i risultati nel ciclo successivo?
-3. Quanto costa in media una medaglia olimpica — e chi è più efficiente?
-4. Ospitare le Olimpiadi dà un vantaggio misurabile, e se sì quanto vale?
-
-**Fonti:** SPLISS Tokyo 2020 (De Bosscher & Shibli, 2021) · SPLISS Paris 2024 (De Bosscher et al., 2024) · UK Sport Historical Funding 2000–2024 (dati ufficiali governo britannico).
 
 ---
 
-{% include scrollytelling.html
-  data_file="scrollama_nb2"
-  chart_height="440px"
-  desktop_chart_height="58vh"
-  sticky_top="12vh"
-  desktop_steps_padding_top="5vh"
-  step_gap="95vh"
-  last_step_gap="5vh"
-  only_active_step_visible="false"
-%}
+<h3>La spesa élite spiega le medaglie meglio del PIL</h3>
+<p>Confrontando il PIL totale con la spesa sportiva élite reale (dati SPLISS su 14-17 nazioni), il risultato è netto: la spesa élite raggiunge <strong>r = 0.85-0.88</strong>, contro <strong>r = 0.58</strong> del PIL. Non conta solo quanto è ricco un paese, ma quanto di quella ricchezza viene effettivamente investita nello sport di alto livello.</p>
+
+<div class="full-width-chart-wrapper">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/g6/nb2_spliss_scatter.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
+<h3>UK Sport: la prova più solida disponibile</h3>
+<p>Il caso britannico è il dataset più trasparente al mondo su questo tema: sette cicli olimpici, ogni disciplina finanziata singolarmente e pubblicamente. La correlazione tra investimento e medaglie è <strong>r = 0.947, R² = 0.90</strong>, il 90% della varianza è spiegato dai fondi stanziati. Il salto tra Atene 2004 (£71M, 30 medaglie) e Pechino 2008 (£235M, 47 medaglie) resta il caso di studio più citato in letteratura.</p>
+
+<div class="full-width-chart-wrapper">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/g6/nb2_uksport.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
+<h3>Ospitare i Giochi vale +17 medaglie</h3>
+<p>Per ogni paese ospitante, il delta tra le medaglie vinte in casa e la propria media storica è in media di <strong>+17.1 medaglie</strong> (escludendo i boicottaggi del 1980/1984), con <strong>p = 0.003</strong>, un risultato statisticamente solido. L'effetto combina investimenti pre-Giochi più alti, vantaggio del pubblico di casa, e assenza di stress da trasferta.</p>
+
+<div class="full-width-chart-wrapper">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/g6/nb2_host_effect.json" style="width: 100%; height: 100%"></vegachart>
+</div>
 
 ---
 
 ## In sintesi
 
-- La **spesa élite reale** spiega le medaglie con r = 0.85–0.88 (SPLISS), significativamente meglio del PIL (r = 0.58): misura direttamente il flusso di risorse verso lo sport di alto livello.
-- UK Sport mostra la relazione più robusta disponibile: **r = 0.947, R² = 0.90** su sette cicli consecutivi — il 90% della varianza delle medaglie britanniche è spiegata dall'investimento.
-- Il **costo per medaglia** varia enormemente: da €2.8M del Belgio a oltre €8M del Brasile. L'efficienza dell'allocazione conta quanto il volume totale di spesa.
-- **Ospitare i Giochi** vale circa +16.6 medaglie rispetto alla propria media storica (p = 0.004).
-
-### Nota metodologica
-
-I dati SPLISS coprono solo 14–17 nazioni e due cicli: il campione è troppo piccolo per stime panel formali. L'effetto paese ospitante esclude i boicottaggi del 1980 e 1984 perché il delta riflette l'assenza dei rivali, non il vero vantaggio di campo.
+- La **spesa élite reale** spiega le medaglie molto meglio del PIL (r = 0.85-0.88 vs r = 0.58).
+- **UK Sport** dimostra la relazione più solida in letteratura: r = 0.947, R² = 0.90 su sette cicli.
+- **Ospitare i Giochi** vale in media +17.1 medaglie rispetto alla propria media storica (p = 0.003).
