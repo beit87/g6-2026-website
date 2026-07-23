@@ -58,6 +58,6 @@ Per concludere l’intervista, allarghiamo il discorso al sistema-paese nel suo 
 
 Ma allora le risorse economiche e gli investimenti nelle infrastrutture non servono? Si può ottenere tanto con poco? “No, servono anche le risorse. Quello che di buono abbiamo è che, quando si arriva all’alto livello, lo stato, in Italia, dà la possibilità agli atleti di continuare ad allenarsi stando dentro le branche sportive delle forze dell’ordine. Questo gli consente di ritardare l’ingresso nel mondo del lavoro e continuare a dedicarsi allo sport a livelli eccellenti”. 
 
-Questo è sicuramente un grosso e meritorio impegno che lo stato si prende ma, come Enrico già diceva, lo sport tende ad attirare la maggior parte delle attenzioni quando si “vedono” i grandi risultati, cioè quando gli atleti già formati cominciano ad ottenere successi rilevanti. Ma la parte più importante dello sport – e socialmente rilevante, per quelli che magari intendono solo coltivare una passione, aggiungerei io – è il lavoro che di formazione che viene prima dei risultati. 
+Questo è sicuramente un grosso e meritorio impegno che lo stato si prende ma, come Enrico già diceva, lo sport tende ad attirare la maggior parte delle attenzioni quando si “vedono” i grandi risultati, cioè quando gli atleti già formati cominciano ad ottenere successi rilevanti. Ma la parte più importante dello sport – e socialmente rilevante, per quelli che magari intendono solo coltivare una passione, aggiungerei io – è il lavoro di formazione che viene prima dei risultati. 
 
 Pisa, 16 luglio 2026
