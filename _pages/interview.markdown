@@ -4,7 +4,7 @@ title: "Intervista a Enrico Di Ciolo"
 subtitle: "La parola dell'esperto"
 ---
 
-# Intervista a Enrico Di Ciolo
+{% include page-hero.html title="Intervista a Enrico Di Ciolo" %}
 
 ![img](img_diciolo.jpg)
 
