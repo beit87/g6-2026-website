@@ -54,10 +54,10 @@ navbar:
     - title: Le Analisi
       url: /
       child:
-      - title: Analisi
-        url: /
-      - title: Analisi
-        url: /
+      - title: Il prezzo dell'oro
+        url: /notebook2.html
+      - title: Chi salirà sul podio a Los Angeles?
+        url: /notebook3.html
       - title: Pil, storico e boicottaggi
         url: /pil_storico_boicottaggi.html
       - title: Successo Maschile e Femminile
