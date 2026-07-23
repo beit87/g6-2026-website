@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Il prezzo dell'oro"
+header_title: "Il prezzo dell'oro"
 subtitle: "Oltre il PIL: quanto costa davvero vincere una medaglia olimpica?"
 header_type: hero
 header_img: "assets/images/img_olimpiadi.jpg"
