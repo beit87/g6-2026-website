@@ -7,7 +7,7 @@ subtitle: "Un approccio orientato alla Text Analysis"
 
 # Perché l’Italia della scherma è una potenza sportiva? Approfondimento tecnico
 
-![img](img_italy_wordcloud.png)
+![img](img_scherma_futurismo.jpg)
 
 ## La pipeline di Text Analysis
 
