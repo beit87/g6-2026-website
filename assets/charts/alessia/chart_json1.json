@@ -1,0 +1,2157 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "data": {
+    "format": {
+      "feature": "countries",
+      "type": "topojson"
+    },
+    "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"
+  },
+  "datasets": {
+    "data-d5a2afcab4e31a13926a0d3749938ca0": [
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Mexico",
+        "gdp_per_capita": 9800.387814800228,
+        "infant_mortality": 14.2,
+        "iso3": "MEX",
+        "life_expectancy": 74.36699999999999,
+        "numeric_id": "484",
+        "urbanization_pct": 77.88607698011103
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Saint Vincent and the Grenadines",
+        "gdp_per_capita": 8203.416475714015,
+        "infant_mortality": 13.8,
+        "iso3": "VCT",
+        "life_expectancy": 70.93100000000001,
+        "numeric_id": "670",
+        "urbanization_pct": 47.0036563367251
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Sri Lanka",
+        "gdp_per_capita": 4247.147218680895,
+        "infant_mortality": 6.6,
+        "iso3": "LKA",
+        "life_expectancy": 76.3895,
+        "numeric_id": "144",
+        "urbanization_pct": 19.23606955622035
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Zimbabwe",
+        "gdp_per_capita": 2327.20335500834,
+        "infant_mortality": 54.675,
+        "iso3": "ZWE",
+        "life_expectancy": 60.49725,
+        "numeric_id": "716",
+        "urbanization_pct": 35.0934397704464
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Peru",
+        "gdp_per_capita": 6742.1755474054125,
+        "infant_mortality": 12.95,
+        "iso3": "PER",
+        "life_expectancy": 76.0505,
+        "numeric_id": "604",
+        "urbanization_pct": 82.3502986448093
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Palestine, State of",
+        "gdp_per_capita": 3591.790881340955,
+        "infant_mortality": 14.375,
+        "iso3": "PSE",
+        "life_expectancy": 75.33099999999999,
+        "numeric_id": "275",
+        "urbanization_pct": 85.51617378287197
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Palau",
+        "gdp_per_capita": 16391.506162225724,
+        "infant_mortality": 19.425,
+        "iso3": "PLW",
+        "life_expectancy": 69.009,
+        "numeric_id": "585",
+        "urbanization_pct": 79.69246493775334
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Papua New Guinea",
+        "gdp_per_capita": 2484.0752965506226,
+        "infant_mortality": 37.8,
+        "iso3": "PNG",
+        "life_expectancy": 65.017,
+        "numeric_id": "598",
+        "urbanization_pct": 13.632682120084723
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Democratic People's Republic of Korea",
+        "gdp_per_capita": null,
+        "infant_mortality": 15.25,
+        "iso3": "PRK",
+        "life_expectancy": 72.98825,
+        "numeric_id": "408",
+        "urbanization_pct": 61.95639434848515
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Rwanda",
+        "gdp_per_capita": 767.4112559168137,
+        "infant_mortality": 32.45,
+        "iso3": "RWA",
+        "life_expectancy": 66.2295,
+        "numeric_id": "646",
+        "urbanization_pct": 20.970524786602127
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Samoa",
+        "gdp_per_capita": 4259.6053101317375,
+        "infant_mortality": 14.55,
+        "iso3": "WSM",
+        "life_expectancy": 70.82875,
+        "numeric_id": "882",
+        "urbanization_pct": 18.80776069910177
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Senegal",
+        "gdp_per_capita": 1376.745542738055,
+        "infant_mortality": 35.9,
+        "iso3": "SEN",
+        "life_expectancy": 67.20750000000001,
+        "numeric_id": "686",
+        "urbanization_pct": 48.4584235774236
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Seychelles",
+        "gdp_per_capita": 17907.276428955327,
+        "infant_mortality": 13.45,
+        "iso3": "SYC",
+        "life_expectancy": 73.87439024390243,
+        "numeric_id": "690",
+        "urbanization_pct": 43.630506249708326
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Singapore",
+        "gdp_per_capita": 62768.87114693437,
+        "infant_mortality": 2.05,
+        "iso3": "SGP",
+        "life_expectancy": 83.20853658536585,
+        "numeric_id": "702",
+        "urbanization_pct": 100.0
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Saint Kitts and Nevis",
+        "gdp_per_capita": 22587.35136948875,
+        "infant_mortality": 16.325000000000003,
+        "iso3": "KNA",
+        "life_expectancy": 71.34675000000001,
+        "numeric_id": "659",
+        "urbanization_pct": 31.342621569986274
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Sierra Leone",
+        "gdp_per_capita": 828.3073693220283,
+        "infant_mortality": 67.575,
+        "iso3": "SLE",
+        "life_expectancy": 58.337500000000006,
+        "numeric_id": "694",
+        "urbanization_pct": 41.9607566918753
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Solomon Islands",
+        "gdp_per_capita": 2182.014632950132,
+        "infant_mortality": 19.225,
+        "iso3": "SLB",
+        "life_expectancy": 69.735,
+        "numeric_id": "090",
+        "urbanization_pct": 25.8643963589092
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Somalia",
+        "gdp_per_capita": 505.3301332297823,
+        "infant_mortality": 84.525,
+        "iso3": "SOM",
+        "life_expectancy": 54.87225,
+        "numeric_id": "706",
+        "urbanization_pct": 49.22488608410255
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Vietnam",
+        "gdp_per_capita": 3088.5951610817824,
+        "infant_mortality": 14.675,
+        "iso3": "VNM",
+        "life_expectancy": 74.08024999999999,
+        "numeric_id": "704",
+        "urbanization_pct": 33.693787877745024
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Kazakhstan",
+        "gdp_per_capita": 8837.065618665754,
+        "infant_mortality": 8.375,
+        "iso3": "KAZ",
+        "life_expectancy": 73.143,
+        "numeric_id": "398",
+        "urbanization_pct": 57.882080673543626
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Myanmar",
+        "gdp_per_capita": 1306.5555496897623,
+        "infant_mortality": 40.475,
+        "iso3": "MMR",
+        "life_expectancy": 66.0595,
+        "numeric_id": "104",
+        "urbanization_pct": 29.947476768451324
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Nicaragua",
+        "gdp_per_capita": 2077.021716856495,
+        "infant_mortality": 13.275,
+        "iso3": "NIC",
+        "life_expectancy": 73.55300000000001,
+        "numeric_id": "558",
+        "urbanization_pct": 58.27564945745805
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Nepal",
+        "gdp_per_capita": 1073.470395683274,
+        "infant_mortality": 29.0,
+        "iso3": "NPL",
+        "life_expectancy": 68.87975,
+        "numeric_id": "524",
+        "urbanization_pct": 65.66605639076113
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Niger",
+        "gdp_per_capita": 541.1924863651175,
+        "infant_mortality": 69.275,
+        "iso3": "NER",
+        "life_expectancy": 59.637,
+        "numeric_id": "562",
+        "urbanization_pct": 16.587893631155076
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Nauru",
+        "gdp_per_capita": 10155.16323984288,
+        "infant_mortality": 12.85,
+        "iso3": "NRU",
+        "life_expectancy": 61.182,
+        "numeric_id": "520",
+        "urbanization_pct": 100.0
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Oman",
+        "gdp_per_capita": 18503.050976617425,
+        "infant_mortality": 8.85,
+        "iso3": "OMN",
+        "life_expectancy": 79.78475,
+        "numeric_id": "512",
+        "urbanization_pct": 78.65248699027656
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Pakistan",
+        "gdp_per_capita": 1475.9203157956124,
+        "infant_mortality": 58.975,
+        "iso3": "PAK",
+        "life_expectancy": 66.344,
+        "numeric_id": "586",
+        "urbanization_pct": 36.6129719102465
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Panama",
+        "gdp_per_capita": 15789.056221813771,
+        "infant_mortality": 13.075,
+        "iso3": "PAN",
+        "life_expectancy": 78.11325000000001,
+        "numeric_id": "591",
+        "urbanization_pct": 65.6794601720282
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Paraguay",
+        "gdp_per_capita": 6001.764665317769,
+        "infant_mortality": 17.85,
+        "iso3": "PRY",
+        "life_expectancy": 73.558,
+        "numeric_id": "600",
+        "urbanization_pct": 63.48620723936655
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Honduras",
+        "gdp_per_capita": 2421.8305496012326,
+        "infant_mortality": 15.675,
+        "iso3": "HND",
+        "life_expectancy": 71.88625,
+        "numeric_id": "340",
+        "urbanization_pct": 55.63474690061963
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Iraq",
+        "gdp_per_capita": 5103.062947907551,
+        "infant_mortality": 24.7,
+        "iso3": "IRQ",
+        "life_expectancy": 70.208,
+        "numeric_id": "368",
+        "urbanization_pct": 69.8879208425495
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Iceland",
+        "gdp_per_capita": 70190.16080281057,
+        "infant_mortality": 2.05,
+        "iso3": "ISL",
+        "life_expectancy": 82.72256097560975,
+        "numeric_id": "352",
+        "urbanization_pct": 93.8459785961609
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "United States Virgin Islands",
+        "gdp_per_capita": 36496.695709507,
+        "infant_mortality": null,
+        "iso3": "VIR",
+        "life_expectancy": 79.43109756097559,
+        "numeric_id": "850",
+        "urbanization_pct": 95.04605363377014
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Kiribati",
+        "gdp_per_capita": 1814.8637582619324,
+        "infant_mortality": 43.05,
+        "iso3": "KIR",
+        "life_expectancy": 65.81475,
+        "numeric_id": "296",
+        "urbanization_pct": 53.88240001414395
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Yemen",
+        "gdp_per_capita": 806.8041966201716,
+        "infant_mortality": 39.875,
+        "iso3": "YEM",
+        "life_expectancy": 66.67675000000001,
+        "numeric_id": "887",
+        "urbanization_pct": 33.90681320175747
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "South Sudan",
+        "gdp_per_capita": null,
+        "infant_mortality": 129.025,
+        "iso3": "SSD",
+        "life_expectancy": 45.52625,
+        "numeric_id": "728",
+        "urbanization_pct": 19.48939617421757
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Lebanon",
+        "gdp_per_capita": 8694.409913750207,
+        "infant_mortality": 12.025,
+        "iso3": "LBN",
+        "life_expectancy": 78.24225,
+        "numeric_id": "422",
+        "urbanization_pct": 89.1648308657192
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Liberia",
+        "gdp_per_capita": 691.062366693341,
+        "infant_mortality": 63.650000000000006,
+        "iso3": "LBR",
+        "life_expectancy": 60.87275,
+        "numeric_id": "430",
+        "urbanization_pct": 52.06108244827098
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Lesotho",
+        "gdp_per_capita": 1078.6428344893088,
+        "infant_mortality": 66.225,
+        "iso3": "LSO",
+        "life_expectancy": 54.16725,
+        "numeric_id": "426",
+        "urbanization_pct": 37.0523361674674
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Liechtenstein",
+        "gdp_per_capita": 169454.79952091875,
+        "infant_mortality": null,
+        "iso3": "LIE",
+        "life_expectancy": 83.30182926829272,
+        "numeric_id": "438",
+        "urbanization_pct": 14.539581660638774
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Luxembourg",
+        "gdp_per_capita": 111678.97900008976,
+        "infant_mortality": 2.075,
+        "iso3": "LUX",
+        "life_expectancy": 82.42865853658535,
+        "numeric_id": "442",
+        "urbanization_pct": 92.3905034951629
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Macao",
+        "gdp_per_capita": 77988.4117904872,
+        "infant_mortality": null,
+        "iso3": "MAC",
+        "life_expectancy": 83.60243902439026,
+        "numeric_id": "446",
+        "urbanization_pct": 100.0
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Madagascar",
+        "gdp_per_capita": 486.52839659827146,
+        "infant_mortality": 43.825,
+        "iso3": "MDG",
+        "life_expectancy": 63.46475,
+        "numeric_id": "450",
+        "urbanization_pct": 29.829447357933525
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Malawi",
+        "gdp_per_capita": 515.0918739574224,
+        "infant_mortality": 38.475,
+        "iso3": "MWI",
+        "life_expectancy": 64.134,
+        "numeric_id": "454",
+        "urbanization_pct": 16.00589611058355
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Maldives",
+        "gdp_per_capita": 10905.248124702695,
+        "infant_mortality": 7.175000000000001,
+        "iso3": "MDV",
+        "life_expectancy": 79.32025,
+        "numeric_id": "462",
+        "urbanization_pct": 39.5063940860919
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Cabo Verde",
+        "gdp_per_capita": 4044.452009960673,
+        "infant_mortality": 14.65,
+        "iso3": "CPV",
+        "life_expectancy": 74.83725,
+        "numeric_id": "132",
+        "urbanization_pct": 69.81447751123208
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Costa Rica",
+        "gdp_per_capita": 12470.763952776526,
+        "infant_mortality": 7.775,
+        "iso3": "CRI",
+        "life_expectancy": 80.092,
+        "numeric_id": "188",
+        "urbanization_pct": 76.29856288815715
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Cyprus",
+        "gdp_per_capita": 27218.763671875,
+        "infant_mortality": 2.2750000000000004,
+        "iso3": "CYP",
+        "life_expectancy": 81.52175,
+        "numeric_id": "196",
+        "urbanization_pct": 66.861648556087
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Djibouti",
+        "gdp_per_capita": 2671.159407624785,
+        "infant_mortality": 52.575,
+        "iso3": "DJI",
+        "life_expectancy": 63.88275,
+        "numeric_id": "262",
+        "urbanization_pct": 71.43116112552579
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Eritrea",
+        "gdp_per_capita": null,
+        "infant_mortality": 30.025,
+        "iso3": "ERI",
+        "life_expectancy": 66.78474999999999,
+        "numeric_id": "232",
+        "urbanization_pct": 35.38712024688722
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Mauritius",
+        "gdp_per_capita": 11117.206842156424,
+        "infant_mortality": 13.5,
+        "iso3": "MUS",
+        "life_expectancy": 74.3904268292683,
+        "numeric_id": "480",
+        "urbanization_pct": 39.401566008064925
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Mauritania",
+        "gdp_per_capita": 1667.69444241548,
+        "infant_mortality": 36.25,
+        "iso3": "MRT",
+        "life_expectancy": 67.24249999999999,
+        "numeric_id": "478",
+        "urbanization_pct": 54.57643421502942
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Gabon",
+        "gdp_per_capita": 7166.064985244469,
+        "infant_mortality": 31.45,
+        "iso3": "GAB",
+        "life_expectancy": 66.94475,
+        "numeric_id": "266",
+        "urbanization_pct": 89.22568542038334
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Gambia",
+        "gdp_per_capita": 681.74642539201,
+        "infant_mortality": 40.10000000000001,
+        "iso3": "GMB",
+        "life_expectancy": 63.88875,
+        "numeric_id": "270",
+        "urbanization_pct": 60.76118942257776
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Guinea-Bissau",
+        "gdp_per_capita": 770.6341530831182,
+        "infant_mortality": 50.95,
+        "iso3": "GNB",
+        "life_expectancy": 61.395,
+        "numeric_id": "624",
+        "urbanization_pct": 43.2302885055542
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Equatorial Guinea",
+        "gdp_per_capita": 7542.230678779811,
+        "infant_mortality": 58.225,
+        "iso3": "GNQ",
+        "life_expectancy": 61.6935,
+        "numeric_id": "226",
+        "urbanization_pct": 69.69051902192408
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Guatemala",
+        "gdp_per_capita": 4312.51996623912,
+        "infant_mortality": 21.225,
+        "iso3": "GTM",
+        "life_expectancy": 71.48325,
+        "numeric_id": "320",
+        "urbanization_pct": 53.87364615751135
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Guinea",
+        "gdp_per_capita": 877.5525529786155,
+        "infant_mortality": 68.5,
+        "iso3": "GIN",
+        "life_expectancy": 58.90675,
+        "numeric_id": "324",
+        "urbanization_pct": 35.71908855438235
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Guam",
+        "gdp_per_capita": 37295.14020744957,
+        "infant_mortality": null,
+        "iso3": "GUM",
+        "life_expectancy": 76.5295,
+        "numeric_id": "316",
+        "urbanization_pct": 94.07976161366864
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Guyana",
+        "gdp_per_capita": 6125.938671894488,
+        "infant_mortality": 28.35,
+        "iso3": "GUY",
+        "life_expectancy": 68.62700000000001,
+        "numeric_id": "328",
+        "urbanization_pct": 26.416429040989275
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Haiti",
+        "gdp_per_capita": 1390.548666285255,
+        "infant_mortality": 46.6,
+        "iso3": "HTI",
+        "life_expectancy": 63.8905,
+        "numeric_id": "332",
+        "urbanization_pct": 51.05117715854288
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Bangladesh",
+        "gdp_per_capita": 1888.8521805333,
+        "infant_mortality": 26.85,
+        "iso3": "BGD",
+        "life_expectancy": 71.857,
+        "numeric_id": "050",
+        "urbanization_pct": 30.354344156318376
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Barbados",
+        "gdp_per_capita": 20968.38404176433,
+        "infant_mortality": 11.05,
+        "iso3": "BRB",
+        "life_expectancy": 76.3195,
+        "numeric_id": "052",
+        "urbanization_pct": 59.26614619386922
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Burundi",
+        "gdp_per_capita": 239.742708013399,
+        "infant_mortality": 37.775000000000006,
+        "iso3": "BDI",
+        "life_expectancy": 61.53,
+        "numeric_id": "108",
+        "urbanization_pct": 17.1776045767262
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Benin",
+        "gdp_per_capita": 1087.0175751531474,
+        "infant_mortality": 53.77499999999999,
+        "iso3": "BEN",
+        "life_expectancy": 59.602250000000005,
+        "numeric_id": "204",
+        "urbanization_pct": 47.65289159383165
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Bhutan",
+        "gdp_per_capita": 3391.1702854707323,
+        "infant_mortality": 19.725,
+        "iso3": "BTN",
+        "life_expectancy": 71.562,
+        "numeric_id": "064",
+        "urbanization_pct": 38.16998739546361
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Lao People's Democratic Republic",
+        "gdp_per_capita": 2467.5201268931523,
+        "infant_mortality": 35.65,
+        "iso3": "LAO",
+        "life_expectancy": 67.466,
+        "numeric_id": "418",
+        "urbanization_pct": 34.86264382222885
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Libya",
+        "gdp_per_capita": 9662.85393307724,
+        "infant_mortality": 9.675,
+        "iso3": "LBY",
+        "life_expectancy": 72.65299999999999,
+        "numeric_id": "434",
+        "urbanization_pct": 87.81829361340968
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Bolivia, Plurinational State of",
+        "gdp_per_capita": 3873.571224235922,
+        "infant_mortality": 20.225,
+        "iso3": "BOL",
+        "life_expectancy": 67.61175,
+        "numeric_id": "068",
+        "urbanization_pct": 69.24383026685173
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Central African Republic",
+        "gdp_per_capita": 430.9931648976385,
+        "infant_mortality": 92.075,
+        "iso3": "CAF",
+        "life_expectancy": 45.01425,
+        "numeric_id": "140",
+        "urbanization_pct": 41.06463129479595
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Cambodia",
+        "gdp_per_capita": 1941.0250761303173,
+        "infant_mortality": 21.975,
+        "iso3": "KHM",
+        "life_expectancy": 69.89925,
+        "numeric_id": "116",
+        "urbanization_pct": 36.17824796807568
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Congo",
+        "gdp_per_capita": 2371.899795874958,
+        "infant_mortality": 33.2,
+        "iso3": "COG",
+        "life_expectancy": 63.9345,
+        "numeric_id": "178",
+        "urbanization_pct": 63.39177038537265
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Chad",
+        "gdp_per_capita": 889.5715098865705,
+        "infant_mortality": 67.375,
+        "iso3": "TCD",
+        "life_expectancy": 52.2295,
+        "numeric_id": "148",
+        "urbanization_pct": 23.673759043245923
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Chile",
+        "gdp_per_capita": 14671.2395643122,
+        "infant_mortality": 6.375,
+        "iso3": "CHL",
+        "life_expectancy": 80.447,
+        "numeric_id": "152",
+        "urbanization_pct": 87.88001914280021
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Cameroon",
+        "gdp_per_capita": 1525.93317773904,
+        "infant_mortality": 48.975,
+        "iso3": "CMR",
+        "life_expectancy": 60.9985,
+        "numeric_id": "120",
+        "urbanization_pct": 53.468949093457
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Congo, Democratic Republic of the",
+        "gdp_per_capita": 478.2478535043517,
+        "infant_mortality": 55.7,
+        "iso3": "COD",
+        "life_expectancy": 59.686,
+        "numeric_id": "180",
+        "urbanization_pct": 42.302793831339045
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Comoros",
+        "gdp_per_capita": 1456.76157249836,
+        "infant_mortality": 40.925,
+        "iso3": "COM",
+        "life_expectancy": 65.24549999999999,
+        "numeric_id": "174",
+        "urbanization_pct": 31.241570178079176
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "El Salvador",
+        "gdp_per_capita": 4106.282447114288,
+        "infant_mortality": 11.3,
+        "iso3": "SLV",
+        "life_expectancy": 71.256,
+        "numeric_id": "222",
+        "urbanization_pct": 71.41432571411133
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Micronesia, Federated States of",
+        "gdp_per_capita": 3349.4887671917004,
+        "infant_mortality": 24.825,
+        "iso3": "FSM",
+        "life_expectancy": 65.869,
+        "numeric_id": "583",
+        "urbanization_pct": 22.33952965398045
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Afghanistan",
+        "gdp_per_capita": 508.872928029155,
+        "infant_mortality": 59.225,
+        "iso3": "AFG",
+        "life_expectancy": 62.609,
+        "numeric_id": "004",
+        "urbanization_pct": 24.90925177475515
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Albania",
+        "gdp_per_capita": 5357.771952198138,
+        "infant_mortality": 7.775,
+        "iso3": "ALB",
+        "life_expectancy": 79.062,
+        "numeric_id": "008",
+        "urbanization_pct": 56.17376431539777
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Algeria",
+        "gdp_per_capita": 4506.329135123828,
+        "infant_mortality": 21.15,
+        "iso3": "DZA",
+        "life_expectancy": 75.4945,
+        "numeric_id": "012",
+        "urbanization_pct": 71.61146876330267
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Andorra",
+        "gdp_per_capita": 41220.0961321376,
+        "infant_mortality": 3.0500000000000003,
+        "iso3": "AND",
+        "life_expectancy": 84.29700000000001,
+        "numeric_id": "020",
+        "urbanization_pct": 88.51193205793373
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Angola",
+        "gdp_per_capita": 2549.076495682545,
+        "infant_mortality": 36.45,
+        "iso3": "AGO",
+        "life_expectancy": 62.3535,
+        "numeric_id": "024",
+        "urbanization_pct": 65.48031968769905
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Aruba",
+        "gdp_per_capita": 29152.41023193595,
+        "infant_mortality": null,
+        "iso3": "ABW",
+        "life_expectancy": 75.76475,
+        "numeric_id": "533",
+        "urbanization_pct": 62.65241923280242
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Bosnia and Herzegovina",
+        "gdp_per_capita": 5610.952215893396,
+        "infant_mortality": 5.949999999999999,
+        "iso3": "BIH",
+        "life_expectancy": 77.46125,
+        "numeric_id": "070",
+        "urbanization_pct": 48.73842414668715
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Belize",
+        "gdp_per_capita": 6099.0816310398295,
+        "infant_mortality": 11.95,
+        "iso3": "BLZ",
+        "life_expectancy": 72.201,
+        "numeric_id": "084",
+        "urbanization_pct": 43.292567650621024
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Georgia",
+        "gdp_per_capita": 4526.872799490485,
+        "infant_mortality": 8.425,
+        "iso3": "GEO",
+        "life_expectancy": 73.68025,
+        "numeric_id": "268",
+        "urbanization_pct": 58.15807832134345
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "T\u00fcrkiye",
+        "gdp_per_capita": 10205.026015888823,
+        "infant_mortality": 9.925,
+        "iso3": "TUR",
+        "life_expectancy": 77.20575,
+        "numeric_id": "792",
+        "urbanization_pct": 88.24038334330898
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Greece",
+        "gdp_per_capita": 18939.999343702024,
+        "infant_mortality": 3.575,
+        "iso3": "GRC",
+        "life_expectancy": 81.52560975609758,
+        "numeric_id": "300",
+        "urbanization_pct": 77.9599272174127
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Uganda",
+        "gdp_per_capita": 783.0629385718785,
+        "infant_mortality": 37.85,
+        "iso3": "UGA",
+        "life_expectancy": 65.44925,
+        "numeric_id": "800",
+        "urbanization_pct": 26.76857711329828
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Ecuador",
+        "gdp_per_capita": 6164.984169935757,
+        "infant_mortality": 12.075,
+        "iso3": "ECU",
+        "life_expectancy": 76.712,
+        "numeric_id": "218",
+        "urbanization_pct": 63.0292093985297
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Ireland",
+        "gdp_per_capita": 74730.68577781475,
+        "infant_mortality": 3.025,
+        "iso3": "IRL",
+        "life_expectancy": 82.17926829268295,
+        "numeric_id": "372",
+        "urbanization_pct": 62.9961527068968
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Israel",
+        "gdp_per_capita": 41355.82662909467,
+        "infant_mortality": 2.975,
+        "iso3": "ISR",
+        "life_expectancy": 82.64146341463415,
+        "numeric_id": "376",
+        "urbanization_pct": 91.65514691828471
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Qatar",
+        "gdp_per_capita": 65603.6979227269,
+        "infant_mortality": 5.775,
+        "iso3": "QAT",
+        "life_expectancy": 82.566,
+        "numeric_id": "634",
+        "urbanization_pct": 99.05281930114282
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "The Bahamas",
+        "gdp_per_capita": 32193.67419929083,
+        "infant_mortality": 13.075,
+        "iso3": "BHS",
+        "life_expectancy": 73.38575,
+        "numeric_id": "044",
+        "urbanization_pct": 82.01247547005562
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Ukraine",
+        "gdp_per_capita": 2860.4155273437527,
+        "infant_mortality": 8.600000000000001,
+        "iso3": "UKR",
+        "life_expectancy": 73.71775000000001,
+        "numeric_id": "804",
+        "urbanization_pct": 69.28552478962537
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Belarus",
+        "gdp_per_capita": 6005.782856903685,
+        "infant_mortality": 2.675,
+        "iso3": "BLR",
+        "life_expectancy": 74.08963414634147,
+        "numeric_id": "112",
+        "urbanization_pct": 77.13376021733944
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Romania",
+        "gdp_per_capita": 11364.566744683289,
+        "infant_mortality": 6.35,
+        "iso3": "ROU",
+        "life_expectancy": 75.34634146341465,
+        "numeric_id": "642",
+        "urbanization_pct": 53.23885905021038
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "New Zealand",
+        "gdp_per_capita": 42294.25312371913,
+        "infant_mortality": 4.5,
+        "iso3": "NZL",
+        "life_expectancy": 81.82012195121953,
+        "numeric_id": "554",
+        "urbanization_pct": 84.11705468040887
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Cuba",
+        "gdp_per_capita": 8716.222564557385,
+        "infant_mortality": 5.15,
+        "iso3": "CUB",
+        "life_expectancy": 77.4275,
+        "numeric_id": "192",
+        "urbanization_pct": 76.99009132385252
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Hungary",
+        "gdp_per_capita": 15392.486062503323,
+        "infant_mortality": 3.675,
+        "iso3": "HUN",
+        "life_expectancy": 76.06646341463414,
+        "numeric_id": "348",
+        "urbanization_pct": 70.46383476257321
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Republic of Korea",
+        "gdp_per_capita": 33329.98562604987,
+        "infant_mortality": 2.675,
+        "iso3": "KOR",
+        "life_expectancy": 82.68902439024392,
+        "numeric_id": "410",
+        "urbanization_pct": 81.4248533166928
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Slovakia",
+        "gdp_per_capita": 18315.25936411825,
+        "infant_mortality": 5.025,
+        "iso3": "SVK",
+        "life_expectancy": 77.31585365853661,
+        "numeric_id": "703",
+        "urbanization_pct": 53.55183502309188
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "South Africa",
+        "gdp_per_capita": 6429.357544087665,
+        "infant_mortality": 26.425,
+        "iso3": "ZAF",
+        "life_expectancy": 65.49199999999999,
+        "numeric_id": "710",
+        "urbanization_pct": 63.3490212998508
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Austria",
+        "gdp_per_capita": 48326.327922295925,
+        "infant_mortality": 2.95,
+        "iso3": "AUT",
+        "life_expectancy": 81.71829268292686,
+        "numeric_id": "040",
+        "urbanization_pct": 68.01230224886257
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Egypt",
+        "gdp_per_capita": 2778.35604658743,
+        "infant_mortality": 23.275,
+        "iso3": "EGY",
+        "life_expectancy": 70.83324999999999,
+        "numeric_id": "818",
+        "urbanization_pct": 42.477148268400526
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Indonesia",
+        "gdp_per_capita": 3822.06369720796,
+        "infant_mortality": 19.725,
+        "iso3": "IDN",
+        "life_expectancy": 70.02875,
+        "numeric_id": "360",
+        "urbanization_pct": 54.77513694763185
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Ethiopia",
+        "gdp_per_capita": 717.7938054611998,
+        "infant_mortality": 43.25,
+        "iso3": "ETH",
+        "life_expectancy": 64.9815,
+        "numeric_id": "231",
+        "urbanization_pct": 20.554331779479952
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Portugal",
+        "gdp_per_capita": 22076.79204201795,
+        "infant_mortality": 2.875,
+        "iso3": "PRT",
+        "life_expectancy": 81.38719512195125,
+        "numeric_id": "620",
+        "urbanization_pct": 61.12555199825242
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Tunisia",
+        "gdp_per_capita": 3655.95295384949,
+        "infant_mortality": 15.2,
+        "iso3": "TUN",
+        "life_expectancy": 75.28825,
+        "numeric_id": "788",
+        "urbanization_pct": 68.4298196748494
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Estonia",
+        "gdp_per_capita": 21789.32056716135,
+        "infant_mortality": 2.1,
+        "iso3": "EST",
+        "life_expectancy": 78.15609756097564,
+        "numeric_id": "233",
+        "urbanization_pct": 69.14408135720562
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Fiji",
+        "gdp_per_capita": 5779.532913003859,
+        "infant_mortality": 18.45,
+        "iso3": "FJI",
+        "life_expectancy": 66.92275,
+        "numeric_id": "242",
+        "urbanization_pct": 55.96425917587203
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Latvia",
+        "gdp_per_capita": 15879.542179671223,
+        "infant_mortality": 3.675,
+        "iso3": "LVA",
+        "life_expectancy": 74.84512195121951,
+        "numeric_id": "428",
+        "urbanization_pct": 67.99593900580217
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Belgium",
+        "gdp_per_capita": 45023.426637887926,
+        "infant_mortality": 3.325,
+        "iso3": "BEL",
+        "life_expectancy": 81.63048780487806,
+        "numeric_id": "056",
+        "urbanization_pct": 86.77711527965778
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Bulgaria",
+        "gdp_per_capita": 9180.57324196834,
+        "infant_mortality": 5.95,
+        "iso3": "BGR",
+        "life_expectancy": 74.92560975609757,
+        "numeric_id": "100",
+        "urbanization_pct": 73.4704761505127
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Slovenia",
+        "gdp_per_capita": 24113.283077221327,
+        "infant_mortality": 2.025,
+        "iso3": "SVN",
+        "life_expectancy": 81.27804878048781,
+        "numeric_id": "705",
+        "urbanization_pct": 54.88401455349393
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Uzbekistan",
+        "gdp_per_capita": 2199.6134363339297,
+        "infant_mortality": 16.075,
+        "iso3": "UZB",
+        "life_expectancy": 71.85225,
+        "numeric_id": "860",
+        "urbanization_pct": 50.62736606597903
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Azerbaijan",
+        "gdp_per_capita": 4393.357850001492,
+        "infant_mortality": 18.1,
+        "iso3": "AZE",
+        "life_expectancy": 72.89200000000001,
+        "numeric_id": "031",
+        "urbanization_pct": 56.87641027404647
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Dominican Republic",
+        "gdp_per_capita": 7659.789044347844,
+        "infant_mortality": 31.1,
+        "iso3": "DOM",
+        "life_expectancy": 73.23150000000001,
+        "numeric_id": "214",
+        "urbanization_pct": 73.81918909137907
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Armenia",
+        "gdp_per_capita": 4046.67825110944,
+        "infant_mortality": 11.45,
+        "iso3": "ARM",
+        "life_expectancy": 75.48170731707319,
+        "numeric_id": "051",
+        "urbanization_pct": 64.79008923262724
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Kyrgyzstan",
+        "gdp_per_capita": 1257.546235284415,
+        "infant_mortality": 17.1,
+        "iso3": "KGZ",
+        "life_expectancy": 71.28780487804877,
+        "numeric_id": "417",
+        "urbanization_pct": 34.9677688983744
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Mongolia",
+        "gdp_per_capita": 3930.26408474171,
+        "infant_mortality": 13.875,
+        "iso3": "MNG",
+        "life_expectancy": 70.66189024390243,
+        "numeric_id": "496",
+        "urbanization_pct": 67.8999520607395
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Argentina",
+        "gdp_per_capita": 12235.30948093222,
+        "infant_mortality": 9.275,
+        "iso3": "ARG",
+        "life_expectancy": 76.56625,
+        "numeric_id": "032",
+        "urbanization_pct": 91.72201578759602
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "San Marino",
+        "gdp_per_capita": 46033.085027687295,
+        "infant_mortality": 1.6,
+        "iso3": "SMR",
+        "life_expectancy": 85.01500000000001,
+        "numeric_id": "674",
+        "urbanization_pct": 97.0999984741211
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Jordan",
+        "gdp_per_capita": 4091.97183867038,
+        "infant_mortality": 14.175,
+        "iso3": "JOR",
+        "life_expectancy": 76.24425,
+        "numeric_id": "400",
+        "urbanization_pct": 91.03901033024816
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Malaysia",
+        "gdp_per_capita": 10290.26898090892,
+        "infant_mortality": 6.75,
+        "iso3": "MYS",
+        "life_expectancy": 75.63675,
+        "numeric_id": "458",
+        "urbanization_pct": 74.3739029552596
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Nigeria",
+        "gdp_per_capita": 2298.6113289006253,
+        "infant_mortality": 68.54999999999998,
+        "iso3": "NGA",
+        "life_expectancy": 52.566,
+        "numeric_id": "566",
+        "urbanization_pct": 57.7515316862089
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Bahrain",
+        "gdp_per_capita": 25542.23032674508,
+        "infant_mortality": 6.375,
+        "iso3": "BHR",
+        "life_expectancy": 80.42425,
+        "numeric_id": "048",
+        "urbanization_pct": 100.0
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Kingdom of Saudi Arabia",
+        "gdp_per_capita": 26280.96792455928,
+        "infant_mortality": 6.225,
+        "iso3": "SAU",
+        "life_expectancy": 78.5345,
+        "numeric_id": "682",
+        "urbanization_pct": 83.38503152020019
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Venezuela",
+        "gdp_per_capita": 3351.814101939515,
+        "infant_mortality": 21.2,
+        "iso3": "VEN",
+        "life_expectancy": 72.328,
+        "numeric_id": "862",
+        "urbanization_pct": 89.04729729795433
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "India",
+        "gdp_per_capita": 1916.3242001584324,
+        "infant_mortality": 32.15,
+        "iso3": "IND",
+        "life_expectancy": 70.2345,
+        "numeric_id": "356",
+        "urbanization_pct": 33.33990103555267
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Hong Kong, China",
+        "gdp_per_capita": 46697.79898642172,
+        "infant_mortality": null,
+        "iso3": "HKG",
+        "life_expectancy": 84.73317073170735,
+        "numeric_id": "344",
+        "urbanization_pct": 100.0
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Philippines",
+        "gdp_per_capita": 3148.15418840034,
+        "infant_mortality": 22.4,
+        "iso3": "PHL",
+        "life_expectancy": 69.72425,
+        "numeric_id": "608",
+        "urbanization_pct": 52.85929969795725
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Poland",
+        "gdp_per_capita": 14477.521356911277,
+        "infant_mortality": 3.95,
+        "iso3": "POL",
+        "life_expectancy": 77.77804878048784,
+        "numeric_id": "616",
+        "urbanization_pct": 60.10051641932593
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Czechia",
+        "gdp_per_capita": 21858.95457162145,
+        "infant_mortality": 2.525,
+        "iso3": "CZE",
+        "life_expectancy": 79.06585365853657,
+        "numeric_id": "203",
+        "urbanization_pct": 72.88106945059208
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Kenya",
+        "gdp_per_capita": 1754.61785482286,
+        "infant_mortality": 37.775,
+        "iso3": "KEN",
+        "life_expectancy": 62.75375,
+        "numeric_id": "404",
+        "urbanization_pct": 31.443044475342
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Norway",
+        "gdp_per_capita": 76555.65776475388,
+        "infant_mortality": 2.05,
+        "iso3": "NOR",
+        "life_expectancy": 82.68353658536587,
+        "numeric_id": "578",
+        "urbanization_pct": 82.09719390610343
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Jamaica",
+        "gdp_per_capita": 5728.830883967828,
+        "infant_mortality": 17.175,
+        "iso3": "JAM",
+        "life_expectancy": 71.76725,
+        "numeric_id": "388",
+        "urbanization_pct": 56.114423190569525
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Spain",
+        "gdp_per_capita": 28881.4736329106,
+        "infant_mortality": 2.6750000000000003,
+        "iso3": "ESP",
+        "life_expectancy": 83.4689024390244,
+        "numeric_id": "724",
+        "urbanization_pct": 79.5052251821337
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Sweden",
+        "gdp_per_capita": 52645.29422160477,
+        "infant_mortality": 2.25,
+        "iso3": "SWE",
+        "life_expectancy": 82.59634146341465,
+        "numeric_id": "752",
+        "urbanization_pct": 87.35498972592913
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Switzerland",
+        "gdp_per_capita": 83436.68791335859,
+        "infant_mortality": 3.6,
+        "iso3": "CHE",
+        "life_expectancy": 83.70304878048783,
+        "numeric_id": "756",
+        "urbanization_pct": 78.66420146026718
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Denmark",
+        "gdp_per_capita": 58187.87759239325,
+        "infant_mortality": 3.4000000000000004,
+        "iso3": "DNK",
+        "life_expectancy": 81.09024390243906,
+        "numeric_id": "208",
+        "urbanization_pct": 88.00795416008222
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Croatia",
+        "gdp_per_capita": 14436.479723205175,
+        "infant_mortality": 4.074999999999999,
+        "iso3": "HRV",
+        "life_expectancy": 77.94817073170734,
+        "numeric_id": "191",
+        "urbanization_pct": 56.00671166297408
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Islamic Republic of Iran",
+        "gdp_per_capita": 5123.009288324,
+        "infant_mortality": 12.8,
+        "iso3": "IRN",
+        "life_expectancy": 76.50675,
+        "numeric_id": "364",
+        "urbanization_pct": 74.57202767026152
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Serbia",
+        "gdp_per_capita": 6961.475370854379,
+        "infant_mortality": 5.0,
+        "iso3": "SRB",
+        "life_expectancy": 75.76341463414636,
+        "numeric_id": "688",
+        "urbanization_pct": 60.724795237178775
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Morocco",
+        "gdp_per_capita": 3361.7944335937527,
+        "infant_mortality": 18.975,
+        "iso3": "MAR",
+        "life_expectancy": 73.75675000000001,
+        "numeric_id": "504",
+        "urbanization_pct": 61.4136246639025
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Puerto Rico",
+        "gdp_per_capita": 30704.2537775486,
+        "infant_mortality": null,
+        "iso3": "PRI",
+        "life_expectancy": 80.48725,
+        "numeric_id": "630",
+        "urbanization_pct": 93.88253912937007
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Colombia",
+        "gdp_per_capita": 6432.2221122356295,
+        "infant_mortality": 12.9,
+        "iso3": "COL",
+        "life_expectancy": 76.50450000000001,
+        "numeric_id": "170",
+        "urbanization_pct": 77.29204507962825
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "United States",
+        "gdp_per_capita": 61129.88134835221,
+        "infant_mortality": 5.6,
+        "iso3": "USA",
+        "life_expectancy": 78.62621951219512,
+        "numeric_id": "840",
+        "urbanization_pct": 80.32761712644982
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "People's Republic of China",
+        "gdp_per_capita": 9415.777471904385,
+        "infant_mortality": 6.75,
+        "iso3": "CHN",
+        "life_expectancy": 77.5245,
+        "numeric_id": "156",
+        "urbanization_pct": 60.82257652282715
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Japan",
+        "gdp_per_capita": 39594.15398985665,
+        "infant_mortality": 1.9,
+        "iso3": "JPN",
+        "life_expectancy": 84.16298780487804,
+        "numeric_id": "392",
+        "urbanization_pct": 91.58953002614648
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Great Britain",
+        "gdp_per_capita": 42259.11470465995,
+        "infant_mortality": 3.8,
+        "iso3": "GBR",
+        "life_expectancy": 81.25935365853657,
+        "numeric_id": "826",
+        "urbanization_pct": 82.34254093289508
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Australia",
+        "gdp_per_capita": 54201.73100589781,
+        "infant_mortality": 3.2,
+        "iso3": "AUS",
+        "life_expectancy": 82.64939024390245,
+        "numeric_id": "036",
+        "urbanization_pct": 87.16836376570166
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Netherlands",
+        "gdp_per_capita": 50958.0471588657,
+        "infant_mortality": 3.5,
+        "iso3": "NLD",
+        "life_expectancy": 81.81158536585366,
+        "numeric_id": "528",
+        "urbanization_pct": 92.04958603467254
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "France",
+        "gdp_per_capita": 39384.4599650107,
+        "infant_mortality": 3.2750000000000004,
+        "iso3": "FRA",
+        "life_expectancy": 82.6628048780488,
+        "numeric_id": "250",
+        "urbanization_pct": 78.65180339545255
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Germany",
+        "gdp_per_capita": 46268.81018594143,
+        "infant_mortality": 3.2,
+        "iso3": "DEU",
+        "life_expectancy": 81.04207317073173,
+        "numeric_id": "276",
+        "urbanization_pct": 81.06668606541588
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Italy",
+        "gdp_per_capita": 33238.14546691655,
+        "infant_mortality": 2.75,
+        "iso3": "ITA",
+        "life_expectancy": 83.25853658536587,
+        "numeric_id": "380",
+        "urbanization_pct": 69.52500152587892
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Canada",
+        "gdp_per_capita": 45083.9337999766,
+        "infant_mortality": 4.525,
+        "iso3": "CAN",
+        "life_expectancy": 81.92750000000002,
+        "numeric_id": "124",
+        "urbanization_pct": 81.49764926551308
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Brazil",
+        "gdp_per_capita": 9311.821776397468,
+        "infant_mortality": 13.475,
+        "iso3": "BRA",
+        "life_expectancy": 75.47649999999999,
+        "numeric_id": "076",
+        "urbanization_pct": 86.31721642621419
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Zambia",
+        "gdp_per_capita": 1361.3593072645824,
+        "infant_mortality": 38.3,
+        "iso3": "ZMB",
+        "life_expectancy": 61.93625,
+        "numeric_id": "894",
+        "urbanization_pct": 42.91877641367203
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Finland",
+        "gdp_per_capita": 46887.1760497556,
+        "infant_mortality": 1.925,
+        "iso3": "FIN",
+        "life_expectancy": 81.69451219512194,
+        "numeric_id": "246",
+        "urbanization_pct": 72.1644025959946
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Botswana",
+        "gdp_per_capita": 7108.518230122135,
+        "infant_mortality": 39.725,
+        "iso3": "BWA",
+        "life_expectancy": 65.8195,
+        "numeric_id": "072",
+        "urbanization_pct": 66.03141509617456
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Burkina Faso",
+        "gdp_per_capita": 728.7881492566438,
+        "infant_mortality": 52.425,
+        "iso3": "BFA",
+        "life_expectancy": 59.72675,
+        "numeric_id": "854",
+        "urbanization_pct": 26.000111973540523
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "C\u00f4te d'Ivoire",
+        "gdp_per_capita": 2024.8824574272223,
+        "infant_mortality": 54.35,
+        "iso3": "CIV",
+        "life_expectancy": 59.5495,
+        "numeric_id": "384",
+        "urbanization_pct": 50.63776243805751
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Ghana",
+        "gdp_per_capita": 2076.686606700515,
+        "infant_mortality": 34.75,
+        "iso3": "GHA",
+        "life_expectancy": 63.986,
+        "numeric_id": "288",
+        "urbanization_pct": 54.952325053423976
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Grenada",
+        "gdp_per_capita": 9879.618854382965,
+        "infant_mortality": 16.450000000000003,
+        "iso3": "GRD",
+        "life_expectancy": 74.97875,
+        "numeric_id": "308",
+        "urbanization_pct": 36.048654942572455
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Kuwait",
+        "gdp_per_capita": 30036.7947017915,
+        "infant_mortality": 7.65,
+        "iso3": "KWT",
+        "life_expectancy": 80.41744512195123,
+        "numeric_id": "414",
+        "urbanization_pct": 100.0
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Republic of Moldova",
+        "gdp_per_capita": 3715.534806523935,
+        "infant_mortality": 14.075,
+        "iso3": "MDA",
+        "life_expectancy": 70.24275,
+        "numeric_id": "498",
+        "urbanization_pct": 40.20226955413817
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Syrian Arab Republic",
+        "gdp_per_capita": 928.8642971204108,
+        "infant_mortality": 23.3,
+        "iso3": "SYR",
+        "life_expectancy": 67.2955,
+        "numeric_id": "760",
+        "urbanization_pct": 74.39492708267382
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Thailand",
+        "gdp_per_capita": 6738.035515066645,
+        "infant_mortality": 9.35,
+        "iso3": "THA",
+        "life_expectancy": 77.03625,
+        "numeric_id": "764",
+        "urbanization_pct": 51.905574263781176
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Mali",
+        "gdp_per_capita": 941.2136824097324,
+        "infant_mortality": 60.8,
+        "iso3": "MLI",
+        "life_expectancy": 58.7345,
+        "numeric_id": "466",
+        "urbanization_pct": 27.3908797658972
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Malta",
+        "gdp_per_capita": 30645.126783926506,
+        "infant_mortality": 5.550000000000001,
+        "iso3": "MLT",
+        "life_expectancy": 82.36402439024391,
+        "numeric_id": "470",
+        "urbanization_pct": 94.67665614215
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Montenegro",
+        "gdp_per_capita": 8016.227955073789,
+        "infant_mortality": 2.9,
+        "iso3": "MNE",
+        "life_expectancy": 76.94878048780487,
+        "numeric_id": "499",
+        "urbanization_pct": 65.04087399540053
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Monaco",
+        "gdp_per_capita": 181578.307529909,
+        "infant_mortality": 2.675,
+        "iso3": "MCO",
+        "life_expectancy": 85.93575,
+        "numeric_id": "492",
+        "urbanization_pct": 100.0
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Mozambique",
+        "gdp_per_capita": 487.257027260688,
+        "infant_mortality": 50.925,
+        "iso3": "MOZ",
+        "life_expectancy": 60.42475,
+        "numeric_id": "508",
+        "urbanization_pct": 32.85433616196205
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Sao Tome and Principe",
+        "gdp_per_capita": 1687.8894644583377,
+        "infant_mortality": 12.55,
+        "iso3": "STP",
+        "life_expectancy": 67.32050000000001,
+        "numeric_id": "678",
+        "urbanization_pct": 67.71744155883789
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Sudan",
+        "gdp_per_capita": 860.1810913085933,
+        "infant_mortality": 45.275,
+        "iso3": "SDN",
+        "life_expectancy": 65.28175,
+        "numeric_id": "736",
+        "urbanization_pct": 34.3325603137252
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Suriname",
+        "gdp_per_capita": 6247.284237124593,
+        "infant_mortality": 17.825000000000003,
+        "iso3": "SUR",
+        "life_expectancy": 71.36675,
+        "numeric_id": "740",
+        "urbanization_pct": 66.08841216964566
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Eswatini",
+        "gdp_per_capita": 3744.26899174684,
+        "infant_mortality": 49.425,
+        "iso3": "SWZ",
+        "life_expectancy": 58.08975,
+        "numeric_id": "748",
+        "urbanization_pct": 23.93424329078737
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "United Republic of Tanzania",
+        "gdp_per_capita": 1006.5283813476572,
+        "infant_mortality": 36.8,
+        "iso3": "TZA",
+        "life_expectancy": 65.21549999999999,
+        "numeric_id": "834",
+        "urbanization_pct": 32.55817495224495
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Tonga",
+        "gdp_per_capita": 4454.449231434348,
+        "infant_mortality": 9.125,
+        "iso3": "TON",
+        "life_expectancy": 72.11949999999999,
+        "numeric_id": "776",
+        "urbanization_pct": 22.782340842816
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Tajikistan",
+        "gdp_per_capita": 830.8696017244255,
+        "infant_mortality": 25.4,
+        "iso3": "TJK",
+        "life_expectancy": 70.55125,
+        "numeric_id": "762",
+        "urbanization_pct": 26.25223779678345
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Timor-Leste",
+        "gdp_per_capita": 1345.8880500345874,
+        "infant_mortality": 41.025,
+        "iso3": "TLS",
+        "life_expectancy": 66.05199999999999,
+        "numeric_id": "626",
+        "urbanization_pct": 29.292470869026253
+      },
+      {
+        "cluster_wb": "Poveri estremi",
+        "country": "Togo",
+        "gdp_per_capita": 810.6807072099664,
+        "infant_mortality": 42.05,
+        "iso3": "TGO",
+        "life_expectancy": 60.37275,
+        "numeric_id": "768",
+        "urbanization_pct": 40.79714840903045
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Tuvalu",
+        "gdp_per_capita": 4388.903011486165,
+        "infant_mortality": 20.45,
+        "iso3": "TUV",
+        "life_expectancy": 65.79325,
+        "numeric_id": "798",
+        "urbanization_pct": 60.30697455171526
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "United Arab Emirates",
+        "gdp_per_capita": 44882.17142991462,
+        "infant_mortality": 5.425,
+        "iso3": "ARE",
+        "life_expectancy": 82.407,
+        "numeric_id": "784",
+        "urbanization_pct": 84.77152045173486
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Uruguay",
+        "gdp_per_capita": 18440.020212047177,
+        "infant_mortality": 6.65,
+        "iso3": "URY",
+        "life_expectancy": 77.49974999999999,
+        "numeric_id": "858",
+        "urbanization_pct": 95.25738877366288
+      },
+      {
+        "cluster_wb": "Reddito basso-medio",
+        "country": "Vanuatu",
+        "gdp_per_capita": 3132.522749406272,
+        "infant_mortality": 15.2,
+        "iso3": "VUT",
+        "life_expectancy": 70.5765,
+        "numeric_id": "548",
+        "urbanization_pct": 24.35134282653557
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Turkmenistan",
+        "gdp_per_capita": 5909.628878143198,
+        "infant_mortality": 34.075,
+        "iso3": "TKM",
+        "life_expectancy": 69.25225,
+        "numeric_id": "795",
+        "urbanization_pct": 47.037009845843
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Namibia",
+        "gdp_per_capita": 4895.044412706167,
+        "infant_mortality": 44.05,
+        "iso3": "NAM",
+        "life_expectancy": 62.149,
+        "numeric_id": "516",
+        "urbanization_pct": 47.10350368707751
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Lithuania",
+        "gdp_per_capita": 17647.611810001174,
+        "infant_mortality": 3.625,
+        "iso3": "LTU",
+        "life_expectancy": 75.52865853658541,
+        "numeric_id": "440",
+        "urbanization_pct": 67.17073186202902
+      },
+      {
+        "cluster_wb": "Reddito medio-alto",
+        "country": "Russian Federation",
+        "gdp_per_capita": 13669.12158203125,
+        "infant_mortality": 7.300000000000001,
+        "iso3": "RUS",
+        "life_expectancy": 70.64451219512195,
+        "numeric_id": "643",
+        "urbanization_pct": 74.12562949185723
+      },
+      {
+        "cluster_wb": "Ricchi avanzati",
+        "country": "Trinidad and Tobago",
+        "gdp_per_capita": 20858.162732517376,
+        "infant_mortality": 21.125,
+        "iso3": "TTO",
+        "life_expectancy": 72.7695,
+        "numeric_id": "780",
+        "urbanization_pct": 53.92590488282508
+      }
+    ]
+  },
+  "height": 420,
+  "layer": [
+    {
+      "mark": {
+        "fill": "#e0e0e0",
+        "stroke": "white",
+        "strokeWidth": 0.4,
+        "type": "geoshape"
+      },
+      "projection": {
+        "type": "naturalEarth1"
+      }
+    },
+    {
+      "encoding": {
+        "color": {
+          "field": "cluster_wb",
+          "legend": {
+            "columns": 2,
+            "labelFontSize": 10,
+            "orient": "bottom",
+            "title": "Cluster socioeconomico",
+            "titleFontSize": 11
+          },
+          "scale": {
+            "domain": [
+              "Ricchi avanzati",
+              "Reddito medio-alto",
+              "Reddito basso-medio",
+              "Poveri estremi"
+            ],
+            "range": [
+              "#1b2140",
+              "#ff8009",
+              "#9a0641",
+              "#ffe34a"
+            ]
+          },
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "title": "Paese",
+            "type": "nominal"
+          },
+          {
+            "field": "cluster_label",
+            "title": "Cluster",
+            "type": "nominal"
+          },
+          {
+            "field": "gdp_per_capita",
+            "format": ",.0f",
+            "title": "PIL pro capite (USD)",
+            "type": "quantitative"
+          },
+          {
+            "field": "life_expectancy",
+            "format": ".1f",
+            "title": "Aspett. vita",
+            "type": "quantitative"
+          },
+          {
+            "field": "urbanization_pct",
+            "format": ".1f",
+            "title": "Urbaniz. %",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "mark": {
+        "stroke": "white",
+        "strokeWidth": 0.4,
+        "type": "geoshape"
+      },
+      "projection": {
+        "type": "naturalEarth1"
+      },
+      "transform": [
+        {
+          "from": {
+            "data": {
+              "name": "data-d5a2afcab4e31a13926a0d3749938ca0"
+            },
+            "fields": [
+              "country",
+              "cluster_wb",
+              "gdp_per_capita",
+              "life_expectancy",
+              "urbanization_pct"
+            ],
+            "key": "numeric_id"
+          },
+          "lookup": "id"
+        },
+        {
+          "filter": "datum.cluster_wb != null"
+        }
+      ]
+    }
+  ],
+  "title": {
+    "fontSize": 14,
+    "subtitle": "Basato su PIL pro capite, aspettativa di vita, urbanizzazione, mortalit\u00e0 infantile",
+    "subtitleFontSize": 11,
+    "text": "Cluster socioeconomici dei paesi olimpici"
+  },
+  "width": 750
+}

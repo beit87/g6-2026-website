@@ -1,0 +1,317 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 13,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "datasets": {
+    "data-49b1c54a268d0d813e4ca8eda816df55": [
+      {
+        "pct_non_ricchi": 84.84848484848484,
+        "sport": "Badminton"
+      },
+      {
+        "pct_non_ricchi": 84.21052631578947,
+        "sport": "Rhythmic Gymnastics"
+      },
+      {
+        "pct_non_ricchi": 75.37688442211055,
+        "sport": "Taekwondo"
+      },
+      {
+        "pct_non_ricchi": 73.65269461077845,
+        "sport": "Weightlifting"
+      },
+      {
+        "pct_non_ricchi": 71.42857142857143,
+        "sport": "Table Tennis"
+      },
+      {
+        "pct_non_ricchi": 62.921348314606746,
+        "sport": "Volleyball"
+      },
+      {
+        "pct_non_ricchi": 60.11964107676969,
+        "sport": "Boxing"
+      },
+      {
+        "pct_non_ricchi": 59.26459985580389,
+        "sport": "Wrestling"
+      },
+      {
+        "pct_non_ricchi": 55.95238095238095,
+        "sport": "Artistic Gymnastics"
+      },
+      {
+        "pct_non_ricchi": 54.66666666666667,
+        "sport": "Handball"
+      },
+      {
+        "pct_non_ricchi": 53.318335208098986,
+        "sport": "Gymnastics"
+      },
+      {
+        "pct_non_ricchi": 53.07692307692307,
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "pct_non_ricchi": 50.07824726134585,
+        "sport": "Judo"
+      },
+      {
+        "pct_non_ricchi": 49.5253164556962,
+        "sport": "Canoeing"
+      },
+      {
+        "pct_non_ricchi": 47.61904761904761,
+        "sport": "Football"
+      },
+      {
+        "pct_non_ricchi": 46.80851063829787,
+        "sport": "Basketball"
+      },
+      {
+        "pct_non_ricchi": 45.54455445544555,
+        "sport": "Water Polo"
+      },
+      {
+        "pct_non_ricchi": 43.23725055432372,
+        "sport": "Shooting"
+      },
+      {
+        "pct_non_ricchi": 43.23204419889503,
+        "sport": "Fencing"
+      },
+      {
+        "pct_non_ricchi": 41.0377358490566,
+        "sport": "Archery"
+      },
+      {
+        "pct_non_ricchi": 40.909090909090914,
+        "sport": "Hockey"
+      },
+      {
+        "pct_non_ricchi": 39.63821009203428,
+        "sport": "Athletics"
+      },
+      {
+        "pct_non_ricchi": 37.62376237623762,
+        "sport": "Diving"
+      },
+      {
+        "pct_non_ricchi": 37.254901960784316,
+        "sport": "Synchronized Swimming"
+      },
+      {
+        "pct_non_ricchi": 34.412955465587046,
+        "sport": "Tennis"
+      },
+      {
+        "pct_non_ricchi": 26.932668329177055,
+        "sport": "Rowing"
+      },
+      {
+        "pct_non_ricchi": 21.588366890380314,
+        "sport": "Swimming"
+      },
+      {
+        "pct_non_ricchi": 21.465968586387437,
+        "sport": "Sailing"
+      },
+      {
+        "pct_non_ricchi": 18.1058495821727,
+        "sport": "Cycling"
+      },
+      {
+        "pct_non_ricchi": 16.51376146788991,
+        "sport": "Equestrianism"
+      }
+    ],
+    "data-c3602a7fc25ec29a58c596ee59b4cf75": [
+      {
+        "x": 50
+      }
+    ]
+  },
+  "height": 600,
+  "layer": [
+    {
+      "data": {
+        "name": "data-49b1c54a268d0d813e4ca8eda816df55"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.pct_non_ricchi >= 50",
+            "value": "#ff8009"
+          },
+          "value": "#1b2140"
+        },
+        "tooltip": [
+          {
+            "field": "sport",
+            "title": "Sport",
+            "type": "nominal"
+          },
+          {
+            "field": "pct_non_ricchi",
+            "format": ".1f",
+            "title": "% non ricchi",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "pct_non_ricchi",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "title": "% medaglie vinte da paesi NON ricchi",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "sport",
+          "sort": {
+            "field": "pct_non_ricchi",
+            "order": "descending"
+          },
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "name": "view_13"
+    },
+    {
+      "data": {
+        "name": "data-c3602a7fc25ec29a58c596ee59b4cf75"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "color": "gray",
+        "strokeDash": [
+          4,
+          4
+        ],
+        "type": "rule"
+      }
+    }
+  ],
+  "params": [
+    {
+      "bind": "scales",
+      "name": "param_6",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      },
+      "views": [
+        "view_13"
+      ]
+    }
+  ],
+  "title": "Sport per accessibilit\u00e0 socioeconomica \u2014 cluster STATICO (arancione = dominato da paesi non ricchi)",
+  "width": 750
+}
