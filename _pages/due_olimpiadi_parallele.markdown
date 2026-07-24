@@ -1,9 +1,10 @@
 ---
 layout: default
 title: "Due Olimpiadi parallele"
-subtitle: "Olimpiadi e ricchezza - un'analisi di 60 anni di medaglie (1964-2020)"
+subtitle: "Olimpiadi e ricchezza: un'analisi di 60 anni di medaglie (1964-2020)"
+vega: true
 ---
-
+{% include page-hero.html title="Due Olimpiadi parallele" %}
 
 
 *Perché i Giochi Olimpici non sono mai stati un campo da gioco equo — e ce lo dice il profilo economico di lungo periodo di 208 paesi.*
