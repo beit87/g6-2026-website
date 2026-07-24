@@ -1,0 +1,934 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 12,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "datasets": {
+    "data-33977b9e9d7da40ffd34536db6e4abf3": [
+      {
+        "cluster_dynamic": "Poveri estremi",
+        "cluster_rank": 0,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 126.67014129790222,
+        "infant_mortality": 70.65,
+        "life_expectancy": 54.5887073170732,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 28.856478864376648,
+        "year": 1964
+      },
+      {
+        "cluster_dynamic": "Poveri estremi",
+        "cluster_rank": 0,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 132.640483840888,
+        "infant_mortality": 59.85,
+        "life_expectancy": 56.92713414634148,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 32.64554831543228,
+        "year": 1968
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 257.88331756907405,
+        "infant_mortality": 46.975,
+        "life_expectancy": 61.8004451219512,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 39.57487671779525,
+        "year": 1972
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 485.0379025392442,
+        "infant_mortality": 37.425,
+        "life_expectancy": 63.5939024390244,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 45.853377569174455,
+        "year": 1976
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 1290.7147467634616,
+        "infant_mortality": 31.550000000000004,
+        "life_expectancy": 65.03658536585365,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 52.21767921429555,
+        "year": 1980
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 1985.4531722851923,
+        "infant_mortality": 25.175,
+        "life_expectancy": 66.80853658536583,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 59.12106804489795,
+        "year": 1984
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 2895.02941948933,
+        "infant_mortality": 18.1,
+        "life_expectancy": 69.10853658536585,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 65.7711689539299,
+        "year": 1988
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 6390.86212640594,
+        "infant_mortality": 12.625,
+        "life_expectancy": 71.31036585365855,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 73.0498847415489,
+        "year": 1992
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 10325.710320050955,
+        "infant_mortality": 9.1,
+        "life_expectancy": 73.14817073170735,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 77.39083931436453,
+        "year": 1996
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 11583.141122486835,
+        "infant_mortality": 6.775,
+        "life_expectancy": 74.79207317073173,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 79.07154843933145,
+        "year": 2000
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 13386.5683080465,
+        "infant_mortality": 5.35,
+        "life_expectancy": 76.57560975609758,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": 99.17717170715332,
+        "urbanization_pct": 80.1107885359655,
+        "year": 2004
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 21244.217248106528,
+        "infant_mortality": 4.225,
+        "life_expectancy": 78.40548780487805,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": 100.41967964172376,
+        "urbanization_pct": 81.44327747974424,
+        "year": 2008
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 23109.029333138,
+        "infant_mortality": 3.375,
+        "life_expectancy": 80.04268292682927,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": 101.0497608184815,
+        "urbanization_pct": 81.92240905738456,
+        "year": 2012
+      },
+      {
+        "cluster_dynamic": "Ricchi avanzati",
+        "cluster_rank": 3,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 28972.197188788603,
+        "infant_mortality": 2.975,
+        "life_expectancy": 81.45914634146344,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": 100.2338142395019,
+        "urbanization_pct": 81.77669657817037,
+        "year": 2016
+      },
+      {
+        "cluster_dynamic": "Ricchi avanzati",
+        "cluster_rank": 3,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 33329.98562604987,
+        "infant_mortality": 2.675,
+        "life_expectancy": 82.68902439024392,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": 99.16130256652832,
+        "urbanization_pct": 81.4248533166928,
+        "year": 2020
+      }
+    ],
+    "data-5af6418b78655c432a48429f634f8ab4": [
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 2043.1390748037325,
+        "infant_mortality": 18.625,
+        "life_expectancy": 74.25125,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 105.341381072998,
+        "urbanization_pct": 43.74556636810303,
+        "year": 2008
+      }
+    ],
+    "data-611935df8826a92d1bb09743d754fd1d": [
+      {
+        "NOC": "KOR",
+        "Year": 1964,
+        "medals": 3
+      },
+      {
+        "NOC": "KOR",
+        "Year": 1968,
+        "medals": 2
+      },
+      {
+        "NOC": "KOR",
+        "Year": 1972,
+        "medals": 1
+      },
+      {
+        "NOC": "KOR",
+        "Year": 1976,
+        "medals": 6
+      },
+      {
+        "NOC": "KOR",
+        "Year": 1984,
+        "medals": 19
+      },
+      {
+        "NOC": "KOR",
+        "Year": 1988,
+        "medals": 33
+      },
+      {
+        "NOC": "KOR",
+        "Year": 1992,
+        "medals": 28
+      },
+      {
+        "NOC": "KOR",
+        "Year": 1996,
+        "medals": 27
+      },
+      {
+        "NOC": "KOR",
+        "Year": 2000,
+        "medals": 28
+      },
+      {
+        "NOC": "KOR",
+        "Year": 2004,
+        "medals": 30
+      },
+      {
+        "NOC": "KOR",
+        "Year": 2008,
+        "medals": 31
+      },
+      {
+        "NOC": "KOR",
+        "Year": 2012,
+        "medals": 28
+      },
+      {
+        "NOC": "KOR",
+        "Year": 2016,
+        "medals": 21
+      },
+      {
+        "NOC": "KOR",
+        "Year": 2020,
+        "medals": 20
+      }
+    ],
+    "data-6f4a71cd87b9d2cef506dc60afe1d314": [
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 257.88331756907405,
+        "infant_mortality": 46.975,
+        "life_expectancy": 61.8004451219512,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 39.57487671779525,
+        "year": 1972
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 1985.4531722851923,
+        "infant_mortality": 25.175,
+        "life_expectancy": 66.80853658536583,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 59.12106804489795,
+        "year": 1984
+      },
+      {
+        "cluster_dynamic": "Ricchi avanzati",
+        "cluster_rank": 3,
+        "country": "Republic of Korea",
+        "gdp_per_capita": 28972.197188788603,
+        "infant_mortality": 2.975,
+        "life_expectancy": 81.45914634146344,
+        "noc_ioc": "KOR",
+        "primary_school_enrollment": 100.2338142395019,
+        "urbanization_pct": 81.77669657817037,
+        "year": 2016
+      }
+    ],
+    "data-b2a9733e91adfd60e574792bbe4a8e19": [
+      {
+        "NOC": "CHN",
+        "Year": 1984,
+        "medals": 32
+      },
+      {
+        "NOC": "CHN",
+        "Year": 1988,
+        "medals": 28
+      },
+      {
+        "NOC": "CHN",
+        "Year": 1992,
+        "medals": 53
+      },
+      {
+        "NOC": "CHN",
+        "Year": 1996,
+        "medals": 50
+      },
+      {
+        "NOC": "CHN",
+        "Year": 2000,
+        "medals": 58
+      },
+      {
+        "NOC": "CHN",
+        "Year": 2004,
+        "medals": 63
+      },
+      {
+        "NOC": "CHN",
+        "Year": 2008,
+        "medals": 100
+      },
+      {
+        "NOC": "CHN",
+        "Year": 2012,
+        "medals": 88
+      },
+      {
+        "NOC": "CHN",
+        "Year": 2016,
+        "medals": 70
+      },
+      {
+        "NOC": "CHN",
+        "Year": 2020,
+        "medals": 88
+      }
+    ],
+    "data-faec4385debc51c3bc136a29d1159532": [
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 77.80260367827574,
+        "infant_mortality": null,
+        "life_expectancy": 44.0515,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 18.30028533935545,
+        "year": 1964
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 96.39929696269247,
+        "infant_mortality": null,
+        "life_expectancy": 53.35175,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": null,
+        "urbanization_pct": 17.97095534603775,
+        "year": 1968
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 106.03558307085198,
+        "infant_mortality": 84.63333333333333,
+        "life_expectancy": 56.4335,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 116.60412979126,
+        "urbanization_pct": 17.440103054046624,
+        "year": 1972
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 157.11527366098773,
+        "infant_mortality": 70.625,
+        "life_expectancy": 59.817,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 108.583917617798,
+        "urbanization_pct": 17.2103238105774,
+        "year": 1976
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 173.08776958770227,
+        "infant_mortality": 55.89999999999999,
+        "life_expectancy": 62.62225,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 113.62180900573726,
+        "urbanization_pct": 17.965981960296652,
+        "year": 1980
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 205.54078157209025,
+        "infant_mortality": 46.27499999999999,
+        "life_expectancy": 64.9995,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 111.68611717224124,
+        "urbanization_pct": 20.434167385101304,
+        "year": 1984
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 270.2256238727212,
+        "infant_mortality": 43.175,
+        "life_expectancy": 66.70750000000001,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 127.11257362365748,
+        "urbanization_pct": 24.14134979248048,
+        "year": 1988
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 312.02166902154653,
+        "infant_mortality": 43.225,
+        "life_expectancy": 68.0755,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 124.42966461181648,
+        "urbanization_pct": 26.29021739959717,
+        "year": 1992
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 458.780039325963,
+        "infant_mortality": 40.6,
+        "life_expectancy": 69.68724999999999,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 112.625331878662,
+        "urbanization_pct": 28.250032424926776,
+        "year": 1996
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 804.0807247472532,
+        "infant_mortality": 34.6,
+        "life_expectancy": 71.40075,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 110.204330444336,
+        "urbanization_pct": 32.629922389984124,
+        "year": 2000
+      },
+      {
+        "cluster_dynamic": "Reddito basso-medio",
+        "cluster_rank": 1,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 1126.2843800653268,
+        "infant_mortality": 26.675000000000004,
+        "life_expectancy": 72.8455,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 115.730102539062,
+        "urbanization_pct": 38.427945479899776,
+        "year": 2004
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 2043.1390748037325,
+        "infant_mortality": 18.625,
+        "life_expectancy": 74.25125,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 105.341381072998,
+        "urbanization_pct": 43.74556636810303,
+        "year": 2008
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 4438.673352268617,
+        "infant_mortality": 13.025,
+        "life_expectancy": 75.42675,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 104.82592712881176,
+        "urbanization_pct": 49.09881667170687,
+        "year": 2012
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 7377.122858995503,
+        "infant_mortality": 9.325,
+        "life_expectancy": 76.58525,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 99.41237313436736,
+        "urbanization_pct": 55.16758823394775,
+        "year": 2016
+      },
+      {
+        "cluster_dynamic": "Reddito medio-alto",
+        "cluster_rank": 2,
+        "country": "People's Republic of China",
+        "gdp_per_capita": 9415.777471904385,
+        "infant_mortality": 6.75,
+        "life_expectancy": 77.5245,
+        "noc_ioc": "CHN",
+        "primary_school_enrollment": 97.51114407609104,
+        "urbanization_pct": 60.82257652282715,
+        "year": 2020
+      }
+    ]
+  },
+  "params": [
+    {
+      "bind": "scales",
+      "name": "param_1",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      },
+      "views": [
+        "view_1",
+        "view_2"
+      ]
+    }
+  ],
+  "vconcat": [
+    {
+      "height": 340,
+      "layer": [
+        {
+          "data": {
+            "name": "data-611935df8826a92d1bb09743d754fd1d"
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "Year",
+                "title": "Anno",
+                "type": "ordinal"
+              },
+              {
+                "field": "medals",
+                "title": "Medaglie",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "field": "Year",
+              "title": "Anno",
+              "type": "ordinal"
+            },
+            "y": {
+              "axis": {
+                "titleColor": "#BA7517"
+              },
+              "field": "medals",
+              "title": "Medaglie per edizione",
+              "type": "quantitative"
+            }
+          },
+          "mark": {
+            "color": "#BA7517",
+            "opacity": 0.7,
+            "type": "bar"
+          },
+          "name": "view_1"
+        },
+        {
+          "data": {
+            "name": "data-33977b9e9d7da40ffd34536db6e4abf3"
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "year",
+                "title": "Anno",
+                "type": "ordinal"
+              },
+              {
+                "field": "gdp_per_capita",
+                "format": ",.0f",
+                "title": "PIL pro capite (USD)",
+                "type": "quantitative"
+              },
+              {
+                "field": "cluster_dynamic",
+                "title": "Cluster",
+                "type": "nominal"
+              }
+            ],
+            "x": {
+              "field": "year",
+              "title": "Anno",
+              "type": "ordinal"
+            },
+            "y": {
+              "axis": {
+                "titleColor": "#185FA5"
+              },
+              "field": "gdp_per_capita",
+              "title": "PIL pro capite (USD)",
+              "type": "quantitative"
+            }
+          },
+          "mark": {
+            "color": "#185FA5",
+            "point": true,
+            "type": "line"
+          }
+        },
+        {
+          "data": {
+            "name": "data-6f4a71cd87b9d2cef506dc60afe1d314"
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "ordinal"
+            }
+          },
+          "mark": {
+            "color": "gray",
+            "strokeDash": [
+              3,
+              3
+            ],
+            "type": "rule"
+          }
+        },
+        {
+          "data": {
+            "name": "data-6f4a71cd87b9d2cef506dc60afe1d314"
+          },
+          "encoding": {
+            "text": {
+              "field": "cluster_dynamic",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "year",
+              "type": "ordinal"
+            },
+            "y": {
+              "value": 10
+            }
+          },
+          "mark": {
+            "align": "left",
+            "angle": 270,
+            "color": "dimgray",
+            "dy": -6,
+            "fontSize": 9,
+            "type": "text"
+          }
+        }
+      ],
+      "resolve": {
+        "scale": {
+          "y": "independent"
+        }
+      },
+      "title": "Corea del Sud (KOR) \u2014 medaglie vs PIL pro capite nel tempo",
+      "width": 480
+    },
+    {
+      "height": 340,
+      "layer": [
+        {
+          "data": {
+            "name": "data-b2a9733e91adfd60e574792bbe4a8e19"
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "Year",
+                "title": "Anno",
+                "type": "ordinal"
+              },
+              {
+                "field": "medals",
+                "title": "Medaglie",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "field": "Year",
+              "title": "Anno",
+              "type": "ordinal"
+            },
+            "y": {
+              "axis": {
+                "titleColor": "#BA7517"
+              },
+              "field": "medals",
+              "title": "Medaglie per edizione",
+              "type": "quantitative"
+            }
+          },
+          "mark": {
+            "color": "#BA7517",
+            "opacity": 0.7,
+            "type": "bar"
+          },
+          "name": "view_2"
+        },
+        {
+          "data": {
+            "name": "data-faec4385debc51c3bc136a29d1159532"
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "year",
+                "title": "Anno",
+                "type": "ordinal"
+              },
+              {
+                "field": "gdp_per_capita",
+                "format": ",.0f",
+                "title": "PIL pro capite (USD)",
+                "type": "quantitative"
+              },
+              {
+                "field": "cluster_dynamic",
+                "title": "Cluster",
+                "type": "nominal"
+              }
+            ],
+            "x": {
+              "field": "year",
+              "title": "Anno",
+              "type": "ordinal"
+            },
+            "y": {
+              "axis": {
+                "titleColor": "#185FA5"
+              },
+              "field": "gdp_per_capita",
+              "title": "PIL pro capite (USD)",
+              "type": "quantitative"
+            }
+          },
+          "mark": {
+            "color": "#185FA5",
+            "point": true,
+            "type": "line"
+          }
+        },
+        {
+          "data": {
+            "name": "data-5af6418b78655c432a48429f634f8ab4"
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "ordinal"
+            }
+          },
+          "mark": {
+            "color": "gray",
+            "strokeDash": [
+              3,
+              3
+            ],
+            "type": "rule"
+          }
+        },
+        {
+          "data": {
+            "name": "data-5af6418b78655c432a48429f634f8ab4"
+          },
+          "encoding": {
+            "text": {
+              "field": "cluster_dynamic",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "year",
+              "type": "ordinal"
+            },
+            "y": {
+              "value": 10
+            }
+          },
+          "mark": {
+            "align": "left",
+            "angle": 270,
+            "color": "dimgray",
+            "dy": -6,
+            "fontSize": 9,
+            "type": "text"
+          }
+        }
+      ],
+      "resolve": {
+        "scale": {
+          "y": "independent"
+        }
+      },
+      "title": "Cina (CHN) \u2014 medaglie vs PIL pro capite nel tempo",
+      "width": 480
+    }
+  ]
+}
