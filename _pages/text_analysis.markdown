@@ -2,6 +2,7 @@
 layout: default
 title: "Perché l'Italia è una potenza nella scherma?"
 subtitle: "Un approccio orientato alla Text Analysis"
+vega: true
 ---
 
 {% include page-hero.html title="Perché l’Italia della scherma è una potenza sportiva?" subtitle="Approfondimento tecnico" %}
