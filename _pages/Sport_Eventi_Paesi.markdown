@@ -26,7 +26,6 @@ Di seguit analizziamo come si distribuiscono i cluster rispetto alle diverse fea
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/01_coord_parall_sport.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
 <br/>
 
 | Cluster   | Nome                                | Sport                                                                                                                                                                          |
@@ -49,7 +48,6 @@ Tra le varie analisi condotte sull'evoluzione temporale dei cluster rispetto all
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/03_nazioni_tempo_sport.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
 <br/>
 
 Si osserva un aumento graduale del numero di Paesi partecipanti in tutti i cluster. Il fenomeno di globalizzazione più evidente riguarda il cluster dei grandi sport di massa, che tra il 1964 e il 2020 vede raddoppiare il numero di Paesi partecipanti. 
@@ -62,7 +60,6 @@ A differenza dell'analisi di clustering che richiedeva una base storica minima, 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/09_heatmap_totale_sport.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
 <br/>
 
 ## Il profilo storico degli eventi
@@ -83,7 +80,6 @@ Di seguit analizziamo come si distribuiscono i cluster rispetto alle diverse fea
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/10_coord_parall_event.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
 <br/>
 
 Cluster 0, il cluster degli eventi di nicchia ad alta efficienza. È il cluster che presenta il valore più alto per l'efficienza in base al numero di atleti. Anche se per ogni Paese si qualificano pochi atleti in questi eventi, ne basta uno per portare a casa l'oro. Sono eventi di nicchia perchè non solo non partecipano molte nazioni, ma tra quelle che partecipano sono pochi i Paesi che si spartiscono storicamente questi ori. Infine, la percentuale di eventi di squadra e l'efficienza in base alla popolazione sono poco sotto la media.
@@ -97,7 +93,6 @@ Coerentemente con quanto fatto per gli sport, analizziamo l'evoluzione temporale
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/12_nazioni_tempo_event.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
 <br/>
 
 Il Cluster del grande bacino degli eventi inidividuali e quello degli eventi di nicchia ad alta efficienza mostrano un graduale aumento dei Paesi partecipanti nel corso del tempo. Nello specifico, per il Cluster degli eventi individuali di nicchia ad alta efficienza si notano due picchi in corrispondenza delle edizioni olimpiche del 1984 e del 1996: il primo è presumibilmente lo specchio del boicottaggio di Mosca 1980 (le nazioni occidentali tornano a gareggiare dopo l'assenza della precedente edizione), il secondo coincide con l'assestamento definitivo delle nazioni nate dalla dissoluzione dell'URSS e della Jugoslavia come Comitati Olimpici indipendenti. (DA INVESTIGARE MEGLIO)
@@ -119,7 +114,6 @@ Prima di analizzare come si distribuiscono i cluster rispetto alle diverse featu
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/16_coord_parall_paesi.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
 <br/>
 
 | Cluster   | Nome                                        | Paesi                                                                                                                                                      |
@@ -156,16 +150,12 @@ Per esplorare i top 5 sport per le entità storiche, non più esistenti e per le
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
 <br/>
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/19_grafico_interattivo_paesi_storici.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
 <br/>
-
-
 
 
 ### Nota metodologica
