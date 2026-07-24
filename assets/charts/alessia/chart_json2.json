@@ -1,0 +1,231 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-0658b289201bd254ce74444e1d993f60"
+  },
+  "datasets": {
+    "data-0658b289201bd254ce74444e1d993f60": [
+      {
+        "cluster_label": "Ricchi avanzati",
+        "medals_per_million": 0.6549727116990944
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "medals_per_million": 0.34219528001573774
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "medals_per_million": 0.06356994210499234
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "medals_per_million": 0.007710831337590543
+      }
+    ]
+  },
+  "height": 350,
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "cluster_label",
+          "legend": null,
+          "sort": [
+            "Ricchi avanzati",
+            "Reddito medio-alto",
+            "Reddito basso-medio",
+            "Poveri estremi"
+          ],
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "cluster_label",
+            "title": "Cluster",
+            "type": "nominal"
+          },
+          {
+            "field": "medals_per_million",
+            "format": ".3f",
+            "title": "Medaglie/milione",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": -15
+          },
+          "field": "cluster_label",
+          "sort": [
+            "Ricchi avanzati",
+            "Reddito medio-alto",
+            "Reddito basso-medio",
+            "Poveri estremi"
+          ],
+          "title": "",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "medals_per_million",
+          "title": "Medaglie per milione di abitanti (media cluster statico)",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "type": "bar"
+      }
+    },
+    {
+      "encoding": {
+        "color": {
+          "field": "cluster_label",
+          "legend": null,
+          "sort": [
+            "Ricchi avanzati",
+            "Reddito medio-alto",
+            "Reddito basso-medio",
+            "Poveri estremi"
+          ],
+          "type": "nominal"
+        },
+        "text": {
+          "field": "medals_per_million",
+          "format": ".3f",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "cluster_label",
+            "title": "Cluster",
+            "type": "nominal"
+          },
+          {
+            "field": "medals_per_million",
+            "format": ".3f",
+            "title": "Medaglie/milione",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": -15
+          },
+          "field": "cluster_label",
+          "sort": [
+            "Ricchi avanzati",
+            "Reddito medio-alto",
+            "Reddito basso-medio",
+            "Poveri estremi"
+          ],
+          "title": "",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "medals_per_million",
+          "title": "Medaglie per milione di abitanti (media cluster statico)",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "dy": -8,
+        "type": "text"
+      }
+    }
+  ],
+  "title": "Medaglie pro capite per cluster socioeconomico STATICO",
+  "width": 400
+}
