@@ -56,6 +56,8 @@ navbar:
       child:
       - title: Sport Eventi Paesi
         url: /Sport_Eventi_Paesi.html
+      - title: Due Olimpiadi parallele
+        url: /due_olimpiadi_parallele.html
       - title: Il prezzo dell'oro
         url: /notebook2.html
       - title: Chi salirà sul podio a Los Angeles?
