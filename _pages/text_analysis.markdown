@@ -43,9 +43,9 @@ Si sono quindi salvati i testi in inglese in un nuovo dataset in *repubblica_cle
 
 ## Conclusioni
 
-Infine, è possibile mostrare in un grafico riassuntivo l’andamento nel tempo dello stato d’animo della stampa italiana nei confronti della scherma. Se definiamo l’emozione “enthusiasm” come la somma aritmetica di “admiration” e “approval” è possibile ottenere un grafico a dispersione in cui ogni punto rappresenta un articolo, mettendo in ascisse il momento della pubblicazione e in ordinata il livello di “entusiasmo” espresso.
+Infine, è possibile mostrare in un grafico riassuntivo l’andamento nel tempo dello stato d’animo della stampa italiana nei confronti della scherma. Se definiamo l’emozione “enthusiasm” come la somma aritmetica di “admiration” e “approval” è possibile ottenere un grafico a dispersione in cui ogni punto rappresenta un articolo, mettendo in ascisse il momento della pubblicazione e in ordinata il livello di “entusiasmo” espresso. Passando il mouse sopra un punto, si può visualizzare un tooltip con le informazioni di base sull'articolo corrispondente; cliccando sul punto si viene reindirizzati al sito della *Repubblica* per leggere il testo.
 
-![img](img_italy_kmeans.png)
+<iframe src="chart_emotions_clustering.html" width="800" height="600"></iframe>
 
 Come si può vedere, gli articoli possono essere raggruppati in diversi cluster, ovviamente in base alla data di pubblicazione ma anche del punteggio emotivo. È interessante notare come nel tempo sia aumentato il numero di articoli dedicati alla scherma e come anche il cluster 4, che rappresenta il gruppo di articoli entusiastici di epoche più recenti, sia più denso e abbia al suo interno articoli con punteggi fra i più alti in assoluto.
 
