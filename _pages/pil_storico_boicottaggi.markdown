@@ -14,7 +14,7 @@ vega: true
 Con una tecnica di clustering (K-Means) i 220 paesi del dataset, osservati in ciascuna delle 15 edizioni dal 1964 al 2020, si raggruppano naturalmente in tre profili socio-economici molto riconoscibili:
 
 <div class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/gianni/pil_vs_medaglie.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/pil_vs_medaglie.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 <div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">Ogni punto è una coppia nazione-edizione, colorata per cluster socio-economico. A destra, le nazioni con lo Score medio più alto (con almeno 3 edizioni disputate) nell'area selezionata a sinistra — trascina un rettangolo sullo scatter per filtrare la classifica.</div>
 
@@ -33,7 +33,7 @@ Con un modello di Random Forest — un algoritmo che impara da migliaia di combi
 La sorpresa più grande non è quanto il modello riesce a prevedere, ma *cosa* usa per farlo. Ci si aspetterebbe che il PIL sia il fattore principale. Invece, il singolo indicatore più importante — con un peso di quasi il **70%** su tutti gli altri messi insieme — è semplicemente **quante medaglie lo stesso paese aveva vinto nell'edizione precedente**.
 
 <div class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/gianni/feature_importance_shap.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/feature_importance_shap.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
 Il PIL conta ancora, ma soprattutto nel lungo periodo: apre la porta al potenziale, mentre è lo storico recente a decidere chi la attraversa davvero. I sistemi sportivi nazionali, insomma, cambiano lentissimamente: infrastrutture, allenatori e federazioni non si costruiscono (né si smontano) in quattro anni.
@@ -49,7 +49,7 @@ Qui entra la parte più curiosa dell'analisi. Guardando dove il modello sbaglia 
 Lo stesso fenomeno si vede, in modo speculare, nel grafico qui sotto: la correlazione tra PIL e medaglie, che in quasi tutte le edizioni resta sopra 0,8, crolla esattamente nel 1980 — l'unico anno in cui la politica, non l'economia, ha deciso chi era sul podio.
 
 <div class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/gianni/correlazione_pil_medaglie_nel_tempo.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/correlazione_pil_medaglie_nel_tempo.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
 Un modello economico, per definizione, non può sapere che una squadra è rimasta a casa per un embargo diplomatico. È uno dei limiti più onesti e più interessanti di tutta l'analisi.
