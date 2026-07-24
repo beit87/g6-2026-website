@@ -59,38 +59,38 @@ L’analisi del sentiment ha posto delle sfide particolari, in quanto ad oggi no
 
 Il file *repubblica_clean.json* è stato caricato in un DataFrame ma prima di poterlo usare è stato necessario compiere alcune operazioni preliminari. Innanzitutto, ci siamo accorti che molti degli articoli scaricati trattavano solo marginalmente della scherma, mettendola a lato di altre notizie. Si è usato Llama, dunque, per selezionare gli articoli pertinenti, che poi sono stati salvati in un file *repubblica_clean_screened.json*. A tale scopo, Llama è stato istruito con un prompt piuttosto elaborato:
 <blockquote>
-Sei un revisore accurato e scrupoloso.
-Leggi il testo contenuto nel tag &lt;text&gt;
-e stabilisci se l'argomento principale del testo è la scherma.
-Ricordati che il fioretto, la sciabola e la spada sono discipline della scherma.
-
-Segui queste istruzioni:
-- rispondi semplicemente "1" se l'argomento principale del testo è la scherma;
-- rispondi semplicemente "0" se il testo parla di scherma ma anche di altri argomenti;
-- rispondi semplicemente "-1" se l'argomento principale del testo non è la scherma.
-
-Non aggiungere commenti o spiegazioni.
-Per rispondere in maniera affidabile, considera questi esempi:
-
-Esempio 1:
-- Testo: "Fantastico successo di Valentina Vezzali che, negli ultimi campionati mondiali di scherma, ha ottenuto un'altra medaglia d'oro".
-- Risposta corretta: 1.
-- Giustificazione: la notizia riguarda i successi della famosa campionessa di scherma Valentina Vezzali.
-
-Esempio 2:
-- Testo: "Al Palazzetto dello sport di Bologna si sono tenuti i giochi sportivi provinciali. Grande partecipazione di giovani che hanno gareggiato a basket, pallavolo e scherma".
-- Risposta corretta: 0.
-- Giustificazione: la notizia parla di sport a livello locale; fra i vari sport menzionati c'è anche la scherma
-
-Esempio 3:
-- Testo: "Il pugile Cammarelle è sicuramente uno dei più grandi campioni della storia. Il suo modo di fare boxe è elegante; quando Cammarelle combatte, il pugilato è elegante come la scherma".
-- Risposta corretta: -1.
-- Giustificazione: nonostante il testo usi la parola "scherma", essa è usata come metafora; il testo, in realtà, è dedicato al pugile Cammarelle e al suo modo di interpretare la boxe.
-
-&lt;text&gt;...&lt;/text&gt;
+Sei un revisore accurato e scrupoloso.<br>
+Leggi il testo contenuto nel tag &lt;text&gt;<br>
+e stabilisci se l'argomento principale del testo è la scherma.<br>
+Ricordati che il fioretto, la sciabola e la spada sono discipline della scherma.<br>
+<br>
+Segui queste istruzioni:<br>
+- rispondi semplicemente "1" se l'argomento principale del testo è la scherma;<br>
+- rispondi semplicemente "0" se il testo parla di scherma ma anche di altri argomenti;<br>
+- rispondi semplicemente "-1" se l'argomento principale del testo non è la scherma.<br>
+<br>
+Non aggiungere commenti o spiegazioni.<br>
+Per rispondere in maniera affidabile, considera questi esempi:<br>
+<br>
+Esempio 1:<br>
+- Testo: "Fantastico successo di Valentina Vezzali che, negli ultimi campionati mondiali di scherma, ha ottenuto un'altra medaglia d'oro".<br>
+- Risposta corretta: 1.<br>
+- Giustificazione: la notizia riguarda i successi della famosa campionessa di scherma Valentina Vezzali.<br>
+<br>
+Esempio 2:<br>
+- Testo: "Al Palazzetto dello sport di Bologna si sono tenuti i giochi sportivi provinciali. Grande partecipazione di giovani che hanno gareggiato a basket, pallavolo e scherma".<br>
+- Risposta corretta: 0.<br>
+- Giustificazione: la notizia parla di sport a livello locale; fra i vari sport menzionati c'è anche la scherma<br>
+<br>
+Esempio 3:<br>
+- Testo: "Il pugile Cammarelle è sicuramente uno dei più grandi campioni della storia. Il suo modo di fare boxe è elegante; quando Cammarelle combatte, il pugilato è elegante come la scherma".<br>
+- Risposta corretta: -1.<br>
+- Giustificazione: nonostante il testo usi la parola "scherma", essa è usata come metafora; il testo, in realtà, è dedicato al pugile Cammarelle e al suo modo di interpretare la boxe.<br>
+<br>
+&lt;text&gt;...&lt;/text&gt;<br>
 </blockquote>
 
-Come si può notare, si è fatto uso di una tecnica di *zero-shot learning*: per aumentare l’efficacia del modello nel compito di classificazione, si sono forniti esempi all’interno del prompt spesso. Alla fine del processo, si è ottenuto un dataset di 200 testi selezionati e pertinenti.
+Come si può notare, si è fatto uso di una tecnica di *zero-shot learning*: per aumentare l’efficacia del modello nel compito di classificazione, si sono forniti esempi all’interno del prompt spesso. Sono stati tenuti solo gli articoli con punteggio 0 e 1 e così, alla fine del processo, si è ottenuto un dataset di 200 testi selezionati e pertinenti.
 
 Da ogni record del dataset "screened" si è poi estratto il campo *text*. Questo è stato inserito in un tag *&lt;source&gt;* e finalmente passato a Llama in un prompt contenente l’ordine di traduzione in inglese: 
 <blockquote>
