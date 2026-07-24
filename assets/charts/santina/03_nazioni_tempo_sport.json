@@ -1,18 +1,62 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
     "axis": {
-      "labelFont": "Inter",
-      "titleFont": "Inter"
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
     },
     "background": "transparent",
-    "header": {
-      "labelFont": "Inter",
-      "titleFont": "Inter"
+    "bar": {
+      "fill": "#1b2140"
     },
     "legend": {
-      "labelFont": "Inter",
-      "titleFont": "Inter"
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
     },
     "range": {
       "category": [
@@ -23,24 +67,31 @@
         "#e7b6af",
         "#0088b0",
         "#e03830"
-      ],
-      "heatmap": [
-        "#e7b6af",
-        "#1b2140"
-      ],
-      "ramp": [
-        "#e7b6af",
-        "#1b2140"
       ]
     },
-    "text": {
-      "font": "Inter"
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
     },
     "title": {
-      "font": "Inter"
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
     },
     "view": {
-      "stroke": "transparent"
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
     }
   },
   "data": {
@@ -632,5 +683,5 @@
     "type": "line"
   },
   "title": "Clustering sport, Nazioni partecipanti nel tempo",
-  "width": 400
+  "width": 450
 }
