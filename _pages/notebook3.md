@@ -1,13 +1,12 @@
 ---
 layout: default
 title: "Chi salirà sul podio a Los Angeles?"
-header_title: "Chi salirà sul podio a Los Angeles?"
 subtitle: "Machine Learning, causalità e previsioni per i Giochi Olimpici del 2028"
-header_type: hero
-header_img: "assets/images/img_olimpiadi.jpg"
 vega: true
 custom_css: /assets/css/g6-charts.css
 ---
+
+{% include page-hero.html title="Chi salirà sul podio a Los Angeles?" %}
 
 Costruiamo un modello predittivo, verifichiamo che funzioni davvero su dati mai visti, testiamo se investire nello sport causa davvero più medaglie, e infine stimiamo il medagliere di Los Angeles 2028.
 {: .lead}

@@ -1,13 +1,12 @@
 ---
 layout: default
 title: "Il prezzo dell'oro"
-header_title: "Il prezzo dell'oro"
 subtitle: "Oltre il PIL: quanto costa davvero vincere una medaglia olimpica?"
-header_type: hero
-header_img: "assets/images/img_olimpiadi.jpg"
 vega: true
 custom_css: /assets/css/g6-charts.css
 ---
+
+{% include page-hero.html title="Il prezzo dell'oro" %}
 
 Il PIL totale correla con le medaglie olimpiche (r = 0.58), ma non spiega tutto. Cosa succede se guardiamo direttamente quanto ogni paese investe nello sport d'élite, invece che alla sua ricchezza complessiva? In questa analisi usiamo due fonti di dati reali: il progetto SPLISS, che misura la spesa élite quadriennale di 14-17 nazioni a Tokyo 2020 e Paris 2024, e i dati ufficiali di UK Sport, che dal 2000 al 2024 tracciano ogni sterlina investita dal governo britannico nello sport olimpico.
 {: .lead}
