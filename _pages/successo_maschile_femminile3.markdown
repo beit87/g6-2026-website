@@ -14,7 +14,6 @@ In questa analisi raccontiamo come è cambiato il peso dello sport femminile all
 3. I risultati maschili e femminili rispondono agli stessi fattori socio-economici?
 
 I dati provengono dal dataset storico dei risultati olimpici (dettaglio atleta-evento e biografie degli atleti) incrociato con il dataset degli indicatori socio-economici World Bank, utilizzanto ance in altre analisi del progetto, costruito nella fase di [data preparation]({{site.baseurl}}/data_preparation.html). 
-Il genere di ogni evento è ricavato dal nome della gara (eventi *maschili*, *femminili* e *misti*), e negli sport di squadra ogni squadra conta una sola medaglia.
 
 ## Un po' di storia
 
@@ -33,30 +32,30 @@ La presenza femminile ai Giochi olimpici non è stata prevista fin dall'inizio, 
 
 All'inizio del nostro periodo di analisi, nel 1964, le donne erano circa il **13%** dei partecipanti; a Tokyo 2020 quasi il **48%**. La crescita è continua, senza inversioni, e accelera dagli anni '80. Il numero di atleti uomini è più o meno stabile dagli anni '90.
 
-<div style="height: 560px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/01_partecipazione_e_quota.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano4/01_partecipazione_e_quota.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
+
 <br/>
 
 ## L'evoluzione del medagliere
 
 La quota di medaglie femminili passa dal **21%** del 1964 a oltre il **48%** del 2020, e la sua curva ricalca quella della partecipazione.
 
-<div style="height: 560px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/02_medagliere_e_quota.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano4/02_medagliere_e_quota.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
+
 <br/>
 
 ## I paesi che dipendono di più dalle medaglie femminili
 
 Aggregando l'intero periodo 1964-2020 e considerando solo i paesi con almeno 30 medaglie di genere, i paesi oltre la linea del 50% hanno vinto **più medaglie con le donne che con gli uomini** in oltre mezzo secolo di Giochi. Il gruppo di testa è eterogeneo: potenze dello sprint come la **Giamaica** (62,5%), paesi con sistemi sportivi statali che hanno investito presto sullo sport femminile (Cina, Romania, ex DDR) e paesi occidentali come Paesi Bassi e Canada. 
 
-<div style="height: 460px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/03_top15_quota_femminile_paesi.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano4/03_top15_quota_femminile_paesi.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
+
 <br/>
 
 ### Dove sono USA e Russia?
@@ -79,37 +78,20 @@ Il secondo è la frammentazione dei **NOC storici**: il dataset segue il medagli
 
 Restringendo lo sguardo al periodo recente (2000-2020, quando il programma femminile è ormai ampio), l'equilibrio di genere tra le grandi potenze sportive non è affatto uniforme. Gli **Stati Uniti**, primo medagliere del periodo, hanno vinto **più medaglie femminili che maschili** (317 contro 300); Cina, Paesi Bassi e Canada superano nettamente il 50% femminile e il Giappone è esattamente alla pari. All'estremo opposto, paesi come Cuba, Italia e Francia costruiscono ancora circa due terzi del medagliere sulle gare maschili. Essere una potenza olimpica, quindi, non implica un medagliere equilibrato.
 
-<div style="height: 500px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/06_medagliere_principali_paesi_2000_2020.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano4/05_medagliere_principali_paesi_2000_2020.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
-<br/>
 
 ## Uomini e donne rispondono agli stessi fattori socio-economici?
 
 Mettiamo in relazione le medaglie con gli indicatori World Bank su un panel paese-edizione (3.126 righe, una per paese-edizione) che include anche i paesi senza medaglie, usando come misura di successo log(1 + medaglie) per attenuare il peso dei paesi dominanti.  Gli indicatori di **dimensione** — PIL assoluto e popolazione — sono i più associati al numero di medaglie, e questo vale per entrambi i generi: nel grafico, il punto maschile e quello femminile di ogni indicatore sono quasi sovrapposti (differenza media assoluta di appena 0,02). La crescita del PIL è invece scorrelata: vince chi è grande, non chi cresce in fretta.
 
-<div style="height: 400px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/04_correlazioni_indicatori_per_genere.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano4/04_correlazioni_indicatori_per_genere.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<p>------------</p>
+
 <br/>
 
-Guardando nel dettaglio la relazione più nota — quella con la ricchezza — le due rette di regressione sono quasi parallele e quasi sovrapposte: a parità di PIL pro capite, un paese tende a vincere un numero simile di medaglie maschili e femminili. La risposta qualitativa alla terza domanda è quindi: **sì, i due medaglieri rispondono sostanzialmente agli stessi fattori socio-economici**. Ciò che gli indicatori *non* spiegano è la variabilità tra paesi simili vista sopra: lì contano probabilmente politiche sportive, tradizioni e fattori culturali che il World Bank non misura.
-
-<div style="height: 480px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/stefano3/05_scatter_pil_pro_capite_regressione.json" style="width: 100%; height: 100%"></vegachart>
-</div>
-<p>------------</p>
-<br/>
-
-### Come leggere la retta di regressione
-
-Ogni puntino del grafico è un paese in una singola edizione (2000-2020): sull'asse orizzontale la sua ricchezza media, su quello verticale le medaglie vinte (entrambe in scala logaritmica, solo per rendere leggibile la nuvola). La **retta di regressione** è la linea che riassume tutti quei punti: tra tutte le rette possibili, è quella che passa il più vicino possibile a ogni puntino. In pratica risponde alla domanda *"conoscendo la ricchezza di un paese, quante medaglie mi aspetto in media?"*.
-
-La cosa da guardare è la **pendenza**: se la retta sale verso destra, più ricchezza si associa a più medaglie; se è piatta, la ricchezza non conta. Qui entrambe le rette salgono, con pendenza quasi identica per uomini (≈0,18) e donne (≈0,17), e sono praticamente sovrapposte — la traduzione visiva del fatto che **a parità di ricchezza i due generi vincono un numero simile di medaglie**.
-
-Due avvertenze per leggerla con onestà. Primo: i punti sono molto **dispersi** attorno alle rette (la correlazione è debole, r≈0,3), quindi la retta indica una *tendenza media*, non una previsione — ci sono paesi ricchi che vincono poco e paesi non ricchi che vincono molto. Secondo: si tratta di un'**associazione descrittiva, non di un rapporto di causa-effetto**. La ricchezza appare come una condizione che aiuta, non come una spiegazione completa del successo olimpico.
 
 ## I boicottaggi: una perturbazione da tenere presente
 
@@ -127,8 +109,4 @@ I boicottaggi perturbano proprio le serie mostrate in questa pagina: nel 1980 e 
 
 - Dal 1964 al 2020 la quota femminile dei partecipanti è passata dal **13% al 48%** e quella delle medaglie dal **21% al 48%**: le due curve viaggiano insieme, segno che la crescita del medagliere femminile è soprattutto crescita delle opportunità di gara.
 - Un gruppo eterogeneo di paesi (Giamaica, Cina, Romania, Paesi Bassi, Canada) ha vinto **più con le donne che con gli uomini**; tra le potenze recenti anche gli USA 2000-2020 hanno un medagliere a maggioranza femminile.
-- Gli indicatori socio-economici — PIL e popolazione in testa — spiegano il successo olimpico **allo stesso modo per uomini e donne**; la composizione di genere del medagliere resta in gran parte non spiegata da questi indicatori, ed è probabilmente legata a scelte di investimento sportivo che i dati disponibili non misurano.
-
-### Nota metodologica
-
-Il genere degli eventi è ricavato dal parsing testuale del nome della gara; gli eventi misti sono tenuti separati e non redistribuiti. Le medaglie di squadra contano una volta per squadra; il medagliere ricostruito coincide esattamente con quello ufficiale del CIO. 
+- Gli indicatori socio-economici — PIL e popolazione in testa — spiegano il successo olimpico **allo stesso modo per uomini e donne**.
