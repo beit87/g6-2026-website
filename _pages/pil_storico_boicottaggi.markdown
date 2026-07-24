@@ -13,10 +13,12 @@ vega: true
 
 Con una tecnica di clustering (K-Means) i 220 paesi del dataset, osservati in ciascuna delle 15 edizioni dal 1964 al 2020, si raggruppano naturalmente in tre profili socio-economici molto riconoscibili:
 
-<div style="height: 420px; margin: 1.5rem 0;">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/gianni/pil_vs_medaglie.json" style="width: 100%; height: 100%"></vegachart>
+<div style="height: 540px; margin: 1.5rem 0;">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/pil_vs_medaglie.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">Ogni punto è una coppia nazione-edizione, colorata per cluster socio-economico. A destra, le prime 20 nazioni per punteggio medio.</div>
+<div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">Ogni punto è una coppia nazione-edizione, colorata per cluster socio-economico. A destra, le nazioni con lo Score medio più alto (con almeno 3 edizioni disputate) nell'area selezionata a sinistra — trascina un rettangolo sullo scatter per filtrare la classifica.</div>
+
+**Nota:** due casi non compaiono nella classifica pur avendo punteggi altissimi — Unified Team (le ex repubbliche sovietiche riunite nel 1992) e ROC (la Russia nel 2020, sotto squalifica per doping di stato). Entrambe hanno gareggiato una sola volta: la loro "media" coinciderebbe col picco di quell'unica edizione, scavalcando nazioni come gli Stati Uniti che mediano su 15 edizioni. Per questo la classifica richiede almeno 3 edizioni disputate; restano comunque visibili come singoli punti nello scatter.
 
 - **Le Grandi Potenze Olimpiche** — PIL alto e popolazione ampia (USA, Cina, Germania, Francia, Italia, Australia, ma anche India, Brasile ed Egitto per pura scala economica e demografica). Dominano il medagliere in modo sistematico: possono permettersi infrastrutture sportive su larga scala e hanno un ampio bacino di atleti tra cui scegliere.
 - **Le Economie Emergenti** — grandi popolazioni ma reddito pro capite basso. Il potenziale demografico c'è, ma raramente si trasforma in medaglie per mancanza di investimenti strutturati. È il gruppo più interessante: al suo interno si nascondono le storie di maggiore efficienza, come vedremo tra poco.
@@ -31,7 +33,7 @@ Con un modello di Random Forest — un algoritmo che impara da migliaia di combi
 La sorpresa più grande non è quanto il modello riesce a prevedere, ma *cosa* usa per farlo. Ci si aspetterebbe che il PIL sia il fattore principale. Invece, il singolo indicatore più importante — con un peso di quasi il **70%** su tutti gli altri messi insieme — è semplicemente **quante medaglie lo stesso paese aveva vinto nell'edizione precedente**.
 
 <div style="height: 380px; margin: 1.5rem 0;">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/gianni/feature_importance_shap.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/feature_importance_shap.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
 Il PIL conta ancora, ma soprattutto nel lungo periodo: apre la porta al potenziale, mentre è lo storico recente a decidere chi la attraversa davvero. I sistemi sportivi nazionali, insomma, cambiano lentissimamente: infrastrutture, allenatori e federazioni non si costruiscono (né si smontano) in quattro anni.
@@ -47,7 +49,7 @@ Qui entra la parte più curiosa dell'analisi. Guardando dove il modello sbaglia 
 Lo stesso fenomeno si vede, in modo speculare, nel grafico qui sotto: la correlazione tra PIL e medaglie, che in quasi tutte le edizioni resta sopra 0,8, crolla esattamente nel 1980 — l'unico anno in cui la politica, non l'economia, ha deciso chi era sul podio.
 
 <div style="height: 380px; margin: 1.5rem 0;">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/gianni/correlazione_pil_medaglie_nel_tempo.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/correlazione_pil_medaglie_nel_tempo.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
 Un modello economico, per definizione, non può sapere che una squadra è rimasta a casa per un embargo diplomatico. È uno dei limiti più onesti e più interessanti di tutta l'analisi.
