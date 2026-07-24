@@ -66,7 +66,8 @@ navbar:
         url: /text_analysis.html
     - title: Intervista
       url: /interview.html
-
+      - title: La porta stretta dei poveri, il bivio dei ricchi
+        url: /la-porta-stretta.html
 
     - title: SBD Master # deve essere sempre l'ultimo elemento della navbar, non modificarlo
       url: https://masterbigdata.it/
