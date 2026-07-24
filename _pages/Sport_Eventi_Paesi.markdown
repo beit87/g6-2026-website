@@ -157,6 +157,7 @@ Per esplorare i top 5 sport per le entità storiche, non più esistenti e per le
 </div>
 <br/>
 
+
 ### Nota metodologica
 
 I dati provengono dal dataset storico dei risultati olimpici (dettaglio atleta-evento e biografie degli atleti) incrociato con il dato sulla popolazione proveniente dal dataset degli indicatori socio-economici World Bank.
