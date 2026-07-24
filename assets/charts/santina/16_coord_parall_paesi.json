@@ -1,0 +1,289 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter"
+    },
+    "background": "transparent",
+    "header": {
+      "labelFont": "Inter",
+      "titleFont": "Inter"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter"
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ],
+      "heatmap": [
+        "#e7b6af",
+        "#1b2140"
+      ],
+      "ramp": [
+        "#e7b6af",
+        "#1b2140"
+      ]
+    },
+    "text": {
+      "font": "Inter"
+    },
+    "title": {
+      "font": "Inter"
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "name": "data-e47734f23ea1caa844b4ce3b2e146c6b"
+  },
+  "datasets": {
+    "data-e47734f23ea1caa844b4ce3b2e146c6b": [
+      {
+        "cluster": "Cluster 0",
+        "feature": "gold_ratio",
+        "valore": -0.3010132865997284
+      },
+      {
+        "cluster": "Cluster 1",
+        "feature": "gold_ratio",
+        "valore": 1.2021278470802466
+      },
+      {
+        "cluster": "Cluster 2",
+        "feature": "gold_ratio",
+        "valore": -0.8893047256735488
+      },
+      {
+        "cluster": "Cluster 3",
+        "feature": "gold_ratio",
+        "valore": -1.4467876201236636
+      },
+      {
+        "cluster": "Cluster 4",
+        "feature": "gold_ratio",
+        "valore": 0.19663755282503076
+      },
+      {
+        "cluster": "Cluster 5",
+        "feature": "gold_ratio",
+        "valore": 1.0982673864079178
+      },
+      {
+        "cluster": "Cluster 6",
+        "feature": "gold_ratio",
+        "valore": 0.6600028031479317
+      },
+      {
+        "cluster": "Cluster 0",
+        "feature": "n_sports",
+        "valore": -0.47469749503115577
+      },
+      {
+        "cluster": "Cluster 1",
+        "feature": "n_sports",
+        "valore": -0.2628768298759562
+      },
+      {
+        "cluster": "Cluster 2",
+        "feature": "n_sports",
+        "valore": 0.5009461518026828
+      },
+      {
+        "cluster": "Cluster 3",
+        "feature": "n_sports",
+        "valore": -1.044059424774564
+      },
+      {
+        "cluster": "Cluster 4",
+        "feature": "n_sports",
+        "valore": 0.9262566756919248
+      },
+      {
+        "cluster": "Cluster 5",
+        "feature": "n_sports",
+        "valore": 1.3235247474566014
+      },
+      {
+        "cluster": "Cluster 6",
+        "feature": "n_sports",
+        "valore": -0.9731520815453059
+      },
+      {
+        "cluster": "Cluster 0",
+        "feature": "gold_per_athlete_mean",
+        "valore": -0.11946267688750145
+      },
+      {
+        "cluster": "Cluster 1",
+        "feature": "gold_per_athlete_mean",
+        "valore": 0.18790544589826644
+      },
+      {
+        "cluster": "Cluster 2",
+        "feature": "gold_per_athlete_mean",
+        "valore": -0.8567568200313452
+      },
+      {
+        "cluster": "Cluster 3",
+        "feature": "gold_per_athlete_mean",
+        "valore": -1.0358488021059733
+      },
+      {
+        "cluster": "Cluster 4",
+        "feature": "gold_per_athlete_mean",
+        "valore": 0.18605591431518406
+      },
+      {
+        "cluster": "Cluster 5",
+        "feature": "gold_per_athlete_mean",
+        "valore": 2.7485701861005376
+      },
+      {
+        "cluster": "Cluster 6",
+        "feature": "gold_per_athlete_mean",
+        "valore": 0.12145305018606109
+      },
+      {
+        "cluster": "Cluster 0",
+        "feature": "n_editions",
+        "valore": -1.6287146685845648
+      },
+      {
+        "cluster": "Cluster 1",
+        "feature": "n_editions",
+        "valore": 0.5737433335777155
+      },
+      {
+        "cluster": "Cluster 2",
+        "feature": "n_editions",
+        "valore": 0.6919465303394647
+      },
+      {
+        "cluster": "Cluster 3",
+        "feature": "n_editions",
+        "valore": 0.5737433335777157
+      },
+      {
+        "cluster": "Cluster 4",
+        "feature": "n_editions",
+        "valore": 0.7091844965338867
+      },
+      {
+        "cluster": "Cluster 5",
+        "feature": "n_editions",
+        "valore": -0.833613477866861
+      },
+      {
+        "cluster": "Cluster 6",
+        "feature": "n_editions",
+        "valore": 0.2368642228067303
+      },
+      {
+        "cluster": "Cluster 0",
+        "feature": "gold_per_popul_agg_log",
+        "valore": -0.06129023464752389
+      },
+      {
+        "cluster": "Cluster 1",
+        "feature": "gold_per_popul_agg_log",
+        "valore": 2.036314274320952
+      },
+      {
+        "cluster": "Cluster 2",
+        "feature": "gold_per_popul_agg_log",
+        "valore": -0.9119614813612817
+      },
+      {
+        "cluster": "Cluster 3",
+        "feature": "gold_per_popul_agg_log",
+        "valore": -0.8141262217487131
+      },
+      {
+        "cluster": "Cluster 4",
+        "feature": "gold_per_popul_agg_log",
+        "valore": 0.5221913938211459
+      },
+      {
+        "cluster": "Cluster 5",
+        "feature": "gold_per_popul_agg_log",
+        "valore": -0.21120607568062721
+      },
+      {
+        "cluster": "Cluster 6",
+        "feature": "gold_per_popul_agg_log",
+        "valore": -0.7921640067451863
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "cluster",
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "cluster",
+        "type": "nominal"
+      },
+      {
+        "field": "feature",
+        "type": "nominal"
+      },
+      {
+        "field": "valore",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 0
+      },
+      "field": "feature",
+      "sort": [
+        "gold_ratio",
+        "n_sports",
+        "gold_per_athlete_mean",
+        "n_editions",
+        "gold_per_popul_agg_log"
+      ],
+      "title": null,
+      "type": "nominal"
+    },
+    "y": {
+      "field": "valore",
+      "title": null,
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "mark": {
+    "point": true,
+    "type": "line"
+  },
+  "params": [
+    {
+      "bind": "scales",
+      "name": "param_1",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      }
+    }
+  ],
+  "title": "Centroidi dei cluser sui Paesi",
+  "width": 500
+}
