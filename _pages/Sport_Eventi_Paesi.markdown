@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Il DNA sportivo dei Paesi"
+title: "Sport, eventi e Paesi"
 subtitle: "Sport, eventi e Paesi attraverso il medagliere olimpico"
 vega: true
 ---
 
 {% include page-hero.html title="Il DNA sportivo dei Paesi" %}
 
-Ogni quattro anni un nuovo medagliere olimpico si aggiunge alla serie storica, contribuendo a delineare un profilo sempre più definito non solo dei Paesi che partecipano ai Giochi, ma anche delle discipline sportive e degli eventi che li compongono. In questo modo, nel corso del tempo, si mette sempre più a fuoco, ad esempio, la distinzione tra sport in cui competono numerosi Paesi e altri in cui la partecipazione è più limitata, oppure tra sport in cui la distribuzione delle medaglie d'oro è più democratica e altri in cui è concentrata nelle mani di pochi. Questo, chiaramente, vale anche per gli eventi all'interno delle varie discipline sportive. Parallelamente, emerge con maggiore chiarezza anche il profilo dei Paesi: si distinguono quelli che gareggiano in un numero più ampio di discipline da quelli più specializzati, quelli che faticano a conquistare medaglie d'oro da quelli capaci di vincere in contesti diversi. Si osservano inoltre differenze tra Paesi con popolazione numerosa che ottengono risulati modesti e Paesi con un numero inferiore di abitanti ma con elevata efficienza sportiva. 
+Ogni quattro anni un nuovo medagliere olimpico si aggiunge alla serie storica, contribuendo a delineare un profilo sempre più definito non solo dei Paesi che partecipano ai Giochi, ma anche delle discipline sportive e degli eventi che li compongono. In questo modo, nel corso del tempo, si mette sempre più a fuoco, ad esempio, la distinzione tra sport in cui competono numerosi Paesi e altri in cui la partecipazione è più limitata, oppure tra sport in cui la distribuzione delle medaglie d'oro è più democratica e altri in cui è concentrata nelle mani di pochi. Questo, chiaramente, vale anche per gli eventi all'interno delle varie discipline sportive. Parallelamente, emerge con maggiore chiarezza anche il profilo dei Paesi: si distinguono quelli che gareggiano in un numero più ampio di discipline da quelli più specializzati, quelli che faticano a conquistare medaglie d'oro da quelli capaci di vincere in contesti diversi. Si osservano inoltre differenze tra Paesi con popolazione numerosa che ottengono risultati modesti e Paesi con un numero inferiore di abitanti ma con elevata efficienza sportiva. 
 
 Con questa analisi mettiamo ordine tra questi pattern, osservando la storia olimpica da tre prospettive, quella degli sport, degli eventi e dei Paesi.
 
@@ -16,12 +16,12 @@ Con questa analisi mettiamo ordine tra questi pattern, osservando la storia olim
 Per definire il profilo storico degli sport ci siamo posti delle domande alle quali abbiamo provato a dare risposta tramite l'utilizzo di una serie di features create ad hoc:
 - Quanto è diffuso uno sport? Quanti sono, in media, i Paesi e gli atleti che partecipano ai suoi eventi?
 - Quanto sono concentrati gli ori? Sono sempre gli stessi Paesi a vincere oppure le vittorie sono distribuite?
-- Quanto "costa" una medaglia d'oro in termini di atleti? È necessario schierare molti atleti o basta un singolo specialista?
+- Quanto "costa" una medaglia d'oro in termini di atleti? È necessario schierarne molti o basta un singolo specialista?
 - Quanto "costa" una medaglia d'oro in termini di popolazione? Serve un Paese molto popoloso o è possibile essere efficienti anche con un bacino ridotto?
 - Quanto contribuisce la distinzione tra sport individuali e sport di squadra nel definire il profilo di uno sport?
 
 Nel rispondere a queste domande sono stati individuati 4 cluster: sport a media diffusione, grandi sport di massa, sport di squadra, sport di nicchia ad alta efficienza.
-Di seguit analizziamo come si distribuiscono i cluster rispetto alle diverse features e quali sport vi appartengono. L'analisi è stata limitata agli sport presenti in almeno cinque edizioni olimpiche, al fine di garantire risultati più robusti e rappresentativi.
+Di seguito analizziamo come si distribuiscono i cluster rispetto alle diverse features e quali sport vi appartengono. L'analisi è stata limitata agli sport presenti in almeno cinque edizioni olimpiche, al fine di garantire risultati più robusti e rappresentativi.
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/01_coord_parall_sport.json" style="width: 100%; height: 100%"></vegachart>
@@ -35,13 +35,13 @@ Di seguit analizziamo come si distribuiscono i cluster rispetto alle diverse fea
 | Cluster 2 | Sport di squadra                    | Baseball, Basketball, Beach Volleyball, Football, Handball, Hockey, Softball, Volleyball, Water Polo                                                                           |
 | Cluster 3 | Sport di nicchia ad alta efficienza | Archery, Artistic Swimming, Cycling Mountain Bike, Diving, Equestrian Dressage, Equestrian Eventing, Equestrian Jumping, Modern Pentathlon, Rhythmic Gymnastics, Table Tennis, Trampolining|
 
-Gli sport a media diffusione sono caratterizzati da un numero di Paesi partecipanti sopra la media, ma da un numero di atleti per evento inferiore. Si tratta principalmente di sport individuali in cui molti Paesi competono pur schierando pochi atleti. La concentrazione delle medaglie d'oro è bassa, quindi diverse nazioni riescono a vincere, incluse anche alcune con popolazione non particolarmente elevata. L'efficienza in termini di medaglie per atleta risulta nella norma.
+Gli sport a media diffusione sono caratterizzati da un numero di Paesi partecipanti sopra la media, ma da un numero di atleti per evento inferiore. Si tratta principalmente di sport individuali in cui competono molti Paesi, pur schierando pochi atleti. La concentrazione delle medaglie d'oro è bassa, quindi diverse nazioni riescono a vincere, anche alcune con popolazione non particolarmente numerosa. L'efficienza in termini di medaglie per atleta risulta nella norma.
 
-I grandi sport di massa sono quelli con il più alto numero di Paesi e atleti partecipanti. La distribuzione degli ori è ampia e poco concentrata. Questo cluster presenta una bassa percentuale di eventi di squarda, ma un'elevata efficienza rispetto alla popolazione. Un esempio è rappresentato da Paesi come la Giamaica che, pu avendo dimensioni ridotte, risulta estremamente competitiva nell'atletica. Si tratta di sport "universali", accessibili anche a Paesi con poche risorse ma con atleti altamente specializzati.
+I grandi sport di massa sono quelli con il più alto numero di Paesi e atleti partecipanti. La distribuzione degli ori è ampia e poco concentrata. Questo cluster presenta una bassa percentuale di eventi di squarda, ma un'elevata efficienza rispetto alla popolazione. Un esempio è rappresentato da Paesi come la Giamaica che, pur avendo dimensioni ridotte in termini di popolazione, risulta estremamente competitiva nell'atletica. Si tratta di sport "universali", accessibili anche a Paesi con poche risorse ma con atleti altamente specializzati.
 
-Gli sport di squadra sono quelli con il minor numero di Paesi partecipanti. Anche il numero di atleti per evento  aspetto che può sembrare controintuitivo ma che è spiegato proprio dalla minore partecipazione complessiva. Anche l'efficienza per atleta può sembrare controintuitiva, ma dipende dal fatto che una medaglia d'oro è contata per l'intera squadra. In questi sport si osserva una maggiore concentrazione delle vittorie, spesso appannaggio di Paesi medio-grandi con sistemi sportivi collettivi ben strutturati.
+Gli sport di squadra sono quelli con il minor numero di Paesi e atleti per evento partecipanti. Questo secondo aspetto potrebbe sembrare controintuitivo, ma è dovuto proprio dalla minore partecipazione complessiva. Anche l'efficienza per atleta può sembrare controintuitiva, ma dipende dal fatto che, pur essendo una squadra composta da un certo numero di atleti, si conteggia una sola medaglia d'oro attribuita all'intera squadra. In questi sport si osserva una maggiore concentrazione delle vittorie, spesso appannaggio di Paesi medio-grandi con sistemi sportivi collettivi ben strutturati.
 
-Gli sport di nicchia ad alta efficienza coinvolgono pochi Paesi, ma non necessariamente pochi atleti. La concentrazione degli ori è elevata: sono pochi i Paesi che dominano queste discipline. Allo stesso tempo, l'efficienza per atleta è molto alta, pooichè bastano pochi specialisti per ottenere una medaglia. La presenza di sport di squadra è inferiore alla media e i Paesi vincitori tendono ad essere di dimensioni medio-grandi.
+Gli sport di nicchia ad alta efficienza coinvolgono pochi Paesi ma non necessariamente pochi atleti. La concentrazione degli ori è elevata: sono pochi i Paesi che dominano queste discipline. Allo stesso tempo, l'efficienza per atleta è molto alta perchè bastano pochi specialisti per ottenere una medaglia. La presenza di sport di squadra è inferiore alla media e i Paesi vincitori tendono ad essere di dimensioni medio-grandi.
 
 Tra le varie analisi condotte sull'evoluzione temporale dei cluster rispetto alle specifiche features, risulta particolarmente interessante quella che descrive come è cambiata, nel corso del tempo, la partecipazione dei Paesi.
 
@@ -51,11 +51,11 @@ Tra le varie analisi condotte sull'evoluzione temporale dei cluster rispetto all
 <br/>
 
 Si osserva un aumento graduale del numero di Paesi partecipanti in tutti i cluster. Il fenomeno di globalizzazione più evidente riguarda il cluster dei grandi sport di massa, che tra il 1964 e il 2020 vede raddoppiare il numero di Paesi partecipanti. 
-Al contrario, il cluster degli sport di squadra si mantiene nel tempo su valori più contenuti, generalmente compresi tra 10 e 20 Paesi partecipanti. Si nota un leggero picco nel 2016, seguito da una diminuizione nel 2020. 
+Al contrario, il cluster degli sport di squadra si mantiene su valori più contenuti nel corso del tempo, generalmente compresi tra 10 e 20 Paesi partecipanti. Si nota un leggero picco nel 2016, seguito da una diminuizione nel 2020. 
 Un elemento particolarmente significativo è il calo della partecipazione in corrispondenza delle Olimpiadi di Mosca del 1980. Questo fenomeno è riconducibile al boicottaggio guidato dagli Stati Uniti in risposta all'invasione sovietica dell'Afghanistan, boicottaggio a cui aderirono numerosi Paesi che decisero di non partecipare ai Giochi.
 
 I quattro profili descritti nascono da medie storiche aggregate, utili per cogliere pattern generali. La seguente heatmap invece segue il percorso inverso, mostrando per ogni sport e per ciasuna edizione olimpica, quali delegazioni sportive hanno dominato il medagliere, con l'obiettivo di analizzare l'evoluzione nel tempo anche di singole discipline di particolare interesse.
-A differenza dell'analisi di clustering che richiedeva una base storica minima, questo grafico mostra tutti gli sport presenti tra il 1964 e il 2020, comprese le discipline comparse anche in una sola edizione. Inoltre, nel rispetto della storia delle Olimpiadi, sono state mantenute le delegazioni sportive relative a Paesi non più esistenti o a contesti particolari. Rientrano in questa seconda categoria sia le rappresentative associate a Paesi soggetti a sanzioni (come la Russia, che nel 2020 ha partecipato come ROC), sia la delegazione degli atleti rifugiati, che non rappresenta un singolo Stato ma riunisce atleti impossibilitati a gareggiare sotto la propria bandiera nazionale.
+A differenza dell'analisi di clustering che richiedeva una base storica minima, questo grafico mostra tutti gli sport presenti tra il 1964 e il 2020, comprese le discipline comparse anche in una sola edizione. Inoltre, nel rispetto della storia delle Olimpiadi, sono state mantenute anche le delegazioni sportive relative a Paesi non più esistenti o a contesti particolari. Rientrano in questa seconda categoria sia le rappresentative associate a Paesi soggetti a sanzioni (come la Russia, che nel 2020 ha partecipato come ROC), sia la delegazione degli atleti rifugiati, che non rappresenta un singolo Stato ma riunisce atleti impossibilitati a gareggiare sotto la propria bandiera nazionale.
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/09_heatmap_totale_sport.json" style="width: 100%; height: 100%"></vegachart>
@@ -65,30 +65,30 @@ A differenza dell'analisi di clustering che richiedeva una base storica minima, 
 ## Il profilo storico degli eventi
 
 Oltre all'analisi degli sport, proponiamo anche un breve approfondimento sugli eventi sportivi, raggruppandoli secondo una logica analoga a quella appena vista per gli sport, ma applicata questa volta al singolo evento invece che alla disciplina nel suo complesso.
-Anche qui è stato applicato un filtro sul numero minimo di edizioni coinvolte per ottenere risultati fondati su una base storica solida. Tuttavia, visto l'elevato numero di eventi che superano comunque questo filtro, ci limitiamo a mostrare la logica con cui l'algoritmo K-Means li ha divisi in tre cluster, senza elencarli uno per uno come fatto per gli sport. 
+Anche qui è stato applicato un filtro sul numero minimo di edizioni coinvolte, al fine di ottenere risultati fondati su una base storica solida. Tuttavia, visto l'elevato numero di eventi che superano questo filtro, ci limitiamo a mostrare la logica con cui l'algoritmo K-Means li ha divisi in tre cluster, senza elencarli uno per uno come fatto per gli sport. 
 
 Per definire il profilo storico degli eventi ci siamo posti alcune delle domande già formulate per gli sport, aggiungendone un'altra:
 - Quanto è diffuso un evento? Quanti sono, in media, i Paesi che vi gareggiano?
-- Quanto "costa" una medaglia d'oro in termini di atleti? È necessario schierare molti atleti o basta un singolo specialista?
+- Quanto "costa" una medaglia d'oro in termini di atleti? È necessario schierarne molti o basta un singolo specialista?
 - Quanto "costa" una medaglia d'oro in termini di popolazione? Serve un Paese molto popoloso o è possibile essere efficienti anche con un bacino ridotto?
 - Quanto contribuisce la distinzione tra eventi individuali ed eventi di squadra nel definire il profilo di uno evento?
-- Quante sono le nazioni che hanno vinto almeno una medaglia d'oro in quell'evento nel corso del tempo?
+- Quanti sono i Paesi che hanno vinto almeno una medaglia d'oro in quell'evento nel corso del tempo?
 
 Nel rispondere a queste domande sono stati individuati 3 cluster: eventi di nicchia ad alta efficienza, eventi di squadra, il grande bacino degli eventi individuali.
-Di seguit analizziamo come si distribuiscono i cluster rispetto alle diverse features.
+Di seguito analizziamo come si distribuiscono i cluster rispetto alle diverse features.
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/10_coord_parall_event.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 <br/>
 
-Cluster 0, il cluster degli eventi di nicchia ad alta efficienza. È il cluster che presenta il valore più alto per l'efficienza in base al numero di atleti. Anche se per ogni Paese si qualificano pochi atleti in questi eventi, ne basta uno per portare a casa l'oro. Sono eventi di nicchia perchè non solo non partecipano molte nazioni, ma tra quelle che partecipano sono pochi i Paesi che si spartiscono storicamente questi ori. Infine, la percentuale di eventi di squadra e l'efficienza in base alla popolazione sono poco sotto la media.
+Cluster 0, il cluster degli eventi di nicchia ad alta efficienza. È il cluster che presenta il valore più alto per l'efficienza in base al numero di atleti: basta un singolo specialista per portare a casa l'oro. Sono eventi di nicchia perchè non solo non partecipano molte nazioni, ma tra quelle che partecipano sono pochi i Paesi che si spartiscono storicamente gli ori. Infine, la percentuale di eventi di squadra e l'efficienza in base alla popolazione sono poco sotto la media.
 
-Cluster 1, il cluster degli eventi di squadra. Così come si intuisce dal nome e come si osserva dal grafico, è il cluster che raccoglie gli eventi di squadra per cui, come già visto per gli sport, gareggiano poche nazioni. Per quanto riguarda l'efficienza in base al numero di atleti, vale quanto già detto nel caso della descrizione degli sport di squadra. L'efficienza per popolazione e il numero di nazioni che hanno vinto almeno un oro sono sul valore medio.
+Cluster 1, il cluster degli eventi di squadra. Così come si intuisce dal nome e come si osserva dal grafico, è il cluster che raccoglie gli eventi di squadra. Anche in questo caso, come già visto per gli sport, gareggiano pochi Paesi. Anche per quanto riguarda l'efficienza in base al numero di atleti, vale quanto già detto nel caso della descrizione degli sport di squadra. L'efficienza per popolazione e il numero di nazioni che hanno vinto almeno un oro sono sul valore medio.
 
 Cluster 2, il grande bacino degli eventi individuali. È un ampio contenitore di eventi olimpici individuali più globalizzati rispetto a quelli del Cluster 0. L'efficienza per numero di atleti, l'efficienza per popolazione e il numero di nazioni che hanno vinto almeno un oro si concentrano intorno al valore medio. 
 
-Coerentemente con quanto fatto per gli sport, analizziamo l'evoluzione temporale della partecipazione dei Paesi agli eventi appartenenti ai tre cluster.
+Coerentemente con quanto fatto per gli sport, analizziamo l'evoluzione temporale della partecipazione dei Paesi agli eventi appartenenti ai tre cluster individuati.
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/12_nazioni_tempo_event.json" style="width: 100%; height: 100%"></vegachart>
@@ -96,8 +96,8 @@ Coerentemente con quanto fatto per gli sport, analizziamo l'evoluzione temporale
 <br/>
 
 Il Cluster del grande bacino degli eventi inidividuali e quello degli eventi di nicchia ad alta efficienza mostrano un graduale aumento dei Paesi partecipanti nel corso del tempo. Nello specifico, per il Cluster degli eventi individuali di nicchia ad alta efficienza si notano due picchi in corrispondenza delle edizioni olimpiche di Los Angeles del 1984 e di Atlanta del 1996.
-Coerentemente con quanto visto nell'analisi temporale degli sport, il cluster degli eventi di squadra ha un moderato aumento dei Paesi partecipanti nel corso del tempo che negli anni più recenti si appiattisce e tende a decrescere.
-Inoltre, così come già notato nell'analisi temporale effettuata sugli sport, si nota un importante calo nei paesi partecipanti nell'edizione olimpica dei Mosca del 1980, dovuto al già discusso boicottaggio.
+Coerentemente con quanto visto nell'analisi temporale degli sport, il cluster degli eventi di squadra ha un moderato aumento dei Paesi partecipanti nel corso del tempo, che negli anni più recenti si appiattisce e tende a decrescere.
+Inoltre, così come già notato nell'analisi temporale effettuata sugli sport, si nota un importante calo dei paesi partecipanti nell'edizione olimpica dei Mosca del 1980, dovuto al già discusso boicottaggio.
 
 ## Il profilo storico dei Paesi
 
@@ -108,7 +108,7 @@ Anche per definire il profilo storico dei Paesi ci siamo posti una serie di doma
 - Quando "cosa" una medaglia d'oro in termini di popolazione? Serve un paese molto popoloso o è possibile essere efficienti anche con un bacino ridotto di abitanti?
 - Da quante edizioni olimpiche un Paese gareggia sotto la sua attuale bandiera? Quanto è lunga la sua storia olimpica?
  
-Nel rispondere a queste domande sono stati individuati 7 cluster: sport a media diffusione, grandi sport di massa, sport di squadra, sport di nicchia ad alta efficienza.
+Nel rispondere a queste domande sono stati individuati 7 cluster: Paesi con breve storia olimpica, piccoli Paesi iper-efficienti, Paesi dai molti sport ma pochi ori, Paesi dai pochi sport e pochi ori, potenze olimpiche consolidate, superpotenze olimpiche, Paesi dai pochi sport ma molti ori. 
 Prima di analizzare come si distribuiscono i cluster rispetto alle diverse features e quali Paesi vi appartengono, è opportuno fare alcune considerazioni. Poiché la maggior parte delle features introdotte descivono il successo olimpico di un Paese, sono stati inclusi nell'analisi soltanto i Paesi che, durante il corso della loro partecipazione alle edizioni olimpiche, hanno conquistato almeno un totale di 10 medaglie. Inoltre, poiché l'analisi presenta una "fotografia" della situazione attuale dei Paesi, costruita aggregando i dati delle serie temporali, i cosiddetti "Paesi storici", così come i casi speciali di delegazioni che non fanno riferimento ad alcun Paese o che sono il frutto di una sanzione ad un Paese, sono stati esclusi dall'analisi. Inoltre, per mancanza di dati sulla popolazione per l'intera serie storica, sono stati esclusi dall'analisi anche Taipei Cinese e Kosovo.
 
 <div style="height: 560px">
@@ -116,15 +116,15 @@ Prima di analizzare come si distribuiscono i cluster rispetto alle diverse featu
 </div>
 <br/>
 
-| Cluster   | Nome                                            | Paesi                                                                                                                                                      |
-|-----------|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cluster 0 | Paesi con breve storia olimpica                 | Armenia, Azerbaijan, Belarus, Croatia, Czechia, Estonia, Georgia, Kazakhstan, Latvia, Lithuania, South Africa, Slovenia, Serbia, Slovakia, Ukraine, Uzbekistan |
-| Cluster 1 | Piccoli Paesi iper-efficienti                   | The Bahamas, Cuba, Finland, Hungary, Jamaica, Norway, New Zealand                                                                                          |
-| Cluster 2 | Paesi con alta partecipazione ma poco successo  | Argentina, Austria, Brazil, Colombia, Egypt, Israel, Mexico, Portugal, Venezuela                                                                           |
-| Cluster 3 | Paesi con bassa partecipazione e poco successo  | Dominican Republic, Indonesia, India, Malaysia, Mongolia, Nigeria, Trinidad and Tobago                                                                                                                                                   |
-| Cluster 4 | Potenze olimpiche consolidate                   | Australia, Belgium, Bulgaria, Canada, Denmark, Spain, France, Great Britain, Greece, Ireland, Italy, Japan, South Korea, Netherlands, Poland, Romania, Switzerland, Sweden                                                                                                                               |
-| Cluster 5 | Le superpotenze olimpiche                       | China, Germany, Russia, United States                                                                                                                                                           |
-| Cluster 6 | Paesi con bassa partecipazione ma alto successo | Algeria, Ethiopia, Iran, Kenya, Morocco, North Korea, Thailand, Tunisia, Türkiye, Uganda                                                                                                                                                           |
+| Cluster   | Nome                              | Paesi                                                                                                                                                      |
+|-----------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cluster 0 | Paesi con breve storia olimpica   | Armenia, Azerbaijan, Belarus, Croatia, Czechia, Estonia, Georgia, Kazakhstan, Latvia, Lithuania, South Africa, Slovenia, Serbia, Slovakia, Ukraine, Uzbekistan |
+| Cluster 1 | Piccoli Paesi iper-efficienti     | The Bahamas, Cuba, Finland, Hungary, Jamaica, Norway, New Zealand                                                                                          |
+| Cluster 2 | Paesi dai molti sport e pochi ori | Argentina, Austria, Brazil, Colombia, Egypt, Israel, Mexico, Portugal, Venezuela                                                                           |
+| Cluster 3 | Paesi dai pochi sport e pochi ori | Dominican Republic, Indonesia, India, Malaysia, Mongolia, Nigeria, Trinidad and Tobago                                                                                                                                                   |
+| Cluster 4 | Potenze olimpiche consolidate     | Australia, Belgium, Bulgaria, Canada, Denmark, Spain, France, Great Britain, Greece, Ireland, Italy, Japan, South Korea, Netherlands, Poland, Romania, Switzerland, Sweden                                                                                                                               |
+| Cluster 5 | Superpotenze olimpiche            | China, Germany, Russia, United States                                                                                                                                                           |
+| Cluster 6 | Paesi dai pochi sport e molti ori | Algeria, Ethiopia, Iran, Kenya, Morocco, North Korea, Thailand, Tunisia, Türkiye, Uganda                                                                                                                                                           |
 
 Ad esclusione del Sudafrica, il cluster dei Paesi con breve storia olimpica contiene tutti i paesi che si sono formati dopo la scissione dell'Unione Sovietica, della Yugoslavia e della Cecoslovacchia. Il tratto distintivo di questo cluster è proprio il numero ridotto di edizioni olimpiche in cui hanno gareggiato che, per quanto riguarda i paesi neoformatisi, è coerente con la loro non precedente esistenza. Un Paese che sembrerebbe stonare in questo cluster ma che in realtà è del tutto legittimo è il Sudafrica, anch'esso partecipante a poche edizioni olimpiche per via del periodo di esclusione dal 1964 al 1988 a causa delle politiche di segregazione razziale. 
 Indagando la percentuale di successo dei Paesi di questo cluster nelle categorie sportive, notiamo le seguenti percentuali: Athletics 62%, Shooting 50%, Wrestling 43%, Rowing 37%, Weightlifting 37%, Judo 31%, Swimming 25%, Taekwondo 25%, Boxing 18%, Canoe Slalom 18%. Questa firma sportiva conferma e arricchisce il quadro presenato: Atletica, Tiro, Lotta, Canottaggio, Sollevamento Pesi, sono l'inequivocabile eredità dei Paesi di cui facevano parte e che avevano, per queste discipline, programmi di allenamento specializzati.
