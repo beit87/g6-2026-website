@@ -6,47 +6,71 @@ subtitle: "I fattori socio-economici dietro il successo olimpico"
 
 {% include page-hero.html %}
 
-**Il medagliere olimpico non racconta solo lo sport.** Ogni quattro anni diventa una classifica tra nazioni. Ma cosa c'è dietro quella classifica? Perché alcuni paesi vincono sistematicamente più di altri, anche a parità di popolazione? E quanto contano ricchezza, istruzione, salute e investimenti pubblici nel produrre campioni?
+## Il progetto
 
-**"Non solo Giochi"** nasce da queste domande: è un progetto di analisi dati che mette in relazione i risultati delle **Olimpiadi estive dal 1964 al 2020** con gli **indicatori socio-economici** dei paesi partecipanti, per capire quali fattori strutturali accompagnano — e in parte spiegano — il successo sportivo.
+Il medagliere olimpico non racconta solo lo sport: ogni quattro anni, di fatto, viene stilata una classifica delle nazioni. Ma cosa c’è dietro questa classifica? Perché alcuni paesi vincono sistematicamente più di altri, anche a parità di popolazione? E quanto contano ricchezza, istruzione, salute e investimenti pubblici nel produrre campioni?
+“Non solo Giochi” nasce da queste domande: è un progetto di analisi dati che mette in relazione i risultati delle Olimpiadi estive dal 1964 al 2020 con gli indicatori socioeconomici dei paesi partecipanti, per capire quali fattori strutturali accompagnano — e in parte spiegano — il successo sportivo.
 
-## Le domande di ricerca
+## I Paesi olimpici: ricchi e poveri
 
-Il progetto ruota attorno ad alcune domande centrali:
+Ma innanzitutto “chi” sono i paesi che partecipano alle Olimpiadi? Come si differenziano l’uno dall’altro? La prima distinzione che si può fare è quella macroscopica fra “paesi ricchi” e “paesi poveri”. È un dato di fatto che il divario economico si traduca anche in un divario sportivo: i paesi più ricchi vincono quasi 100 volte più medaglie per abitante dei più poveri. Senza contare che tale disparità dal 1964 a oggi non si è mai ridotta!
 
-- **Il PIL spiega le medaglie?** Quanto contano la ricchezza e la dimensione demografica di un paese nel determinare il suo medagliere?
-- **Esistono "famiglie" di paesi olimpici?** È possibile raggruppare i paesi per profilo socio-economico e sportivo, e capire quali sport dominano in ciascun gruppo?
-- **Alcuni sport sono più "democratici" di altri?** Quali discipline restano accessibili ai paesi con meno risorse e quali richiedono infrastrutture costose?
-- **Il successo ha un genere?** Come è cresciuto il medagliere femminile e risponde agli stessi fattori di quello maschile?
-- **Si può prevedere il futuro?** Con i dati storici e gli indicatori è possibile stimare i medaglieri delle prossime edizioni?
+Questa differenza, poi, è amplificata dagli sport che richiedono equipaggiamenti più costosi o infrastrutture specifiche; discipline come il nuoto, equitazione e vela,sono dominio quasi esclusivo dei paesi ricchi. Invece, le discipline più praticabili, che mettono al centro il corpo più le infrastrutture, vedono i paesi più poveri emergere con maggior facilità: pensiamo alla boxe, alla lotta o all’atletica leggera.
 
-## I dati
+I dati supportano queste considerazioni; basandosi sulla distribuzione delle 36000 medaglie assegnate negli ultimi sessant’anni di Olimpiadi, una semplice test statistico mostra una fortissima correlazione fra il livello socioeconomico di un paese e le discipline in cui tende a vincere di più.
 
-La base comune di lavoro unisce due mondi:
+D’altra parte, la soglia economica per entrare nel medagliere si è progressivamente abbassata nel tempo, mentre allo stesso tempo i paesi restano nettamente divisi per PIL a seconda del tipo di sport in cui vincono:  due facce dello stesso fenomeno. Lo spiraglio che si è allargato nel tempo è, specificamente, quello dello sport individuale. Gli sport di squadra restano invece aperti a chi può permettersi di costruirci sopra un intero sistema.
 
-- lo **storico dei risultati olimpici** (medaglieri, atleti, eventi e edizioni dal 1964 in poi);
-- le **serie storiche della World Bank**: PIL, popolazione, urbanizzazione, aspettativa di vita, istruzione, spesa pubblica e molti altri indicatori, scelti in modo collaborativo dai componenti del gruppo.
+C'è però chi ha dimostrato che il divario si può scalfire. La Corea del Sud ha impiegato oltre cinquant’anni (e diverse generazioni di atleti) per entrare a far parte del gruppo di paesi olimpici più vincenti — le sue medaglie pro capite nel frattempo sono più che quadruplicate (+404%). Una prova che la geografia della ricchezza olimpica, per quanto rigida, non è scolpita nella pietra.
 
-Le due fonti sono state integrate in un unico dataset di analisi, in cui ogni riga rappresenta un paese in una specifica edizione olimpica, arricchito con la media degli indicatori nei quattro anni precedenti i Giochi. La costruzione del dataset è descritta in dettaglio nella pagina [Data Preparation]({{site.baseurl}}/data_preparation.html).
+## Superpotenze, medi calibri e “lillipuziani” virtuosi
 
-## Le analisi del gruppo
+La nostra visione delle differenze fra i vari paesi può essere raffinata tre grandi gruppi fra quelli che hanno vinto almeno una medaglia. Innanzitutto, ci sono le “superpotenze” olimpiche (USA, Cina, Germania e Russia) che si distinguono per partecipare a molte e variegate discipline sportive, vincendo ori ovunque.
 
-Il progetto è il lavoro collettivo del **Gruppo 6** del Master SoBigData. Ogni componente ha esplorato una prospettiva diversa sulla stessa domanda di fondo:
+È interessante notare, però, che si tratta di un cluster con una partecipazione bassa a livello di edizioni. Russia e Germania, per esempio, a causa delle loro vicissitudini storiche hanno partecipato ai Giochi con denominazioni diverse (“URSS”, “Repubblica Federale Tedesca”, “Repubblica Democratica Tedesca”) e questo, tecnicamente, porta a considerare un paese nuovo nel medagliere storico ad ogni cambio di nome. La Cina, poi, non partecipa dal 1956 al 1980.
 
-- **Alessia Niotta** ha classificato i paesi in fasce socio-economiche (dai "ricchi avanzati" ai paesi a basso reddito) e ha costruito, sport per sport, modelli di regressione logistica per stimare la probabilità di vincere una medaglia: ne emerge che alcuni sport (vela, scherma, equitazione) sono fortemente legati alla ricchezza, mentre altri (atletica, pugilato, sollevamento pesi) restano aperti al talento dei paesi con meno risorse.
+A questo gruppo di paesi di grande successo, comunque, appartengono anche gli USA, che pure hanno sempre partecipato a tutte le edizioni dei Giochi (a parte il boicottaggio delle Olimpiadi di Mosca); evidentemente la similarità con gli altri membri del gruppo è data dal grande numero di medaglie conquistate.
 
-- **Santina Capalbo** ha applicato tecniche di clustering su tre livelli — paesi, sport ed eventi — individuando gruppi di paesi con profili olimpici ben riconoscibili: dalla "potenza assoluta" (gli USA) alle potenze consolidate europee, dagli specialisti di poche discipline (come Kenya e Giamaica nell'atletica) ai giganti a partecipazione discontinua come URSS e Cina.
+Ci sono poi dei paesi che ottengono poche medaglie; tuttavia, all’interno di questo gruppo si possono trovare paesi molto “virtuosi”, come la Giamaica, le Bahamas o il Kenya. Questi paesi sono altamente specializzati nell’atletica e rispetto al numero totali di medaglie hanno una buona quota di medaglie d’oro. Sorprendentemente, hanno un rapporto ori / medaglie totali leggermente migliore di quello di grandi potenze olimpiche come USA, Russia, Cina, ecc.
 
-- **Gianni Coia** ha esplorato il dataset con tecniche di data mining, studiando come i cluster socio-economici dei paesi si riflettono negli sport in cui eccellono: i paesi ricchi dominano le discipline tecniche e costose, quelli emergenti gli sport basati sul talento individuale.
+Infine ci sono le “medie potenze consolidate”, paesi che ottengono molte medaglie ma non tante quanto le superpotenze e nemmeno in tutte le discipline sportive. Questi paesi tendono a raccogliere, in maniera consistente nel tempo, la maggior parte delle loro medaglie in alcune discipline in cui sono altamente specializzati. È questo il caso dell’Italia, che storicamente ha raccolto la maggior parte delle sue medaglia nella scherma e alla quale abbiamo dedicato un approfondimento.
 
-- **Giuseppe Pascuzzi** ha costruito modelli predittivi (dalla regressione ai Random Forest) per stimare i medaglieri, ha analizzato l'effetto causale degli investimenti nello sport d'élite — che risultano un predittore più forte del semplice PIL — e ha misurato il vantaggio del paese ospitante, arrivando a una previsione del medagliere di Los Angeles 2028.
+## Atleti e atlete
 
-- **Stefano Macchiavelli** ha curato la costruzione del dataset comune (medaglieri + indicatori World Bank) e ha analizzato il medagliere attraverso la lente del genere: la crescita del successo femminile dal 1964 a oggi e il confronto tra risultati maschili e femminili in relazione agli indicatori socio-economici ([leggi l'analisi]({{site.baseurl}}/successo_maschile_femminile3.html)).
+Dopo aver considerato i paesi come organismi sportivi collettivi, ci si può chiedere anche “chi” siano gli atleti che formano le delegazioni nazionali. In particolare, ci siamo chiesti come sia cambiata la loro composizione in un’ottica di genere; in effetti grandi cambiamenti ci sono stati.
 
-- **Alessio Cioli** ha curato il download dei dati e ha aggiunto una prospettiva qualitativa, raccogliendo con tecniche di web scraping gli articoli della stampa italiana sulla scherma olimpica per analizzare come i media raccontano il successo sportivo.
+Ma partiamo considerando cosa si pubblicava nel periodo ufficiale del CIO Revue Olympique, fasciolo 79 del luglio 1912, nell’articolo “Les femmes aux Jeux Olympiques”:
 
-- **Luisa Mancone** ha contribuito alla selezione degli indicatori legati a salute e benessere, una delle dimensioni chiave del dataset comune.
+<blockquote>
+“Le Olimpiadi sono […] la solenne e periodica esaltazione dell'atletismo maschile, con l'internazionalismo come base, la lealtà come mezzo, l'arte come cornice e l'applauso femminile come ricompensa.”
+</blockquote>
 
-## Cosa abbiamo imparato
+Pierre de Coubertin, fondatore delle moderne olimpiadi, non era contrario in assoluto all'attività fisica femminile; tuttavia, riteneva che le donne dovessero praticare sport per salute ed educazione, ma non nelle competizioni olimpiche, che immaginava come celebrazione “dell'atletismo maschile”.
 
-Le diverse analisi convergono su un messaggio comune: **il medagliere olimpico non è solo sport**. La ricchezza e la dimensione di un paese sono condizioni abilitanti — il PIL è il singolo indicatore più correlato con le medaglie — ma non bastano a spiegare tutto. Contano le scelte: dove investire, in quali discipline specializzarsi, quanto includere e valorizzare le atlete. È in questo spazio tra struttura e strategia che i Giochi diventano, appunto, *non solo giochi*.
+Dalla fine del XIX secolo ad oggi, però, le cose sono molto cambiate e nelle Olimpiadi di Parigi 2024 la partecipazione maschile e quella femminile si sono sostanzialmente equivalse (ammontando rispettivamente a 52% e 48%). Oltretutto, si può constatare come in certe nazioni il contributo delle donne, in termini di medaglie conquistate, sia ormai preponderante.
+
+## I fattori del successo sportivo
+
+Ma è possibile stabilire che cosa determini il successo sportivo di un paese? Dalle prime analisi che avevamo fatto, sembrava emergere un dato inequivocabile: il miglior predittore del successo di un paese è il PIL, dove con tale termine non s’intende il prodotto pro capite ma proprio la misura della ricchezza complessiva di un sistema-paese. Da questo punto di vista è vero che, in linea di massima, i paesi più ricchi tendono a spartirsi la maggior parte delle medaglie.
+
+Tuttavia, a un’analisi più attenta è emerso che l’economia conta fino a un certo punto. Non sono i paesi più ricchi a vincere più medaglie, ma quelli che scelgono di investire davvero nello sport di alto livello. Il PIL conta meno di quanto ci si aspetterebbe: è la scelta politica di destinare risorse concrete alla preparazione degli atleti a fare la differenza.
+
+Per esempio, il Regno Unito, dopo le disastrose partecipazioni ai Giochi del 2000 e 2004, cambiò completamente rotta investendo massicciamente nelle varie discipline sportive e tracciando i capitali in modo da avere pieno controllo della gestione delle risorse. Già nel 2008 le medaglie risultarono raddoppiate per poi crescere ulteriormente nelle edizioni successive.
+
+Analogo discorso vale per alcuni paesi poveri che, in termini assoluti, hanno poche risorse da spendere per lo sport ma che, concentrandole nelle aree dove eccellono, riescono ad ottenere risultati di livello mondiale. Così, la Giamaica è diventata sinonimo di velocità; il Kenya domina nelle gare di resistenza e Cuba ha sviluppato una tradizione vincente in discipline come pugilato e lotta. È la prova che, nello sport come nell'economia, non sempre vince chi possiede di più ma chi sa sfruttare meglio ciò che ha.
+
+## L’Italia e la scherma
+
+Abbiamo dedicato un approfondimento all’Italia, che costituisce un esempio paradigmatico di quelle potenze sportive “specializzate” menzionate in precedenza. Nella scherma, infatti, l’Italia è il paese più vincente della storia: fra il 1964 e il 2020 l’Italia ha ottenuto quasi 70 medaglie.
+
+Abbiamo deciso di cercare le ragioni storiche di questo successo attraverso l’analisi dell’opinione pubblica, scaricando qualche centianio di articoli dedicati alla scherma dal sito della *Repubblica*. Li abbiamo poi processati con le tecniche della Text Analysis e l’uso di Language Model locali per trovare la risposta alle nostre domande.
+
+È emerso che il successo della scherma italiana è dovuto a un intreccio di molti fattori, in primo luogo l’esistenza di una lunga tradizione schermistica nel nostro paese. Determinante, però, è stato anche il ruolo delle istituzioni sportive e dello stato. Insomma, la ragione del successo italiano nella scherma è l’intreccio di fattori economici, storici e politici.
+
+A lato dell’indagine principale, inoltre, abbiamo compiuto, un’analisi emotiva degli articoli di giornale scaricati. Il dato che è emerso è sorprendente: in media, solo il 47% degli articoli sulla scherma ha un tono “neutrale”. Questo significa che all’interno del nostro corpus di documenti, gli autori hanno dato ampiamente voce a emozioni quali l’approvazione, l’ammirazione, la gioia (ma anche la disapprovazione quando si trattava di commentare gli insuccessi della Nazionale di scherma). Tutto questo lascia intendere come il discorso della scherma non sia semplice “cronaca” ma costituisca un fatto *identitario*: la scherma è parte dell’identità nazionale e per questo il suo racconto non può che essere emotivamente connotato. 
+
+## L’intervista finale
+
+In conclusione, abbiamo elaborato dati statistici e testuali; prodotto analisi, report e grafici: ma potevano trovare ulteriore supporto alle nostre indagini? In cerca di conferme, ci siamo rivolti a una vera e propria autorità dello sport italiano: Enrico Di Ciolo, del Club Scherma Pisa Antonio Di Ciolo e allenatore della Nazionale di scherma dal 1994. Gli abbiamo chiesto se si ritrovasse in quello che abbiamo scoperto sulla scherma italiana ma abbiamo approfittato della sua disponibilità anche per fargli qualche domanda su come, secondo lui, si costruisce il successo sportivo di un paese in generale.
+
+Ne è uscita una corposa intervista e ciò che ne è emerso appare confermare, in buona sostanza, quello che i dati ci hanno raccontato: tutto serve per ottenere risultati di grande livello ma le risorse possono poco senza una gestione virtuosa, senza cultura sportiva e, cosa che a un maestro come Enrico preme molto, dei buoni formatori.
