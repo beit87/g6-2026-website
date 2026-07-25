@@ -4,7 +4,7 @@ title: "Non solo Giochi"
 subtitle: "I fattori socio-economici dietro il successo olimpico"
 ---
 
-{% include page-hero.html %}
+{% include page-hero.html % title="Non solo Giochi"}
 
 ## Il progetto
 
