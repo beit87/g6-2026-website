@@ -9,6 +9,7 @@ subtitle: "I fattori socio-economici dietro il successo olimpico"
 ## Il progetto
 
 Il medagliere olimpico non racconta solo lo sport: ogni quattro anni, di fatto, viene stilata una classifica delle nazioni. Ma cosa c’è dietro questa classifica? Perché alcuni paesi vincono sistematicamente più di altri, anche a parità di popolazione? E quanto contano ricchezza, istruzione, salute e investimenti pubblici nel produrre campioni?
+
 “Non solo Giochi” nasce da queste domande: è un progetto di analisi dati che mette in relazione i risultati delle Olimpiadi estive dal 1964 al 2020 con gli indicatori socioeconomici dei paesi partecipanti, per capire quali fattori strutturali accompagnano — e in parte spiegano — il successo sportivo.
 
 ## I Paesi olimpici: ricchi e poveri
