@@ -13577,7 +13577,7 @@
     ],
     "x": {
       "field": "conteggio",
-      "title": "Medaglie",
+      "title": null,
       "type": "quantitative"
     },
     "y": {
