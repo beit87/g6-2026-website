@@ -15,7 +15,7 @@ Ogni quattro anni raccontiamo le Olimpiadi come la più grande gara di merito de
 >
 > ### ~96 volte
 >
-> *Le medaglie vinte per milione di abitanti dai paesi "ricchi avanzati" rispetto ai "poveri estremi", nella media 1964-2024*
+> *Le medaglie vinte per milione di abitanti dai paesi con "economie avanzate" rispetto alle "economie vulnerabili", nella media 1964-2024*
 
 ## La domanda di fondo
 
@@ -31,15 +31,17 @@ Il risultato sono quattro "mondi" socioeconomici, ciascuno associato in modo per
 
 ### I quattro mondi olimpici
 
-| Cluster | N. paesi | Esempi rappresentativi |
-|---|---|---|
-| **Ricchi avanzati** | 36 | Monaco, Isole Cayman, Liechtenstein, San Marino, Lussemburgo, Bermuda, Svizzera, Norvegia, Qatar, Bahrein |
-| **Reddito medio-alto** | 70 | Antigua e Barbuda, Belize — il cluster più numeroso: economie di reddito intermedio in fase di industrializzazione o urbanizzazione avanzata |
-| **Reddito basso-medio** | 64 | Algeria, Azerbaigian |
-| **Poveri estremi** | 38 | Afghanistan, Angola, Bangladesh, Burundi, Benin, Bhutan |
+| Cluster                               | N. paesi | Esempi rappresentativi |
+|---------------------------------------|---|---|
+| **Economie avanzate **                | 36 | Monaco, Isole Cayman, Liechtenstein, San Marino, Lussemburgo, Bermuda, Svizzera, Norvegia, Qatar, Bahrein |
+| **Economie emergenti**                | 70 | Antigua e Barbuda, Belize — il cluster più numeroso: economie di reddito intermedio in fase di industrializzazione o urbanizzazione avanzata |
+| **Economie in via di consolidamento** | 64 | Algeria, Azerbaigian |
+| **Economie vulnerabili**              | 38 | Afghanistan, Angola, Bangladesh, Burundi, Benin, Bhutan |
 
-<div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json1.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 780px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json1def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
@@ -47,10 +49,12 @@ Il risultato sono quattro "mondi" socioeconomici, ciascuno associato in modo per
 
 ## Il risultato centrale: chi vince, per abitante
 
-Guardando alle medaglie vinte in rapporto alla popolazione di ciascun paese, il divario tra i quattro cluster è netto e monotono: si scende a gradini da un mondo all'altro, senza eccezioni. I paesi "ricchi avanzati" vincono in media 0,679 medaglie ogni milione di abitanti; i paesi a "reddito medio-alto" ne vincono 0,402; il "reddito basso-medio" crolla a 0,068; i "poveri estremi" si fermano a 0,007 — meno di un decimo del gruppo appena sopra, e circa un novantaseiesimo dei paesi più ricchi.
+Guardando alle medaglie vinte in rapporto alla popolazione di ciascun paese, il divario tra i quattro cluster è netto e monotono: si scende a gradini da un mondo all'altro, senza eccezioni. I paesi con "Economie avanzate" vincono in media 0,679 medaglie ogni milione di abitanti; i paesi con "economie emergenti" ne vincono 0,402; nelle "economie in via di consolidamento" crolla a 0,068, le"economie vulnerabili" si fermano a 0,007 — meno di un decimo del gruppo appena sopra, e circa un novantaseiesimo dei paesi più ricchi.
 
-<div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json2.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 430px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json2def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
@@ -60,10 +64,12 @@ Il divario non è un artefatto del metodo: la stessa gerarchia — con valori as
 
 ### Il divario nel tempo
 
-Il vantaggio dei paesi ricchi non è un fenomeno recente né in via di esaurimento. Tracciando, edizione dopo edizione, il tasso medio di medaglie pro capite di ciascun cluster, il gruppo dei paesi "ricchi avanzati" resta stabilmente sopra a tutti gli altri lungo l'intero arco 1964-2024, con oscillazioni legate soprattutto ai boicottaggi della Guerra Fredda e all'espansione del programma olimpico, ma senza mai un vero riavvicinamento verso gli altri cluster.
+Il vantaggio dei paesi ricchi non è un fenomeno recente né in via di esaurimento. Tracciando, edizione dopo edizione, il tasso medio di medaglie pro capite di ciascun cluster, il gruppo dele "economie avanzate" resta stabilmente sopra a tutti gli altri lungo l'intero arco 1964-2024, con oscillazioni legate soprattutto ai boicottaggi della Guerra Fredda e all'espansione del programma olimpico, ma senza mai un vero riavvicinamento verso gli altri cluster.
 
-<div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json3.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 830px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json3def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
@@ -73,21 +79,25 @@ Il vantaggio dei paesi ricchi non è un fenomeno recente né in via di esaurimen
 
 La ricchezza non predice soltanto quante medaglie vince un paese, ma anche in quali sport le vince. Un test statistico chi-quadro sulla distribuzione delle medaglie tra sport e cluster restituisce un risultato inequivocabile (χ² = 3.327,9; gradi di libertà = 87; p < 0,001): la probabilità che questa distribuzione sia dovuta al caso è, a tutti gli effetti, nulla.
 
-<div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json4bis.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 830px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json4def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
 *Distribuzione percentuale delle medaglie per sport all'interno di ciascun cluster (ogni riga somma al 100%).*
 
-Il quadro che emerge è coerente con l'intuizione: gli sport "ricchi avanzati" sono quelli che richiedono attrezzature costose, infrastrutture dedicate o animali — equitazione (indice di specializzazione 1,46x rispetto alla media), nuoto (1,44x), vela (1,41x), ciclismo (1,37x), canottaggio (1,25x). All'estremo opposto, i paesi a "reddito basso-medio" e "poveri estremi" si concentrano su sport che richiedono soprattutto un corpo allenato e poco altro: hockey su prato, taekwondo, calcio, atletica, pugilato — in alcuni casi (come l'hockey su prato nei "poveri estremi") con indici di specializzazione vicini a 9 volte la media globale.
+Il quadro che emerge è coerente con l'intuizione: gli sport delle "economie avanzate" sono quelli che richiedono attrezzature costose, infrastrutture dedicate o animali — equitazione (indice di specializzazione 1,46x rispetto alla media), nuoto (1,44x), vela (1,41x), ciclismo (1,37x), canottaggio (1,25x). All'estremo opposto, i paesi delle "economie in via di consolidamento" e delle" economie vulnerabili" si concentrano su sport che richiedono soprattutto un corpo allenato e poco altro: hockey su prato, taekwondo, calcio, atletica, pugilato — in alcuni casi (come l'hockey su prato nelle "economie vulnerabili") con indici di specializzazione vicini a 9 volte la media globale.
 
 ### Chi domina davvero ogni sport?
 
-Ribaltando la prospettiva — e chiedendosi non "di cosa vive ogni cluster" ma "chi vince davvero in ogni disciplina" — il quadro si conferma. In sport come equitazione, nuoto, vela e ciclismo, tra il 73% e il 78% delle medaglie va ai paesi del cluster "ricchi avanzati". In altri sport, come sollevamento pesi, tennistavolo, badminton e taekwondo, la maggioranza assoluta delle medaglie viene invece vinta da paesi non ricchi.
+Ribaltando la prospettiva — e chiedendosi non "di cosa vive ogni cluster" ma "chi vince davvero in ogni disciplina" — il quadro si conferma. In sport come equitazione, nuoto, vela e ciclismo, tra il 73% e il 78% delle medaglie va ai paesi del cluster "economie avanzate". In altri sport, come sollevamento pesi, tennistavolo, badminton e taekwondo, la maggioranza assoluta delle medaglie viene invece vinta da paesi non ricchi.
 
-<div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json5.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 830px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json5def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
@@ -95,19 +105,21 @@ Ribaltando la prospettiva — e chiedendosi non "di cosa vive ogni cluster" ma "
 
 ### Gli sport più (e meno) "democratici"
 
-Ordinando gli sport in base alla quota di medaglie vinte da paesi non appartenenti al cluster "ricchi avanzati", si ottiene una classifica di accessibilità economica. In testa, la ginnastica ritmica (93,0% delle medaglie a paesi non ricchi), il badminton (84,8%), il taekwondo (77,9%), il sollevamento pesi (76,5%) e il tennistavolo (71,4%). In fondo, l'equitazione, dove appena il 21,8% delle medaglie sfugge ai paesi ricchi, seguita da nuoto (23,3%), vela (24,4%) e ciclismo (26,9%).
+Ordinando gli sport in base alla quota di medaglie vinte da paesi non appartenenti al cluster "economie avanzate", si ottiene una classifica di accessibilità economica. In testa, in testa il badminton (con 84,8% delle medaglie a paesi non ricchi), la ginnastica ritmica (84,2%), il taekwondo (75,4%), il sollevamento pesi (73,7%) e il tennistavolo (71,4%). In fondo, l'equitazione, dove appena il 16,5% delle medaglie sfugge ai paesi ricchi, seguita da ciclismo (18,1%), vela (21,5%) e nuoto(21,6%).
 
 <div class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json6bis.json" style="width: 100%; height: 100%"></vegachart>
+  <div style="max-width: 780px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json6def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
-*Quota % di medaglie vinte da paesi non appartenenti al cluster "ricchi avanzati", per sport.*
+*Quota % di medaglie vinte da paesi non appartenenti al cluster "economie avanzate", per sport.*
 
-La stessa storia, letta come composizione interna di ogni disciplina, mostra visivamente quanto ogni sport sia "colorato" da un profilo economico dominante: alcuni sport sono quasi interamente di un colore (i "ricchi avanzati" in equitazione e vela), altri sono un mosaico più equilibrato di tutti e quattro i cluster.
+La stessa storia, letta come composizione interna di ogni disciplina, mostra visivamente quanto ogni sport sia "colorato" da un profilo economico dominante: alcuni sport sono quasi interamente di un colore (le"economie avanzate" in equitazione e vela), altri sono un mosaico più equilibrato di tutti e quattro i cluster.
 
 <div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json7bis.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json7def2.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
 <br/>
@@ -127,10 +139,12 @@ Per rispondere, è stato addestrato un modello di regressione logistica indipend
 
 Il risultato è sorprendentemente forte: conoscere solo il profilo economico di un paese permette già di prevedere con ottima accuratezza chi vincerà medaglie in nuoto sincronizzato, tennistavolo, tiro con l'arco, tuffi e badminton (AUC tra 0,93 e 0,97), mentre la previsione è più incerta — ma comunque nettamente sopra il caso — per pugilato, atletica e lotta (AUC tra 0,74 e 0,81): sport dove il talento individuale e altri fattori non economici contano visibilmente di più.
 
-Tradotto in probabilità concrete: un paese-tipo del cluster "ricchi avanzati" ha una probabilità stimata del 77% di salire sul podio in canottaggio in una data edizione, contro una probabilità sostanzialmente nulla (circa lo 0%) per un paese-tipo del cluster "poveri estremi". Il divario si restringe, ma non si annulla mai, negli sport più accessibili.
+Tradotto in probabilità concrete: un paese-tipo del cluster "economie avanzate" ha una probabilità stimata del 77% di salire sul podio in canottaggio in una data edizione, contro una probabilità sostanzialmente nulla (circa lo 0%) per un paese-tipo del cluster "economie vulnerabili". Il divario si restringe, ma non si annulla mai, negli sport più accessibili.
 
-<div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json8bis.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 820px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json8def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
@@ -140,8 +154,10 @@ Tradotto in probabilità concrete: un paese-tipo del cluster "ricchi avanzati" h
 
 Per verificare che la relazione non nasconda soglie o interazioni complesse che un modello semplice come la regressione logistica non riuscirebbe a cogliere, gli stessi dati sono stati rielaborati anche con due modelli non lineari più flessibili, Random Forest e Gradient Boosting, con impostazioni volutamente prudenti per non favorirli artificialmente. Il miglioramento è quasi sempre presente (il Random Forest supera la logistica in 25 sport su 27, il Gradient Boosting in 24 su 27) ma resta contenuto per la maggior parte degli sport, tipicamente tra i 2 e i 6 punti percentuali di AUC: un segnale che il legame tra ricchezza di un paese e probabilità di medaglia è in gran parte lineare e non richiede spiegazioni più complesse.
 
-<div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json9.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 720px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json9def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
@@ -168,19 +184,23 @@ Il cluster statico, su cui si basa tutta l'analisi precedente, fotografa la posi
 
 Il quadro che emerge è coerente con la storia economica: su 208 paesi analizzati, 146 hanno cambiato fascia di reddito almeno una volta tra il 1964 e il 2024. I casi più istruttivi sono le due economie asiatiche protagoniste del "miracolo" del dopoguerra.
 
-<div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json10.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 520px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json10def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
 *Medaglie vinte per edizione (barre) e PIL pro capite (linea) per Corea del Sud e Cina, con i punti di passaggio da un cluster all'altro (cluster dinamico).*
 
-La Corea del Sud parte nel 1964 nel gruppo dei "poveri estremi", esce da quella fascia già nel 1972 ("reddito basso-medio"), sale a "reddito medio-alto" a metà anni '80 e raggiunge il cluster dei "ricchi avanzati" solo intorno al 2016 — più di cinquant'anni e diverse generazioni di atleti dopo il suo ingresso nei Giochi. Nello stesso periodo le sue medaglie pro capite sono più che quadruplicate (+403,8% tra il periodo precedente e quello successivo alla prima uscita dalla fascia più povera). La Cina segue una traiettoria simile ma più lenta a completarsi: entra nella fascia "reddito medio-alto" solo nel 2008, in concomitanza (non a caso) con le Olimpiadi di Pechino, e alla fine della serie storica disponibile (2020) non ha ancora raggiunto la fascia dei "ricchi avanzati".
+La Corea del Sud parte nel 1964 nel gruppo delle "economie emergenti", esce da quella fascia già nel 1972 ("economie in via di consolidamento"), sale a "economie emergenti a metà anni '80 e raggiunge il cluster delle "economie avanzate" solo intorno al 2016 — più di cinquant'anni e diverse generazioni di atleti dopo il suo ingresso nei Giochi. Nello stesso periodo le sue medaglie pro capite sono più che quadruplicate (+403,8% tra il periodo precedente e quello successivo alla prima uscita dalla fascia più povera). La Cina segue una traiettoria simile ma più lenta a completarsi: entra nella fascia "economia emergente" solo nel 2008, in concomitanza (non a caso) con le Olimpiadi di Pechino, e alla fine della serie storica disponibile (2020) non ha ancora raggiunto la fascia delle "economie avanzate".
 
-Questi due casi mostrano bene il valore aggiunto del cluster dinamico — e insieme il suo limite più importante. Poiché ogni edizione viene reclusterizzata da zero sui soli paesi con dati disponibili quell'anno, la composizione e le soglie di ciascuna fascia (in particolare quella dei "ricchi avanzati") non sono fisse nel tempo: lo stesso livello di PIL pro capite può ricadere in cluster diversi a seconda di come si posizionano, quell'anno, tutti gli altri paesi. Questo rende il confronto tra decenni lontani meno diretto rispetto al cluster statico, ed è anche il motivo per cui il passaggio di un paese al gruppo dei "ricchi avanzati" tende visibilmente a concentrarsi nelle edizioni più recenti: ci vogliono decenni di crescita sostenuta perché un'economia emergente scavalchi il resto del mondo, non solo se stessa nel tempo. A ciò si aggiunge un limite più tecnico: gli indicatori socioeconomici delle edizioni più lontane nel tempo (anni '60 e '70) sono spesso più incompleti di quelli recenti, il che rende le etichette di cluster di quelle prime edizioni potenzialmente meno affidabili di quelle più vicine a noi.
+Questi due casi mostrano bene il valore aggiunto del cluster dinamico — e insieme il suo limite più importante. Poiché ogni edizione viene reclusterizzata da zero sui soli paesi con dati disponibili quell'anno, la composizione e le soglie di ciascuna fascia (in particolare quella delle "economie avanzate") non sono fisse nel tempo: lo stesso livello di PIL pro capite può ricadere in cluster diversi a seconda di come si posizionano, quell'anno, tutti gli altri paesi. Questo rende il confronto tra decenni lontani meno diretto rispetto al cluster statico, ed è anche il motivo per cui il passaggio di un paese al gruppo delle "economie avanzate" tende visibilmente a concentrarsi nelle edizioni più recenti: ci vogliono decenni di crescita sostenuta perché un'economia emergente scavalchi il resto del mondo, non solo se stessa nel tempo. A ciò si aggiunge un limite più tecnico: gli indicatori socioeconomici delle edizioni più lontane nel tempo (anni '60 e '70) sono spesso più incompleti di quelli recenti, il che rende le etichette di cluster di quelle prime edizioni potenzialmente meno affidabili di quelle più vicine a noi.
 
-<div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json11.json" style="width: 100%; height: 100%"></vegachart>
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 780px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json11def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
 </div>
 
 <br/>
