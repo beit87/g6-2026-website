@@ -408,6 +408,11 @@
       "encoding": {
         "color": {
           "field": "profilo",
+          "legend": {
+            "columns": 2,
+            "labelLimit": 250,
+            "orient": "bottom"
+          },
           "scale": {
             "domain": [
               "Economie avanzate",
@@ -489,7 +494,7 @@
       "mark": {
         "type": "bar"
       },
-      "name": "view_44",
+      "name": "view_62",
       "title": "Sport pi\u00f9 polarizzati",
       "width": 380
     },
@@ -500,6 +505,11 @@
       "encoding": {
         "color": {
           "field": "profilo",
+          "legend": {
+            "columns": 2,
+            "labelLimit": 250,
+            "orient": "bottom"
+          },
           "scale": {
             "domain": [
               "Economie avanzate",
@@ -576,7 +586,7 @@
       "mark": {
         "type": "bar"
       },
-      "name": "view_45",
+      "name": "view_63",
       "title": "Sport pi\u00f9 accessibili",
       "width": 380
     }
@@ -584,7 +594,7 @@
   "params": [
     {
       "bind": "scales",
-      "name": "param_21",
+      "name": "param_30",
       "select": {
         "encodings": [
           "x",
@@ -593,8 +603,8 @@
         "type": "interval"
       },
       "views": [
-        "view_44",
-        "view_45"
+        "view_62",
+        "view_63"
       ]
     }
   ],
