@@ -40,7 +40,7 @@ All'inizio del nostro periodo di analisi, nel 1964, le donne erano circa il **13
 
 ## L'evoluzione del medagliere
 
-L'aumento della partecipazione femminile e l'ampliamento dei programmi femminili da parte del Comitato Olimpico Internazionale consentono la crescita della quota di medaglie femminili, che passano dal **21%** del 1964 a oltre il **48%** del 2020 : la curva ricalca quella della partecipazione.
+L'aumento della partecipazione femminile e l'ampliamento dei programmi femminili da parte del Comitato Olimpico Internazionale consentono la crescita della quota di medaglie femminili, che passano dal **21%** del 1964 a oltre il **48%** del 2020.
 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/stefano4/02_medagliere_e_quota.json" style="width: 100%; height: 100%"></vegachart>
