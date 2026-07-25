@@ -91,7 +91,8 @@
       "continuousHeight": 300,
       "continuousWidth": 400,
       "fill": null,
-      "stroke": null
+      "stroke": null,
+      "strokeWidth": 0
     }
   },
   "datasets": {
@@ -636,10 +637,16 @@
       }
     ]
   },
+  "padding": {
+    "bottom": 5,
+    "left": 5,
+    "right": 25,
+    "top": 5
+  },
   "params": [
     {
       "bind": "scales",
-      "name": "param_23",
+      "name": "param_2",
       "select": {
         "encodings": [
           "x",
@@ -648,14 +655,14 @@
         "type": "interval"
       },
       "views": [
-        "view_46",
-        "view_47"
+        "view_3",
+        "view_4"
       ]
     }
   ],
   "vconcat": [
     {
-      "height": 340,
+      "height": 360,
       "layer": [
         {
           "data": {
@@ -681,13 +688,14 @@
             },
             "y": {
               "axis": {
+                "orient": "left",
                 "titleColor": "#BA7517"
               },
               "field": "medals",
               "scale": {
                 "domain": [
                   0,
-                  42.9
+                  44.550000000000004
                 ]
               },
               "title": "Medaglie per edizione",
@@ -699,7 +707,7 @@
             "opacity": 0.7,
             "type": "bar"
           },
-          "name": "view_46"
+          "name": "view_3"
         },
         {
           "data": {
@@ -731,13 +739,16 @@
             },
             "y": {
               "axis": {
-                "titleColor": "#185FA5"
+                "labelPadding": 5,
+                "orient": "right",
+                "titleColor": "#185FA5",
+                "titlePadding": 15
               },
               "field": "gdp_per_capita",
               "scale": {
                 "domain": [
                   0,
-                  43328.98131386483
+                  44995.480595167326
                 ]
               },
               "title": "PIL pro capite (USD)",
@@ -783,7 +794,7 @@
               "type": "ordinal"
             },
             "y": {
-              "value": 8
+              "value": 4
             }
           },
           "mark": {
@@ -791,8 +802,10 @@
             "angle": 270,
             "baseline": "line-bottom",
             "color": "dimgray",
+            "dx": -4,
             "dy": -4,
             "fontSize": 9,
+            "limit": 90,
             "type": "text"
           },
           "transform": [
@@ -809,10 +822,10 @@
         }
       },
       "title": "Corea del Sud (KOR) \u2014 medaglie vs PIL pro capite nel tempo",
-      "width": 480
+      "width": 520
     },
     {
-      "height": 340,
+      "height": 360,
       "layer": [
         {
           "data": {
@@ -838,13 +851,14 @@
             },
             "y": {
               "axis": {
+                "orient": "left",
                 "titleColor": "#BA7517"
               },
               "field": "medals",
               "scale": {
                 "domain": [
                   0,
-                  130.0
+                  135.0
                 ]
               },
               "title": "Medaglie per edizione",
@@ -856,7 +870,7 @@
             "opacity": 0.7,
             "type": "bar"
           },
-          "name": "view_47"
+          "name": "view_4"
         },
         {
           "data": {
@@ -888,13 +902,16 @@
             },
             "y": {
               "axis": {
-                "titleColor": "#185FA5"
+                "labelPadding": 5,
+                "orient": "right",
+                "titleColor": "#185FA5",
+                "titlePadding": 15
               },
               "field": "gdp_per_capita",
               "scale": {
                 "domain": [
                   0,
-                  12240.5107134757
+                  12711.29958707092
                 ]
               },
               "title": "PIL pro capite (USD)",
@@ -940,7 +957,7 @@
               "type": "ordinal"
             },
             "y": {
-              "value": 8
+              "value": 4
             }
           },
           "mark": {
@@ -948,8 +965,10 @@
             "angle": 270,
             "baseline": "line-bottom",
             "color": "dimgray",
+            "dx": -4,
             "dy": -4,
             "fontSize": 9,
+            "limit": 90,
             "type": "text"
           },
           "transform": [
@@ -966,7 +985,7 @@
         }
       },
       "title": "Cina (CHN) \u2014 medaglie vs PIL pro capite nel tempo",
-      "width": 480
+      "width": 520
     }
   ]
 }
