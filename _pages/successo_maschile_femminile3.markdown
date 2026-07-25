@@ -40,7 +40,7 @@ All'inizio del nostro periodo di analisi, nel 1964, le donne erano circa il **13
 
 ## L'evoluzione del medagliere
 
-La quota di medaglie femminili passa dal **21%** del 1964 a oltre il **48%** del 2020, e la sua curva ricalca quella della partecipazione.
+L'aumento della partecipazione femminile e l'ampliamento dei programmi femminili da parte del Comitato Olimpico Internazionale consentono la crescita della quota di medaglie femminili, che passano dal **21%** del 1964 a oltre il **48%** del 2020 : la curva ricalca quella della partecipazione.
 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/stefano4/02_medagliere_e_quota.json" style="width: 100%; height: 100%"></vegachart>
@@ -60,7 +60,7 @@ Aggregando l'intero periodo 1964-2020 e considerando solo i paesi con almeno 30 
 
 ### Dove sono USA e Russia?
 
-Un'assenza che colpisce: le due superpotenze del medagliere non compaiono nella Top 15. Il motivo è la **metrica** — la classifica ordina per *quota* femminile, non per numero di medaglie — e le grandi potenze storiche restano appena sotto la soglia di ingresso (43,3%):
+Un'assenza che colpisce: Stati Uniti e Russia non compaiono nella Top 15. Il motivo è la **metrica** — la classifica ordina per *quota* femminile, non per numero di medaglie — e le grandi potenze storiche restano appena sotto la soglia di ingresso (43,3%):
 
 | Posizione | NOC | Medaglie M | Medaglie F | Quota femminile |
 |-----------|-----|------------|------------|-----------------|
