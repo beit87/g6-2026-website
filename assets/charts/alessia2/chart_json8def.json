@@ -1,0 +1,602 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 13,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "datasets": {
+    "data-824213953d2049fbcbab652f6acd0a2e": [
+      {
+        "probabilita": 78.23997953504036,
+        "profilo": "Economie avanzate",
+        "sport": "Cycling"
+      },
+      {
+        "probabilita": 77.04616404870035,
+        "profilo": "Economie avanzate",
+        "sport": "Rowing"
+      },
+      {
+        "probabilita": 76.4722614344396,
+        "profilo": "Economie avanzate",
+        "sport": "Canoeing"
+      },
+      {
+        "probabilita": 76.43522679620438,
+        "profilo": "Economie avanzate",
+        "sport": "Sailing"
+      },
+      {
+        "probabilita": 76.10630143608962,
+        "profilo": "Economie avanzate",
+        "sport": "Equestrianism"
+      },
+      {
+        "probabilita": 73.72054855998952,
+        "profilo": "Economie avanzate",
+        "sport": "Swimming"
+      },
+      {
+        "probabilita": 72.3304882209276,
+        "profilo": "Economie avanzate",
+        "sport": "Shooting"
+      },
+      {
+        "probabilita": 70.65382122133701,
+        "profilo": "Economie avanzate",
+        "sport": "Tennis"
+      },
+      {
+        "probabilita": 70.59463301876215,
+        "profilo": "Economie avanzate",
+        "sport": "Handball"
+      },
+      {
+        "probabilita": 70.39516258328034,
+        "profilo": "Economie avanzate",
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "probabilita": 40.79742998487476,
+        "profilo": "Economie emergenti",
+        "sport": "Cycling"
+      },
+      {
+        "probabilita": 44.41544145469018,
+        "profilo": "Economie emergenti",
+        "sport": "Rowing"
+      },
+      {
+        "probabilita": 49.31096435420847,
+        "profilo": "Economie emergenti",
+        "sport": "Canoeing"
+      },
+      {
+        "probabilita": 38.866326786932696,
+        "profilo": "Economie emergenti",
+        "sport": "Sailing"
+      },
+      {
+        "probabilita": 37.08767300460617,
+        "profilo": "Economie emergenti",
+        "sport": "Equestrianism"
+      },
+      {
+        "probabilita": 46.32545189031194,
+        "profilo": "Economie emergenti",
+        "sport": "Swimming"
+      },
+      {
+        "probabilita": 49.86619108024574,
+        "profilo": "Economie emergenti",
+        "sport": "Shooting"
+      },
+      {
+        "probabilita": 28.18543738179698,
+        "profilo": "Economie emergenti",
+        "sport": "Tennis"
+      },
+      {
+        "probabilita": 30.80617475867743,
+        "profilo": "Economie emergenti",
+        "sport": "Handball"
+      },
+      {
+        "probabilita": 51.77104022320653,
+        "profilo": "Economie emergenti",
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "probabilita": 1.1430075361592817,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Cycling"
+      },
+      {
+        "probabilita": 1.4818452219432023,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Rowing"
+      },
+      {
+        "probabilita": 1.4500195136992047,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Canoeing"
+      },
+      {
+        "probabilita": 2.3823956236823647,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Sailing"
+      },
+      {
+        "probabilita": 2.0606930787016595,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Equestrianism"
+      },
+      {
+        "probabilita": 4.773065589763843,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Swimming"
+      },
+      {
+        "probabilita": 6.615121395010361,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Shooting"
+      },
+      {
+        "probabilita": 0.4709631669059069,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Tennis"
+      },
+      {
+        "probabilita": 0.5079241847096854,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Handball"
+      },
+      {
+        "probabilita": 3.027225366099147,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "probabilita": 0.026138125860682766,
+        "profilo": "Economie vulnerabili",
+        "sport": "Cycling"
+      },
+      {
+        "probabilita": 0.01834153982881417,
+        "profilo": "Economie vulnerabili",
+        "sport": "Rowing"
+      },
+      {
+        "probabilita": 0.011511098427959082,
+        "profilo": "Economie vulnerabili",
+        "sport": "Canoeing"
+      },
+      {
+        "probabilita": 0.2514404993335046,
+        "profilo": "Economie vulnerabili",
+        "sport": "Sailing"
+      },
+      {
+        "probabilita": 0.20186235009039658,
+        "profilo": "Economie vulnerabili",
+        "sport": "Equestrianism"
+      },
+      {
+        "probabilita": 0.43521381019931077,
+        "profilo": "Economie vulnerabili",
+        "sport": "Swimming"
+      },
+      {
+        "probabilita": 0.5435667661480104,
+        "profilo": "Economie vulnerabili",
+        "sport": "Shooting"
+      },
+      {
+        "probabilita": 0.006092487459529116,
+        "profilo": "Economie vulnerabili",
+        "sport": "Tennis"
+      },
+      {
+        "probabilita": 0.002513223259494047,
+        "profilo": "Economie vulnerabili",
+        "sport": "Handball"
+      },
+      {
+        "probabilita": 0.06473540590634985,
+        "profilo": "Economie vulnerabili",
+        "sport": "Modern Pentathlon"
+      }
+    ],
+    "data-c2299019a1a6aed451b02f3c7b03af99": [
+      {
+        "probabilita": 51.98877317085827,
+        "profilo": "Economie avanzate",
+        "sport": "Badminton"
+      },
+      {
+        "probabilita": 52.065787876084656,
+        "profilo": "Economie avanzate",
+        "sport": "Volleyball"
+      },
+      {
+        "probabilita": 58.84334743024993,
+        "profilo": "Economie avanzate",
+        "sport": "Football"
+      },
+      {
+        "probabilita": 65.88272901066937,
+        "profilo": "Economie avanzate",
+        "sport": "Athletics"
+      },
+      {
+        "probabilita": 57.76068402832449,
+        "profilo": "Economie avanzate",
+        "sport": "Boxing"
+      },
+      {
+        "probabilita": 23.356936378703015,
+        "profilo": "Economie emergenti",
+        "sport": "Badminton"
+      },
+      {
+        "probabilita": 34.645296608211154,
+        "profilo": "Economie emergenti",
+        "sport": "Volleyball"
+      },
+      {
+        "probabilita": 29.66338823253618,
+        "profilo": "Economie emergenti",
+        "sport": "Football"
+      },
+      {
+        "probabilita": 54.04658995684949,
+        "profilo": "Economie emergenti",
+        "sport": "Athletics"
+      },
+      {
+        "probabilita": 52.97410992987569,
+        "profilo": "Economie emergenti",
+        "sport": "Boxing"
+      },
+      {
+        "probabilita": 1.8032145793449128,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Badminton"
+      },
+      {
+        "probabilita": 3.605303614166223,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Volleyball"
+      },
+      {
+        "probabilita": 8.389535722051336,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Football"
+      },
+      {
+        "probabilita": 31.121705828583618,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Athletics"
+      },
+      {
+        "probabilita": 34.01371176939476,
+        "profilo": "Economie in via di consolidamento",
+        "sport": "Boxing"
+      },
+      {
+        "probabilita": 0.07543519086862797,
+        "profilo": "Economie vulnerabili",
+        "sport": "Badminton"
+      },
+      {
+        "probabilita": 0.5551864149199529,
+        "profilo": "Economie vulnerabili",
+        "sport": "Volleyball"
+      },
+      {
+        "probabilita": 7.424261808435313,
+        "profilo": "Economie vulnerabili",
+        "sport": "Football"
+      },
+      {
+        "probabilita": 17.33464295989832,
+        "profilo": "Economie vulnerabili",
+        "sport": "Athletics"
+      },
+      {
+        "probabilita": 22.437624615308884,
+        "profilo": "Economie vulnerabili",
+        "sport": "Boxing"
+      }
+    ]
+  },
+  "hconcat": [
+    {
+      "data": {
+        "name": "data-824213953d2049fbcbab652f6acd0a2e"
+      },
+      "encoding": {
+        "color": {
+          "field": "profilo",
+          "scale": {
+            "domain": [
+              "Economie avanzate",
+              "Economie emergenti",
+              "Economie in via di consolidamento",
+              "Economie vulnerabili"
+            ],
+            "range": [
+              "#1b2140",
+              "#ff8009",
+              "#9a0641",
+              "#ffe34a"
+            ]
+          },
+          "sort": [
+            "Economie avanzate",
+            "Economie emergenti",
+            "Economie in via di consolidamento",
+            "Economie vulnerabili"
+          ],
+          "title": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "sport",
+            "title": "Sport",
+            "type": "nominal"
+          },
+          {
+            "field": "profilo",
+            "title": "Profilo paese",
+            "type": "nominal"
+          },
+          {
+            "field": "probabilita",
+            "format": ".1f",
+            "title": "Probabilit\u00e0",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": -40
+          },
+          "field": "sport",
+          "sort": [
+            "Cycling",
+            "Rowing",
+            "Canoeing",
+            "Sailing",
+            "Equestrianism",
+            "Swimming",
+            "Shooting",
+            "Tennis",
+            "Handball",
+            "Modern Pentathlon"
+          ],
+          "title": null,
+          "type": "nominal"
+        },
+        "xOffset": {
+          "field": "profilo",
+          "sort": [
+            "Economie avanzate",
+            "Economie emergenti",
+            "Economie in via di consolidamento",
+            "Economie vulnerabili"
+          ],
+          "type": "nominal"
+        },
+        "y": {
+          "field": "probabilita",
+          "title": "Probabilit\u00e0 predetta (%)",
+          "type": "quantitative"
+        }
+      },
+      "height": 380,
+      "mark": {
+        "type": "bar"
+      },
+      "name": "view_44",
+      "title": "Sport pi\u00f9 polarizzati",
+      "width": 380
+    },
+    {
+      "data": {
+        "name": "data-c2299019a1a6aed451b02f3c7b03af99"
+      },
+      "encoding": {
+        "color": {
+          "field": "profilo",
+          "scale": {
+            "domain": [
+              "Economie avanzate",
+              "Economie emergenti",
+              "Economie in via di consolidamento",
+              "Economie vulnerabili"
+            ],
+            "range": [
+              "#1b2140",
+              "#ff8009",
+              "#9a0641",
+              "#ffe34a"
+            ]
+          },
+          "sort": [
+            "Economie avanzate",
+            "Economie emergenti",
+            "Economie in via di consolidamento",
+            "Economie vulnerabili"
+          ],
+          "title": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "sport",
+            "title": "Sport",
+            "type": "nominal"
+          },
+          {
+            "field": "profilo",
+            "title": "Profilo paese",
+            "type": "nominal"
+          },
+          {
+            "field": "probabilita",
+            "format": ".1f",
+            "title": "Probabilit\u00e0",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": -40
+          },
+          "field": "sport",
+          "sort": [
+            "Badminton",
+            "Volleyball",
+            "Football",
+            "Athletics",
+            "Boxing"
+          ],
+          "title": null,
+          "type": "nominal"
+        },
+        "xOffset": {
+          "field": "profilo",
+          "sort": [
+            "Economie avanzate",
+            "Economie emergenti",
+            "Economie in via di consolidamento",
+            "Economie vulnerabili"
+          ],
+          "type": "nominal"
+        },
+        "y": {
+          "field": "probabilita",
+          "title": "Probabilit\u00e0 predetta (%)",
+          "type": "quantitative"
+        }
+      },
+      "height": 380,
+      "mark": {
+        "type": "bar"
+      },
+      "name": "view_45",
+      "title": "Sport pi\u00f9 accessibili",
+      "width": 380
+    }
+  ],
+  "params": [
+    {
+      "bind": "scales",
+      "name": "param_21",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      },
+      "views": [
+        "view_44",
+        "view_45"
+      ]
+    }
+  ],
+  "title": "Probabilit\u00e0 predetta di vincere medaglie per profilo paese"
+}
