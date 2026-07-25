@@ -37,8 +37,9 @@ Il PIL totale correla con le medaglie olimpiche (r = 0.58), ma non spiega tutto.
   <vegachart schema-url="{{site.baseurl}}/assets/charts/g6/nb2_uksport.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
-<h3>Ospitare i Giochi vale +17 medaglie</h3>
-<p>Per ogni paese ospitante, il delta tra le medaglie vinte in casa e la propria media storica è in media di <strong>+17.1 medaglie</strong> (escludendo i boicottaggi del 1980/1984), con <strong>p = 0.003</strong>, un risultato statisticamente solido. Il 77% dei paesi ospitanti migliora i propri risultati rispetto alla propria media storica.</p>
+<h3>Ospitare i Giochi vale in media +117% di medaglie</h3>
+<p>Per ogni paese ospitante, calcoliamo la variazione percentuale tra le medaglie vinte in casa e la propria media storica nelle altre edizioni. Il risultato, escludendo i boicottaggi del 1980/1984, è una mediana di <strong>+117%</strong> (praticamente il doppio delle medaglie abituali), con <strong>p = 0.004</strong>, un risultato statisticamente solido. Il 92% dei paesi ospitanti migliora i propri risultati rispetto alla propria media storica.</p>
+<p>Usiamo la mediana anziché la media semplice perché alcuni casi come la Grecia 2004 (che partiva da una media storica bassissima, meno di 2 medaglie) generano variazioni percentuali estreme che distorcerebbero il quadro generale.</p>
 <p>L'effetto combina tre fattori che si sommano: gli investimenti pre-Giochi aumentano sistematicamente nei quattro anni precedenti l'evento, il pubblico di casa genera un vantaggio misurabile in molte discipline individuali, e l'assenza di stress da trasferta e fuso orario avvantaggia gli atleti locali. I casi più emblematici sono Australia 2000 (+31 medaglie rispetto alla propria media) e Gran Bretagna 2012 (+35), entrambi paesi con sistemi sportivi già maturi che si sono esaltati con il vantaggio di casa.</p>
 
 <div class="full-width-chart-wrapper">
@@ -52,7 +53,7 @@ Il PIL totale correla con le medaglie olimpiche (r = 0.58), ma non spiega tutto.
 - La **spesa élite reale** spiega le medaglie molto meglio del PIL (r = 0.85-0.88 vs r = 0.58): misura direttamente il flusso di risorse verso lo sport di alto livello.
 - Il **costo per medaglia** varia da €2.8M (Belgio) a oltre €9M (Brasile): conta l'efficienza dell'allocazione, non il volume di spesa.
 - **UK Sport** dimostra la relazione più solida in letteratura: r = 0.947, R² = 0.90 su sette cicli consecutivi.
-- **Ospitare i Giochi** vale in media +17.1 medaglie rispetto alla propria media storica (p = 0.003).
+- **Ospitare i Giochi** vale in media +117% di medaglie rispetto alla propria media storica (p = 0.004).
 
 ### Nota metodologica
 
