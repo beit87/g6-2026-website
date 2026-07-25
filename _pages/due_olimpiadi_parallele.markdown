@@ -38,7 +38,7 @@ Il risultato sono quattro "mondi" socioeconomici, ciascuno associato in modo per
 | **Reddito basso-medio** | 64 | Algeria, Azerbaigian |
 | **Poveri estremi** | 38 | Afghanistan, Angola, Bangladesh, Burundi, Benin, Bhutan |
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json1.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -49,7 +49,7 @@ Il risultato sono quattro "mondi" socioeconomici, ciascuno associato in modo per
 
 Guardando alle medaglie vinte in rapporto alla popolazione di ciascun paese, il divario tra i quattro cluster è netto e monotono: si scende a gradini da un mondo all'altro, senza eccezioni. I paesi "ricchi avanzati" vincono in media 0,679 medaglie ogni milione di abitanti; i paesi a "reddito medio-alto" ne vincono 0,402; il "reddito basso-medio" crolla a 0,068; i "poveri estremi" si fermano a 0,007 — meno di un decimo del gruppo appena sopra, e circa un novantaseiesimo dei paesi più ricchi.
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json2.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -62,7 +62,7 @@ Il divario non è un artefatto del metodo: la stessa gerarchia — con valori as
 
 Il vantaggio dei paesi ricchi non è un fenomeno recente né in via di esaurimento. Tracciando, edizione dopo edizione, il tasso medio di medaglie pro capite di ciascun cluster, il gruppo dei paesi "ricchi avanzati" resta stabilmente sopra a tutti gli altri lungo l'intero arco 1964-2024, con oscillazioni legate soprattutto ai boicottaggi della Guerra Fredda e all'espansione del programma olimpico, ma senza mai un vero riavvicinamento verso gli altri cluster.
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json3.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -73,7 +73,7 @@ Il vantaggio dei paesi ricchi non è un fenomeno recente né in via di esaurimen
 
 La ricchezza non predice soltanto quante medaglie vince un paese, ma anche in quali sport le vince. Un test statistico chi-quadro sulla distribuzione delle medaglie tra sport e cluster restituisce un risultato inequivocabile (χ² = 3.327,9; gradi di libertà = 87; p < 0,001): la probabilità che questa distribuzione sia dovuta al caso è, a tutti gli effetti, nulla.
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json4.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -86,7 +86,7 @@ Il quadro che emerge è coerente con l'intuizione: gli sport "ricchi avanzati" s
 
 Ribaltando la prospettiva — e chiedendosi non "di cosa vive ogni cluster" ma "chi vince davvero in ogni disciplina" — il quadro si conferma. In sport come equitazione, nuoto, vela e ciclismo, tra il 73% e il 78% delle medaglie va ai paesi del cluster "ricchi avanzati". In altri sport, come sollevamento pesi, tennistavolo, badminton e taekwondo, la maggioranza assoluta delle medaglie viene invece vinta da paesi non ricchi.
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json5.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -97,7 +97,7 @@ Ribaltando la prospettiva — e chiedendosi non "di cosa vive ogni cluster" ma "
 
 Ordinando gli sport in base alla quota di medaglie vinte da paesi non appartenenti al cluster "ricchi avanzati", si ottiene una classifica di accessibilità economica. In testa, la ginnastica ritmica (93,0% delle medaglie a paesi non ricchi), il badminton (84,8%), il taekwondo (77,9%), il sollevamento pesi (76,5%) e il tennistavolo (71,4%). In fondo, l'equitazione, dove appena il 21,8% delle medaglie sfugge ai paesi ricchi, seguita da nuoto (23,3%), vela (24,4%) e ciclismo (26,9%).
 
-<div>
+<div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json6.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -106,7 +106,7 @@ Ordinando gli sport in base alla quota di medaglie vinte da paesi non appartenen
 
 La stessa storia, letta come composizione interna di ogni disciplina, mostra visivamente quanto ogni sport sia "colorato" da un profilo economico dominante: alcuni sport sono quasi interamente di un colore (i "ricchi avanzati" in equitazione e vela), altri sono un mosaico più equilibrato di tutti e quattro i cluster.
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json7.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -129,7 +129,7 @@ Il risultato è sorprendentemente forte: conoscere solo il profilo economico di 
 
 Tradotto in probabilità concrete: un paese-tipo del cluster "ricchi avanzati" ha una probabilità stimata del 77% di salire sul podio in canottaggio in una data edizione, contro una probabilità sostanzialmente nulla (circa lo 0%) per un paese-tipo del cluster "poveri estremi". Il divario si restringe, ma non si annulla mai, negli sport più accessibili.
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json8.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -140,7 +140,7 @@ Tradotto in probabilità concrete: un paese-tipo del cluster "ricchi avanzati" h
 
 Per verificare che la relazione non nasconda soglie o interazioni complesse che un modello semplice come la regressione logistica non riuscirebbe a cogliere, gli stessi dati sono stati rielaborati anche con due modelli non lineari più flessibili, Random Forest e Gradient Boosting, con impostazioni volutamente prudenti per non favorirli artificialmente. Il miglioramento è quasi sempre presente (il Random Forest supera la logistica in 25 sport su 27, il Gradient Boosting in 24 su 27) ma resta contenuto per la maggior parte degli sport, tipicamente tra i 2 e i 6 punti percentuali di AUC: un segnale che il legame tra ricchezza di un paese e probabilità di medaglia è in gran parte lineare e non richiede spiegazioni più complesse.
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json9.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -168,7 +168,7 @@ Il cluster statico, su cui si basa tutta l'analisi precedente, fotografa la posi
 
 Il quadro che emerge è coerente con la storia economica: su 208 paesi analizzati, 146 hanno cambiato fascia di reddito almeno una volta tra il 1964 e il 2024. I casi più istruttivi sono le due economie asiatiche protagoniste del "miracolo" del dopoguerra.
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json10.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
@@ -179,7 +179,7 @@ La Corea del Sud parte nel 1964 nel gruppo dei "poveri estremi", esce da quella 
 
 Questi due casi mostrano bene il valore aggiunto del cluster dinamico — e insieme il suo limite più importante. Poiché ogni edizione viene reclusterizzata da zero sui soli paesi con dati disponibili quell'anno, la composizione e le soglie di ciascuna fascia (in particolare quella dei "ricchi avanzati") non sono fisse nel tempo: lo stesso livello di PIL pro capite può ricadere in cluster diversi a seconda di come si posizionano, quell'anno, tutti gli altri paesi. Questo rende il confronto tra decenni lontani meno diretto rispetto al cluster statico, ed è anche il motivo per cui il passaggio di un paese al gruppo dei "ricchi avanzati" tende visibilmente a concentrarsi nelle edizioni più recenti: ci vogliono decenni di crescita sostenuta perché un'economia emergente scavalchi il resto del mondo, non solo se stessa nel tempo. A ciò si aggiunge un limite più tecnico: gli indicatori socioeconomici delle edizioni più lontane nel tempo (anni '60 e '70) sono spesso più incompleti di quelli recenti, il che rende le etichette di cluster di quelle prime edizioni potenzialmente meno affidabili di quelle più vicine a noi.
 
-<div>
+<div  class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json11.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
