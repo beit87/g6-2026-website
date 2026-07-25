@@ -74,7 +74,7 @@ Il vantaggio dei paesi ricchi non è un fenomeno recente né in via di esaurimen
 La ricchezza non predice soltanto quante medaglie vince un paese, ma anche in quali sport le vince. Un test statistico chi-quadro sulla distribuzione delle medaglie tra sport e cluster restituisce un risultato inequivocabile (χ² = 3.327,9; gradi di libertà = 87; p < 0,001): la probabilità che questa distribuzione sia dovuta al caso è, a tutti gli effetti, nulla.
 
 <div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json4.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json4bis.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
 <br/>
@@ -98,7 +98,7 @@ Ribaltando la prospettiva — e chiedendosi non "di cosa vive ogni cluster" ma "
 Ordinando gli sport in base alla quota di medaglie vinte da paesi non appartenenti al cluster "ricchi avanzati", si ottiene una classifica di accessibilità economica. In testa, la ginnastica ritmica (93,0% delle medaglie a paesi non ricchi), il badminton (84,8%), il taekwondo (77,9%), il sollevamento pesi (76,5%) e il tennistavolo (71,4%). In fondo, l'equitazione, dove appena il 21,8% delle medaglie sfugge ai paesi ricchi, seguita da nuoto (23,3%), vela (24,4%) e ciclismo (26,9%).
 
 <div class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json6.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json6bis.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
 <br/>
@@ -107,7 +107,7 @@ Ordinando gli sport in base alla quota di medaglie vinte da paesi non appartenen
 La stessa storia, letta come composizione interna di ogni disciplina, mostra visivamente quanto ogni sport sia "colorato" da un profilo economico dominante: alcuni sport sono quasi interamente di un colore (i "ricchi avanzati" in equitazione e vela), altri sono un mosaico più equilibrato di tutti e quattro i cluster.
 
 <div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json7.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json7bis.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
 <br/>
@@ -130,7 +130,7 @@ Il risultato è sorprendentemente forte: conoscere solo il profilo economico di 
 Tradotto in probabilità concrete: un paese-tipo del cluster "ricchi avanzati" ha una probabilità stimata del 77% di salire sul podio in canottaggio in una data edizione, contro una probabilità sostanzialmente nulla (circa lo 0%) per un paese-tipo del cluster "poveri estremi". Il divario si restringe, ma non si annulla mai, negli sport più accessibili.
 
 <div  class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json8.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/chart_json8bis.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
 <br/>
