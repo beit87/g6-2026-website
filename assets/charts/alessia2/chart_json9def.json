@@ -225,6 +225,7 @@
     "color": {
       "field": "metodo",
       "legend": {
+        "orient": "bottom",
         "title": "Metodo"
       },
       "sort": [
