@@ -79,7 +79,7 @@
       "fill": "#1b2140"
     },
     "title": {
-      "anchor": "start",
+      "anchor": "middle",
       "color": "#1b2140",
       "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
       "fontSize": 13,
@@ -717,7 +717,7 @@
               "#ff8009"
             ]
           },
-          "title": "% nello sport",
+          "title": null,
           "type": "quantitative"
         },
         "tooltip": [
@@ -794,7 +794,7 @@
       "mark": {
         "type": "rect"
       },
-      "name": "view_42"
+      "name": "view_57"
     },
     {
       "encoding": {
@@ -873,7 +873,7 @@
   "params": [
     {
       "bind": "scales",
-      "name": "param_16",
+      "name": "param_29",
       "select": {
         "encodings": [
           "x",
@@ -882,7 +882,7 @@
         "type": "interval"
       },
       "views": [
-        "view_42"
+        "view_57"
       ]
     }
   ],

@@ -79,7 +79,7 @@
       "fill": "#1b2140"
     },
     "title": {
-      "anchor": "start",
+      "anchor": "middle",
       "color": "#1b2140",
       "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
       "fontSize": 13,
@@ -713,7 +713,7 @@
               "#ff8009"
             ]
           },
-          "title": "% del cluster",
+          "title": null,
           "type": "quantitative"
         },
         "tooltip": [
@@ -790,7 +790,7 @@
       "mark": {
         "type": "rect"
       },
-      "name": "view_41"
+      "name": "view_54"
     },
     {
       "encoding": {
@@ -869,7 +869,7 @@
   "params": [
     {
       "bind": "scales",
-      "name": "param_14",
+      "name": "param_28",
       "select": {
         "encodings": [
           "x",
@@ -878,7 +878,7 @@
         "type": "interval"
       },
       "views": [
-        "view_41"
+        "view_54"
       ]
     }
   ],
