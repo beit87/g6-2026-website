@@ -31,12 +31,12 @@ Il risultato sono quattro "mondi" socioeconomici, ciascuno associato in modo per
 
 ### I quattro mondi olimpici
 
-| Cluster                               | N. paesi | Esempi rappresentativi |
-|---------------------------------------|---|---|
-| **Economie avanzate **                | 36 | Monaco, Isole Cayman, Liechtenstein, San Marino, Lussemburgo, Bermuda, Svizzera, Norvegia, Qatar, Bahrein |
-| **Economie emergenti**                | 70 | Antigua e Barbuda, Belize — il cluster più numeroso: economie di reddito intermedio in fase di industrializzazione o urbanizzazione avanzata |
+| Cluster                              | N. paesi | Esempi rappresentativi |
+|--------------------------------------|---|---|
+| **Economie avanzate**                | 36 | Monaco, Isole Cayman, Liechtenstein, San Marino, Lussemburgo, Bermuda, Svizzera, Norvegia, Qatar, Bahrein |
+| **Economie emergenti**               | 70 | Antigua e Barbuda, Belize — il cluster più numeroso: economie di reddito intermedio in fase di industrializzazione o urbanizzazione avanzata |
 | **Economie in via di consolidamento** | 64 | Algeria, Azerbaigian |
-| **Economie vulnerabili**              | 38 | Afghanistan, Angola, Bangladesh, Burundi, Benin, Bhutan |
+| **Economie vulnerabili**             | 38 | Afghanistan, Angola, Bangladesh, Burundi, Benin, Bhutan |
 
 <div class="full-width-chart-wrapper">
   <div style="max-width: 780px; margin: 0 auto;">
@@ -49,7 +49,7 @@ Il risultato sono quattro "mondi" socioeconomici, ciascuno associato in modo per
 
 ## Il risultato centrale: chi vince, per abitante
 
-Guardando alle medaglie vinte in rapporto alla popolazione di ciascun paese, il divario tra i quattro cluster è netto e monotono: si scende a gradini da un mondo all'altro, senza eccezioni. I paesi con "Economie avanzate" vincono in media 0,679 medaglie ogni milione di abitanti; i paesi con "economie emergenti" ne vincono 0,402; nelle "economie in via di consolidamento" crolla a 0,068, le"economie vulnerabili" si fermano a 0,007 — meno di un decimo del gruppo appena sopra, e circa un novantaseiesimo dei paesi più ricchi.
+Guardando alle medaglie vinte in rapporto alla popolazione di ciascun paese, il divario tra i quattro cluster è netto e monotono: si scende a gradini da un mondo all'altro, senza eccezioni. I paesi con "Economie avanzate" vincono in media 0,655 medaglie ogni milione di abitanti; i paesi con "economie emergenti" ne vincono 0,342; nelle "economie in via di consolidamento" crolla a 0,064, le"economie vulnerabili" si fermano a 0,008 — meno di un decimo del gruppo appena sopra, e circa un novantaseiesimo dei paesi più ricchi.
 
 <div class="full-width-chart-wrapper">
   <div style="max-width: 430px; margin: 0 auto;">
