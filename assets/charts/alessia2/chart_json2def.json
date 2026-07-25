@@ -123,13 +123,18 @@
       "encoding": {
         "color": {
           "field": "cluster_label",
-          "legend": null,
+          "legend": {
+            "columns": 2,
+            "labelLimit": 250,
+            "orient": "bottom"
+          },
           "sort": [
             "Economie avanzate",
             "Economie emergenti",
             "Economie in via di consolidamento",
             "Economie vulnerabili"
           ],
+          "title": null,
           "type": "nominal"
         },
         "tooltip": [
@@ -147,7 +152,8 @@
         ],
         "x": {
           "axis": {
-            "labelAngle": -15
+            "labels": false,
+            "ticks": false
           },
           "field": "cluster_label",
           "sort": [
@@ -156,7 +162,7 @@
             "Economie in via di consolidamento",
             "Economie vulnerabili"
           ],
-          "title": "",
+          "title": null,
           "type": "nominal"
         },
         "y": {
@@ -173,13 +179,18 @@
       "encoding": {
         "color": {
           "field": "cluster_label",
-          "legend": null,
+          "legend": {
+            "columns": 2,
+            "labelLimit": 250,
+            "orient": "bottom"
+          },
           "sort": [
             "Economie avanzate",
             "Economie emergenti",
             "Economie in via di consolidamento",
             "Economie vulnerabili"
           ],
+          "title": null,
           "type": "nominal"
         },
         "text": {
@@ -202,7 +213,8 @@
         ],
         "x": {
           "axis": {
-            "labelAngle": -15
+            "labels": false,
+            "ticks": false
           },
           "field": "cluster_label",
           "sort": [
@@ -211,7 +223,7 @@
             "Economie in via di consolidamento",
             "Economie vulnerabili"
           ],
-          "title": "",
+          "title": null,
           "type": "nominal"
         },
         "y": {
