@@ -1812,7 +1812,6 @@
   "projection": {
     "type": "naturalEarth1"
   },
-  "title": "Paesi che hanno vinto almeno una medaglia olimpica (passa il mouse per i dettagli)",
   "transform": [
     {
       "from": {
