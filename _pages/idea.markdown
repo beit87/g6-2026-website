@@ -37,7 +37,7 @@ Ci sono poi dei paesi che ottengono poche medaglie; tuttavia, all’interno di q
 
 Infine ci sono le “medie potenze consolidate”, paesi che ottengono molte medaglie ma non al livello delle superpotenze e nemmeno in tutte le discipline sportive. Questi paesi tendono a raccogliere, in maniera consistente nel tempo, la maggior parte delle loro medaglie in alcune discipline in cui sono altamente specializzati. È questo il caso dell’Italia, che storicamente ha raccolto la maggior parte delle sue medaglia nella scherma e alla quale abbiamo dedicato un approfondimento.
 
-Tutte queste considerazioni sono racchiuse e nel grafico riportato sotto, che consente di esplorare i risultati di ogni paese semplicemente passando il mouse sopra ognuno di essi; si otterrà un sunto delle medaglie vinte nelle discipline di maggior successo.
+Tutte queste considerazioni sono racchiuse nel grafico riportato sotto, che consente di esplorare i risultati di ogni paese semplicemente passando il mouse sopra ognuno di essi; si otterrà un sunto delle medaglie vinte nelle discipline di maggior successo.
 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
