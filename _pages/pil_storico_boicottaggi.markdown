@@ -7,8 +7,6 @@ vega: true
 
 {% include page-hero.html %}
 
-<p style="color:#666;font-size:14px;margin-top:-8px;margin-bottom:1.5rem;">Autore: Gianni Coia</p>
-
 **Ogni medaglia ha una storia economica alle spalle — ma non solo.** Quanto conta davvero la ricchezza di un paese nel determinare il suo medagliere olimpico? Meno di quanto sembri, e in un modo diverso da quello che ci si aspetterebbe. In questa pagina costruiamo un modello predittivo, verifichiamo cosa guarda davvero per prevedere, misuriamo l'effetto di giocare in casa, e isoliamo gli episodi in cui la storia — non l'economia — ha deciso il podio.
 
 ## Tre famiglie di nazioni olimpiche
@@ -46,7 +44,9 @@ Togliendo del tutto le feature di lag dal modello, l'R² scende da 0,80 a 0,69 �
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/lag_vs_senza_lag.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
-Il lag cattura l'**inerzia** del sistema, mentre PIL e indicatori strutturali catturano il **potenziale** che spiega perché quell'inerzia esiste. La differenza si vede soprattutto per una nazione debuttante, o che rientra dopo un'assenza, dove il lag non è disponibile e il modello deve affidarsi al PIL.
+Il lag cattura l'**inerzia** del sistema, mentre PIL e indicatori strutturali catturano il **potenziale** che spiega perché quell'inerzia esiste. La differenza si vede soprattutto per una nazione debuttante, o che rientra dopo un'assenza: per costruzione, in questi casi la feature di lag vale zero, quindi il modello non ha altra scelta che affidarsi a PIL, popolazione e agli altri indicatori strutturali per stimare un punteggio — è l'unico segnale disponibile, non una scelta di modellazione.
+
+Detto questo, va segnalato con onestà: confrontando la correlazione PIL-Score calcolata solo sulle prime apparizioni di ogni nazione (esclusa la prima edizione del dataset, 1964, che non è un vero debutto) contro il resto del dataset, la correlazione risulta più bassa tra i debuttanti (0,28) che nel resto (0,44) — probabilmente perché la maggior parte delle nazioni debuttanti si colloca comunque su punteggi molto bassi, indipendentemente dal PIL, e il campione è piccolo (96 casi). Il punto strutturale (il lag è strutturalmente assente, quindi il modello deve appoggiarsi al PIL) resta valido; l'idea che il PIL "predica meglio" in questi casi specifici non è invece confermata dai dati a disposizione.
 
 ## Giocare in casa conta, eccome
 
@@ -98,7 +98,7 @@ Le due tabelle mostrano solo i casi più estremi; il grafico sotto li colloca tu
 
 Un terzo episodio, meno estremo ma comunque rilevante, è il boicottaggio africano di Montreal 1976 (circa 30 paesi assenti in protesta contro la partecipazione della Nuova Zelanda, il cui rugby aveva giocato nel Sudafrica dell'apartheid). Il quadro completo dei tre boicottaggi del periodo — 1976, 1980, 1984 — è approfondito nella pagina "Successo Maschile e Femminile", dove la stessa perturbazione viene letta anche dal lato dell'equilibrio di genere nel medagliere.
 
-Lo stesso fenomeno si vede, in modo speculare, nel grafico qui sotto: la correlazione tra PIL e medaglie, che in quasi tutte le edizioni resta sopra 0,8, crolla esattamente nel 1980 — l'unico anno in cui la politica, non l'economia, ha deciso chi era sul podio. Il 1976 non lascia lo stesso segno: le nazioni assenti quell'anno erano già ai margini di entrambe le scale (PIL basso, medaglie quasi nulle), mentre il 1980 ha escluso proprio le potenze economiche e sportive (USA, Germania Ovest, Giappone) — gli stessi punti che determinano la relazione.
+Lo stesso fenomeno si vede, in modo speculare, nel grafico qui sotto: la correlazione tra PIL e medaglie, che in quasi tutte le edizioni resta sopra 0,8, crolla esattamente nel 1980 — l'unico anno in cui la politica, non l'economia, ha deciso chi era sul podio. Il 1976 e il 1984 non lasciano lo stesso segno, e il motivo si può misurare direttamente: **nel 1980, le nazioni presenti ma a zero medaglie rappresentano da sole il 72% del PIL complessivo di tutte le nazioni in gara quell'anno** — una quota enorme, spiegata dal fatto che proprio le maggiori potenze economiche (USA, Giappone, Germania Ovest) erano tra gli assenti. Nel 1976 questa quota è del 29%, nel 1984 del 26% — valori vicini a quelli di edizioni senza alcun boicottaggio (16-23% nel 1968, 1972, 1988, 1992): un'assenza "normale" di piccole economie che non vincono comunque, non uno strappo nella relazione. Il 1980 è l'unica edizione in cui a mancare non sono i soliti paesi piccoli, ma il cuore economico del medagliere.
 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/correlazione_pil_medaglie_nel_tempo.json" style="width: 100%; height: 100%"></vegachart>
@@ -118,7 +118,11 @@ Accanto alla previsione puntuale (un numero di medaglie), è stato costruito anc
 <tr><td style="padding:8px;">Successo elevato</td><td style="padding:8px;">21+</td><td style="padding:8px;"><strong>aperta, senza limite superiore</strong></td></tr>
 </table>
 
-L'accuracy misura semplicemente la percentuale di nazioni-edizione classificate nella fascia corretta: il modello raggiunge **0,824**. Il numero di confronto — la **baseline** — è l'accuracy che si otterrebbe prevedendo sempre la fascia più numerosa ("Nessuna medaglia", che da sola copre il 66,3% delle osservazioni) senza usare alcuna informazione: 0,663. Il modello migliora quindi la baseline di oltre 16 punti percentuali.
+L'accuracy misura semplicemente la percentuale di nazioni-edizione classificate nella fascia corretta: il modello raggiunge **0,820**.
+
+Il numero di confronto — la **baseline** — non è un modello ingenuo qualsiasi: è il minimo che qualunque approccio dovrebbe superare per dire di aggiungere informazione reale. Rappresenta l'accuracy di chi scommettesse sempre sulla fascia più numerosa ("Nessuna medaglia") per ogni nazione-edizione, senza guardare a nessun dato specifico del paese — la scommessa più sicura possibile, dato che il 66,3% delle coppie nazione-edizione finisce davvero a zero medaglie. Il modello supera questa soglia di quasi **16 punti percentuali**: in circa un caso su sei in più, distingue correttamente situazioni che un approccio "a caso" etichetterebbe tutte allo stesso modo.
+
+Un chiarimento importante: questo classificatore **non deriva** dalla previsione continua del modello di regressione (Random Forest visto in precedenza) — è un secondo modello, allenato in modo indipendente e diretto sulla categoria di fascia, non ottenuto applicando delle soglie al numero di medaglie previsto. Il concetto di "vicinanza al confine" resta comunque utile per interpretare gli errori, ma va inteso sul **valore reale**, non su un valore predetto continuo: una nazione con 21 medaglie reali (appena dentro "Successo elevato") e una con 19 (appena fuori, in "Successo medio") sono quasi indistinguibili nella realtà, ma il classificatore le tratta come categorie a sé — è un limite intrinseco di qualunque soglia netta su un fenomeno continuo, non un errore del modello.
 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/accuracy_vs_baseline_fasce.json" style="width: 100%; height: 100%"></vegachart>
