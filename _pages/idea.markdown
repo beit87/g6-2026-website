@@ -60,6 +60,26 @@ Per esempio, il Regno Unito, dopo le disastrose partecipazioni ai Giochi del 200
 
 Analogo discorso vale per alcuni paesi poveri che, in termini assoluti, hanno poche risorse da spendere per lo sport ma che, concentrandole nelle aree dove eccellono, riescono ad ottenere risultati di livello mondiale. Così, la Giamaica è diventata sinonimo di velocità; il Kenya domina nelle gare di resistenza e Cuba ha sviluppato una tradizione vincente in discipline come pugilato e lotta. È la prova che, nello sport come nell'economia, non sempre vince chi possiede di più ma chi sa sfruttare meglio ciò che ha.
 
+**Le medaglie generano altre medaglie**
+
+Se dovessimo scommettere su chi vincerà più medaglie alla prossima Olimpiade, il modo più semplice — e più efficace — sarebbe guardare a chi ne ha vinte di più all'ultima.
+
+Non è una battuta. È quello che i dati dicono davvero.
+
+In un modello che mette alla prova PIL, popolazione e altri indicatori strutturali, il singolo fattore più predittivo del successo olimpico di una nazione non è nessuno di questi: è semplicemente quante medaglie quella stessa nazione aveva già vinto quattro anni prima — pesa quasi il 70% su tutti gli altri fattori messi insieme.
+
+Cosa significa? Che i sistemi sportivi nazionali cambiano lentissimamente. Infrastrutture, allenatori, federazioni, cultura sportiva: tutto questo non si costruisce — né si smonta — in un solo ciclo olimpico. Le Olimpiadi, insomma, non si vincono in quattro anni. Si vincono costruendo, in decenni, un sistema che continua a generare risultati simili edizione dopo edizione.
+
+**Giocare in casa conta, eccome**
+
+C'è un fattore che, secondo il buon senso, dovrebbe sempre aiutare una nazione a vincere di più: giocare in casa.
+
+I dati dicono che il buon senso, per una volta, ha ragione — e più di quanto si pensi. Confrontando lo Score ottenuto da ogni nazione ospitante con la propria media storica nelle altre edizioni, il vantaggio emerge con chiarezza: su 12 Giochi analizzati, 11 nazioni hanno fatto meglio proprio nell'edizione di casa, in media quasi 50 medaglie in più rispetto al solito.
+
+La Cina, a Pechino 2008, ha vissuto probabilmente l'esempio più eclatante: oltre 130 medaglie in più della propria media storica. Gli Stati Uniti nel 1996 e la Gran Bretagna a Londra 2012 raccontano una storia simile. Solo il Canada fa eccezione — l'unica nazione ospitante, nella storia dei Giochi, a non aver approfittato del proprio pubblico di casa.
+
+*Approfondimento: [Pil, storico e boicottaggi]({{site.baseurl}}/pil_storico_boicottaggi.html)*
+
 ## L’Italia e la scherma
 
 Abbiamo dedicato un approfondimento all’Italia, che costituisce un esempio paradigmatico di quelle potenze sportive “specializzate” menzionate in precedenza. Nella scherma, infatti, l’Italia è il paese più vincente della storia: fra il 1964 e il 2020 l’Italia ha ottenuto quasi 70 medaglie.
