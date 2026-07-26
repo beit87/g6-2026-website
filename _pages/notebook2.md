@@ -8,13 +8,15 @@ custom_css: /assets/css/g6-charts.css
 
 {% include page-hero.html title="Il prezzo dell'oro" %}
 
-Il PIL totale correla con le medaglie olimpiche (r = 0.58), ma non spiega tutto. Cosa succede se guardiamo direttamente quanto ogni paese investe nello sport d'élite, invece che alla sua ricchezza complessiva? In questa analisi usiamo due fonti di dati reali: il progetto SPLISS, che misura la spesa élite quadriennale di 14-17 nazioni a Tokyo 2020 e Paris 2024, e i dati ufficiali di UK Sport, che dal 2000 al 2024 tracciano ogni sterlina investita dal governo britannico nello sport olimpico.
+Il PIL totale correla con le medaglie olimpiche (r ≈ 0.80, calcolato edizione per edizione), ma non spiega tutto. Cosa succede se guardiamo direttamente quanto ogni paese investe nello sport d'élite, invece che alla sua ricchezza complessiva? In questa analisi usiamo due fonti di dati reali: il progetto SPLISS, che misura la spesa élite quadriennale di 14-17 nazioni a Tokyo 2020 e Paris 2024, e i dati ufficiali di UK Sport, che dal 2000 al 2024 tracciano ogni sterlina investita dal governo britannico nello sport olimpico.
+
+<p style="font-size:.85em;color:#6b7280;"><em>Nota: la correlazione PIL-medaglie è calcolata per singola edizione olimpica (confrontando solo paesi che gareggiano nello stesso anno) e poi mediata, usando il PIL in valore assoluto. Questo approccio evita la distorsione temporale dovuta alla crescita economica globale nel tempo, che abbasserebbe artificialmente la correlazione se calcolata su tutte le edizioni insieme.</em></p>
 {: .lead}
 
 ---
 
 <h3>La spesa élite spiega le medaglie meglio del PIL</h3>
-<p>Confrontando il PIL totale con la spesa sportiva élite reale, il risultato è netto: la spesa élite raggiunge <strong>r = 0.85-0.88</strong>, contro <strong>r = 0.58</strong> del PIL. Non conta solo quanto è ricco un paese, ma quanto di quella ricchezza viene effettivamente investita nello sport di alto livello. Paesi con PIL simile possono avere strategie di investimento radicalmente diverse, e questo si riflette direttamente nel medagliere.</p>
+<p>Confrontando il PIL totale con la spesa sportiva élite reale, il risultato è netto: la spesa élite raggiunge <strong>r = 0.85-0.88</strong>, un valore ancora superiore al PIL (<strong>r ≈ 0.80</strong>), seppur con un divario più contenuto di quanto ci si potrebbe aspettare. Il PIL da solo cattura già buona parte del segnale (soprattutto nelle edizioni normali, non boicottate), ma la spesa mirata resta il predittore più preciso: paesi con PIL simile possono avere strategie di investimento radicalmente diverse, e questo si riflette nel medagliere.</p>
 <p>Nel grafico, il paese ospitante di ciascuna edizione è evidenziato in rosso: sia il Giappone a Tokyo che la Francia a Paris mostrano una posizione anomala rispetto al trend generale, spendendo di più e ottenendo più medaglie del previsto grazie all'effetto casa, un fattore che analizziamo separatamente più avanti.</p>
 
 <div class="full-width-chart-wrapper">
@@ -50,7 +52,7 @@ Il PIL totale correla con le medaglie olimpiche (r = 0.58), ma non spiega tutto.
 
 ## In sintesi
 
-- La **spesa élite reale** spiega le medaglie molto meglio del PIL (r = 0.85-0.88 vs r = 0.58): misura direttamente il flusso di risorse verso lo sport di alto livello.
+- La **spesa élite reale** spiega le medaglie leggermente meglio del PIL (r = 0.85-0.88 vs r ≈ 0.80): misura direttamente il flusso di risorse verso lo sport di alto livello, con un margine di precisione più contenuto ma comunque presente.
 - Il **costo per medaglia** varia da €2.8M (Belgio) a oltre €9M (Brasile): conta l'efficienza dell'allocazione, non il volume di spesa.
 - **UK Sport** dimostra la relazione più solida in letteratura: r = 0.947, R² = 0.90 su sette cicli consecutivi.
 - **Ospitare i Giochi** vale in media +117% di medaglie rispetto alla propria media storica (p = 0.004).
