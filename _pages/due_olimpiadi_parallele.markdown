@@ -13,7 +13,7 @@ Ogni quattro anni raccontiamo le Olimpiadi come la più grande gara di merito de
 
 > **IL NUMERO CHIAVE**
 >
-> ### ~96 volte
+> ### ~82 volte
 >
 > *Le medaglie vinte per milione di abitanti dai paesi con "economie avanzate" rispetto alle "economie vulnerabili", nella media 1964-2024*
 
@@ -21,7 +21,7 @@ Ogni quattro anni raccontiamo le Olimpiadi come la più grande gara di merito de
 
 Le classifiche olimpiche per numero assoluto di medaglie premiano quasi sempre le stesse nazioni: Stati Uniti, Cina, Russia, Germania, Regno Unito. Ma è un confronto onesto? Un paese con 1,4 miliardi di abitanti come la Cina ha, semplicemente, più atleti tra cui scegliere di un paese con 5 milioni di abitanti. Per capire se esiste un vero "vantaggio da ricchezza", occorre guardare le medaglie per abitante — e occorre farlo confrontando paesi con un profilo economico realmente comparabile.
 
-Questa pagina racconta i risultati ottenuti con il cosiddetto "cluster statico": un'unica fotografia socioeconomica per ciascun paese, costruita sulla media di tutti gli indicatori disponibili lungo l'intero periodo 1964-2024 (non solo l'ultimo anno, non un singolo anno di gara). È il modo più conservativo e più stabile di chiedersi: indipendentemente dalle fluttuazioni economiche di una singola edizione, qual è il profilo di lungo periodo di questo paese — e che ruolo gioca nello sport olimpico?
+Questa pagina racconta i risultati ottenuti con un cluster che si può definire "statico": un'unica fotografia socioeconomica per ciascun paese, costruita sulla media di tutti gli indicatori disponibili lungo l'intero periodo 1964-2024 (non solo l'ultimo anno, non un singolo anno di gara). È il modo più conservativo e più stabile di chiedersi: indipendentemente dalle fluttuazioni economiche di una singola edizione, qual è il profilo di lungo periodo di questo paese — e che ruolo gioca nello sport olimpico?
 
 ## Il metodo, in breve
 
@@ -180,7 +180,15 @@ Entrambi gli approcci usano la stessa pipeline (imputazione dei valori mancanti 
 
 ## Un'ultima prospettiva: cosa racconta (e cosa non racconta) il cluster dinamico
 
-Il cluster statico, su cui si basa tutta l'analisi precedente, fotografa la posizione economica di lungo periodo di ciascun paese: è la scelta più adatta per confrontare, in modo stabile, profili diversi. Ma proprio perché fissa un'unica etichetta per paese, non può raccontare una storia altrettanto importante: quella della mobilità economica. Per questo il progetto include anche un secondo modello, il cluster "dinamico", che ricalcola il raggruppamento in quattro classi separatamente per ogni edizione olimpica, sugli indicatori specifici di quell'anno — così un paese può cambiare cluster nel tempo, seguendo la propria traiettoria di sviluppo reale.
+Il cluster statico, su cui si basa tutta l'analisi precedente, fotografa la posizione economica di lungo periodo di ciascun paese: è la scelta più adatta per confrontare, in modo stabile, profili diversi. Ma proprio perché fissa un'unica etichetta per paese, non può raccontare una storia altrettanto importante: quella della mobilità economica. Per questo il progetto include anche un secondo modello, il cluster "dinamico", che ricalcola il raggruppamento in quattro classi separatamente per ogni edizione olimpica, sugli indicatori specifici di quell'anno — così un paese può cambiare cluster nel tempo, seguendo la propria traiettoria di sviluppo reale. La mappa seguente traduce in un'immagine il movimento dei paesi da un cluster all'altro nel tempo, rendendo visibile la mobilità economica che i numeri, da soli, raccontano solo in parte.
+
+<div class="full-width-chart-wrapper">
+  <div style="max-width: 780px; margin: 0 auto;">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json11def.json" style="width: 100%; height: 100%"></vegachart>
+  </div>
+</div>
+
+<br/>
 
 Il quadro che emerge è coerente con la storia economica: su 208 paesi analizzati, 146 hanno cambiato fascia di reddito almeno una volta tra il 1964 e il 2024. I casi più istruttivi sono le due economie asiatiche protagoniste del "miracolo" del dopoguerra.
 
@@ -195,14 +203,10 @@ Il quadro che emerge è coerente con la storia economica: su 208 paesi analizzat
 
 La Corea del Sud parte nel 1964 nel gruppo delle "economie vulnerabili", esce da quella fascia già nel 1972 ("economie in via di consolidamento"), sale a "economie emergenti a metà anni '80 e raggiunge il cluster delle "economie avanzate" solo intorno al 2016, più di cinquant'anni e diverse generazioni di atleti dopo il suo ingresso nei Giochi. Nello stesso periodo le sue medaglie pro capite sono più che quadruplicate (+403,8% tra il periodo precedente e quello successivo alla prima uscita dalla fascia più povera). Per oltre trent'anni il Paese ha seguito quasi alla lettera il copione previsto dalla teoria: la crescita del PIL pro capite si è tradotta in un aumento delle risorse investite nello sport, e il medagliere è cresciuto quasi di pari passo, fino al picco di Seoul 1988. Il lieve calo osservato nelle ultime due edizioni non contraddice questa relazione, ma ne rivela i limiti fisiologici quando la si applica ad un singolo paese isolato dal contesto: superata una certa soglia di sviluppo, il vantaggio economico da solo non basta più a garantire una crescita proporizionale delle medaglie, perchè entrano in gioco fattori esterni al PIL: la fine dell'effetto-traino dei Giochi di casa del 1988, l'inasprirsi della concorrenza internazionale negli sport-bandiera coreani e un profilo demografico tra i più fragili al mondo che riduce silenziosamente il bacino di futuri atleti. Anche la Cina conferma la regola, non l'eccezione. Il picco di 100 medaglie - anno dei Giochi di Pechino - è l'eco di un vantaggio temporaneo di un Paese ospitante, non un salto dovuto al Pil. Esaurito quell'effetto, il calo del 2012-2016 è un fisiologico rientro; la risalita del 2020, con il PIL ormai ai nuovi massimi, riporta il medagliere in linea con la traiettoria economica del Paese.
 
-Questi due casi mostrano bene il valore aggiunto del cluster dinamico — e insieme il suo limite più importante. Poiché ogni edizione viene reclusterizzata da zero sui soli paesi con dati disponibili quell'anno, la composizione e le soglie di ciascuna fascia (in particolare quella delle "economie avanzate") non sono fisse nel tempo: lo stesso livello di PIL pro capite può ricadere in cluster diversi a seconda di come si posizionano, quell'anno, tutti gli altri paesi. Questo rende il confronto tra decenni lontani meno diretto rispetto al cluster statico, ed è anche il motivo per cui il passaggio di un paese al gruppo delle "economie avanzate" tende visibilmente a concentrarsi nelle edizioni più recenti: ci vogliono decenni di crescita sostenuta perché un'economia emergente scavalchi il resto del mondo, non solo se stessa nel tempo. A ciò si aggiunge un limite più tecnico: gli indicatori socioeconomici delle edizioni più lontane nel tempo (anni '60 e '70) sono spesso più incompleti di quelli recenti, il che rende le etichette di cluster di quelle prime edizioni potenzialmente meno affidabili di quelle più vicine a noi.
-
-<div class="full-width-chart-wrapper">
-  <div style="max-width: 780px; margin: 0 auto;">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json11def.json" style="width: 100%; height: 100%"></vegachart>
-  </div>
-</div>
-
-<br/>
+Questi due casi mostrano bene il valore aggiunto del cluster dinamico — e insieme il suo limite più importante. Poiché ogni edizione viene reclusterizzata da zero sui soli paesi con dati disponibili quell'anno, la composizione e le soglie di ciascuna fascia (in particolare quella delle "economie avanzate") non sono fisse nel tempo: lo stesso livello di PIL pro capite può ricadere in cluster diversi a seconda di come si posizionano, quell'anno, tutti gli altri paesi. Questo rende il confronto tra decenni lontani meno diretto rispetto al cluster statico, ed è anche il motivo per cui il passaggio di un paese al gruppo delle "economie avanzate" tende visibilmente a concentrarsi nelle edizioni più recenti: ci vogliono decenni di crescita sostenuta perché un'economia emergente scavalchi il resto del mondo, non solo se stessa nel tempo. A ciò si aggiunge un limite più tecnico: gli indicatori socioeconomici delle edizioni più lontane nel tempo (anni '60 e '70) sono spesso più incompleti di quelli recenti, il che rende le etichette di cluster di quelle prime edizioni potenzialmente meno affidabili di quelle più vicine a noi. 
 
 Per questo, nel resto di questa analisi, il cluster statico resta il riferimento principale: il cluster dinamico va letto come una lente complementare, utile per raccontare le traiettorie di singoli paesi, non come sostituto del confronto strutturale tra profili economici.
+
+## Conclusione
+
+Alla fine dei conti le Olimpiadi non mentono: raccontano solo una storia diversa da quella che siamo abituati a leggere sul podio: non solo talento e sudore, ma piscine, scuderie e circoli velici che solo pochi paesi possono permettersi. Il vantaggio della ricchezza si assottiglia nell'Olimpiade del corpo- boxe, atletica- dove basta un fisico allenato per competere. Ed è proprio lì che i Giochi tornano, almeno un po', ad assomigliare a quello che promettono di essere. 
