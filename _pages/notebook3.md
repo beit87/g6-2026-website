@@ -13,17 +13,9 @@ Costruiamo un modello predittivo, verifichiamo che funzioni davvero su dati mai 
 
 ---
 
-<h3>Cosa conta davvero, la risposta sorprende</h3>
-<p>Il Random Forest (R² = 0.75 in cross-validation su cinque modelli testati) rivela che il predittore più forte non è il PIL, ma le <strong>medaglie del ciclo precedente</strong>, che pesano il 46% dell'intera capacità predittiva del modello, molto più di qualsiasi indicatore economico.</p>
-<p>Questo riflette la natura dei sistemi sportivi d'élite: infrastrutture, coach e atleti in sviluppo si costruiscono su cicli pluriennali, non da un'edizione all'altra. Un paese che aveva un sistema solido quattro anni fa quasi certamente lo ha ancora oggi, con aggiustamenti marginali. Il PIL totale contribuisce solo per il 14%, la popolazione per il 17%, e la dummy paese ospitante per l'8%.</p>
-
-<div class="full-width-chart-wrapper">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/g6/nb3_feature_importance.json" style="width: 100%; height: 100%"></vegachart>
-</div>
-
 <h3>Il modello funziona davvero? Test su Tokyo 2020</h3>
-<p>Abbiamo allenato il modello sulle edizioni 1968-2016 e testato su <strong>Tokyo 2020</strong>, un intero ciclo olimpico mai visto durante l'allenamento. Il risultato: <strong>R² = 0.86, MAE = 4.2 medaglie</strong> per paese. Per i grandi paesi come USA e Cina l'errore è nell'ordine di poche unità, mentre per i paesi con 3-10 medaglie l'incertezza è naturalmente più alta in proporzione.</p>
-<p>Nel grafico, la linea tratteggiata rappresenta la previsione perfetta (previsto = reale). L'outlier principale è il Giappone, dove l'effetto host non è completamente catturato dal modello: il paese ha vinto più medaglie di quante il sistema si aspettasse, proprio per il vantaggio di giocare in casa che abbiamo quantificato nell'analisi precedente.</p>
+<p>Abbiamo allenato un Random Forest sulle edizioni 1968-2016 (R² = 0.75 in cross-validation su cinque modelli testati) e verificato le sue previsioni su <strong>Tokyo 2020</strong>, un intero ciclo olimpico mai visto durante l'allenamento. Il risultato: <strong>R² = 0.86, MAE = 4.2 medaglie</strong> per paese. Per i grandi paesi come USA e Cina l'errore è nell'ordine di poche unità, mentre per i paesi con 3-10 medaglie l'incertezza è naturalmente più alta in proporzione.</p>
+<p>Nel grafico, la linea tratteggiata rappresenta la previsione perfetta (previsto = reale). L'outlier principale è il Giappone, dove l'effetto host non è completamente catturato dal modello: il paese ha vinto più medaglie di quante il sistema si aspettasse, proprio per il vantaggio di giocare in casa.</p>
 
 <div class="full-width-chart-wrapper">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/g6/nb3_predicted_vs_actual.json" style="width: 100%; height: 100%"></vegachart>
@@ -49,7 +41,7 @@ Costruiamo un modello predittivo, verifichiamo che funzioni davvero su dati mai 
 
 ## Risposta alla Domanda di Ricerca
 
-**Si, gli investimenti in infrastrutture sportive producono medaglie olimpiche.** Le medaglie del ciclo precedente sono il predittore più forte, segno dell'inerzia dei sistemi sportivi. Il modello prevede con buona precisione anche su dati mai visti (R² = 0.86 su Tokyo 2020). Il test di causalità conferma che aumentare la spesa produce risultati misurabili nel ciclo successivo. Le previsioni per Los Angeles 2028 riflettono sia la storia recente di ogni nazione che l'effetto host per gli Stati Uniti.
+**Si, gli investimenti in infrastrutture sportive producono medaglie olimpiche.** Il modello prevede con buona precisione anche su dati mai visti (R² = 0.86 su Tokyo 2020). Il test di causalità conferma che aumentare la spesa produce risultati misurabili nel ciclo successivo. Le previsioni per Los Angeles 2028 riflettono sia la storia recente di ogni nazione che l'effetto host per gli Stati Uniti.
 
 ### Nota metodologica
 
