@@ -43,7 +43,6 @@ Tutte queste considerazioni sono racchiuse e nel grafico riportato sotto, che co
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
-
 ## Atleti e atlete
 
 Dopo aver considerato i paesi come organismi sportivi collettivi, ci si può chiedere anche “chi” siano gli atleti che formano le delegazioni nazionali. In particolare, ci siamo chiesti come sia cambiata la loro composizione in un’ottica di genere; in effetti grandi cambiamenti ci sono stati.
