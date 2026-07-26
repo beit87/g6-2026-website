@@ -28,6 +28,10 @@ C'è però chi ha dimostrato che il divario si può scalfire. La Corea del Sud h
 
 I paesi che hanno vinto almeno una medaglia possono essere suddivisi in tre grandi gruppi. Innanzitutto, ci sono le “superpotenze” olimpiche (USA, Cina, Germania e Russia) che si distinguono per la partecipazione a molte e variegate discipline sportive, vincendo ori ovunque.
 
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
 È interessante notare, però, che si tratta di un cluster con una partecipazione bassa a livello di edizioni. Russia e Germania, per esempio, a causa delle loro vicissitudini storiche, hanno partecipato ai Giochi con denominazioni diverse (“URSS”, “Repubblica Federale Tedesca”, “Repubblica Democratica Tedesca”) e questo, tecnicamente, porta a considerare un paese nuovo nel medagliere storico a ogni cambio di nome. La Cina, poi, non hai mai partecipato dal 1956 al 1980.
 
 A questo gruppo di paesi di grande successo, comunque, appartengono anche gli USA, che pure hanno sempre partecipato a tutte le edizioni dei Giochi (a parte il boicottaggio delle Olimpiadi di Mosca); evidentemente la similarità con gli altri membri del cluster è data dal grande numero di medaglie conquistate.
@@ -56,7 +60,15 @@ Ma è possibile stabilire che cosa determini il successo sportivo di un paese? D
 
 Tuttavia, a un’analisi più attenta, è emerso che l’economia conta fino a un certo punto. Non sono i paesi più ricchi a vincere più medaglie, ma quelli che scelgono di investire davvero nello sport di alto livello. Il PIL conta meno di quanto ci si aspetterebbe: è la scelta politica di destinare risorse concrete alla preparazione degli atleti a fare la differenza.
 
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/feature_importance_shap.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
 Per esempio, il Regno Unito, dopo le disastrose partecipazioni ai Giochi del 2000 e del 2004, cambiò completamente rotta investendo massicciamente nelle varie discipline sportive e tracciando i capitali in modo da avere pieno controllo della gestione delle risorse. Già nel 2008 le medaglie risultarono raddoppiate, per poi crescere ulteriormente nelle edizioni successive.
+
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/host_effect.json" style="width: 100%; height: 100%"></vegachart>
+</div>
 
 Analogo discorso vale per alcuni paesi poveri che, in termini assoluti, hanno poche risorse da spendere per lo sport ma che, concentrandole nelle aree dove eccellono, riescono ad ottenere risultati di livello mondiale. Così, la Giamaica è diventata sinonimo di velocità; il Kenya domina nelle gare di resistenza e Cuba ha sviluppato una tradizione vincente in discipline come judo e lotta. È la prova che, nello sport come nell'economia, non sempre vince chi possiede di più ma chi sa sfruttare meglio ciò che ha.
 
