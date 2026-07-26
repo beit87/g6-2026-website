@@ -26,7 +26,6 @@ Di seguito analizziamo come si distribuiscono i cluster rispetto alle diverse fe
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/01_coord_parall_sport.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<br/>
 
 | Cluster   | Nome                                | Sport                                                                                                                                                                          |
 |-----------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,7 +47,6 @@ Tra le varie analisi condotte sull'evoluzione temporale dei cluster rispetto all
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/03_nazioni_tempo_sport.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<br/>
 
 Si osserva un aumento graduale del numero di Paesi partecipanti in tutti i cluster. Il fenomeno di globalizzazione più evidente riguarda il cluster dei grandi sport di massa, che tra il 1964 e il 2020 vede raddoppiare il numero di Paesi partecipanti. 
 Al contrario, il cluster degli sport di squadra si mantiene su valori più contenuti nel corso del tempo, generalmente compresi tra 10 e 20 Paesi partecipanti. Si nota un leggero picco nel 2016, seguito da una diminuizione nel 2020. 
@@ -60,7 +58,6 @@ A differenza dell'analisi di clustering che richiedeva una base storica minima, 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/09_heatmap_totale_sport.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<br/>
 
 ## Il profilo storico degli eventi
 
@@ -80,7 +77,6 @@ Di seguito analizziamo come si distribuiscono i cluster rispetto alle diverse fe
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/10_coord_parall_event.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<br/>
 
 Cluster 0, il cluster degli eventi di nicchia ad alta efficienza. È il cluster che presenta il valore più alto per l'efficienza in base al numero di atleti: basta un singolo specialista per portare a casa l'oro. Sono eventi di nicchia perchè non solo non partecipano molte nazioni, ma tra quelle che partecipano sono pochi i Paesi che si spartiscono storicamente gli ori. Infine, la percentuale di eventi di squadra e l'efficienza in base alla popolazione sono poco sotto la media.
 
@@ -93,7 +89,6 @@ Coerentemente con quanto fatto per gli sport, analizziamo l'evoluzione temporale
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/12_nazioni_tempo_event.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<br/>
 
 Il Cluster del grande bacino degli eventi inidividuali e quello degli eventi di nicchia ad alta efficienza mostrano un graduale aumento dei Paesi partecipanti nel corso del tempo. Nello specifico, per il Cluster degli eventi individuali di nicchia ad alta efficienza si notano due picchi in corrispondenza delle edizioni olimpiche di Los Angeles del 1984 e di Atlanta del 1996.
 Coerentemente con quanto visto nell'analisi temporale degli sport, il cluster degli eventi di squadra ha un moderato aumento dei Paesi partecipanti nel corso del tempo, che negli anni più recenti si appiattisce e tende a decrescere.
@@ -114,7 +109,6 @@ Prima di analizzare come si distribuiscono i cluster rispetto alle diverse featu
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/16_coord_parall_paesi.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<br/>
 
 | Cluster   | Nome                              | Paesi                                                                                                                                                      |
 |-----------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -125,6 +119,12 @@ Prima di analizzare come si distribuiscono i cluster rispetto alle diverse featu
 | Cluster 4 | Potenze olimpiche consolidate     | Australia, Belgium, Bulgaria, Canada, Denmark, Spain, France, Great Britain, Greece, Ireland, Italy, Japan, South Korea, Netherlands, Poland, Romania, Switzerland, Sweden                                                                                                                               |
 | Cluster 5 | Superpotenze olimpiche            | China, Germany, Russia, United States                                                                                                                                                           |
 | Cluster 6 | Paesi dai pochi sport e molti ori | Algeria, Ethiopia, Iran, Kenya, Morocco, North Korea, Thailand, Tunisia, Türkiye, Uganda                                                                                                                                                           |
+
+Per ogni cluster è stata inoltre calcolata la sua "firma sportiva": per ciascuno sport si calcola la percentuale di Paesi del cluster che hanno vinto almeno una medaglia d'oro in quella disciplina, selezionando poi i 10 sport con la percentuale più alta. In questo modo è possibile capire se un cluster è specializzato su poche discipline specifiche, oppure se il suo successo è distribuito senza un vero punto di forza dominante.
+
+<div style="height: 560px">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/firma_sportiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
+</div>
 
 Ad esclusione del Sudafrica, il cluster dei Paesi con breve storia olimpica contiene tutti i paesi che si sono formati dopo la scissione dell'Unione Sovietica, della Yugoslavia e della Cecoslovacchia. Il tratto distintivo di questo cluster è proprio il numero ridotto di edizioni olimpiche in cui hanno gareggiato che, per quanto riguarda i paesi neoformatisi, è coerente con la loro non precedente esistenza. Un Paese che sembrerebbe stonare in questo cluster ma che in realtà è del tutto legittimo è il Sudafrica, anch'esso partecipante a poche edizioni olimpiche per via del periodo di esclusione dal 1964 al 1988 a causa delle politiche di segregazione razziale. 
 Indagando la percentuale di successo dei Paesi di questo cluster nelle categorie sportive, notiamo le seguenti percentuali: Athletics 62%, Shooting 50%, Wrestling 43%, Rowing 37%, Weightlifting 37%, Judo 31%, Swimming 25%, Taekwondo 25%, Boxing 18%, Canoe Slalom 18%. Questa firma sportiva conferma e arricchisce il quadro presenato: Atletica, Tiro, Lotta, Canottaggio, Sollevamento Pesi, sono l'inequivocabile eredità dei Paesi di cui facevano parte e che avevano, per queste discipline, programmi di allenamento specializzati.
@@ -156,12 +156,10 @@ Per esplorare i top 5 sport per le entità storiche, non più esistenti e per le
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<br/>
 
 <div style="height: 560px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/19_grafico_interattivo_paesi_storici.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<br/>
 
 
 ### Nota metodologica
