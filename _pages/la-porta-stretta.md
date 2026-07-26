@@ -47,17 +47,17 @@ A sinistra: ogni punto è un paese, posizionato secondo la quota di medaglie vin
 <div style="height: 460px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_scatter_cluster.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<div style="font-size: 12px; color: #666; margin-top: 1rem; margin-bottom: 1.5rem;">Ogni punto è un paese. L'asse orizzontale è la quota di medaglie individuali, l'asse verticale il volume totale di medaglie (scala log); il colore indica il cluster K-Means.</div>
+<div style="font-size: 12px; color: #666; margin-top: 2rem; margin-bottom: 1.5rem;">Ogni punto è un paese. L'asse orizzontale è la quota di medaglie individuali, l'asse verticale il volume totale di medaglie (scala log); il colore indica il cluster K-Means.</div>
 
 <div style="height: 420px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_pil_per_cluster.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<div style="font-size: 12px; color: #666; margin-top: 1rem; margin-bottom: 1.5rem;">Distribuzione completa del PIL pro capite in ciascun cluster (non solo la media): la "scatola" mostra quanto varia la ricchezza dei paesi all'interno dello stesso profilo di vittoria.</div>
+<div style="font-size: 12px; color: #666; margin-top: 2rem; margin-bottom: 1.5rem;">Distribuzione completa del PIL pro capite in ciascun cluster (non solo la media): la "scatola" mostra quanto varia la ricchezza dei paesi all'interno dello stesso profilo di vittoria.</div>
 
 <div style="height: 460px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_quota_vs_pil.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<div style="font-size: 12px; color: #666; margin-top: 1rem; margin-bottom: 1.5rem;">La stessa correlazione di Spearman (ρ = −0,422) vista paese per paese, con la linea tratteggiata a indicare il trend di regressione: più PIL, meno dipendenza dalle medaglie individuali.</div>
+<div style="font-size: 12px; color: #666; margin-top: 2rem; margin-bottom: 1.5rem;">La stessa correlazione di Spearman (ρ = −0,422) vista paese per paese, con la linea tratteggiata a indicare il trend di regressione: più PIL, meno dipendenza dalle medaglie individuali.</div>
 <p>------------</p>
 <br/>
 
