@@ -280,7 +280,7 @@
     "color": {
       "field": "cluster",
       "legend": {
-        "columns": 2,
+        "columns": 4,
         "labelLimit": 300,
         "orient": "bottom"
       },
@@ -311,11 +311,6 @@
       }
     ],
     "x": {
-      "field": "valore",
-      "title": null,
-      "type": "quantitative"
-    },
-    "y": {
       "field": "feature",
       "sort": [
         "Quota di ori",
@@ -326,6 +321,11 @@
       ],
       "title": null,
       "type": "nominal"
+    },
+    "y": {
+      "field": "valore",
+      "title": null,
+      "type": "quantitative"
     }
   },
   "height": 350,
@@ -336,7 +336,7 @@
   "params": [
     {
       "bind": "scales",
-      "name": "param_12",
+      "name": "param_1",
       "select": {
         "encodings": [
           "x",
