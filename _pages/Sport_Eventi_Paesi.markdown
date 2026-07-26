@@ -20,7 +20,13 @@ Per definire il profilo storico degli sport ci siamo posti delle domande alle qu
 - Quanto "costa" una medaglia d'oro in termini di popolazione? Serve un Paese molto popoloso o è possibile essere efficienti anche con un bacino ridotto?
 - Quanto contribuisce la distinzione tra sport individuali e sport di squadra nel definire il profilo di uno sport?
 
-Nel rispondere a queste domande sono stati individuati 4 cluster: sport a media diffusione, grandi sport di massa, sport di squadra, sport di nicchia ad alta efficienza.
+Prima di rispondere a queste domande tramite un'aggregazione temporale dei dati per ciascuna categoria sportiva, la heatmap che segue offre una visione completa del medagliere di ogni sport. Per ciascuna disciplina vengono mostrate le prime dieci delegazioni nazionali per numero totale di medaglie conquistate nella storia, evidenziando come tali risultati si distribuiscano nelle diverse edizioni dei giochi. Nella visualizzazione sono inclusi anche gli sport presenti in una sola edizione, che non compaiono invece nell'analisi di clustering poichè, come si vedrà in seguito, non superano il filtro applicato. La rappresentazione mantiene dunque una prospettiva completa e fedele alla storia olimpica, includendo anche delegazioni relative a Paesi non più esistenti o a contesti particolari (come ad esempio la Russia, che nel 2020 ha partecipato come ROC). La heatmap si pone quindi come un punto di partenza utile per ottenere una comprensione generale del fenomeno, prima di approfondire i pattern specifici individuati dall'analisi successiva. 
+
+<div style="height: 560px">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/09_heatmap_totale_sport.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
+Per mettere ordine in questo panorama e individuare pattern ricorrenti tra sport diversi, abbiamo raggruppato le discipline tramite features che rispondono alle domande prima elencate. Sono stati così individuati 4 cluster: sport a media diffusione, grandi sport di massa, sport di squadra, sport di nicchia ad alta efficienza.
 Di seguito analizziamo come si distribuiscono i cluster rispetto alle diverse features e quali sport vi appartengono. L'analisi è stata limitata agli sport presenti in almeno cinque edizioni olimpiche, al fine di garantire risultati più robusti e rappresentativi.
 
 <div style="height: 560px">
@@ -51,13 +57,6 @@ Tra le varie analisi condotte sull'evoluzione temporale dei cluster rispetto all
 Si osserva un aumento graduale del numero di Paesi partecipanti in tutti i cluster. Parte di questa crescita è dovuta anche all'aumento dei Comitati Olimpici Nazionali riconosciuti dal CIO (Comitato Olimpico Internazionale) nel corso del tempo: solo un Paese il cui Comitato Olimpico Nazionale è ufficialmente riconosciuto, infatti, può partecipare ai Giochi e, tra il 1964 e il 2015 il numero di Comitati riconosciuti dal CIO è aumentato di 106 unità, 25 dei quali concentrati nel solo 1993 con il riconoscimento in blocco delle repubbliche nate dalla dissoluzione dell'Unione Sovietica e della Jugoslavia. Concentrando però l'attenzione sui cluster, il fenomeno di globalizzazione più evidente riguarda il cluster dei grandi sport di massa, che tra il 1964 e il 2020 vede raddoppiare il numero di Paesi partecipanti. 
 Al contrario, il cluster degli sport di squadra si mantiene su valori più contenuti nel corso del tempo, generalmente compresi tra 10 e 20 Paesi partecipanti. Si nota un leggero picco nel 2016, seguito da una diminuzione nel 2020. Questa stabilità è dovuta a un motivo strutturale: il CIO e le federazioni internazionali fissano un numero di squadre pressoché costante edizione dopo edizione. Questo si riflette anche su chi riesce davvero a vincere: gli sport di squadra sono il cluster con la concentrazione degli ori più alta in assoluto, segno che, tra le poche nazioni che riescono a qualificarsi, sono ancora meno quelle che arrivano a dominare stabilmente il medagliere. 
 Un elemento particolarmente significativo è il calo della partecipazione in corrispondenza delle Olimpiadi di Mosca del 1980. Questo fenomeno è riconducibile al boicottaggio guidato dagli Stati Uniti in risposta all'invasione sovietica dell'Afghanistan, boicottaggio a cui aderirono numerosi Paesi che decisero di non partecipare ai Giochi.
-
-I quattro profili descritti nascono da medie storiche aggregate, utili per cogliere pattern generali. La seguente heatmap invece segue il percorso inverso, mostrando per ogni sport e per ciascuna edizione olimpica, quali delegazioni sportive hanno dominato il medagliere, con l'obiettivo di analizzare l'evoluzione nel tempo anche di singole discipline di particolare interesse.
-A differenza dell'analisi di clustering che richiedeva una base storica minima, questo grafico mostra tutti gli sport presenti tra il 1964 e il 2020, comprese le discipline comparse anche in una sola edizione. Inoltre, nel rispetto della storia delle Olimpiadi, sono state mantenute anche le delegazioni sportive relative a Paesi non più esistenti o a contesti particolari. Rientrano in questa seconda categoria sia le rappresentative associate a Paesi soggetti a sanzioni (come la Russia, che nel 2020 ha partecipato come ROC), sia la delegazione degli atleti rifugiati, che non rappresenta un singolo Stato ma riunisce atleti impossibilitati a gareggiare sotto la propria bandiera nazionale.
-
-<div style="height: 560px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/09_heatmap_totale_sport.json" style="width: 100%; height: 100%"></vegachart>
-</div>
 
 ## Il profilo storico degli eventi
 
@@ -94,7 +93,7 @@ Il Cluster del grande bacino degli eventi individuali e quello degli eventi di n
 Coerentemente con quanto visto nell'analisi temporale degli sport, il cluster degli eventi di squadra ha un moderato aumento dei Paesi partecipanti nel corso del tempo, che negli anni più recenti si appiattisce e tende a decrescere.
 Inoltre, così come già notato nell'analisi temporale effettuata sugli sport, si nota un importante calo dei paesi partecipanti nell'edizione olimpica di Mosca del 1980, dovuto al già discusso boicottaggio.
 
-## Il profilo storico dei Paesi
+## Il DNA sportivo dei Paesi
 
 Anche per definire il profilo storico dei Paesi ci siamo posti una serie di domande alle quali abbiamo provato a dare risposta tramite l'utilizzo di una serie di features create ad hoc:
 - Quanto è "prezioso" il medagliere di un Paese? Che quota delle sue medaglie è rappresentata da ori rispetto agli argenti e ai bronzi?
@@ -103,7 +102,17 @@ Anche per definire il profilo storico dei Paesi ci siamo posti una serie di doma
 - Quanto "costa" una medaglia d'oro in termini di popolazione? Serve un paese molto popoloso o è possibile essere efficienti anche con un bacino ridotto di abitanti?
 - Quanto è lunga la storia olimpica di un Paese? Da quante edizioni olimpiche gareggia sotto la sua attuale bandiera?
  
-Nel rispondere a queste domande sono stati individuati 7 cluster: Paesi con breve storia olimpica, piccoli Paesi iper-efficienti, Paesi dai molti sport ma pochi ori, Paesi dai pochi sport e pochi ori, potenze olimpiche consolidate, superpotenze olimpiche, Paesi dai pochi sport ma molti ori. 
+Prima di rispondere a queste domande tramite un'aggregazione temporale dei dati per ciascun Paese, la mappa che segue offre una visione d'insieme del medagliere mondiale. Essa consente infatti di individuare, per ogni Paese, i 5 sport in cui eccelle maggiormente, considerando il totale delle medaglie, nonchè quelle di oro, di argento e di bronzo, conquistate nel corso delle diverse edizioni olimpiche. Nella mappa sono inclusi esclusivamente i Paesi attualmente esistenti: in blu quelli che hanno vinto almeno una medaglia, mentre in grigio quelli che, pur avendo partecipato ai Giochi Olimpici, non ne hanno mai conquistata una tra il 1964 e il 2020. In una tonalità di grigio molto più chiara, tendente al bianco, sono invece rappresentati i territori per i quali non si hanno dati. Nello specifico, rientrano in questa categoria la Groenlandia, che non dispone di un comitato olimpico nazionale e i cui atleti gareggiano sotto la bandiera della Danimarca, la Nuova Caledonia, il cui comitato locale non è riconosciuto dal CIO e che risulta quindi esclusa dalle Olimpiadi, e l'Antartide che, non avendo una popolazione nativa o permanente ed essendo abitata solo temporaneamente da ricercatori e personale di supporto, naturalmente non può partecipare ai Giochi. Per esplorare i 5 sport principali relativi ad entità storiche non più esistenti o a delegazioni non riconducibili ad alcun Paese o riconducibili a Paesi sottoposti a sanzione, è possibile visualizzare il grafico riportato sotto la mappa. 
+
+<div style="height: 560px">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
+<div style="height: 560px">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/19_grafico_interattivo_paesi_storici.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
+Per mettere ordine in questo panorama e individuare pattern ricorrenti tra Paesi diversi, abbiamo raggruppato le discipline tramite features che rispondono alle domande prima elencate. Sono stati così individuati 7 cluster: Paesi con breve storia olimpica, piccoli Paesi iper-efficienti, Paesi dai molti sport ma pochi ori, Paesi dai pochi sport e pochi ori, potenze olimpiche consolidate, superpotenze olimpiche, Paesi dai pochi sport ma molti ori. 
 Prima di analizzare come si distribuiscono i cluster rispetto alle diverse features e quali Paesi vi appartengono, è opportuno fare alcune considerazioni. Poiché la maggior parte delle features introdotte descrivono il successo olimpico di un Paese dal punto di vista del medagliere, sono stati inclusi nell'analisi soltanto i Paesi che, durante il corso della loro partecipazione alle edizioni olimpiche, hanno conquistato almeno un totale di 10 medaglie. Inoltre, poiché l'analisi presenta una "fotografia" della situazione attuale dei Paesi, costruita aggregando i dati delle serie temporali, i cosiddetti "Paesi storici", così come i casi speciali di delegazioni che non fanno riferimento ad alcun Paese o che sono il frutto di una sanzione ad un Paese, sono stati esclusi dall'analisi. Infine, sono stati esclusi dall'analisi anche il Kosovo e Taipei Cinese a causa della mancanza di dati sulla popolazione per la loro intera serie storica.
 
 <div style="height: 560px">
@@ -148,18 +157,6 @@ Il cluster dei Paesi con partecipazione ad un basso numero di categorie sportive
 La firma sportiva rivela due tradizioni sportive distinte, mostrando specializzazione in atletica e negli sport di lotta: Athletics 60%,
 Boxing 50%, Weightlifting 40%, Taekwondo e Wrestling 30%, Judo e Shooting 20%,
 Archery, Artistic Gymnastics e Karate 10%.
-
-La seguente mappa permette di esplorare quali sono i top 5 sport in cui i singoli Paesi eccellono. Sono presenti nella mappa soltanto i Paesi attualmente esistenti. In blu sono rappresentati tutti i Paesi che hanno vinto almeno una medaglia, mentre in grigio sono presenti tutti quei Paesi che, pur avendo partecipato alle Olimpiadi, non hanno mai vinto alcuna medaglia. Sono inoltre presenti in un grigio molto più chiaro i Paesi per cui non si hanno dati. Nello specifico, la Groenlandia che non ha un comitato nazionale olimpico e i cui atleti gareggiano sotto la bandiera della Danimarca, la Nuova Caledonia il cui comitato locale non è riconosciuto dal CIO e che è quindi esclusa dalle Olimpiadi, e l'Antartide che, non avendo una popolazione nativa o permanente ed essendo abitata temporaneamente da ricercatori e personale di supporto, naturalmente non può partecipare alle Olimpiadi.
-Per esplorare i top 5 sport per le entità storiche non più esistenti e per le squadre non appartenenti ad alcun paese o sottoposte a sanzione, è possibile visualizzare il grafico che si trova sotto la mappa.
-
-<div style="height: 560px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
-</div>
-
-<div style="height: 560px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/19_grafico_interattivo_paesi_storici.json" style="width: 100%; height: 100%"></vegachart>
-</div>
-
 
 ### Nota metodologica
 
