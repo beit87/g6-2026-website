@@ -7,8 +7,6 @@ vega: true
 
 {% include page-hero.html %}
 
-<p style="color:#666;font-size:14px;margin-top:-8px;margin-bottom:1.5rem;">Autore: Gianni Coia</p>
-
 **Ogni medaglia ha una storia economica alle spalle — ma non solo.** Quanto conta davvero la ricchezza di un paese nel determinare il suo medagliere olimpico? Meno di quanto sembri, e in un modo diverso da quello che ci si aspetterebbe. In questa pagina costruiamo un modello predittivo, verifichiamo cosa guarda davvero per prevedere, misuriamo l'effetto di giocare in casa, e isoliamo gli episodi in cui la storia — non l'economia — ha deciso il podio.
 
 ## Tre famiglie di nazioni olimpiche
@@ -24,7 +22,7 @@ Il messaggio di fondo: **i dati non dividono il mondo in "ricchi che vincono" e 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/pil_vs_medaglie.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">Ogni punto è una coppia nazione-edizione, colorata per cluster e con opacità legata all'anno (più opaco = più recente). A destra, le nazioni con lo Score medio più alto (con almeno 3 edizioni disputate) nell'area selezionata a sinistra — trascina un rettangolo sullo scatter per filtrare la classifica, usa la rotellina per zoomare.</div>
+<div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">Ogni punto è una coppia nazione-edizione, colorata per cluster socio-economico. A destra, le nazioni con lo Score medio più alto (con almeno 3 edizioni disputate) nell'area selezionata a sinistra — trascina un rettangolo sullo scatter per filtrare la classifica, usa la rotellina per zoomare.</div>
 
 **Nota:** due casi non compaiono nella classifica pur avendo punteggi altissimi — Unified Team (le ex repubbliche sovietiche riunite nel 1992) e ROC (la Russia nel 2020, sotto squalifica per doping di stato, competendo sotto bandiera neutra). Entrambe hanno gareggiato una sola volta: la loro "media" coinciderebbe col picco di quell'unica edizione, scavalcando nazioni come gli Stati Uniti che mediano su 15 edizioni. Non è un errore nei dati — l'entità storica è reale — ma la metrica "media" diventa fuorviante per chi ha pochissime partecipazioni. Per questo la classifica richiede almeno 3 edizioni disputate; Unified Team e ROC restano comunque visibili come singoli punti nello scatter.
 
@@ -46,7 +44,7 @@ Togliendo del tutto le feature di lag dal modello, l'R² scende da 0,80 a 0,69 �
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/lag_vs_senza_lag.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
-Il lag cattura l'**inerzia** del sistema, mentre PIL e indicatori strutturali catturano il **potenziale** che spiega perché quell'inerzia esiste. La differenza si vede soprattutto per una nazione debuttante, o che rientra dopo un'assenza, dove il lag non è disponibile e il modello deve affidarsi al PIL.
+Il lag cattura l'**inerzia** del sistema, mentre PIL e indicatori strutturali catturano il **potenziale** che spiega perché quell'inerzia esiste. La differenza si vede soprattutto per una nazione debuttante, o che rientra dopo un'assenza: per costruzione, in questi casi la feature di lag vale zero, quindi il modello non ha altra scelta che affidarsi a PIL, popolazione e agli altri indicatori strutturali per stimare un punteggio — è l'unico segnale disponibile, non una scelta di modellazione.
 
 ## Giocare in casa conta, eccome
 
@@ -60,15 +58,45 @@ Su 12 nazioni che hanno ospitato i Giochi dal 1964 a oggi, **11 fanno meglio da 
 
 ## Quando il modello sbaglia, spesso è la storia a spiegarlo
 
-Qui entra la parte più curiosa dell'analisi. Guardando dove il modello sbaglia di più — le nazioni che vincono molto più o molto meno di quanto le loro risorse economiche farebbero pensare — emergono due tipi di storie molto diverse.
+Qui entra la parte più curiosa dell'analisi. Guardando dove il modello sbaglia di più — le nazioni che vincono molto più o molto meno di quanto le loro risorse economiche farebbero pensare — emergono storie molto diverse tra loro.
 
-**Storie di efficienza vera.** Alcuni paesi convertono risorse limitate in risultati sproporzionati: Kenya ed Etiopia nell'atletica, la Giamaica nello sprint, Cuba nel pugilato. La spiegazione più plausibile — coerente con quello che si legge nella letteratura sportiva, anche se i nostri dati non permettono di dimostrarlo in modo diretto — è la specializzazione estrema in poche discipline ad alta resa, invece di provare a competere su tutti i fronti.
+**Efficienza vera, a parità di risorse.** Guardando al rapporto tra medaglie e PIL (una misura diversa dai residui del modello, di cui parliamo tra un attimo), alcuni paesi convertono risorse limitate in risultati sproporzionati: Kenya ed Etiopia nell'atletica, la Giamaica nello sprint, Cuba nel pugilato. La spiegazione più plausibile — coerente con quello che si legge nella letteratura sportiva, anche se i nostri dati non permettono di dimostrarlo in modo diretto — è la specializzazione estrema in poche discipline ad alta resa, invece di provare a competere su tutti i fronti.
 
-**Storie di politica, non di sport.** E poi ci sono i casi più estremi in assoluto, che raccontano tutt'altro. Il modello prevede circa **52 medaglie per la Bulgaria nel 1984** e **46 per il Giappone nel 1980** — sulla carta, paesi con le risorse per arrivare a quei numeri. Nella realtà, entrambi i paesi tornarono a casa **a zero medaglie**. Non per un crollo improvviso del loro sistema sportivo, ma perché semplicemente **non parteciparono**: il 1980 e il 1984 sono le due edizioni dei boicottaggi incrociati della Guerra Fredda (Mosca 1980, boicottata dagli USA e alleati; Los Angeles 1984, boicottata dall'URSS e blocco sovietico).
+**Le sorprese più grandi del modello, invece, raccontano un'altra storia.** I residui del Random Forest — la differenza tra medaglie reali e previste — non premiano le piccole nazioni efficienti (restano su numeri troppo piccoli per generare un residuo grande in assoluto), ma le transizioni storiche: sistemi sportivi enormi che cambiano bandiera senza perdere le proprie infrastrutture.
+
+<table style="border-collapse:collapse;width:100%;margin:16px 0;font-size:13px;">
+<tr style="background:#1b2140;color:white;"><th style="padding:6px 8px;text-align:left;">Nazione</th><th style="padding:6px 8px;text-align:left;">Anno</th><th style="padding:6px 8px;text-align:right;">Reali</th><th style="padding:6px 8px;text-align:right;">Previste</th><th style="padding:6px 8px;text-align:right;">Residuo</th></tr>
+<tr style="background:#f7f7f7;"><td style="padding:6px 8px;">ROC</td><td style="padding:6px 8px;">2020</td><td style="padding:6px 8px;text-align:right;">139,0</td><td style="padding:6px 8px;text-align:right;">13,7</td><td style="padding:6px 8px;text-align:right;">+125,3</td></tr>
+<tr><td style="padding:6px 8px;">Federazione Russa</td><td style="padding:6px 8px;">1996</td><td style="padding:6px 8px;text-align:right;">136,0</td><td style="padding:6px 8px;text-align:right;">23,5</td><td style="padding:6px 8px;text-align:right;">+112,5</td></tr>
+<tr style="background:#f7f7f7;"><td style="padding:6px 8px;">Germania</td><td style="padding:6px 8px;">1964</td><td style="padding:6px 8px;text-align:right;">92,0</td><td style="padding:6px 8px;text-align:right;">22,4</td><td style="padding:6px 8px;text-align:right;">+69,6</td></tr>
+<tr><td style="padding:6px 8px;">Italia</td><td style="padding:6px 8px;">1984</td><td style="padding:6px 8px;text-align:right;">66,0</td><td style="padding:6px 8px;text-align:right;">16,3</td><td style="padding:6px 8px;text-align:right;">+49,7</td></tr>
+<tr style="background:#f7f7f7;"><td style="padding:6px 8px;">Ungheria</td><td style="padding:6px 8px;">1992</td><td style="padding:6px 8px;text-align:right;">64,0</td><td style="padding:6px 8px;text-align:right;">29,5</td><td style="padding:6px 8px;text-align:right;">+34,5</td></tr>
+</table>
+
+Il caso più estremo è la Russia a Tokyo 2020, in gara sotto bandiera neutra (ROC) per la squalifica da doping di stato — non un'Olimpiade di casa, ma un cortocircuito del modello: il cambio di sigla (da RUS a ROC) azzera artificialmente lo storico/lag di quella nazione, quindi il modello parte da una base quasi nulla e sottostima pesantemente un sistema sportivo in realtà fortissimo, ereditato integralmente dalla Federazione Russa: **+125,3 medaglie** rispetto al previsto. Al secondo posto, la Federazione Russa nel 1996 — la prima Olimpiade dopo la dissoluzione dell'URSS, stesso meccanismo di "cold start" del lag: **+112,5**. Non sono "efficienza" nel senso di Kenya o Cuba: sono discontinuità storiche che il modello non ha modo di rappresentare correttamente.
+
+**Storie di politica, non di sport.** All'estremo opposto, i residui più negativi in assoluto corrispondono esattamente alle due edizioni boicottate della Guerra Fredda. Il modello prevede circa **54 medaglie per la Bulgaria nel 1984** e **47 per il Giappone nel 1980** — sulla carta, paesi con le risorse per arrivare a quei numeri. Nella realtà, entrambi i paesi tornarono a casa **a zero medaglie**. Non per un crollo improvviso del loro sistema sportivo, ma perché semplicemente **non parteciparono**: il 1980 e il 1984 sono le due edizioni dei boicottaggi incrociati della Guerra Fredda (Mosca 1980, boicottata dagli USA e alleati; Los Angeles 1984, boicottata dall'URSS e blocco sovietico).
+
+<table style="border-collapse:collapse;width:100%;margin:16px 0;font-size:13px;">
+<tr style="background:#1b2140;color:white;"><th style="padding:6px 8px;text-align:left;">Nazione</th><th style="padding:6px 8px;text-align:left;">Anno</th><th style="padding:6px 8px;text-align:right;">Reali</th><th style="padding:6px 8px;text-align:right;">Previste</th><th style="padding:6px 8px;text-align:right;">Residuo</th></tr>
+<tr style="background:#f7f7f7;"><td style="padding:6px 8px;">Bulgaria</td><td style="padding:6px 8px;">1984</td><td style="padding:6px 8px;text-align:right;">0,0</td><td style="padding:6px 8px;text-align:right;">53,6</td><td style="padding:6px 8px;text-align:right;">−53,6</td></tr>
+<tr><td style="padding:6px 8px;">Giappone</td><td style="padding:6px 8px;">1980</td><td style="padding:6px 8px;text-align:right;">0,0</td><td style="padding:6px 8px;text-align:right;">46,5</td><td style="padding:6px 8px;text-align:right;">−46,5</td></tr>
+<tr style="background:#f7f7f7;"><td style="padding:6px 8px;">Canada</td><td style="padding:6px 8px;">1988</td><td style="padding:6px 8px;text-align:right;">18,0</td><td style="padding:6px 8px;text-align:right;">58,5</td><td style="padding:6px 8px;text-align:right;">−40,5</td></tr>
+<tr><td style="padding:6px 8px;">Federazione Russa</td><td style="padding:6px 8px;">2008</td><td style="padding:6px 8px;text-align:right;">121,0</td><td style="padding:6px 8px;text-align:right;">152,3</td><td style="padding:6px 8px;text-align:right;">−31,3</td></tr>
+<tr style="background:#f7f7f7;"><td style="padding:6px 8px;">Regno Unito</td><td style="padding:6px 8px;">1996</td><td style="padding:6px 8px;text-align:right;">25,0</td><td style="padding:6px 8px;text-align:right;">44,0</td><td style="padding:6px 8px;text-align:right;">−19,0</td></tr>
+</table>
+
+Gli altri under-performer in tabella (Canada 1988, Russia 2008, Gran Bretagna 1996) sono invece più vicini al concetto di sotto-performance genuina: grandi sistemi sportivi con PIL elevato ma, in quella specifica edizione, un rendimento inferiore al potenziale stimato dal modello — non una scusa storica, semplicemente un'edizione sotto tono.
+
+Le due tabelle mostrano solo i casi più estremi; il grafico sotto li colloca tutti nel tempo, nazione per nazione — dimensione e colore della bolla indicano l'entità del residuo (blu = over-performance, rosa = under-performance).
+
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/over_under_performer_timeline.json" style="width: 100%; height: 100%"></vegachart>
+</div>
 
 Un terzo episodio, meno estremo ma comunque rilevante, è il boicottaggio africano di Montreal 1976 (circa 30 paesi assenti in protesta contro la partecipazione della Nuova Zelanda, il cui rugby aveva giocato nel Sudafrica dell'apartheid). Il quadro completo dei tre boicottaggi del periodo — 1976, 1980, 1984 — è approfondito nella pagina "Successo Maschile e Femminile", dove la stessa perturbazione viene letta anche dal lato dell'equilibrio di genere nel medagliere.
 
-Lo stesso fenomeno si vede, in modo speculare, nel grafico qui sotto: la correlazione tra PIL e medaglie, che in quasi tutte le edizioni resta sopra 0,8, crolla esattamente nel 1980 — l'unico anno in cui la politica, non l'economia, ha deciso chi era sul podio. Il 1976 non lascia lo stesso segno: le nazioni assenti quell'anno erano già ai margini di entrambe le scale (PIL basso, medaglie quasi nulle), mentre il 1980 ha escluso proprio le potenze economiche e sportive (USA, Germania Ovest, Giappone) — gli stessi punti che determinano la relazione.
+Lo stesso fenomeno si vede, in modo speculare, nel grafico qui sotto: la correlazione tra PIL e medaglie, che in quasi tutte le edizioni resta sopra 0,8, crolla esattamente nel 1980 — l'unico anno in cui la politica, non l'economia, ha deciso chi era sul podio. Il 1976 e il 1984 non lasciano lo stesso segno, e il motivo si può misurare direttamente: **nel 1980, le nazioni presenti ma a zero medaglie rappresentano da sole il 72% del PIL complessivo di tutte le nazioni in gara quell'anno** — una quota enorme, spiegata dal fatto che proprio le maggiori potenze economiche (USA, Giappone, Germania Ovest) erano tra gli assenti. Nel 1976 questa quota è del 29%, nel 1984 del 26% — valori vicini a quelli di edizioni senza alcun boicottaggio (16-23% nel 1968, 1972, 1988, 1992): un'assenza "normale" di piccole economie che non vincono comunque, non uno strappo nella relazione. Il 1980 è l'unica edizione in cui a mancare non sono i soliti paesi piccoli, ma il cuore economico del medagliere.
 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/correlazione_pil_medaglie_nel_tempo.json" style="width: 100%; height: 100%"></vegachart>
@@ -88,7 +116,11 @@ Accanto alla previsione puntuale (un numero di medaglie), è stato costruito anc
 <tr><td style="padding:8px;">Successo elevato</td><td style="padding:8px;">21+</td><td style="padding:8px;"><strong>aperta, senza limite superiore</strong></td></tr>
 </table>
 
-L'accuracy misura semplicemente la percentuale di nazioni-edizione classificate nella fascia corretta: il modello raggiunge **0,824**. Il numero di confronto — la **baseline** — è l'accuracy che si otterrebbe prevedendo sempre la fascia più numerosa ("Nessuna medaglia", che da sola copre il 66,3% delle osservazioni) senza usare alcuna informazione: 0,663. Il modello migliora quindi la baseline di oltre 16 punti percentuali.
+L'accuracy misura semplicemente la percentuale di nazioni-edizione classificate nella fascia corretta: il modello raggiunge **0,820**.
+
+Il numero di confronto — la **baseline** — non è un modello ingenuo qualsiasi: è il minimo che qualunque approccio dovrebbe superare per dire di aggiungere informazione reale. Rappresenta l'accuracy di chi scommettesse sempre sulla fascia più numerosa ("Nessuna medaglia") per ogni nazione-edizione, senza guardare a nessun dato specifico del paese — la scommessa più sicura possibile, dato che il 66,3% delle coppie nazione-edizione finisce davvero a zero medaglie. Il modello supera questa soglia di quasi **16 punti percentuali**: in circa un caso su sei in più, distingue correttamente situazioni che un approccio "a caso" etichetterebbe tutte allo stesso modo.
+
+Un chiarimento importante: questo classificatore **non deriva** dalla previsione continua del modello di regressione (Random Forest visto in precedenza) — è un secondo modello, allenato in modo indipendente e diretto sulla categoria di fascia, non ottenuto applicando delle soglie al numero di medaglie previsto. Il concetto di "vicinanza al confine" resta comunque utile per interpretare gli errori, ma va inteso sul **valore reale**, non su un valore predetto continuo: una nazione con 21 medaglie reali (appena dentro "Successo elevato") e una con 19 (appena fuori, in "Successo medio") sono quasi indistinguibili nella realtà, ma il classificatore le tratta come categorie a sé — è un limite intrinseco di qualunque soglia netta su un fenomeno continuo, non un errore del modello.
 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/accuracy_vs_baseline_fasce.json" style="width: 100%; height: 100%"></vegachart>

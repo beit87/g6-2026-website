@@ -15,7 +15,9 @@ Dall’analisi dei dati olimpici è emerso chiaramente che esiste un gruppo di p
 
 L’Italia è proprio uno dei paesi più specializzati ed è a tutti noto come, storicamente, moltissime medaglie siano arrivate dalla scherma. Non potendo indagare i casi di tutti le “potenze sportive specialistiche”, ci siamo così concentrati sul caso italiano: perché l’Italia è particolarmente forte nella scherma?
 
-![img_medals_italy.png](img_medals_italy.png)
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/alessio/chart_italy_medals.json" style="width: 100%; height: 100%"></vegachart>
+</div>
 
 Per trovare una risposta abbiamo adoperato gli strumenti della Text e Sentiment Analysis. Abbiamo scaricato circa 400 articoli del quotidiano La Repubblica, dedicati alla scherma italiana e pubblicati negli anni fra il 2000 e il 2024. Li abbiamo poi passati a un Language Model a cui è stato richiesto di trovare, all’interno di tale spaccato dell’opinione pubblica, i possibili motivi del successo dell’Italia nella scherma.
 
