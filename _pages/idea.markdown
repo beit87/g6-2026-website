@@ -2,6 +2,7 @@
 layout: default
 title: "Non solo Giochi"
 subtitle: "I fattori socio-economici dietro il successo olimpico"
+vega: true
 ---
 
 {% include page-hero.html title="Non solo Giochi"%}
