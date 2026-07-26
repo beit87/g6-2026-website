@@ -24,7 +24,7 @@ Il messaggio di fondo: **i dati non dividono il mondo in "ricchi che vincono" e 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/pil_vs_medaglie.json" style="width: 100%; height: 100%"></vegachart>
 </div>
-<div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">Ogni punto è una coppia nazione-edizione, colorata per cluster e con opacità legata all'anno (più opaco = più recente). A destra, le nazioni con lo Score medio più alto (con almeno 3 edizioni disputate) nell'area selezionata a sinistra — trascina un rettangolo sullo scatter per filtrare la classifica, usa la rotellina per zoomare.</div>
+<div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">Ogni punto è una coppia nazione-edizione, colorata per cluster socio-economico. A destra, le nazioni con lo Score medio più alto (con almeno 3 edizioni disputate) nell'area selezionata a sinistra — trascina un rettangolo sullo scatter per filtrare la classifica, usa la rotellina per zoomare.</div>
 
 **Nota:** due casi non compaiono nella classifica pur avendo punteggi altissimi — Unified Team (le ex repubbliche sovietiche riunite nel 1992) e ROC (la Russia nel 2020, sotto squalifica per doping di stato, competendo sotto bandiera neutra). Entrambe hanno gareggiato una sola volta: la loro "media" coinciderebbe col picco di quell'unica edizione, scavalcando nazioni come gli Stati Uniti che mediano su 15 edizioni. Non è un errore nei dati — l'entità storica è reale — ma la metrica "media" diventa fuorviante per chi ha pochissime partecipazioni. Per questo la classifica richiede almeno 3 edizioni disputate; Unified Team e ROC restano comunque visibili come singoli punti nello scatter.
 
@@ -75,7 +75,7 @@ Qui entra la parte più curiosa dell'analisi. Guardando dove il modello sbaglia 
 <tr style="background:#f7f7f7;"><td style="padding:6px 8px;">Ungheria</td><td style="padding:6px 8px;">1992</td><td style="padding:6px 8px;text-align:right;">64,0</td><td style="padding:6px 8px;text-align:right;">29,5</td><td style="padding:6px 8px;text-align:right;">+34,5</td></tr>
 </table>
 
-Il caso più estremo è la Russia ai Giochi di casa del 2020, in gara sotto bandiera neutra (ROC) per la squalifica da doping di stato, ma con l'intero apparato sportivo ereditato dalla Federazione Russa: **+125,3 medaglie** rispetto al previsto. Al secondo posto, la Federazione Russa nel 1996 — la prima Olimpiade dopo la dissoluzione dell'URSS, con poco storico proprio ma un sistema sovietico ereditato integralmente: **+112,5**. Non sono "efficienza" nel senso di Kenya o Cuba: sono transizioni geopolitiche che il modello non ha modo di rappresentare.
+Il caso più estremo è la Russia a Tokyo 2020, in gara sotto bandiera neutra (ROC) per la squalifica da doping di stato — non un'Olimpiade di casa, ma un cortocircuito del modello: il cambio di sigla (da RUS a ROC) azzera artificialmente lo storico/lag di quella nazione, quindi il modello parte da una base quasi nulla e sottostima pesantemente un sistema sportivo in realtà fortissimo, ereditato integralmente dalla Federazione Russa: **+125,3 medaglie** rispetto al previsto. Al secondo posto, la Federazione Russa nel 1996 — la prima Olimpiade dopo la dissoluzione dell'URSS, stesso meccanismo di "cold start" del lag: **+112,5**. Non sono "efficienza" nel senso di Kenya o Cuba: sono discontinuità storiche che il modello non ha modo di rappresentare correttamente.
 
 **Storie di politica, non di sport.** All'estremo opposto, i residui più negativi in assoluto corrispondono esattamente alle due edizioni boicottate della Guerra Fredda. Il modello prevede circa **54 medaglie per la Bulgaria nel 1984** e **47 per il Giappone nel 1980** — sulla carta, paesi con le risorse per arrivare a quei numeri. Nella realtà, entrambi i paesi tornarono a casa **a zero medaglie**. Non per un crollo improvviso del loro sistema sportivo, ma perché semplicemente **non parteciparono**: il 1980 e il 1984 sono le due edizioni dei boicottaggi incrociati della Guerra Fredda (Mosca 1980, boicottata dagli USA e alleati; Los Angeles 1984, boicottata dall'URSS e blocco sovietico).
 
@@ -89,6 +89,12 @@ Il caso più estremo è la Russia ai Giochi di casa del 2020, in gara sotto band
 </table>
 
 Gli altri under-performer in tabella (Canada 1988, Russia 2008, Gran Bretagna 1996) sono invece più vicini al concetto di sotto-performance genuina: grandi sistemi sportivi con PIL elevato ma, in quella specifica edizione, un rendimento inferiore al potenziale stimato dal modello — non una scusa storica, semplicemente un'edizione sotto tono.
+
+Le due tabelle mostrano solo i casi più estremi; il grafico sotto li colloca tutti nel tempo, nazione per nazione — dimensione e colore della bolla indicano l'entità del residuo (blu = over-performance, rosa = under-performance).
+
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/over_under_performer_timeline.json" style="width: 100%; height: 100%"></vegachart>
+</div>
 
 Un terzo episodio, meno estremo ma comunque rilevante, è il boicottaggio africano di Montreal 1976 (circa 30 paesi assenti in protesta contro la partecipazione della Nuova Zelanda, il cui rugby aveva giocato nel Sudafrica dell'apartheid). Il quadro completo dei tre boicottaggi del periodo — 1976, 1980, 1984 — è approfondito nella pagina "Successo Maschile e Femminile", dove la stessa perturbazione viene letta anche dal lato dell'equilibrio di genere nel medagliere.
 
