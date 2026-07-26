@@ -95,128 +95,128 @@
     }
   },
   "data": {
-    "name": "data-3778f41a1fb8b89fc86d1e77b4babd15"
+    "name": "data-99d4e0640b59a09f26cc4fbd02172fdb"
   },
   "datasets": {
-    "data-3778f41a1fb8b89fc86d1e77b4babd15": [
+    "data-99d4e0640b59a09f26cc4fbd02172fdb": [
       {
-        "cluster": "Cluster 0",
-        "feature": "n_nations_mean",
+        "cluster": "Sport a media diffusione",
+        "feature": "Paesi partecipanti",
         "valore": 0.46926200408120206
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "n_nations_mean",
+        "cluster": "Grandi sport di massa",
+        "feature": "Paesi partecipanti",
         "valore": 1.279734142365233
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "n_nations_mean",
+        "cluster": "Sport di squadra",
+        "feature": "Paesi partecipanti",
         "valore": -0.9962421118844019
       },
       {
-        "cluster": "Cluster 3",
-        "feature": "n_nations_mean",
+        "cluster": "Sport di nicchia ad alta efficienza",
+        "feature": "Paesi partecipanti",
         "valore": -0.43751199093521853
       },
       {
-        "cluster": "Cluster 0",
-        "feature": "athletes_per_event",
+        "cluster": "Sport a media diffusione",
+        "feature": "Atleti per evento",
         "valore": -0.28830714793938217
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "athletes_per_event",
+        "cluster": "Grandi sport di massa",
+        "feature": "Atleti per evento",
         "valore": 1.678207844389434
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "athletes_per_event",
+        "cluster": "Sport di squadra",
+        "feature": "Atleti per evento",
         "valore": -0.9795652610664156
       },
       {
-        "cluster": "Cluster 3",
-        "feature": "athletes_per_event",
+        "cluster": "Sport di nicchia ad alta efficienza",
+        "feature": "Atleti per evento",
         "valore": 0.22680301877028075
       },
       {
-        "cluster": "Cluster 0",
-        "feature": "hhi_gold_mean",
+        "cluster": "Sport a media diffusione",
+        "feature": "Concentrazione ori",
         "valore": -0.907222491271894
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "hhi_gold_mean",
+        "cluster": "Grandi sport di massa",
+        "feature": "Concentrazione ori",
         "valore": -0.8716633380315456
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "hhi_gold_mean",
+        "cluster": "Sport di squadra",
+        "feature": "Concentrazione ori",
         "valore": 0.92394731093448
       },
       {
-        "cluster": "Cluster 3",
-        "feature": "hhi_gold_mean",
+        "cluster": "Sport di nicchia ad alta efficienza",
+        "feature": "Concentrazione ori",
         "valore": 0.7916678742103272
       },
       {
-        "cluster": "Cluster 0",
-        "feature": "mean_gold_per_athletes",
+        "cluster": "Sport a media diffusione",
+        "feature": "Efficienza per atleta",
         "valore": 0.0033478784597724275
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "mean_gold_per_athletes",
+        "cluster": "Grandi sport di massa",
+        "feature": "Efficienza per atleta",
         "valore": -0.2693600216153258
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "mean_gold_per_athletes",
+        "cluster": "Sport di squadra",
+        "feature": "Efficienza per atleta",
         "valore": -1.184877795505707
       },
       {
-        "cluster": "Cluster 3",
-        "feature": "mean_gold_per_athletes",
+        "cluster": "Sport di nicchia ad alta efficienza",
+        "feature": "Efficienza per atleta",
         "valore": 1.1124125335696595
       },
       {
-        "cluster": "Cluster 0",
-        "feature": "mean_gold_per_popul_log",
+        "cluster": "Sport a media diffusione",
+        "feature": "Ori per abitante",
         "valore": 0.41876032944087443
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "mean_gold_per_popul_log",
+        "cluster": "Grandi sport di massa",
+        "feature": "Ori per abitante",
         "valore": 0.9814025187324907
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "mean_gold_per_popul_log",
+        "cluster": "Sport di squadra",
+        "feature": "Ori per abitante",
         "valore": -0.6477010774337729
       },
       {
-        "cluster": "Cluster 3",
-        "feature": "mean_gold_per_popul_log",
+        "cluster": "Sport di nicchia ad alta efficienza",
+        "feature": "Ori per abitante",
         "valore": -0.500271790747485
       },
       {
-        "cluster": "Cluster 0",
-        "feature": "pct_team_events",
+        "cluster": "Sport a media diffusione",
+        "feature": "Sport di squadra",
         "valore": -0.37851545420385696
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "pct_team_events",
+        "cluster": "Grandi sport di massa",
+        "feature": "Sport di squadra",
         "valore": -0.9080626658322464
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "pct_team_events",
+        "cluster": "Sport di squadra",
+        "feature": "Sport di squadra",
         "valore": 1.4534030688673079
       },
       {
-        "cluster": "Cluster 3",
-        "feature": "pct_team_events",
+        "cluster": "Sport di nicchia ad alta efficienza",
+        "feature": "Sport di squadra",
         "valore": -0.24650461092383155
       }
     ]
@@ -224,6 +224,16 @@
   "encoding": {
     "color": {
       "field": "cluster",
+      "legend": {
+        "columns": 2,
+        "orient": "bottom"
+      },
+      "sort": [
+        "Sport a media diffusione",
+        "Grandi sport di massa",
+        "Sport di squadra",
+        "Sport di nicchia ad alta efficienza"
+      ],
       "title": "Cluster",
       "type": "nominal"
     },
@@ -242,25 +252,22 @@
       }
     ],
     "x": {
-      "axis": {
-        "labelAngle": -45
-      },
-      "field": "feature",
-      "sort": [
-        "n_nations_mean",
-        "athletes_per_event",
-        "hhi_gold_mean",
-        "mean_gold_per_athletes",
-        "mean_gold_per_popul_log",
-        "pct_team_events"
-      ],
-      "title": null,
-      "type": "nominal"
-    },
-    "y": {
       "field": "valore",
       "title": "",
       "type": "quantitative"
+    },
+    "y": {
+      "field": "feature",
+      "sort": [
+        "Paesi partecipanti",
+        "Atleti per evento",
+        "Concentrazione ori",
+        "Efficienza per atleta",
+        "Ori per abitante",
+        "Sport di squadra"
+      ],
+      "title": null,
+      "type": "nominal"
     }
   },
   "height": 300,
@@ -271,7 +278,7 @@
   "params": [
     {
       "bind": "scales",
-      "name": "param_1",
+      "name": "param_15",
       "select": {
         "encodings": [
           "x",

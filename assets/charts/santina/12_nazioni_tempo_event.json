@@ -95,368 +95,548 @@
     }
   },
   "data": {
-    "name": "data-0d448f9f1d30679509ee1b61c8748d8d"
+    "name": "data-f41f5a4de0c04ddddabcd6e5c421bfa8"
   },
   "datasets": {
-    "data-0d448f9f1d30679509ee1b61c8748d8d": [
+    "data-f41f5a4de0c04ddddabcd6e5c421bfa8": [
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.3125,
+        "gold_per_athlete_norm": 1.010260143424493,
         "gold_per_popul": 1.0029579130111936e-07,
+        "gold_per_popul_norm": 1.9815612874624615,
         "n_athletes": 17.2,
+        "n_athletes_norm": 0.7302565589464478,
         "n_nations": 10.2,
+        "n_nations_norm": 0.6566608526190386,
         "year": 1964
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.3,
+        "gold_per_athlete_norm": 0.9698497376875133,
         "gold_per_popul": 7.394967319812254e-08,
+        "gold_per_popul_norm": 1.4610364774923967,
         "n_athletes": 21.714285714285715,
+        "n_athletes_norm": 0.9219185794008312,
         "n_nations": 11.571428571428571,
+        "n_nations_norm": 0.7449513874249597,
         "year": 1968
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.3,
+        "gold_per_athlete_norm": 0.9698497376875133,
         "gold_per_popul": 3.515345748648632e-08,
+        "gold_per_popul_norm": 0.6945329367464824,
         "n_athletes": 23.333333333333332,
+        "n_athletes_norm": 0.9906581226017703,
         "n_nations": 13.333333333333334,
+        "n_nations_norm": 0.8583801995020113,
         "year": 1972
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.3,
+        "gold_per_athlete_norm": 0.9698497376875133,
         "gold_per_popul": 4.58862418506161e-08,
+        "gold_per_popul_norm": 0.9065824128684643,
         "n_athletes": 20.6,
+        "n_athletes_norm": 0.8746095996684202,
         "n_nations": 11.4,
+        "n_nations_norm": 0.7339150705742197,
         "year": 1976
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.5555555555555555,
+        "gold_per_athlete_norm": 1.796018032754654,
         "gold_per_popul": 1.322502697492221e-07,
+        "gold_per_popul_norm": 2.6128914423211853,
         "n_athletes": 15.2,
+        "n_athletes_norm": 0.6453430055805818,
         "n_nations": 8.4,
+        "n_nations_norm": 0.5407795256862671,
         "year": 1980
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.35,
+        "gold_per_athlete_norm": 1.1314913606354322,
         "gold_per_popul": 1.8514962451687332e-08,
+        "gold_per_popul_norm": 0.3658033139489794,
         "n_athletes": 28.0,
+        "n_athletes_norm": 1.1887897471221245,
         "n_nations": 16.625,
+        "n_nations_norm": 1.0702928112540704,
         "year": 1984
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.27539682539682536,
+        "gold_per_athlete_norm": 0.89031179623695,
         "gold_per_popul": 5.342107658259609e-08,
+        "gold_per_popul_norm": 1.0554494452596082,
         "n_athletes": 20.75,
+        "n_athletes_norm": 0.8809781161708601,
         "n_nations": 13.55,
+        "n_nations_norm": 0.872328877743919,
         "year": 1988
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.2951007326007326,
+        "gold_per_athlete_norm": 0.9540112270140452,
         "gold_per_popul": 8.658854915239047e-08,
+        "gold_per_popul_norm": 1.710744934678057,
         "n_athletes": 23.9,
+        "n_athletes_norm": 1.014716962722099,
         "n_nations": 15.3,
+        "n_nations_norm": 0.984991278928558,
         "year": 1992
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.2893744164332399,
+        "gold_per_athlete_norm": 0.9354990062375166,
         "gold_per_popul": 2.5534234056465103e-08,
+        "gold_per_popul_norm": 0.5044842765075439,
         "n_athletes": 33.18181818181818,
+        "n_athletes_norm": 1.4087930444791408,
         "n_nations": 21.09090909090909,
+        "n_nations_norm": 1.3578014064849995,
         "year": 1996
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.193694885361552,
+        "gold_per_athlete_norm": 0.6261831125310472,
         "gold_per_popul": 3.1433952253182304e-08,
+        "gold_per_popul_norm": 0.621046028839241,
         "n_athletes": 22.473684210526315,
+        "n_athletes_norm": 0.9541601917690735,
         "n_nations": 16.210526315789473,
+        "n_nations_norm": 1.0436096109734978,
         "year": 2000
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.3234962406015038,
+        "gold_per_athlete_norm": 1.0458091469675506,
         "gold_per_popul": 2.1146505336033794e-08,
+        "gold_per_popul_norm": 0.41779516164538477,
         "n_athletes": 23.94736842105263,
+        "n_athletes_norm": 1.0167280731965538,
         "n_nations": 17.31578947368421,
+        "n_nations_norm": 1.1147648117216908,
         "year": 2004
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.22922468207555927,
+        "gold_per_athlete_norm": 0.7410449926082826,
         "gold_per_popul": 1.6080293365292262e-08,
+        "gold_per_popul_norm": 0.3177011359134368,
         "n_athletes": 25.105263157894736,
+        "n_athletes_norm": 1.0658885514610026,
         "n_nations": 18.94736842105263,
+        "n_nations_norm": 1.219803441397595,
         "year": 2008
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.28686585745409277,
+        "gold_per_athlete_norm": 0.9273892553445182,
         "gold_per_popul": 2.735728913875687e-08,
+        "gold_per_popul_norm": 0.5405026909306897,
         "n_athletes": 25.263157894736842,
+        "n_athletes_norm": 1.0725922530425183,
         "n_nations": 19.526315789473685,
+        "n_nations_norm": 1.2570752132180771,
         "year": 2012
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.3563822751322751,
+        "gold_per_athlete_norm": 1.152124186845054,
         "gold_per_popul": 4.211556025267476e-08,
+        "gold_per_popul_norm": 0.8320844046779226,
         "n_athletes": 25.57894736842105,
+        "n_athletes_norm": 1.0859996562055496,
         "n_nations": 19.263157894736842,
+        "n_nations_norm": 1.2401334987542216,
         "year": 2016
       },
       {
-        "cluster_k3": "Cluster 0",
+        "cluster_k3": "Eventi di nicchia ad alta efficienza",
         "gold_per_athlete": 0.27230255124991964,
+        "gold_per_athlete_norm": 0.8803085263379175,
         "gold_per_popul": 4.9490079215753444e-08,
+        "gold_per_popul_norm": 0.9777840507081488,
         "n_athletes": 27.05263157894737,
+        "n_athletes_norm": 1.14856753763303,
         "n_nations": 20.263157894736842,
+        "n_nations_norm": 1.3045120137168724,
         "year": 2020
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.07701463560003585,
+        "gold_per_athlete_norm": 1.1464260093491292,
         "gold_per_popul": 3.3247570970285684e-07,
+        "gold_per_popul_norm": 4.570879916238597,
         "n_athletes": 14.35135135135135,
+        "n_athletes_norm": 1.0030416928634414,
         "n_nations": 14.35135135135135,
+        "n_nations_norm": 1.010673181948797,
         "year": 1964
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.07072005915266619,
+        "gold_per_athlete_norm": 1.0527260768508746,
         "gold_per_popul": 5.251912647537394e-08,
+        "gold_per_popul_norm": 0.7220335604042437,
         "n_athletes": 15.763157894736842,
+        "n_athletes_norm": 1.101715385019945,
         "n_nations": 15.842105263157896,
+        "n_nations_norm": 1.1156573721244678,
         "year": 1968
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.062302981344966354,
+        "gold_per_athlete_norm": 0.9274309709754669,
         "gold_per_popul": 4.121665154807125e-08,
+        "gold_per_popul_norm": 0.5666470039091235,
         "n_athletes": 17.51219512195122,
+        "n_athletes_norm": 1.2239587346750347,
         "n_nations": 17.21951219512195,
+        "n_nations_norm": 1.212659265025331,
         "year": 1972
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.06103105242587419,
+        "gold_per_athlete_norm": 0.908497265926684,
         "gold_per_popul": 6.825885392263256e-08,
+        "gold_per_popul_norm": 0.9384235160495528,
         "n_athletes": 14.304347826086957,
+        "n_athletes_norm": 0.9997565321564458,
         "n_nations": 14.304347826086957,
+        "n_nations_norm": 1.0073630265997469,
         "year": 1976
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.058279612811964476,
+        "gold_per_athlete_norm": 0.8675398308630277,
         "gold_per_popul": 5.933537534631501e-08,
+        "gold_per_popul_norm": 0.8157434290022049,
         "n_athletes": 11.042553191489361,
+        "n_athletes_norm": 0.7717838533500285,
         "n_nations": 11.042553191489361,
+        "n_nations_norm": 0.7776558525849562,
         "year": 1980
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.06806808452827517,
+        "gold_per_athlete_norm": 1.0132492597258147,
         "gold_per_popul": 4.625418971824186e-08,
+        "gold_per_popul_norm": 0.6359031371463371,
         "n_athletes": 12.764705882352942,
+        "n_athletes_norm": 0.8921481945275918,
         "n_nations": 12.764705882352942,
+        "n_nations_norm": 0.8989359674162948,
         "year": 1984
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.06578632795824314,
+        "gold_per_athlete_norm": 0.9792834419496573,
         "gold_per_popul": 3.648494512378548e-08,
+        "gold_per_popul_norm": 0.5015954490643062,
         "n_athletes": 14.98360655737705,
+        "n_athletes_norm": 1.0472311435045494,
         "n_nations": 14.98360655737705,
+        "n_nations_norm": 1.0551988412566584,
         "year": 1988
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.06388936708426096,
+        "gold_per_athlete_norm": 0.9510456236738566,
         "gold_per_popul": 2.269745835567367e-08,
+        "gold_per_popul_norm": 0.31204492093672864,
         "n_athletes": 16.0,
+        "n_athletes_norm": 1.1182687046613131,
         "n_nations": 15.852459016393443,
+        "n_nations_norm": 1.1163865202354362,
         "year": 1992
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.058900489704352646,
+        "gold_per_athlete_norm": 0.8767820925772066,
         "gold_per_popul": 3.141566608243261e-08,
+        "gold_per_popul_norm": 0.4319029419616438,
         "n_athletes": 15.929824561403509,
+        "n_athletes_norm": 1.113364017360167,
         "n_nations": 15.736842105263158,
+        "n_nations_norm": 1.1082443663296206,
         "year": 1996
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.07045403479058374,
+        "gold_per_athlete_norm": 1.0487660860590504,
         "gold_per_popul": 1.0193510464038062e-07,
+        "gold_per_popul_norm": 1.4014050018174666,
         "n_athletes": 14.879310344827585,
+        "n_athletes_norm": 1.0399416940977513,
         "n_nations": 14.724137931034482,
+        "n_nations_norm": 1.0369261381654034,
         "year": 2000
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.07583021793148009,
+        "gold_per_athlete_norm": 1.1287949810311253,
         "gold_per_popul": 5.13367502450118e-08,
+        "gold_per_popul_norm": 0.7057782382646794,
         "n_athletes": 13.454545454545455,
+        "n_athletes_norm": 0.9403623198288316,
         "n_nations": 13.236363636363636,
+        "n_nations_norm": 0.9321517832211197,
         "year": 2004
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.06911458699824717,
+        "gold_per_athlete_norm": 1.0288273072109013,
         "gold_per_popul": 5.192500533113689e-08,
+        "gold_per_popul_norm": 0.7138655760169547,
         "n_athletes": 13.363636363636363,
+        "n_athletes_norm": 0.9340085203705285,
         "n_nations": 13.163636363636364,
+        "n_nations_norm": 0.9270300701264982,
         "year": 2008
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.060398024430073305,
+        "gold_per_athlete_norm": 0.8990741250732855,
         "gold_per_popul": 9.805818753098588e-08,
+        "gold_per_popul_norm": 1.34810510039582,
         "n_athletes": 13.411764705882353,
+        "n_athletes_norm": 0.9373722965543361,
         "n_nations": 13.215686274509803,
+        "n_nations_norm": 0.9306956098902959,
         "year": 2012
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.07087975226942239,
+        "gold_per_athlete_norm": 1.055103239855503,
         "gold_per_popul": 4.380959622073756e-08,
+        "gold_per_popul_norm": 0.6022948373667941,
         "n_athletes": 13.68,
+        "n_athletes_norm": 0.9561197424854228,
         "n_nations": 13.54,
+        "n_nations_norm": 0.9535349353911646,
         "year": 2016
       },
       {
-        "cluster_k3": "Cluster 1",
+        "cluster_k3": "Eventi di squadra",
         "gold_per_athlete": 0.07500115429351015,
+        "gold_per_athlete_norm": 1.1164536888784176,
         "gold_per_popul": 5.334425023472809e-08,
+        "gold_per_popul_norm": 0.7333773714255478,
         "n_athletes": 13.176470588235293,
+        "n_athletes_norm": 0.9209271685446108,
         "n_nations": 13.019607843137255,
+        "n_nations_norm": 0.9168870696842085,
         "year": 2020
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.0837718321635918,
+        "gold_per_athlete_norm": 0.9495286036592809,
         "gold_per_popul": 4.7632886199518045e-08,
+        "gold_per_popul_norm": 0.7655398780244018,
         "n_athletes": 40.14655172413793,
+        "n_athletes_norm": 1.0500337532777,
         "n_nations": 21.78448275862069,
+        "n_nations_norm": 0.8880020471638321,
         "year": 1964
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.08223398040854503,
+        "gold_per_athlete_norm": 0.9320975150476226,
         "gold_per_popul": 3.7151835562942085e-08,
+        "gold_per_popul_norm": 0.5970919239725828,
         "n_athletes": 41.50833333333333,
+        "n_athletes_norm": 1.0856511747706714,
         "n_nations": 22.875,
+        "n_nations_norm": 0.9324548603677201,
         "year": 1968
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.0786967723598434,
+        "gold_per_athlete_norm": 0.8920043222333948,
         "gold_per_popul": 5.496173373045156e-08,
+        "gold_per_popul_norm": 0.883326673923976,
         "n_athletes": 42.23529411764706,
+        "n_athletes_norm": 1.1046648466318014,
         "n_nations": 24.00735294117647,
+        "n_nations_norm": 0.9786130244617828,
         "year": 1972
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.08554466243863396,
+        "gold_per_athlete_norm": 0.9696231033509957,
         "gold_per_popul": 6.846192338770366e-08,
+        "gold_per_popul_norm": 1.1002972244849798,
         "n_athletes": 35.15909090909091,
+        "n_athletes_norm": 0.9195866295761503,
         "n_nations": 20.356060606060606,
+        "n_nations_norm": 0.8297751978168783,
         "year": 1976
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.08897110140657737,
+        "gold_per_athlete_norm": 1.0084607618422357,
         "gold_per_popul": 7.958243625584787e-08,
+        "gold_per_popul_norm": 1.2790224024846713,
         "n_athletes": 27.34328358208955,
+        "n_athletes_norm": 0.7151640540369355,
         "n_nations": 16.67910447761194,
+        "n_nations_norm": 0.6798912365783718,
         "year": 1980
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.0770802706862581,
+        "gold_per_athlete_norm": 0.8736817603735213,
         "gold_per_popul": 3.238301148001219e-08,
+        "gold_per_popul_norm": 0.5204489720533073,
         "n_athletes": 34.13907284768212,
+        "n_athletes_norm": 0.8929080395744058,
         "n_nations": 21.52980132450331,
+        "n_nations_norm": 0.8776204541107974,
         "year": 1984
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.08007181211690974,
+        "gold_per_athlete_norm": 0.907589985657271,
         "gold_per_popul": 6.95056619772162e-08,
+        "gold_per_popul_norm": 1.1170718433724003,
         "n_athletes": 39.388888888888886,
+        "n_athletes_norm": 1.0302170687444367,
         "n_nations": 24.734567901234566,
+        "n_nations_norm": 1.0082565271519812,
         "year": 1988
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.07509413170908881,
+        "gold_per_athlete_norm": 0.851169470490903,
         "gold_per_popul": 3.67038691703775e-08,
+        "gold_per_popul_norm": 0.589892357352024,
         "n_athletes": 39.95238095238095,
+        "n_athletes_norm": 1.0449552133909923,
         "n_nations": 25.541666666666668,
+        "n_nations_norm": 1.0411563377147768,
         "year": 1992
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.08875004252212364,
+        "gold_per_athlete_norm": 1.0059551256580834,
         "gold_per_popul": 5.4830901822282083e-08,
+        "gold_per_popul_norm": 0.8812239870827413,
         "n_athletes": 41.55882352941177,
+        "n_athletes_norm": 1.086971746720568,
         "n_nations": 27.476470588235294,
+        "n_nations_norm": 1.1200248544590474,
         "year": 1996
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.10004346142289985,
+        "gold_per_athlete_norm": 1.1339626432500634,
         "gold_per_popul": 7.07158235728008e-08,
+        "gold_per_popul_norm": 1.1365211573693135,
         "n_athletes": 40.0887573964497,
+        "n_athletes_norm": 1.0485221416394794,
         "n_nations": 27.899408284023668,
+        "n_nations_norm": 1.137265086593281,
         "year": 2000
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.08913176388709551,
+        "gold_per_athlete_norm": 1.0102818228939854,
         "gold_per_popul": 6.045560399807483e-08,
+        "gold_per_popul_norm": 0.9716223265733165,
         "n_athletes": 39.13253012048193,
+        "n_athletes_norm": 1.023512000731979,
         "n_nations": 27.198795180722893,
+        "n_nations_norm": 1.1087059568267184,
         "year": 2004
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.09714684890052823,
+        "gold_per_athlete_norm": 1.1011304086829785,
         "gold_per_popul": 5.67976926912885e-08,
+        "gold_per_popul_norm": 0.9128335946898049,
         "n_athletes": 39.43030303030303,
+        "n_athletes_norm": 1.0313002563279352,
         "n_nations": 27.89090909090909,
+        "n_nations_norm": 1.1369186335253512,
         "year": 2008
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.09369552666873096,
+        "gold_per_athlete_norm": 1.062010705855696,
         "gold_per_popul": 1.0909338545657915e-07,
+        "gold_per_popul_norm": 1.7533125464176402,
         "n_athletes": 37.51875,
+        "n_athletes_norm": 0.9813035538267928,
         "n_nations": 27.35625,
+        "n_nations_norm": 1.1151242961282817,
         "year": 2012
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.09544809893300812,
+        "gold_per_athlete_norm": 1.0818755870685284,
         "gold_per_popul": 6.871710260941326e-08,
+        "gold_per_popul_norm": 1.1043983799229198,
         "n_athletes": 39.20886075949367,
+        "n_athletes_norm": 1.025508429912804,
         "n_nations": 27.29746835443038,
+        "n_nations_norm": 1.1127281767354158,
         "year": 2016
       },
       {
-        "cluster_k3": "Cluster 2",
+        "cluster_k3": "Grande bacino degli eventi individuali",
         "gold_per_athlete": 0.10768949873097383,
+        "gold_per_athlete_norm": 1.2206281839354394,
         "gold_per_popul": 8.63256279119344e-08,
+        "gold_per_popul_norm": 1.387396732275921,
         "n_athletes": 36.69281045751634,
+        "n_athletes_norm": 0.9597010908373464,
         "n_nations": 25.352941176470587,
+        "n_nations_norm": 1.0334633103657662,
         "year": 2020
       }
     ]
@@ -464,6 +644,16 @@
   "encoding": {
     "color": {
       "field": "cluster_k3",
+      "legend": {
+        "columns": 3,
+        "labelLimit": 300,
+        "orient": "bottom"
+      },
+      "sort": [
+        "Eventi di nicchia ad alta efficienza",
+        "Eventi di squadra",
+        "Grande bacino degli eventi individuali"
+      ],
       "title": "Cluster",
       "type": "nominal"
     },
@@ -477,7 +667,7 @@
         "type": "quantitative"
       },
       {
-        "field": "n_nations",
+        "field": "valore_plot",
         "format": ".2f",
         "type": "quantitative"
       }
@@ -491,7 +681,7 @@
       "type": "ordinal"
     },
     "y": {
-      "field": "n_nations",
+      "field": "valore_plot",
       "scale": {},
       "title": null,
       "type": "quantitative"
@@ -502,6 +692,26 @@
     "point": true,
     "type": "line"
   },
+  "params": [
+    {
+      "bind": {
+        "input": "radio",
+        "name": "Visualizzazione: ",
+        "options": [
+          "Valori assoluti",
+          "Valori normalizzati"
+        ]
+      },
+      "name": "view_mode_n_nations",
+      "value": "Valori assoluti"
+    }
+  ],
   "title": "Nazioni partecipanti",
-  "width": 450
+  "transform": [
+    {
+      "as": "valore_plot",
+      "calculate": "view_mode_n_nations == 'Valori normalizzati' ? datum.n_nations_norm : datum.n_nations"
+    }
+  ],
+  "width": "container"
 }

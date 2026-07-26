@@ -95,83 +95,83 @@
     }
   },
   "data": {
-    "name": "data-620eb04006e841d98e3b2d83c0942efa"
+    "name": "data-1bd1aa9bd174772496727d0061f39346"
   },
   "datasets": {
-    "data-620eb04006e841d98e3b2d83c0942efa": [
+    "data-1bd1aa9bd174772496727d0061f39346": [
       {
-        "cluster": "Cluster 0",
-        "feature": "is_team_event",
+        "cluster": "Eventi di nicchia ad alta efficienza",
+        "feature": "Eventi di squadra",
         "valore": -0.24469870247268732
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "is_team_event",
+        "cluster": "Eventi di squadra",
+        "feature": "Eventi di squadra",
         "valore": 1.700678597592059
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "is_team_event",
+        "cluster": "Grande bacino degli eventi individuali",
+        "feature": "Eventi di squadra",
         "valore": -0.5880005789547023
       },
       {
-        "cluster": "Cluster 0",
-        "feature": "n_nations_mean",
+        "cluster": "Eventi di nicchia ad alta efficienza",
+        "feature": "Paesi partecipanti",
         "valore": -0.643158701754774
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "n_nations_mean",
+        "cluster": "Eventi di squadra",
+        "feature": "Paesi partecipanti",
         "valore": -0.9274055063099205
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "n_nations_mean",
+        "cluster": "Grande bacino degli eventi individuali",
+        "feature": "Paesi partecipanti",
         "valore": 0.4114755288088341
       },
       {
-        "cluster": "Cluster 0",
-        "feature": "gold_per_athlete",
+        "cluster": "Eventi di nicchia ad alta efficienza",
+        "feature": "Efficienza per atleta",
         "valore": 2.4661423138184215
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "gold_per_athlete",
+        "cluster": "Eventi di squadra",
+        "feature": "Efficienza per atleta",
         "valore": -0.39282905329815515
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "gold_per_athlete",
+        "cluster": "Grande bacino degli eventi individuali",
+        "feature": "Efficienza per atleta",
         "valore": -0.1460084501279694
       },
       {
-        "cluster": "Cluster 0",
-        "feature": "gold_per_popul_log",
+        "cluster": "Eventi di nicchia ad alta efficienza",
+        "feature": "Ori per abitante",
         "valore": -0.17900273543330708
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "gold_per_popul_log",
+        "cluster": "Eventi di squadra",
+        "feature": "Ori per abitante",
         "valore": -0.09386380709598124
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "gold_per_popul_log",
+        "cluster": "Grande bacino degli eventi individuali",
+        "feature": "Ori per abitante",
         "valore": 0.05496848391004073
       },
       {
-        "cluster": "Cluster 0",
-        "feature": "n_nations_with_gold",
+        "cluster": "Eventi di nicchia ad alta efficienza",
+        "feature": "Paesi vincitori di ori",
         "valore": -2.1133015206236787
       },
       {
-        "cluster": "Cluster 1",
-        "feature": "n_nations_with_gold",
+        "cluster": "Eventi di squadra",
+        "feature": "Paesi vincitori di ori",
         "valore": 0.03159445657476879
       },
       {
-        "cluster": "Cluster 2",
-        "feature": "n_nations_with_gold",
+        "cluster": "Grande bacino degli eventi individuali",
+        "feature": "Paesi vincitori di ori",
         "valore": 0.23571446844934615
       }
     ]
@@ -179,6 +179,11 @@
   "encoding": {
     "color": {
       "field": "cluster",
+      "legend": {
+        "columns": 3,
+        "labelLimit": 300,
+        "orient": "bottom"
+      },
       "title": "Cluster",
       "type": "nominal"
     },
@@ -197,24 +202,21 @@
       }
     ],
     "x": {
-      "axis": {
-        "labelAngle": 0
-      },
-      "field": "feature",
-      "sort": [
-        "is_team_event",
-        "n_nations_mean",
-        "gold_per_athlete",
-        "gold_per_popul_log",
-        "n_nations_with_gold"
-      ],
-      "title": null,
-      "type": "nominal"
-    },
-    "y": {
       "field": "valore",
       "title": null,
       "type": "quantitative"
+    },
+    "y": {
+      "field": "feature",
+      "sort": [
+        "Eventi di squadra",
+        "Paesi partecipanti",
+        "Efficienza per atleta",
+        "Ori per abitante",
+        "Paesi vincitori di ori"
+      ],
+      "title": null,
+      "type": "nominal"
     }
   },
   "height": 300,
@@ -225,7 +227,7 @@
   "params": [
     {
       "bind": "scales",
-      "name": "param_1",
+      "name": "param_6",
       "select": {
         "encodings": [
           "x",
