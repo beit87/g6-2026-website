@@ -8,13 +8,13 @@ custom_css: /assets/css/g6-charts.css
 
 {% include page-hero.html title="Chi salirà sul podio a Los Angeles?" %}
 
-Costruiamo un modello predittivo, verifichiamo che funzioni davvero su dati mai visti, testiamo se investire nello sport causa davvero più medaglie, e infine stimiamo il medagliere di Los Angeles 2028.
+Dopo aver confrontato cinque algoritmi di machine learning con cross-validation, il **Random Forest** si è rivelato il modello più preciso (R² = 0.75). Un'analisi indipendente della stessa famiglia di modelli, condotta da un altro membro del gruppo, conferma questo risultato: la variabile "paese ospitante" pesa solo lo 0.4% nella sua feature importance, perché il suo effetto è già in gran parte assorbito dalle medaglie del ciclo precedente. Partendo da questa base comune, usiamo il nostro modello per verificare che funzioni davvero su dati mai visti, testare se investire nello sport causa più medaglie, e stimare il medagliere di Los Angeles 2028.
 {: .lead}
 
 ---
 
 <h3>Il modello funziona davvero? Test su Tokyo 2020</h3>
-<p>Abbiamo allenato un Random Forest sulle edizioni 1968-2016 (R² = 0.75 in cross-validation su cinque modelli testati) e verificato le sue previsioni su <strong>Tokyo 2020</strong>, un intero ciclo olimpico mai visto durante l'allenamento. Il risultato: <strong>R² = 0.86, MAE = 4.2 medaglie</strong> per paese. Per i grandi paesi come USA e Cina l'errore è nell'ordine di poche unità, mentre per i paesi con 3-10 medaglie l'incertezza è naturalmente più alta in proporzione.</p>
+<p>Abbiamo allenato il modello sulle edizioni 1968-2016 e verificato le sue previsioni su <strong>Tokyo 2020</strong>, un intero ciclo olimpico mai visto durante l'allenamento. Il risultato: <strong>R² = 0.86, MAE = 4.2 medaglie</strong> per paese. Per i grandi paesi come USA e Cina l'errore è nell'ordine di poche unità, mentre per i paesi con 3-10 medaglie l'incertezza è naturalmente più alta in proporzione.</p>
 <p>Nel grafico, la linea tratteggiata rappresenta la previsione perfetta (previsto = reale). L'outlier principale è il Giappone, dove l'effetto host non è completamente catturato dal modello: il paese ha vinto più medaglie di quante il sistema si aspettasse, proprio per il vantaggio di giocare in casa.</p>
 
 <div class="full-width-chart-wrapper">
