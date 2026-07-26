@@ -8,7 +8,7 @@ custom_css: /assets/css/g6-charts.css
 
 {% include page-hero.html title="Chi salirà sul podio a Los Angeles?" %}
 
-Dopo aver confrontato cinque algoritmi di machine learning con cross-validation, il **Random Forest** si è rivelato il modello più preciso (R² = 0.75). Un'analisi indipendente della stessa famiglia di modelli, condotta da un altro membro del gruppo, conferma questo risultato: la variabile "paese ospitante" pesa solo lo 0.4% nella sua feature importance, perché il suo effetto è già in gran parte assorbito dalle medaglie del ciclo precedente. Partendo da questa base comune, usiamo il nostro modello per verificare che funzioni davvero su dati mai visti, testare se investire nello sport causa più medaglie, e stimare il medagliere di Los Angeles 2028.
+Il modello dietro queste previsioni è un **Random Forest**, scelto dopo aver confrontato cinque algoritmi di machine learning (OLS, Ridge, Lasso, Gradient Boosting e Random Forest) con cross-validation a 5 fold sulle edizioni 1968-2016. I modelli lineari si fermano a R² = 0.73, il Random Forest raggiunge R² = 0.75 in cross-validation. Usiamo questo modello per verificare che funzioni davvero su dati mai visti, testare se investire nello sport causa più medaglie, e stimare il medagliere di Los Angeles 2028.
 {: .lead}
 
 ---
