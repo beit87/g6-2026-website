@@ -13630,7 +13630,7 @@
           "Yugoslavia"
         ]
       },
-      "name": "param_2",
+      "name": "param_1",
       "select": {
         "fields": [
           "country"
@@ -13644,9 +13644,9 @@
   "transform": [
     {
       "filter": {
-        "param": "param_2"
+        "param": "param_1"
       }
     }
   ],
-  "width": 450
+  "width": "container"
 }

@@ -227,7 +227,7 @@
   "params": [
     {
       "bind": "scales",
-      "name": "param_6",
+      "name": "param_7",
       "select": {
         "encodings": [
           "x",
@@ -238,5 +238,5 @@
     }
   ],
   "title": "Centroidi dei cluster",
-  "width": 500
+  "width": "container"
 }

@@ -278,7 +278,7 @@
   "params": [
     {
       "bind": "scales",
-      "name": "param_15",
+      "name": "param_16",
       "select": {
         "encodings": [
           "x",
@@ -289,5 +289,5 @@
     }
   ],
   "title": "Centroidi dei cluster sugli sport",
-  "width": 500
+  "width": "container"
 }

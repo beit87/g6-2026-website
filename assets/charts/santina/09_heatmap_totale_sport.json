@@ -36261,7 +36261,7 @@
           "Wrestling"
         ]
       },
-      "name": "param_7",
+      "name": "param_17",
       "select": {
         "fields": [
           "sport"
@@ -36275,9 +36275,9 @@
   "transform": [
     {
       "filter": {
-        "param": "param_7"
+        "param": "param_17"
       }
     }
   ],
-  "width": 600
+  "width": "container"
 }

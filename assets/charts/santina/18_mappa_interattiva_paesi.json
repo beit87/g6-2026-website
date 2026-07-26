@@ -1838,5 +1838,5 @@
       "calculate": "isValid(datum.country) ? datum.country : 'Non applicabile'"
     }
   ],
-  "width": 800
+  "width": "container"
 }
