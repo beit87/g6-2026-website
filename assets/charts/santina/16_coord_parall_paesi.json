@@ -280,7 +280,7 @@
     "color": {
       "field": "cluster",
       "legend": {
-        "columns": 4,
+        "columns": 3,
         "labelLimit": 300,
         "orient": "bottom"
       },

@@ -945,7 +945,8 @@
     "color": {
       "field": "cluster_k4",
       "legend": {
-        "columns": 2,
+        "columns": 4,
+        "labelLimit": 250,
         "orient": "bottom"
       },
       "sort": [

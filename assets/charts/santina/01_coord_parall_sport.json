@@ -226,6 +226,7 @@
       "field": "cluster",
       "legend": {
         "columns": 4,
+        "labelLimit": 250,
         "orient": "bottom"
       },
       "sort": [
