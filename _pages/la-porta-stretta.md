@@ -44,17 +44,17 @@ Sono emersi tre gruppi nitidi. I "Misti" — grandi potenze sportive con program
 A sinistra: ogni punto è un paese, posizionato secondo la quota di medaglie vinte in eventi individuali (asse x) e il volume totale di medaglie (asse y, scala log), colorato per cluster K-Means. A destra: la stessa quota individuale confrontata col PIL pro capite medio del paese (scala log); la linea nera è il trend di regressione — la sua pendenza negativa riflette la correlazione di Spearman ρ = −0,422 (p = 0,001).
 
 <div style="height: 460px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/chart_scatter_cluster.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Luisa/chart_scatter_cluster.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 <div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">Ogni punto è un paese. L'asse orizzontale è la quota di medaglie individuali, l'asse verticale il volume totale di medaglie (scala log); il colore indica il cluster K-Means.</div>
 
 <div style="height: 420px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/chart_pil_per_cluster.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Luisa/chart_pil_per_cluster.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 <div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">Distribuzione completa del PIL pro capite in ciascun cluster (non solo la media): la "scatola" mostra quanto varia la ricchezza dei paesi all'interno dello stesso profilo di vittoria.</div>
 
 <div style="height: 460px">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/chart_quota_vs_pil.json" style="width: 100%; height: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Luisa/chart_quota_vs_pil.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 <div style="font-size: 12px; color: #666; margin-bottom: 1.5rem;">La stessa correlazione di Spearman (ρ = −0,422) vista paese per paese, con la linea tratteggiata a indicare il trend di regressione: più PIL, meno dipendenza dalle medaglie individuali.</div>
 <p>------------</p>
