@@ -32,15 +32,15 @@ I paesi che hanno vinto almeno una medaglia possono essere suddivisi in tre gran
 
 A questo gruppo di paesi di grande successo, comunque, appartengono anche gli USA, che pure hanno sempre partecipato a tutte le edizioni dei Giochi (a parte il boicottaggio delle Olimpiadi di Mosca); evidentemente la similarità con gli altri membri del cluster è data dal grande numero di medaglie conquistate.
 
-Ci sono poi dei paesi che ottengono poche medaglie; tuttavia, all’interno di questo gruppo si possono trovare paesi molto “virtuosi”, come la Giamaica, le Bahamas o il Kenya. Questi paesi sono altamente specializzati nell’atletica e rispetto al numero totale di medaglie hanno una buona quota di ori. Sorprendentemente, hanno un rapporto ori / medaglie totali leggermente migliore di quello di grandi potenze olimpiche come USA, Russia, Cina, ecc.
+Ci sono poi dei paesi che ottengono poche medaglie; tuttavia, all’interno di questo gruppo si possono trovare paesi molto “virtuosi”, come la Giamaica, le Bahamas o il Kenya. Questi paesi sono altamente specializzati nell’atletica e rispetto al numero totale di medaglie hanno una buona quota di ori. Sorprendentemente, hanno un rapporto ori / medaglie ottenute leggermente migliore di quello di grandi potenze olimpiche come USA, Russia, Cina, ecc.
 
-Infine ci sono le “medie potenze consolidate”, paesi che ottengono molte medaglie ma non tante quanto le superpotenze e nemmeno in tutte le discipline sportive. Questi paesi tendono a raccogliere, in maniera consistente nel tempo, la maggior parte delle loro medaglie in alcune discipline in cui sono altamente specializzati. È questo il caso dell’Italia, che storicamente ha raccolto la maggior parte delle sue medaglia nella scherma e alla quale abbiamo dedicato un approfondimento.
+Infine ci sono le “medie potenze consolidate”, paesi che ottengono molte medaglie ma non al livello delle superpotenze e nemmeno in tutte le discipline sportive. Questi paesi tendono a raccogliere, in maniera consistente nel tempo, la maggior parte delle loro medaglie in alcune discipline in cui sono altamente specializzati. È questo il caso dell’Italia, che storicamente ha raccolto la maggior parte delle sue medaglia nella scherma e alla quale abbiamo dedicato un approfondimento.
 
 ## Atleti e atlete
 
 Dopo aver considerato i paesi come organismi sportivi collettivi, ci si può chiedere anche “chi” siano gli atleti che formano le delegazioni nazionali. In particolare, ci siamo chiesti come sia cambiata la loro composizione in un’ottica di genere; in effetti grandi cambiamenti ci sono stati.
 
-Ma partiamo considerando cosa si pubblicava nel periodo ufficiale del CIO Revue Olympique, fasciolo 79 del luglio 1912, nell’articolo “Les femmes aux Jeux Olympiques”:
+Consideriamo, intanto, ciò che si pubblicava nel periodo ufficiale del CIO Revue Olympique, fasciolo 79 del luglio 1912, nell’articolo “Les femmes aux Jeux Olympiques”:
 
 <blockquote>
 “Le Olimpiadi sono […] la solenne e periodica esaltazione dell'atletismo maschile, con l'internazionalismo come base, la lealtà come mezzo, l'arte come cornice e l'applauso femminile come ricompensa.”
@@ -54,31 +54,23 @@ Dalla fine del XIX secolo ad oggi, però, le cose sono molto cambiate e nelle Ol
 
 Ma è possibile stabilire che cosa determini il successo sportivo di un paese? Dalle prime analisi che avevamo fatto, sembrava emergere un dato inequivocabile: il miglior predittore del successo di un paese è il PIL, dove con tale termine non s’intende il prodotto pro capite ma proprio la misura della ricchezza complessiva di un sistema-paese. Da questo punto di vista è vero che, in linea di massima, i paesi più ricchi tendono a spartirsi la maggior parte delle medaglie.
 
-Tuttavia, a un’analisi più attenta è emerso che l’economia conta fino a un certo punto. Non sono i paesi più ricchi a vincere più medaglie, ma quelli che scelgono di investire davvero nello sport di alto livello. Il PIL conta meno di quanto ci si aspetterebbe: è la scelta politica di destinare risorse concrete alla preparazione degli atleti a fare la differenza.
+Tuttavia, a un’analisi più attenta, è emerso che l’economia conta fino a un certo punto. Non sono i paesi più ricchi a vincere più medaglie, ma quelli che scelgono di investire davvero nello sport di alto livello. Il PIL conta meno di quanto ci si aspetterebbe: è la scelta politica di destinare risorse concrete alla preparazione degli atleti a fare la differenza.
 
-Per esempio, il Regno Unito, dopo le disastrose partecipazioni ai Giochi del 2000 e 2004, cambiò completamente rotta investendo massicciamente nelle varie discipline sportive e tracciando i capitali in modo da avere pieno controllo della gestione delle risorse. Già nel 2008 le medaglie risultarono raddoppiate per poi crescere ulteriormente nelle edizioni successive.
+Per esempio, il Regno Unito, dopo le disastrose partecipazioni ai Giochi del 2000 e del 2004, cambiò completamente rotta investendo massicciamente nelle varie discipline sportive e tracciando i capitali in modo da avere pieno controllo della gestione delle risorse. Già nel 2008 le medaglie risultarono raddoppiate, per poi crescere ulteriormente nelle edizioni successive.
 
-Analogo discorso vale per alcuni paesi poveri che, in termini assoluti, hanno poche risorse da spendere per lo sport ma che, concentrandole nelle aree dove eccellono, riescono ad ottenere risultati di livello mondiale. Così, la Giamaica è diventata sinonimo di velocità; il Kenya domina nelle gare di resistenza e Cuba ha sviluppato una tradizione vincente in discipline come pugilato e lotta. È la prova che, nello sport come nell'economia, non sempre vince chi possiede di più ma chi sa sfruttare meglio ciò che ha.
+Analogo discorso vale per alcuni paesi poveri che, in termini assoluti, hanno poche risorse da spendere per lo sport ma che, concentrandole nelle aree dove eccellono, riescono ad ottenere risultati di livello mondiale. Così, la Giamaica è diventata sinonimo di velocità; il Kenya domina nelle gare di resistenza e Cuba ha sviluppato una tradizione vincente in discipline come judo e lotta. È la prova che, nello sport come nell'economia, non sempre vince chi possiede di più ma chi sa sfruttare meglio ciò che ha.
 
-**Le medaglie generano altre medaglie**
+## Predire il successo sportivo
 
-Se dovessimo scommettere su chi vincerà più medaglie alla prossima Olimpiade, il modo più semplice — e più efficace — sarebbe guardare a chi ne ha vinte di più all'ultima.
-
-Non è una battuta. È quello che i dati dicono davvero.
+Posto che il successo sportivo sembra dipendere da alcuni chiari fattori, è possibile, allora, riuscire a prevedere chi vincerà più medaglie alla prossima Olimpiade? Su chi si dovrebbe scommettere e, soprattutto, su quali criteri bisognerebbe basarsi per predire i risultati dei Giochi? Il modo più semplice ed efficace, che emerge dall'analisi dei dati, sarebbe guardare a chi ha vinto di più nell'ultima edizione.
 
 In un modello che mette alla prova PIL, popolazione e altri indicatori strutturali, il singolo fattore più predittivo del successo olimpico di una nazione non è nessuno di questi: è semplicemente quante medaglie quella stessa nazione aveva già vinto quattro anni prima — pesa quasi il 70% su tutti gli altri fattori messi insieme.
 
-Cosa significa? Che i sistemi sportivi nazionali cambiano lentissimamente. Infrastrutture, allenatori, federazioni, cultura sportiva: tutto questo non si costruisce — né si smonta — in un solo ciclo olimpico. Le Olimpiadi, insomma, non si vincono in quattro anni. Si vincono costruendo, in decenni, un sistema che continua a generare risultati simili edizione dopo edizione.
+Questo significa che i sistemi sportivi nazionali cambiano lentissimamente e che esiste, quindi, una vera e propria “inerzia sportiva”. Infrastrutture, allenatori, federazioni, cultura sportiva: tutto questo non si costruisce né si smonta in un solo ciclo olimpico. Le Olimpiadi, insomma, non si vincono in quattro anni ma si vincono costruendo, in decenni, un sistema che continua a generare risultati simili edizione dopo edizione.
 
-**Giocare in casa conta, eccome**
-
-C'è un fattore che, secondo il buon senso, dovrebbe sempre aiutare una nazione a vincere di più: giocare in casa.
-
-I dati dicono che il buon senso, per una volta, ha ragione — e più di quanto si pensi. Confrontando lo Score ottenuto da ogni nazione ospitante con la propria media storica nelle altre edizioni, il vantaggio emerge con chiarezza: su 12 Giochi analizzati, 11 nazioni hanno fatto meglio proprio nell'edizione di casa, in media quasi 50 medaglie in più rispetto al solito.
+L'esperienza insegna, però, che esiste anche un altro fattore in grado di influenzare positivamente i risultati di una delegazione olimpica: giocare in casa. E in effetti, questa verità del senso comune appare confermata dai dati. Confrontando lo Score ottenuto da ogni nazione ospitante con la propria media storica nelle altre edizioni, il vantaggio emerge con chiarezza: su 12 Giochi analizzati, 11 nazioni hanno fatto meglio proprio nell'edizione di casa, in media quasi 50 medaglie in più rispetto al solito.
 
 La Cina, a Pechino 2008, ha vissuto probabilmente l'esempio più eclatante: oltre 130 medaglie in più della propria media storica. Gli Stati Uniti nel 1996 e la Gran Bretagna a Londra 2012 raccontano una storia simile. Solo il Canada fa eccezione — l'unica nazione ospitante, nella storia dei Giochi, a non aver approfittato del proprio pubblico di casa.
-
-*Approfondimento: [Pil, storico e boicottaggi]({{site.baseurl}}/pil_storico_boicottaggi.html)*
 
 ## L’Italia e la scherma
 
