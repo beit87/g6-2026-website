@@ -7,7 +7,9 @@ vega: true
 
 {% include page-hero.html %}
 
-Costruiamo un modello predittivo, verifichiamo cosa guarda davvero per prevedere, misuriamo l'effetto di giocare in casa, e isoliamo gli episodi in cui la storia — non l'economia — ha deciso il podio.
+<p style="color:#666;font-size:14px;margin-top:-8px;margin-bottom:1.5rem;">Autore: Gianni Coia</p>
+
+**Ogni medaglia ha una storia economica alle spalle — ma non solo.** Quanto conta davvero la ricchezza di un paese nel determinare il suo medagliere olimpico? Meno di quanto sembri, e in un modo diverso da quello che ci si aspetterebbe. In questa pagina costruiamo un modello predittivo, verifichiamo cosa guarda davvero per prevedere, misuriamo l'effetto di giocare in casa, e isoliamo gli episodi in cui la storia — non l'economia — ha deciso il podio.
 
 ## Tre famiglie di nazioni olimpiche
 
@@ -28,7 +30,7 @@ Il messaggio di fondo: **i dati non dividono il mondo in "ricchi che vincono" e 
 
 ## Un modello che prova a prevedere il medagliere
 
-Prima di guardare al risultato, vale la pena farsi una domanda scomoda: perché costruire un modello complesso, se poi il verdetto è "guarda cosa la nazione aveva già vinto"? La risposta è che il modello non parte da questa idea — la mette alla prova insieme ad altre undici variabili (PIL, popolazione, aspettativa di vita, urbanizzazione e altre), lasciando ai dati il compito di decidere quale conta di più. Ed è proprio questo confronto rigoroso — non un'intuizione, non una scorciatoia — a rivelare che lo storico recente pesa quasi il **70%** su tutte le altre variabili messe insieme.
+Prima di guardare al risultato, vale la pena farsi una domanda scomoda: perché costruire un modello complesso, se poi il verdetto è "guarda cosa la nazione aveva già vinto"? La risposta è che il modello non parte da questa idea — la mette alla prova insieme a molte altre variabili (PIL, popolazione, aspettativa di vita, urbanizzazione e altre), lasciando ai dati il compito di decidere quale conta di più. Ed è proprio questo confronto rigoroso — non un'intuizione, non una scorciatoia — a rivelare che lo storico recente pesa quasi il **70%** su tutte le altre variabili messe insieme.
 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/feature_importance_shap.json" style="width: 100%; height: 100%"></vegachart>
@@ -102,4 +104,4 @@ Un'estensione renderebbe il quadro più completo: un indicatore esplicito di boi
 
 ## In sintesi
 
-Il successo olimpico è per circa il 68% spiegabile da fattori strutturali misurabili — PIL, demografia, storico sportivo — ma il predittore singolarmente più forte non è la ricchezza presente, è quella accumulata in decenni di sistema sportivo. Il PIL crea il potenziale; lo storico recente decide chi lo attiva; i residui rivelano dove efficienza, scelte ed eventi storici fanno la differenza tra realizzarlo o sprecarlo. Il valore del progetto non sta in un singolo numero, ma nell'aver dimostrato in modo convergente queste tre tesi, ciascuna supportata da più analisi indipendenti tra loro.
+Il successo olimpico è per circa il 68% spiegabile da fattori strutturali misurabili — PIL, demografia, storico sportivo — ma il predittore singolarmente più forte non è la ricchezza presente, è quella accumulata in decenni di sistema sportivo. Il PIL crea il potenziale; lo storico recente decide chi lo attiva; i residui rivelano dove efficienza, scelte ed eventi storici fanno la differenza tra realizzarlo o sprecarlo — dal +125,3 della Russia ai Giochi di casa del 2020 (in gara come ROC) al −53,6 della Bulgaria nel 1984, assente per boicottaggio nonostante un potenziale stimato di oltre 50 medaglie. Il valore del progetto non sta in un singolo numero, ma nell'aver dimostrato in modo convergente queste tre tesi, ciascuna supportata da più analisi indipendenti tra loro.
