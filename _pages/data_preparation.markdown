@@ -87,7 +87,7 @@ Dopo tutte le correzioni, il dataset è stato controllato sistematicamente per:
 - **Duplicati sulla coppia codice NOC + anno**: zero
 - **Somma totale delle medaglie**: invariata rispetto alla versione precedente alla correzione (11.782) — a conferma che nessuna medaglia reale è stata toccata, solo righe fittizie e codici incoerenti
 
-Il dataset finale (`dataset_indicatori_definitivo_5.csv`) parte da 3.126 righe grezze e arriva a **3.058 righe** dopo la rimozione delle righe fittizie residue; dopo la successiva pulizia dei valori mancanti applicata dalle singole analisi (interpolazione limitata a 3 anni di gap + imputazione con mediana per nazione + eliminazione delle sole righe prive dei pilastri fondamentali PIL, popolazione e punteggio medaglie) si arriva a **2.619 osservazioni valide** — l'**85,7%** del dataset di partenza, una quota di conservazione alta proprio perché la base di partenza era già pulita.
+Il dataset finale parte da 3.126 righe grezze e arriva a **3.058 righe** dopo la rimozione delle righe fittizie residue; dopo la successiva pulizia dei valori mancanti applicata dalle singole analisi (interpolazione limitata a 3 anni di gap + imputazione con mediana per nazione + eliminazione delle sole righe prive dei pilastri fondamentali PIL, popolazione e punteggio medaglie) si arriva a **2.619 osservazioni valide** — l'**85,7%** del dataset di partenza, una quota di conservazione alta proprio perché la base di partenza era già pulita.
 
 **Nota per chi riusa questo dataset:** il lavoro di correzione è documentato passo per passo, con il codice e la verifica di ogni singola riga rimossa, nel notebook `per_dataset_new.ipynb`.
 
