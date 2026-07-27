@@ -49,9 +49,9 @@ Il cuore della preparazione dati è l'unione tra medagliere e indicatori. Per og
 
 Il dataset finale contiene 6.700 righe (una per paese × edizione estiva, dal 1964 al 2020) e una quarantina di colonne:
 
-- **Identificazione**: `edition`, `year`, `country`, `country_noc`;
-- **Medagliere**: `gold`, `silver`, `bronze`, `total`;
-- **Contesto dell'edizione**: `paese_olimpiade`, `citta_olimpiade`;
+- **Identificazione**: edizione, anno, Paese, codice NOC del Paese;
+- **Medagliere**: medaglie d'oro, medaglie d'argento, medaglie di bronzo, medaglie totali;
+- **Contesto dell'edizione**: Paese ospitante, città ospitante;
 - **Indicatori socio-economici** (media dei 4 anni pre-olimpici), tra cui: PIL corrente e pro capite, crescita del PIL, popolazione totale e in età lavorativa, urbanizzazione, aspettativa di vita, mortalità infantile, iscrizione scolastica, spesa militare, inflazione e superficie del paese.
 
 ## Output prodotti
