@@ -89,8 +89,6 @@ Dopo tutte le correzioni, il dataset è stato controllato sistematicamente per:
 
 Il dataset finale parte da 3.126 righe grezze e arriva a **3.058 righe** dopo la rimozione delle righe fittizie residue; dopo la successiva pulizia dei valori mancanti applicata dalle singole analisi (interpolazione limitata a 3 anni di gap + imputazione con mediana per nazione + eliminazione delle sole righe prive dei pilastri fondamentali PIL, popolazione e punteggio medaglie) si arriva a **2.619 osservazioni valide** — l'**85,7%** del dataset di partenza, una quota di conservazione alta proprio perché la base di partenza era già pulita.
 
-**Nota per chi riusa questo dataset:** il lavoro di correzione è documentato passo per passo, con il codice e la verifica di ogni singola riga rimossa, nel notebook `per_dataset_new.ipynb`.
-
 ## Note metodologiche
 
 - **Finestra temporale pre-olimpica**: gli indicatori sono aggregati sui 4 anni precedenti ciascuna edizione. Il valore è un parametro dello script e può essere modificato per analisi di sensibilità.
