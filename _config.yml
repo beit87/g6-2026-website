@@ -45,10 +45,10 @@ navbar:
   brand: # brand della navbar, mostrato a sinistra.
     title :  "Non solo Giochi"
     img: "./assets/images/Logo_masthead.png" # non modificare
-    url: /idea.html
+    url: /index.html
   nav:
     - title: L'idea
-      url: /idea.html
+      url: /index.html
     - title: Data Preparation
       url: /data_preparation.html
     - title: Le Analisi
