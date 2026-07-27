@@ -76,10 +76,6 @@ Tuttavia, a un’analisi più attenta, è emerso che l’economia conta fino a u
 
 Per esempio, il Regno Unito, dopo le disastrose partecipazioni ai Giochi del 2000 e del 2004, cambiò completamente rotta investendo massicciamente nelle varie discipline sportive e tracciando i capitali in modo da avere pieno controllo della gestione delle risorse. Già nel 2008 le medaglie risultarono raddoppiate, per poi crescere ulteriormente nelle edizioni successive.
 
-<div class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/host_effect.json" style="width: 100%; height: 100%"></vegachart>
-</div>
-
 Analogo discorso vale per alcuni paesi poveri che, in termini assoluti, hanno poche risorse da spendere per lo sport ma che, concentrandole nelle aree dove eccellono, riescono ad ottenere risultati di livello mondiale. Così, la Giamaica è diventata sinonimo di velocità; il Kenya domina nelle gare di resistenza e Cuba ha sviluppato una tradizione vincente in discipline come judo e lotta. È la prova che, nello sport come nell'economia, non sempre vince chi possiede di più ma chi sa sfruttare meglio ciò che ha.
 
 ## Predire il successo sportivo
