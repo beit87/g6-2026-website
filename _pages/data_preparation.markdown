@@ -16,6 +16,10 @@ Il dataset di analisi nasce dall'integrazione di due famiglie di fonti:
   - `Olympic_Medal_Tally_History_definitivo.csv`: il medagliere per paese e per edizione (ori, argenti, bronzi, totale);
   - `Olympic_Games_Summary.csv`: le informazioni su ogni edizione dei Giochi (anno, paese e città ospitante).
 - **Indicatori socio-economici** — le serie storiche della [World Bank (Data360)](https://data360.worldbank.org/en/search), scaricate tramite chiamate API (utilizzando la libreria Python [wbgapi](https://pypi.org/project/wbgapi/)): PIL, PIL pro capite, popolazione, urbanizzazione, aspettativa di vita, istruzione, spesa militare, indicatori di governance e molti altri.
+- *Dati SPLISS* (VUB, Vrije Universiteit Brussel):
+    * Spesa pubblica per lo sport d'élite in 14–17 nazioni, riferita alle edizioni Tokyo 2020 e Paris 2024.
+- *Dati UK Sport*:
+    * Finanziamenti pubblici e medaglie del Team GB su 7 cicli olimpici (Sydney 2000 – Paris 2024), dati pubblici.
 
 La lista degli indicatori è stata costruita in modo collaborativo: utilizzando la libreria `wbgapi` è stato creato un file excel con tutti gli indicatori disponibili, nei vari database disponibili su WorldBank. Ogni partecipante al gruppo ha quindi esplorato e proposto un insieme di indicatori coerente con la propria analisi (istruzione, salute, macroeconomia, governance, demografia). Le liste sono state poi unite e deduplicate in un unico catalogo (una sessantina di serie World Bank). Avendo riscontrato una forte presenza di valori nulli, molti indicatori sono stati scartati dal stataset finale
 

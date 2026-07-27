@@ -38,13 +38,15 @@ Il grafico riportato consente di esplorare i risultati di ogni paese; passando s
 <vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
-I paesi che hanno vinto almeno una medaglia possono essere suddivisi in tre grandi gruppi. Innanzitutto, ci sono le “superpotenze” olimpiche (USA, Cina, Germania e Russia) che si distinguono per la partecipazione a molte e variegate discipline sportive, vincendo ori ovunque.
+I paesi che hanno vinto almeno una medaglia possono essere suddivisi in sette grandi gruppi: paesi con breve storia olimpica, piccoli Paesi iper-efficienti, paesi dai molti sport ma pochi ori, paesi dai pochi sport e pochi ori, medie potenze olimpiche consolidate, superpotenze olimpiche, paesi dai pochi sport ma molti ori. Tre gruppi, fra quelli citati, sono particolarmente interessanti.
+
+Innanzitutto, ci sono le “superpotenze” olimpiche (USA, Cina, Germania e Russia) che si distinguono per la partecipazione a molte e variegate discipline sportive, vincendo ori ovunque.
 
 È interessante notare, però, che si tratta di un cluster con una partecipazione bassa a livello di edizioni. Russia e Germania, per esempio, a causa delle loro vicissitudini storiche, hanno partecipato ai Giochi con denominazioni diverse (“URSS”, “Repubblica Federale Tedesca”, “Repubblica Democratica Tedesca”) e questo, tecnicamente, porta a considerare un paese nuovo nel medagliere storico a ogni cambio di nome. La Cina, poi, non hai mai partecipato dal 1956 al 1980.
 
 A questo gruppo di paesi di grande successo, comunque, appartengono anche gli USA, che pure hanno sempre partecipato a tutte le edizioni dei Giochi (a parte il boicottaggio delle Olimpiadi di Mosca); evidentemente la similarità con gli altri membri del cluster è data dal grande numero di medaglie conquistate.
 
-Ci sono poi dei paesi che ottengono poche medaglie; tuttavia, all’interno di questo gruppo si possono trovare paesi molto “virtuosi”, come la Giamaica, le Bahamas o il Kenya. Questi paesi sono altamente specializzati nell’atletica e rispetto al numero totale di medaglie hanno una buona quota di ori. Sorprendentemente, hanno un rapporto ori / medaglie ottenute leggermente migliore di quello di grandi potenze olimpiche come USA, Russia, Cina, ecc.
+Ci sono poi dei paesi che ottengono relativamente poche medaglie ma che sono molto “virtuosi”, come la Giamaica, le Bahamas o il Kenya. Questi paesi sono altamente specializzati nell’atletica e rispetto al numero totale di medaglie hanno una buona quota di ori. Sorprendentemente, hanno un rapporto ori / medaglie ottenute leggermente migliore di quello di grandi potenze olimpiche come USA, Russia, Cina, ecc.
 
 Infine ci sono le “medie potenze consolidate”, paesi che ottengono molte medaglie ma non al livello delle superpotenze e nemmeno in tutte le discipline sportive. Questi paesi tendono a raccogliere, in maniera consistente nel tempo, la maggior parte delle loro medaglie in alcune discipline in cui sono altamente specializzati. È questo il caso dell’Italia, che storicamente ha raccolto la maggior parte delle sue medaglia nella scherma e alla quale abbiamo dedicato un approfondimento.
 
