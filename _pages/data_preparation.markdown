@@ -26,12 +26,12 @@ Abbiamo creato diversi script per interagire con i database di WorldBank
 Uno script che occupa di scaricare le serie storiche dalla World Bank:
 
 1. **Selezione dei paesi**: si parte dalla lista dei codici ISO dei paesi e si verifica quali codici esistono effettivamente nella nomenclatura World Bank. I codici validi vengono salvati in cache per evitare di ripetere il controllo a ogni esecuzione.
-2. **Download per paese**: per ciascun paese vengono scaricate tutte serie del catalogo per il periodo **1960–2020**, e salvate in un file CSV per paese:  oltre 200 file con una riga per anno e una colonna per indicatore.
+2. **Download per paese**: per ciascun paese vengono scaricate tutte le serie del catalogo per il periodo **1960–2020**, e salvate in un file CSV per paese:  oltre 200 file con una riga per anno e una colonna per indicatore.
 3. **Robustezza**: l'API World Bank ha limiti e chiusure di connessione impreviste, quindi lo script introduce ritardi casuali tra le richieste, gestisce gli errori di rete con tentativi ripetuti e, in caso di interruzione, riprende dal primo paese non ancora salvato su disco.
 
 ## Pulizia dei dati
 
-IUn secondo script si occupa di validare, aggregare e normalizzare i dati :
+Un secondo script si occupa di validare, aggregare e normalizzare i dati :
 
 - **Validazione degli input**: ogni file CSV viene controllato per la presenza delle colonne obbligatorie (edizione, anno, paese, medaglie), con errori espliciti se manca qualcosa.
 - **Normalizzazione**: i codici paese (NOC) e le edizioni vengono normalizzati (spazi, formati) per permettere il matching tra le diverse fonti; gli anni delle serie World Bank (formato `YR1964`) vengono convertiti in interi; tutti i valori degli indicatori vengono forzati a numerici. 
@@ -47,23 +47,23 @@ Il cuore della preparazione dati è l'unione tra medagliere e indicatori. Per og
 
 ## Variabili principali
 
-Il dataset finale contiene circa 6.700 righe (una per paese × edizione estiva, dal 1964 al 2020) e una quarantina di colonne:
+Il dataset finale contiene 6.700 righe (una per paese × edizione estiva, dal 1964 al 2020) e una quarantina di colonne:
 
 - **Identificazione**: `edition`, `year`, `country`, `country_noc`;
 - **Medagliere**: `gold`, `silver`, `bronze`, `total`;
 - **Contesto dell'edizione**: `paese_olimpiade`, `citta_olimpiade`;
-- **Indicatori socio-economici** (media dei 4 anni pre-olimpici), tra cui: PIL corrente e pro capite (`NY.GDP.MKTP.CD`, `NY.GDP.PCAP.CD`), crescita del PIL, popolazione totale e in età lavorativa (`SP.POP.TOTL`, `SP.POP.1564.TO.ZS`), urbanizzazione (`SP.URB.TOTL.IN.ZS`), aspettativa di vita (`SP.DYN.LE00.IN`), mortalità infantile, iscrizione scolastica, spesa militare, inflazione e superficie del paese.
+- **Indicatori socio-economici** (media dei 4 anni pre-olimpici), tra cui: PIL corrente e pro capite, crescita del PIL, popolazione totale e in età lavorativa, urbanizzazione, aspettativa di vita, mortalità infantile, iscrizione scolastica, spesa militare, inflazione e superficie del paese.
 
 ## Output prodotti
 
-La pipeline produce un dataset in fomrato CSV, usato come base ion diversi notebook del progetto:
+La pipeline produce un dataset in formato CSV, usato come base in diversi notebook del progetto.
 
 
 ## Un bug nascosto: le righe fittizie da cambio di bandiera olimpica
 
 Il dataset comune descritto sopra unisce, per ogni riga *paese × edizione*, il medagliere con gli indicatori socio-economici del paese in quel periodo. Questa unione, fatta per nome paese su tutta la serie storica 1964–2020, si è rivelata corretta per la stragrande maggioranza delle nazioni — ma ha generato un problema sistematico per tutti i paesi che, nel tempo, hanno cambiato identità olimpica: si sono divisi, uniti, o hanno gareggiato sotto una sigla diversa dalla propria.
 
-**Come si è scoperto il problema.** Durante un controllo dei duplicati sul dataset, sono emerse due righe per la stessa combinazione *codice NOC × anno* in corrispondenza di Russia 1992 e Russia 2020: una con gli indicatori socio-economici popolati e 0 medaglie, l'altra con gli indicatori nulli e le medaglie reali. La causa: nel 1992 la Russia gareggiò come parte della Squadra Unificata (EUN, le 12 ex repubbliche sovietiche), e nel 2020 come ROC (Russian Olympic Committee, per la squalifica della Russia dal doping di stato) — due sigle diverse dalla Federazione Russa vera e propria. Il merge per nome paese aveva agganciato gli indicatori economici alla "Russia" su tutta la serie storica, indipendentemente da quale identità olimpica fosse effettivamente in gara quell'anno, creando così una riga fittizia parallela a quella corretta.
+**Come si è scoperto il problema.** Durante un controllo dei duplicati sul dataset, sono emerse due righe per la stessa combinazione *codice NOC × anno* in corrispondenza di Russia 1992 e Russia 2020: una con gli indicatori socio-economici popolati e 0 medaglie, l'altra con gli indicatori nulli e le medaglie reali. La causa: nel 1992 la Russia gareggiò come parte della Squadra Unificata (EUN, le 12 ex repubbliche sovietiche), e nel 2020 come ROC (Russian Olympic Committee, a seguito della squalifica della Russia per doping di stato) — due sigle diverse dalla Federazione Russa vera e propria. Il merge per nome paese aveva agganciato gli indicatori economici alla "Russia" su tutta la serie storica, indipendentemente da quale identità olimpica fosse effettivamente in gara quell'anno, creando così una riga fittizia parallela a quella corretta.
 
 **La correzione.** Il problema è stato risolto costruendo una mappatura esplicita tra codice NOC (usato dal CIO per identificare le delegazioni sportive) e codice ISO (usato dagli indicatori World Bank) — i due standard, nati per scopi diversi, non coincidono sempre per le stesse entità storiche.
 
