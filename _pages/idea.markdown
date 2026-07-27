@@ -91,6 +91,10 @@ La Cina, a Pechino 2008, ha vissuto probabilmente l'esempio più eclatante: oltr
 
 Abbiamo dedicato un approfondimento all’Italia, che costituisce un esempio paradigmatico di quelle potenze sportive “specializzate” menzionate in precedenza. Nella scherma, infatti, l’Italia è il paese più vincente della storia: fra il 1964 e il 2020 l’Italia ha ottenuto quasi 70 medaglie.
 
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/alessio/chart_italy_medals.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
 Abbiamo deciso di cercare le ragioni storiche di questo successo attraverso l’analisi dell’opinione pubblica, scaricando qualche centianio di articoli dedicati alla scherma dal sito della *Repubblica*. Li abbiamo poi processati con le tecniche della Text Analysis e l’uso di Language Model locali per trovare la risposta alle nostre domande.
 
 È emerso che il successo della scherma italiana è dovuto a molti e diversi fattori, in primo luogo l’esistenza di una lunga tradizione schermistica nel nostro paese. Determinante, però, è stato anche il ruolo delle istituzioni sportive e dello stato. Insomma, la ragione del successo italiano nella scherma è l’intreccio di fattori economici, storici e politici.
