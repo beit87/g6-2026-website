@@ -15,7 +15,7 @@ Il medagliere olimpico non racconta solo lo sport: ogni quattro anni, di fatto, 
 
 ## I Paesi olimpici: ricchi e poveri
 
-Ma innanzitutto “chi” sono i paesi che partecipano alle Olimpiadi? Come si differenziano l’uno dall’altro? La prima distinzione che si può fare è quella macroscopica fra “paesi ricchi” e “paesi poveri”. È un dato di fatto che il divario economico si traduca anche in un divario sportivo: i paesi più ricchi vincono circa 80 volte più medaglie per abitante dei più poveri. Senza contare che tale disparità dal 1964 a oggi non si è mai ridotta!
+Ma innanzitutto “chi” sono i paesi che partecipano alle Olimpiadi? Come si differenziano l’uno dall’altro? La prima distinzione che si può fare è quella macroscopica fra “paesi ricchi” e “paesi poveri”, anche se questa dicotomia può essere ulteriormente raffinata distinguendo “economie avanzate”, “economie emergenti”, “economie in consolidamento” e “economie fragili”. È un dato di fatto che il divario economico si traduca anche in un divario sportivo: i paesi più ricchi vincono circa 80 volte più medaglie per abitante dei più poveri. Senza contare che tale disparità dal 1964 a oggi non si è mai ridotta!
 
 <div class="full-width-chart-wrapper">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/alessia2/chart_json1def.json" style="width: 100%; height: 100%"></vegachart>
