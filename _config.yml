@@ -66,10 +66,10 @@ navbar:
         url: /notebook2.html
       - title: Chi salirà sul podio a Los Angeles?
         url: /notebook3.html
-      - title: Perché l'Italia è una potenza nella scherma?
-        url: /text_analysis.html
       - title: Pil, storico e boicottaggi
         url: /pil_storico_boicottaggi.html
+      - title: Perché l'Italia è una potenza nella scherma?
+        url: /text_analysis.html
     - title: Intervista
       url: /interview.html
 
