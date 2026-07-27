@@ -31,6 +31,13 @@ C'è però chi ha dimostrato che il divario si può scalfire. La Corea del Sud h
 
 ## Superpotenze, medi calibri e “lillipuziani” virtuosi
 
+Dei 195 paesi a oggi esistenti, 72 non hanno mai ottenuto medaglie alle Olimpiadi, almeno per quanto riguarda gli anni 1964 - 2020 (l'Albania, per esempio, nell'edizione del 2024 è riuscita nell'impresa di conquistare la sua prima medaglia). 
+Il grafico riportato consente di esplorare i risultati di ogni paese; passando sopra la cartina si otterrà un prospetto delle medaglie vinte dai vari paesi nelle loro discipline di maggior successo.
+
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
 I paesi che hanno vinto almeno una medaglia possono essere suddivisi in tre grandi gruppi. Innanzitutto, ci sono le “superpotenze” olimpiche (USA, Cina, Germania e Russia) che si distinguono per la partecipazione a molte e variegate discipline sportive, vincendo ori ovunque.
 
 È interessante notare, però, che si tratta di un cluster con una partecipazione bassa a livello di edizioni. Russia e Germania, per esempio, a causa delle loro vicissitudini storiche, hanno partecipato ai Giochi con denominazioni diverse (“URSS”, “Repubblica Federale Tedesca”, “Repubblica Democratica Tedesca”) e questo, tecnicamente, porta a considerare un paese nuovo nel medagliere storico a ogni cambio di nome. La Cina, poi, non hai mai partecipato dal 1956 al 1980.
@@ -40,12 +47,6 @@ A questo gruppo di paesi di grande successo, comunque, appartengono anche gli US
 Ci sono poi dei paesi che ottengono poche medaglie; tuttavia, all’interno di questo gruppo si possono trovare paesi molto “virtuosi”, come la Giamaica, le Bahamas o il Kenya. Questi paesi sono altamente specializzati nell’atletica e rispetto al numero totale di medaglie hanno una buona quota di ori. Sorprendentemente, hanno un rapporto ori / medaglie ottenute leggermente migliore di quello di grandi potenze olimpiche come USA, Russia, Cina, ecc.
 
 Infine ci sono le “medie potenze consolidate”, paesi che ottengono molte medaglie ma non al livello delle superpotenze e nemmeno in tutte le discipline sportive. Questi paesi tendono a raccogliere, in maniera consistente nel tempo, la maggior parte delle loro medaglie in alcune discipline in cui sono altamente specializzati. È questo il caso dell’Italia, che storicamente ha raccolto la maggior parte delle sue medaglia nella scherma e alla quale abbiamo dedicato un approfondimento.
-
-Tutte queste considerazioni sono racchiuse nel grafico riportato sotto, che consente di esplorare i risultati di ogni paese semplicemente passando il mouse sopra ognuno di essi; si otterrà un sunto delle medaglie vinte nelle discipline di maggior successo.
-
-<div class="full-width-chart-wrapper">
-<vegachart schema-url="{{site.baseurl}}/assets/charts/santina/18_mappa_interattiva_paesi.json" style="width: 100%; height: 100%"></vegachart>
-</div>
 
 ## Atleti e atlete
 
