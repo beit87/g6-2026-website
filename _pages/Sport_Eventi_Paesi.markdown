@@ -7,8 +7,6 @@ vega: true
 
 {% include page-hero.html title="Sport, eventi e Paesi" %}
 
-![img](bolt.jpeg)
-
 Ogni quattro anni un nuovo medagliere olimpico si aggiunge alla serie storica, contribuendo a delineare un profilo sempre più definito non solo dei Paesi che partecipano ai Giochi, ma anche delle discipline sportive e degli eventi che li compongono. In questo modo, nel corso del tempo, si mette sempre più a fuoco, ad esempio, la distinzione tra sport in cui competono numerosi Paesi e altri in cui la partecipazione è più limitata, oppure tra sport in cui la distribuzione delle medaglie d'oro è più democratica e altri in cui è concentrata nelle mani di pochi. Questo, chiaramente, vale anche per gli eventi all'interno delle varie discipline sportive. Parallelamente, emerge con maggiore chiarezza anche il profilo dei Paesi: si distinguono quelli che gareggiano in un numero più ampio di discipline da quelli più specializzati, quelli che faticano a conquistare medaglie d'oro da quelli capaci di vincere in contesti diversi. Si osservano inoltre differenze tra Paesi con popolazione numerosa che ottengono risultati modesti e Paesi con un numero inferiore di abitanti ma con elevata efficienza sportiva. 
 
 Con questa analisi mettiamo ordine tra questi pattern, osservando la storia olimpica da tre prospettive, quella degli sport, degli eventi e dei Paesi.
