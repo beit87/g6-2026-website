@@ -48,7 +48,7 @@ A sinistra: ogni punto è un paese, posizionato secondo la quota di medaglie vin
 </div>
 <div style="font-size: 12px; color: #666; margin-top: 2rem; margin-bottom: 1.5rem;">Ogni punto è un paese. L'asse orizzontale è la quota di medaglie individuali, l'asse verticale il volume totale di medaglie (scala log); il colore indica il cluster K-Means.</div>
 
-<div style="height: 520px">
+<div style="height: 540px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Luisa/chart_pil_per_cluster.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 <div style="font-size: 12px; color: #666; margin-top: 2rem; margin-bottom: 1.5rem;">Distribuzione completa del PIL pro capite in ciascun cluster (non solo la media): la "scatola" mostra quanto varia la ricchezza dei paesi all'interno dello stesso profilo di vittoria.</div>
