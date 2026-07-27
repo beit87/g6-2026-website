@@ -66,6 +66,10 @@ Dalla fine del XIX secolo ad oggi, però, le cose sono molto cambiate e nelle Ol
 
 Ma è possibile stabilire che cosa determini il successo sportivo di un paese? Dalle prime analisi che avevamo fatto, sembrava emergere un dato inequivocabile: il miglior predittore del successo di un paese è il PIL, dove con tale termine non s’intende il prodotto pro capite ma proprio la misura della ricchezza complessiva di un sistema-paese. Da questo punto di vista è vero che, in linea di massima, i paesi più ricchi tendono a spartirsi la maggior parte delle medaglie.
 
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/Gianni/pil_vs_medaglie.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
 Tuttavia, a un’analisi più attenta, è emerso che l’economia conta fino a un certo punto. Non sono i paesi più ricchi a vincere più medaglie, ma quelli che scelgono di investire davvero nello sport di alto livello. Il PIL conta meno di quanto ci si aspetterebbe: è la scelta politica di destinare risorse concrete alla preparazione degli atleti a fare la differenza.
 
 <div class="full-width-chart-wrapper">
