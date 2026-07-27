@@ -1,0 +1,486 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 16,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-7b1ba5e6a631c8213769fce164f4cd34"
+  },
+  "datasets": {
+    "data-7b1ba5e6a631c8213769fce164f4cd34": [
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.3246895412690737,
+        "year": 1964
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.27779703605830747,
+        "year": 1968
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.2914201648411347,
+        "year": 1972
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.7329295484762777,
+        "year": 1976
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.2004680809520679,
+        "year": 1980
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.6440181737656201,
+        "year": 1984
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.6036253725415518,
+        "year": 1988
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.482304694425121,
+        "year": 1992
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.4396385714467403,
+        "year": 1996
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.6103910111200496,
+        "year": 2000
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.3946693265870475,
+        "year": 2004
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.5102977447294896,
+        "year": 2008
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.4602471281063749,
+        "year": 2012
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 0.47699793118280837,
+        "year": 2016
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "medaglie_pro_capite": 3.3440548264700256,
+        "year": 2020
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.24231270272482316,
+        "year": 1964
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.11013789236196364,
+        "year": 1968
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.13691357208652902,
+        "year": 1972
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.15777796134215663,
+        "year": 1976
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.19020983603694433,
+        "year": 1980
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.09441593843203186,
+        "year": 1984
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.18175119241486154,
+        "year": 1988
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.32324552610611884,
+        "year": 1992
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.35536446790447235,
+        "year": 1996
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.5869172859781275,
+        "year": 2000
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.44678280115087693,
+        "year": 2004
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.4899767951119219,
+        "year": 2008
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.6150889392808001,
+        "year": 2012
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.5767985644353398,
+        "year": 2016
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "medaglie_pro_capite": 0.6065636918690741,
+        "year": 2020
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.007916364872453726,
+        "year": 1964
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.08527779606097284,
+        "year": 1968
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.029696892316406074,
+        "year": 1972
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.013588441666119248,
+        "year": 1976
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.06851342573746652,
+        "year": 1980
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.013690619837268554,
+        "year": 1984
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.06268209406016563,
+        "year": 1988
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.05755083234680892,
+        "year": 1992
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.2235844301963243,
+        "year": 1996
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.03224912177273282,
+        "year": 2000
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.043048333171275474,
+        "year": 2004
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.08119505682430157,
+        "year": 2008
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.08902762770433909,
+        "year": 2012
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.07067903750045407,
+        "year": 2016
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "medaglie_pro_capite": 0.07426378641682102,
+        "year": 2020
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.006267356387334399,
+        "year": 1964
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.008957708309427296,
+        "year": 1968
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.018166981295913397,
+        "year": 1972
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.00042977194061719044,
+        "year": 1976
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.008936270616621568,
+        "year": 1980
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.004336864978722829,
+        "year": 1984
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.0044962216634430695,
+        "year": 1988
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.005151162935197783,
+        "year": 1992
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.011472938661242398,
+        "year": 1996
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.006055072489712524,
+        "year": 2000
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.015365834956482326,
+        "year": 2004
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.005344464111592603,
+        "year": 2008
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.00415833866216497,
+        "year": 2012
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.0090095306614729,
+        "year": 2016
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "medaglie_pro_capite": 0.007519569479010586,
+        "year": 2020
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "cluster_label",
+      "legend": {
+        "columns": 2,
+        "labelLimit": 250,
+        "orient": "bottom"
+      },
+      "scale": {
+        "domain": [
+          "Economie avanzate",
+          "Economie emergenti",
+          "Economie in via di consolidamento",
+          "Economie vulnerabili"
+        ],
+        "range": [
+          "#1b2140",
+          "#ff8009",
+          "#9a0641",
+          "#ffe34a"
+        ]
+      },
+      "sort": [
+        "Economie avanzate",
+        "Economie emergenti",
+        "Economie in via di consolidamento",
+        "Economie vulnerabili"
+      ],
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "cluster_label",
+        "title": "Cluster",
+        "type": "nominal"
+      },
+      {
+        "field": "year",
+        "title": "Anno",
+        "type": "ordinal"
+      },
+      {
+        "field": "medaglie_pro_capite",
+        "format": ".3f",
+        "title": "Medaglie / milione ab.",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "year",
+      "title": "Anno",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "medaglie_pro_capite",
+      "title": "Medaglie per milione di abitanti",
+      "type": "quantitative"
+    }
+  },
+  "height": 450,
+  "mark": {
+    "point": {
+      "size": 70
+    },
+    "type": "line"
+  },
+  "params": [
+    {
+      "bind": "scales",
+      "name": "param_26",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      }
+    }
+  ],
+  "title": "Medaglie pro capite per cluster STATICO nel tempo (1964\u20132024)",
+  "width": 800
+}

@@ -1,0 +1,891 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 13,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-f309c4b252de8a161806e8a7fbb90601"
+  },
+  "datasets": {
+    "data-f309c4b252de8a161806e8a7fbb90601": [
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Archery"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 6.132075471698113,
+        "sport": "Archery"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 34.90566037735849,
+        "sport": "Archery"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 58.9622641509434,
+        "sport": "Archery"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Artistic Gymnastics"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 25.0,
+        "sport": "Artistic Gymnastics"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 30.952380952380953,
+        "sport": "Artistic Gymnastics"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 44.047619047619044,
+        "sport": "Artistic Gymnastics"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 3.078387813392574,
+        "sport": "Athletics"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 7.743573468740082,
+        "sport": "Athletics"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 28.81624880990162,
+        "sport": "Athletics"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 60.36178990796572,
+        "sport": "Athletics"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Badminton"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 58.333333333333336,
+        "sport": "Badminton"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 26.515151515151516,
+        "sport": "Badminton"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 15.151515151515152,
+        "sport": "Badminton"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Basketball"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 2.127659574468085,
+        "sport": "Basketball"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 44.680851063829785,
+        "sport": "Basketball"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 53.191489361702125,
+        "sport": "Basketball"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 1.694915254237288,
+        "sport": "Boxing"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 14.356929212362912,
+        "sport": "Boxing"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 44.06779661016949,
+        "sport": "Boxing"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 39.88035892323031,
+        "sport": "Boxing"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Canoeing"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 0.949367088607595,
+        "sport": "Canoeing"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 48.575949367088604,
+        "sport": "Canoeing"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 50.4746835443038,
+        "sport": "Canoeing"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Cycling"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 2.0891364902506964,
+        "sport": "Cycling"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 16.016713091922004,
+        "sport": "Cycling"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 81.89415041782729,
+        "sport": "Cycling"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Diving"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 23.26732673267327,
+        "sport": "Diving"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 14.356435643564355,
+        "sport": "Diving"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 62.37623762376238,
+        "sport": "Diving"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Equestrianism"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 0.0,
+        "sport": "Equestrianism"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 16.51376146788991,
+        "sport": "Equestrianism"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 83.4862385321101,
+        "sport": "Equestrianism"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Fencing"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 2.3480662983425415,
+        "sport": "Fencing"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 40.88397790055249,
+        "sport": "Fencing"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 56.767955801104975,
+        "sport": "Fencing"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 3.8095238095238098,
+        "sport": "Football"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 2.857142857142857,
+        "sport": "Football"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 40.95238095238095,
+        "sport": "Football"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 52.38095238095239,
+        "sport": "Football"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Gymnastics"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 6.974128233970754,
+        "sport": "Gymnastics"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 46.344206974128234,
+        "sport": "Gymnastics"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 46.681664791901014,
+        "sport": "Gymnastics"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Handball"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 1.3333333333333335,
+        "sport": "Handball"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 53.333333333333336,
+        "sport": "Handball"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 45.33333333333333,
+        "sport": "Handball"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 7.2727272727272725,
+        "sport": "Hockey"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 14.545454545454545,
+        "sport": "Hockey"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 19.090909090909093,
+        "sport": "Hockey"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 59.09090909090909,
+        "sport": "Hockey"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Judo"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 9.702660406885759,
+        "sport": "Judo"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 40.375586854460096,
+        "sport": "Judo"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 49.92175273865415,
+        "sport": "Judo"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 2.307692307692308,
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 50.76923076923077,
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 46.92307692307692,
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Rhythmic Gymnastics"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 3.508771929824561,
+        "sport": "Rhythmic Gymnastics"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 80.7017543859649,
+        "sport": "Rhythmic Gymnastics"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 15.789473684210526,
+        "sport": "Rhythmic Gymnastics"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Rowing"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 1.8703241895261846,
+        "sport": "Rowing"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 25.06234413965087,
+        "sport": "Rowing"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 73.06733167082294,
+        "sport": "Rowing"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Sailing"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 1.3961605584642234,
+        "sport": "Sailing"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 20.069808027923212,
+        "sport": "Sailing"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 78.53403141361257,
+        "sport": "Sailing"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.11086474501108648,
+        "sport": "Shooting"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 10.643015521064301,
+        "sport": "Shooting"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 32.48337028824834,
+        "sport": "Shooting"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 56.76274944567628,
+        "sport": "Shooting"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Swimming"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 5.1454138702460845,
+        "sport": "Swimming"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 16.44295302013423,
+        "sport": "Swimming"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 78.41163310961969,
+        "sport": "Swimming"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Synchronized Swimming"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 9.803921568627452,
+        "sport": "Synchronized Swimming"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 27.450980392156865,
+        "sport": "Synchronized Swimming"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 62.745098039215684,
+        "sport": "Synchronized Swimming"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Table Tennis"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 55.46218487394958,
+        "sport": "Table Tennis"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 15.966386554621847,
+        "sport": "Table Tennis"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 28.57142857142857,
+        "sport": "Table Tennis"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 4.0201005025125625,
+        "sport": "Taekwondo"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 26.633165829145728,
+        "sport": "Taekwondo"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 44.72361809045226,
+        "sport": "Taekwondo"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 24.623115577889447,
+        "sport": "Taekwondo"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Tennis"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 4.4534412955465585,
+        "sport": "Tennis"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 29.959514170040485,
+        "sport": "Tennis"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 65.58704453441295,
+        "sport": "Tennis"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Volleyball"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 6.741573033707865,
+        "sport": "Volleyball"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 56.17977528089888,
+        "sport": "Volleyball"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 37.07865168539326,
+        "sport": "Volleyball"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.0,
+        "sport": "Water Polo"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 0.0,
+        "sport": "Water Polo"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 45.54455445544555,
+        "sport": "Water Polo"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 54.45544554455446,
+        "sport": "Water Polo"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.14970059880239522,
+        "sport": "Weightlifting"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 22.604790419161677,
+        "sport": "Weightlifting"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 50.898203592814376,
+        "sport": "Weightlifting"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 26.34730538922156,
+        "sport": "Weightlifting"
+      },
+      {
+        "cluster_label": "Poveri estremi",
+        "pct_dello_sport": 0.21629416005767843,
+        "sport": "Wrestling"
+      },
+      {
+        "cluster_label": "Reddito basso-medio",
+        "pct_dello_sport": 15.861571737563086,
+        "sport": "Wrestling"
+      },
+      {
+        "cluster_label": "Reddito medio-alto",
+        "pct_dello_sport": 43.186733958183126,
+        "sport": "Wrestling"
+      },
+      {
+        "cluster_label": "Ricchi avanzati",
+        "pct_dello_sport": 40.735400144196106,
+        "sport": "Wrestling"
+      }
+    ]
+  },
+  "height": 180,
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "pct_dello_sport",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ],
+            "range": [
+              "#1b2140",
+              "#ff8009"
+            ]
+          },
+          "title": "% nello sport",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "cluster_label",
+            "title": "Cluster",
+            "type": "nominal"
+          },
+          {
+            "field": "sport",
+            "title": "Sport",
+            "type": "nominal"
+          },
+          {
+            "field": "pct_dello_sport",
+            "format": ".1f",
+            "title": "% medaglie nello sport",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": -60,
+            "labelFontSize": 10
+          },
+          "field": "sport",
+          "sort": [
+            "Athletics",
+            "Swimming",
+            "Wrestling",
+            "Boxing",
+            "Judo",
+            "Shooting",
+            "Rowing",
+            "Cycling",
+            "Canoeing",
+            "Gymnastics",
+            "Weightlifting",
+            "Sailing",
+            "Fencing",
+            "Equestrianism",
+            "Diving",
+            "Taekwondo",
+            "Archery",
+            "Tennis",
+            "Badminton",
+            "Table Tennis",
+            "Hockey",
+            "Modern Pentathlon",
+            "Volleyball",
+            "Basketball",
+            "Handball",
+            "Football",
+            "Synchronized Swimming",
+            "Water Polo",
+            "Rhythmic Gymnastics",
+            "Artistic Gymnastics"
+          ],
+          "title": null,
+          "type": "nominal"
+        },
+        "y": {
+          "field": "cluster_label",
+          "sort": [
+            "Ricchi avanzati",
+            "Reddito medio-alto",
+            "Reddito basso-medio",
+            "Poveri estremi"
+          ],
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "type": "rect"
+      },
+      "name": "view_27"
+    },
+    {
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "(datum.pct_dello_sport > 50)",
+            "value": "white"
+          },
+          "value": "white"
+        },
+        "text": {
+          "field": "pct_dello_sport",
+          "format": ".1f",
+          "type": "quantitative"
+        },
+        "x": {
+          "axis": {
+            "labelAngle": -60,
+            "labelFontSize": 10
+          },
+          "field": "sport",
+          "sort": [
+            "Athletics",
+            "Swimming",
+            "Wrestling",
+            "Boxing",
+            "Judo",
+            "Shooting",
+            "Rowing",
+            "Cycling",
+            "Canoeing",
+            "Gymnastics",
+            "Weightlifting",
+            "Sailing",
+            "Fencing",
+            "Equestrianism",
+            "Diving",
+            "Taekwondo",
+            "Archery",
+            "Tennis",
+            "Badminton",
+            "Table Tennis",
+            "Hockey",
+            "Modern Pentathlon",
+            "Volleyball",
+            "Basketball",
+            "Handball",
+            "Football",
+            "Synchronized Swimming",
+            "Water Polo",
+            "Rhythmic Gymnastics",
+            "Artistic Gymnastics"
+          ],
+          "title": null,
+          "type": "nominal"
+        },
+        "y": {
+          "field": "cluster_label",
+          "sort": [
+            "Ricchi avanzati",
+            "Reddito medio-alto",
+            "Reddito basso-medio",
+            "Poveri estremi"
+          ],
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "baseline": "middle",
+        "fontSize": 10,
+        "type": "text"
+      }
+    }
+  ],
+  "params": [
+    {
+      "bind": "scales",
+      "name": "param_23",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      },
+      "views": [
+        "view_27"
+      ]
+    }
+  ],
+  "title": "Chi domina ogni sport? \u2014 quota % per cluster socioeconomico STATICO (ogni colonna = 100%)",
+  "width": 800
+}

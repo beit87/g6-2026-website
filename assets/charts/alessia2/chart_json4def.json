@@ -1,0 +1,887 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "middle",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 13,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-51f367ba5b6ef95f02d3ce7687198f7d"
+  },
+  "datasets": {
+    "data-51f367ba5b6ef95f02d3ce7687198f7d": [
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 1.3182872811643114,
+        "sport": "Archery"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 1.3716404077849862,
+        "sport": "Archery"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.8637873754152824,
+        "sport": "Archery"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Archery"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.3902130352246362,
+        "sport": "Artistic Gymnastics"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.48192771084337355,
+        "sport": "Artistic Gymnastics"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 1.3953488372093024,
+        "sport": "Artistic Gymnastics"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Artistic Gymnastics"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 20.059059270196162,
+        "sport": "Athletics"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 16.830398517145507,
+        "sport": "Athletics"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 16.21262458471761,
+        "sport": "Athletics"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 69.7841726618705,
+        "sport": "Athletics"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.2109259649862898,
+        "sport": "Badminton"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.6487488415199258,
+        "sport": "Badminton"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 5.116279069767442,
+        "sport": "Badminton"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Badminton"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.5273149124657245,
+        "sport": "Basketball"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.7784986098239111,
+        "sport": "Basketball"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.132890365448505,
+        "sport": "Basketball"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Basketball"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 4.218519299725796,
+        "sport": "Boxing"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 8.19277108433735,
+        "sport": "Boxing"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 9.56810631229236,
+        "sport": "Boxing"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 12.23021582733813,
+        "sport": "Boxing"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 3.3642691415313224,
+        "sport": "Canoeing"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 5.690454124189064,
+        "sport": "Canoeing"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.3986710963455149,
+        "sport": "Canoeing"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Canoeing"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 6.201223370596921,
+        "sport": "Cycling"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 2.131603336422614,
+        "sport": "Cycling"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.9966777408637874,
+        "sport": "Cycling"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Cycling"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 2.657667158827252,
+        "sport": "Diving"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 1.0750695088044486,
+        "sport": "Diving"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 6.245847176079734,
+        "sport": "Diving"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Diving"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 3.838852562750475,
+        "sport": "Equestrianism"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 1.3345690454124188,
+        "sport": "Equestrianism"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.0,
+        "sport": "Equestrianism"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Equestrianism"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 4.334528580468255,
+        "sport": "Fencing"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 5.486561631139945,
+        "sport": "Fencing"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 1.1295681063122924,
+        "sport": "Fencing"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Fencing"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.580046403712297,
+        "sport": "Football"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.7970342910101947,
+        "sport": "Football"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.19933554817275745,
+        "sport": "Football"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 2.877697841726619,
+        "sport": "Football"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 4.3767137734655135,
+        "sport": "Gymnastics"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 7.636700648748842,
+        "sport": "Gymnastics"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 4.119601328903655,
+        "sport": "Gymnastics"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Gymnastics"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.35857414047669267,
+        "sport": "Handball"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.7414272474513438,
+        "sport": "Handball"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.0664451827242525,
+        "sport": "Handball"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Handball"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.6855093862054419,
+        "sport": "Hockey"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.38924930491195553,
+        "sport": "Hockey"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 1.06312292358804,
+        "sport": "Hockey"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 5.755395683453238,
+        "sport": "Hockey"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 3.3642691415313224,
+        "sport": "Judo"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 4.782205746061168,
+        "sport": "Judo"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 4.119601328903655,
+        "sport": "Judo"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Judo"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.6433241932081839,
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 1.2233549582947174,
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.19933554817275745,
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Modern Pentathlon"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.09491668424383042,
+        "sport": "Rhythmic Gymnastics"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.8526413345690453,
+        "sport": "Rhythmic Gymnastics"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.132890365448505,
+        "sport": "Rhythmic Gymnastics"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Rhythmic Gymnastics"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 6.180130774098291,
+        "sport": "Rowing"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 3.7256719184430027,
+        "sport": "Rowing"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.9966777408637874,
+        "sport": "Rowing"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Rowing"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 4.745834212191521,
+        "sport": "Sailing"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 2.131603336422614,
+        "sport": "Sailing"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.53156146179402,
+        "sport": "Sailing"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Sailing"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 5.399704703649019,
+        "sport": "Shooting"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 5.430954587581094,
+        "sport": "Shooting"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 6.378737541528238,
+        "sport": "Shooting"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.7194244604316548,
+        "sport": "Shooting"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 14.785910145538917,
+        "sport": "Swimming"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 5.449490268767377,
+        "sport": "Swimming"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 6.112956810631229,
+        "sport": "Swimming"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Swimming"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.3374815439780637,
+        "sport": "Synchronized Swimming"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.25949953660797037,
+        "sport": "Synchronized Swimming"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.33222591362126247,
+        "sport": "Synchronized Swimming"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Synchronized Swimming"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.35857414047669267,
+        "sport": "Table Tennis"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.35217794253938833,
+        "sport": "Table Tennis"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 4.385382059800665,
+        "sport": "Table Tennis"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Table Tennis"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.5167686142164101,
+        "sport": "Taekwondo"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 1.64967562557924,
+        "sport": "Taekwondo"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 3.5215946843853816,
+        "sport": "Taekwondo"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 5.755395683453238,
+        "sport": "Taekwondo"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 1.7085003163889476,
+        "sport": "Tennis"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 1.3716404077849862,
+        "sport": "Tennis"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.7308970099667774,
+        "sport": "Tennis"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Tennis"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.34802784222737815,
+        "sport": "Volleyball"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.9267840593141797,
+        "sport": "Volleyball"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.3986710963455149,
+        "sport": "Volleyball"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Volleyball"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 0.580046403712297,
+        "sport": "Water Polo"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 0.8526413345690453,
+        "sport": "Water Polo"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 0.0,
+        "sport": "Water Polo"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.0,
+        "sport": "Water Polo"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 1.8561484918793503,
+        "sport": "Weightlifting"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 6.302131603336422,
+        "sport": "Weightlifting"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 10.033222591362126,
+        "sport": "Weightlifting"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 0.7194244604316548,
+        "sport": "Weightlifting"
+      },
+      {
+        "cluster_label": "Economie avanzate",
+        "pct_del_cluster": 5.958658510862687,
+        "sport": "Wrestling"
+      },
+      {
+        "cluster_label": "Economie emergenti",
+        "pct_del_cluster": 11.102873030583874,
+        "sport": "Wrestling"
+      },
+      {
+        "cluster_label": "Economie in via di consolidamento",
+        "pct_del_cluster": 14.61794019933555,
+        "sport": "Wrestling"
+      },
+      {
+        "cluster_label": "Economie vulnerabili",
+        "pct_del_cluster": 2.158273381294964,
+        "sport": "Wrestling"
+      }
+    ]
+  },
+  "height": 180,
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "pct_del_cluster",
+          "scale": {
+            "range": [
+              "#1b2140",
+              "#ff8009"
+            ]
+          },
+          "title": null,
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "cluster_label",
+            "title": "Cluster",
+            "type": "nominal"
+          },
+          {
+            "field": "sport",
+            "title": "Sport",
+            "type": "nominal"
+          },
+          {
+            "field": "pct_del_cluster",
+            "format": ".1f",
+            "title": "% medaglie del cluster",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": -60,
+            "labelFontSize": 10
+          },
+          "field": "sport",
+          "sort": [
+            "Athletics",
+            "Swimming",
+            "Wrestling",
+            "Boxing",
+            "Judo",
+            "Shooting",
+            "Rowing",
+            "Cycling",
+            "Canoeing",
+            "Gymnastics",
+            "Weightlifting",
+            "Sailing",
+            "Fencing",
+            "Equestrianism",
+            "Diving",
+            "Taekwondo",
+            "Archery",
+            "Tennis",
+            "Badminton",
+            "Table Tennis",
+            "Hockey",
+            "Modern Pentathlon",
+            "Volleyball",
+            "Basketball",
+            "Handball",
+            "Football",
+            "Synchronized Swimming",
+            "Water Polo",
+            "Rhythmic Gymnastics",
+            "Artistic Gymnastics"
+          ],
+          "title": null,
+          "type": "nominal"
+        },
+        "y": {
+          "field": "cluster_label",
+          "sort": [
+            "Economie avanzate",
+            "Economie emergenti",
+            "Economie in via di consolidamento",
+            "Economie vulnerabili"
+          ],
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "type": "rect"
+      },
+      "name": "view_54"
+    },
+    {
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "(datum.pct_del_cluster > 50)",
+            "value": "white"
+          },
+          "value": "white"
+        },
+        "text": {
+          "field": "pct_del_cluster",
+          "format": ".1f",
+          "type": "quantitative"
+        },
+        "x": {
+          "axis": {
+            "labelAngle": -60,
+            "labelFontSize": 10
+          },
+          "field": "sport",
+          "sort": [
+            "Athletics",
+            "Swimming",
+            "Wrestling",
+            "Boxing",
+            "Judo",
+            "Shooting",
+            "Rowing",
+            "Cycling",
+            "Canoeing",
+            "Gymnastics",
+            "Weightlifting",
+            "Sailing",
+            "Fencing",
+            "Equestrianism",
+            "Diving",
+            "Taekwondo",
+            "Archery",
+            "Tennis",
+            "Badminton",
+            "Table Tennis",
+            "Hockey",
+            "Modern Pentathlon",
+            "Volleyball",
+            "Basketball",
+            "Handball",
+            "Football",
+            "Synchronized Swimming",
+            "Water Polo",
+            "Rhythmic Gymnastics",
+            "Artistic Gymnastics"
+          ],
+          "title": null,
+          "type": "nominal"
+        },
+        "y": {
+          "field": "cluster_label",
+          "sort": [
+            "Economie avanzate",
+            "Economie emergenti",
+            "Economie in via di consolidamento",
+            "Economie vulnerabili"
+          ],
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "mark": {
+        "baseline": "middle",
+        "fontSize": 10,
+        "type": "text"
+      }
+    }
+  ],
+  "params": [
+    {
+      "bind": "scales",
+      "name": "param_28",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      },
+      "views": [
+        "view_54"
+      ]
+    }
+  ],
+  "title": "Distribuzione % degli sport per cluster socioeconomico STATICO",
+  "width": 800
+}

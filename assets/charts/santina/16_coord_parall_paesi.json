@@ -1,0 +1,351 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-47089f730f22cd0b1bc0090588bcda7e"
+  },
+  "datasets": {
+    "data-47089f730f22cd0b1bc0090588bcda7e": [
+      {
+        "cluster": "Paesi con breve storia olimpica",
+        "feature": "Quota di ori",
+        "valore": -0.3010132865997284
+      },
+      {
+        "cluster": "Piccoli Paesi iper-efficienti",
+        "feature": "Quota di ori",
+        "valore": 1.2021278470802466
+      },
+      {
+        "cluster": "Paesi dai molti sport ma pochi ori",
+        "feature": "Quota di ori",
+        "valore": -0.8893047256735488
+      },
+      {
+        "cluster": "Paesi dai pochi sport e pochi ori",
+        "feature": "Quota di ori",
+        "valore": -1.4467876201236636
+      },
+      {
+        "cluster": "Potenze olimpiche consolidate",
+        "feature": "Quota di ori",
+        "valore": 0.19663755282503076
+      },
+      {
+        "cluster": "Superpotenze olimpiche",
+        "feature": "Quota di ori",
+        "valore": 1.0982673864079178
+      },
+      {
+        "cluster": "Paesi dai pochi sport ma molti ori",
+        "feature": "Quota di ori",
+        "valore": 0.6600028031479317
+      },
+      {
+        "cluster": "Paesi con breve storia olimpica",
+        "feature": "Sport praticati",
+        "valore": -0.47469749503115577
+      },
+      {
+        "cluster": "Piccoli Paesi iper-efficienti",
+        "feature": "Sport praticati",
+        "valore": -0.2628768298759562
+      },
+      {
+        "cluster": "Paesi dai molti sport ma pochi ori",
+        "feature": "Sport praticati",
+        "valore": 0.5009461518026828
+      },
+      {
+        "cluster": "Paesi dai pochi sport e pochi ori",
+        "feature": "Sport praticati",
+        "valore": -1.044059424774564
+      },
+      {
+        "cluster": "Potenze olimpiche consolidate",
+        "feature": "Sport praticati",
+        "valore": 0.9262566756919248
+      },
+      {
+        "cluster": "Superpotenze olimpiche",
+        "feature": "Sport praticati",
+        "valore": 1.3235247474566014
+      },
+      {
+        "cluster": "Paesi dai pochi sport ma molti ori",
+        "feature": "Sport praticati",
+        "valore": -0.9731520815453059
+      },
+      {
+        "cluster": "Paesi con breve storia olimpica",
+        "feature": "Efficienza per atleta",
+        "valore": -0.11946267688750145
+      },
+      {
+        "cluster": "Piccoli Paesi iper-efficienti",
+        "feature": "Efficienza per atleta",
+        "valore": 0.18790544589826644
+      },
+      {
+        "cluster": "Paesi dai molti sport ma pochi ori",
+        "feature": "Efficienza per atleta",
+        "valore": -0.8567568200313452
+      },
+      {
+        "cluster": "Paesi dai pochi sport e pochi ori",
+        "feature": "Efficienza per atleta",
+        "valore": -1.0358488021059733
+      },
+      {
+        "cluster": "Potenze olimpiche consolidate",
+        "feature": "Efficienza per atleta",
+        "valore": 0.18605591431518406
+      },
+      {
+        "cluster": "Superpotenze olimpiche",
+        "feature": "Efficienza per atleta",
+        "valore": 2.7485701861005376
+      },
+      {
+        "cluster": "Paesi dai pochi sport ma molti ori",
+        "feature": "Efficienza per atleta",
+        "valore": 0.12145305018606109
+      },
+      {
+        "cluster": "Paesi con breve storia olimpica",
+        "feature": "Edizioni disputate",
+        "valore": -1.6287146685845648
+      },
+      {
+        "cluster": "Piccoli Paesi iper-efficienti",
+        "feature": "Edizioni disputate",
+        "valore": 0.5737433335777155
+      },
+      {
+        "cluster": "Paesi dai molti sport ma pochi ori",
+        "feature": "Edizioni disputate",
+        "valore": 0.6919465303394647
+      },
+      {
+        "cluster": "Paesi dai pochi sport e pochi ori",
+        "feature": "Edizioni disputate",
+        "valore": 0.5737433335777157
+      },
+      {
+        "cluster": "Potenze olimpiche consolidate",
+        "feature": "Edizioni disputate",
+        "valore": 0.7091844965338867
+      },
+      {
+        "cluster": "Superpotenze olimpiche",
+        "feature": "Edizioni disputate",
+        "valore": -0.833613477866861
+      },
+      {
+        "cluster": "Paesi dai pochi sport ma molti ori",
+        "feature": "Edizioni disputate",
+        "valore": 0.2368642228067303
+      },
+      {
+        "cluster": "Paesi con breve storia olimpica",
+        "feature": "Ori per abitante",
+        "valore": -0.06129023464752389
+      },
+      {
+        "cluster": "Piccoli Paesi iper-efficienti",
+        "feature": "Ori per abitante",
+        "valore": 2.036314274320952
+      },
+      {
+        "cluster": "Paesi dai molti sport ma pochi ori",
+        "feature": "Ori per abitante",
+        "valore": -0.9119614813612817
+      },
+      {
+        "cluster": "Paesi dai pochi sport e pochi ori",
+        "feature": "Ori per abitante",
+        "valore": -0.8141262217487131
+      },
+      {
+        "cluster": "Potenze olimpiche consolidate",
+        "feature": "Ori per abitante",
+        "valore": 0.5221913938211459
+      },
+      {
+        "cluster": "Superpotenze olimpiche",
+        "feature": "Ori per abitante",
+        "valore": -0.21120607568062721
+      },
+      {
+        "cluster": "Paesi dai pochi sport ma molti ori",
+        "feature": "Ori per abitante",
+        "valore": -0.7921640067451863
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "cluster",
+      "legend": {
+        "columns": 3,
+        "labelLimit": 300,
+        "orient": "bottom"
+      },
+      "sort": [
+        "Paesi con breve storia olimpica",
+        "Piccoli Paesi iper-efficienti",
+        "Paesi dai molti sport ma pochi ori",
+        "Paesi dai pochi sport e pochi ori",
+        "Potenze olimpiche consolidate",
+        "Superpotenze olimpiche",
+        "Paesi dai pochi sport ma molti ori"
+      ],
+      "title": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "cluster",
+        "type": "nominal"
+      },
+      {
+        "field": "feature",
+        "type": "nominal"
+      },
+      {
+        "field": "valore",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "feature",
+      "sort": [
+        "Quota di ori",
+        "Sport praticati",
+        "Efficienza per atleta",
+        "Edizioni disputate",
+        "Ori per abitante"
+      ],
+      "title": null,
+      "type": "nominal"
+    },
+    "y": {
+      "field": "valore",
+      "title": null,
+      "type": "quantitative"
+    }
+  },
+  "height": 350,
+  "mark": {
+    "point": true,
+    "type": "line"
+  },
+  "params": [
+    {
+      "bind": "scales",
+      "name": "param_1",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      }
+    }
+  ],
+  "title": "Centroidi dei cluster sui Paesi",
+  "width": "container"
+}

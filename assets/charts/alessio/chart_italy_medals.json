@@ -1,0 +1,175 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-bff3c5f47e4bb12b68cddfe47ff7eea2"
+  },
+  "datasets": {
+    "data-bff3c5f47e4bb12b68cddfe47ff7eea2": [
+      {
+        "country": "Italy",
+        "sport": "Fencing",
+        "total_gold": 24,
+        "total_medals": 68
+      },
+      {
+        "country": "Italy",
+        "sport": "Athletics",
+        "total_gold": 16,
+        "total_medals": 39
+      },
+      {
+        "country": "Italy",
+        "sport": "Shooting",
+        "total_gold": 14,
+        "total_medals": 38
+      },
+      {
+        "country": "Italy",
+        "sport": "Swimming",
+        "total_gold": 5,
+        "total_medals": 26
+      },
+      {
+        "country": "Italy",
+        "sport": "Rowing",
+        "total_gold": 7,
+        "total_medals": 23
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "value": "#1b2140"
+    },
+    "tooltip": [
+      {
+        "field": "sport",
+        "type": "nominal"
+      },
+      {
+        "field": "total_medals",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "tickCount": 30
+      },
+      "field": "total_medals",
+      "title": null,
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "sport",
+      "sort": "-x",
+      "title": null,
+      "type": "nominal"
+    }
+  },
+  "height": 250,
+  "mark": {
+    "type": "bar"
+  },
+  "padding": {
+    "bottom": 5,
+    "left": 100,
+    "right": 5,
+    "top": 5
+  },
+  "title": "Top 5 sport per medaglie totali, Italia",
+  "width": 400
+}

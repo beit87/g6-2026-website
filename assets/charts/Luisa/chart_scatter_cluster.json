@@ -1,0 +1,1205 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+  "config": {
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "gridColor": "#e2ddd4",
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontWeight": 400,
+      "tickColor": "#e2ddd4",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontWeight": 400
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "header": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "line": {
+      "stroke": "#1b2140"
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "stroke": "#1b2140"
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641"
+      ],
+      "heatmap": [
+        "#9a0641",
+        "#1b2140"
+      ],
+      "ramp": [
+        "#9a0641",
+        "#1b2140"
+      ]
+    },
+    "text": {
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "title": {
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontWeight": 400
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "name": "data-fa6e071487727c9d25b8d385536ac142"
+  },
+  "datasets": {
+    "data-fa6e071487727c9d25b8d385536ac142": [
+      {
+        "NOC": "ALG",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.833213344056216,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 17,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 17,
+        "pil_procapite_medio": null,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "ARG",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 3.5263605246161616,
+        "log_pil_procapite": 8.575096562567095,
+        "medaglie_individuali": 15,
+        "medaglie_squadra": 19,
+        "medaglie_totali": 34,
+        "pil_procapite_medio": 5298.063008085122,
+        "quota_individuale": 0.4411764705882353
+      },
+      {
+        "NOC": "ARM",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.772588722239781,
+        "log_pil_procapite": 7.543372561084565,
+        "medaglie_individuali": 16,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 16,
+        "pil_procapite_medio": 1888.1873260403415,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "AUS",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.966146739123692,
+        "log_pil_procapite": 9.99911404997684,
+        "medaglie_individuali": 236,
+        "medaglie_squadra": 154,
+        "medaglie_totali": 390,
+        "pil_procapite_medio": 22006.960088741893,
+        "quota_individuale": 0.6051282051282051
+      },
+      {
+        "NOC": "AUT",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.5553480614894135,
+        "log_pil_procapite": 9.98253529687741,
+        "medaglie_individuali": 28,
+        "medaglie_squadra": 7,
+        "medaglie_totali": 35,
+        "pil_procapite_medio": 21645.119848725586,
+        "quota_individuale": 0.8
+      },
+      {
+        "NOC": "AZE",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.784189633918261,
+        "log_pil_procapite": 7.92599056740385,
+        "medaglie_individuali": 44,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 44,
+        "pil_procapite_medio": 2768.3051906677188,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "BAH",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 2.5649493574615367,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 6,
+        "medaglie_squadra": 7,
+        "medaglie_totali": 13,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.46153846153846156
+      },
+      {
+        "NOC": "BEL",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.871201010907891,
+        "log_pil_procapite": 9.942591863919132,
+        "medaglie_individuali": 41,
+        "medaglie_squadra": 7,
+        "medaglie_totali": 48,
+        "pil_procapite_medio": 20797.578984086227,
+        "quota_individuale": 0.8541666666666666
+      },
+      {
+        "NOC": "BLR",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 4.430816798843313,
+        "log_pil_procapite": 8.1967264553593,
+        "medaglie_individuali": 69,
+        "medaglie_squadra": 15,
+        "medaglie_totali": 84,
+        "pil_procapite_medio": 3629.0509810807603,
+        "quota_individuale": 0.8214285714285714
+      },
+      {
+        "NOC": "BRA",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 4.770684624465665,
+        "log_pil_procapite": 8.254105825531115,
+        "medaglie_individuali": 61,
+        "medaglie_squadra": 57,
+        "medaglie_totali": 118,
+        "pil_procapite_medio": 3843.373692143053,
+        "quota_individuale": 0.5169491525423728
+      },
+      {
+        "NOC": "BUL",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.318119993844216,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 179,
+        "medaglie_squadra": 25,
+        "medaglie_totali": 204,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.8774509803921569
+      },
+      {
+        "NOC": "CAN",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.318119993844216,
+        "log_pil_procapite": 9.969058480019223,
+        "medaglie_individuali": 134,
+        "medaglie_squadra": 70,
+        "medaglie_totali": 204,
+        "pil_procapite_medio": 21355.369375155267,
+        "quota_individuale": 0.6568627450980392
+      },
+      {
+        "NOC": "CHI",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 1.791759469228055,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 4,
+        "medaglie_squadra": 2,
+        "medaglie_totali": 6,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.6666666666666666
+      },
+      {
+        "NOC": "CHN",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 6.295266001439646,
+        "log_pil_procapite": 7.497838804210899,
+        "medaglie_individuali": 415,
+        "medaglie_squadra": 127,
+        "medaglie_totali": 542,
+        "pil_procapite_medio": 1804.1391002358432,
+        "quota_individuale": 0.7656826568265682
+      },
+      {
+        "NOC": "CMR",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 1.6094379124341003,
+        "log_pil_procapite": 6.716331832309732,
+        "medaglie_individuali": 4,
+        "medaglie_squadra": 1,
+        "medaglie_totali": 5,
+        "pil_procapite_medio": 825.7828391110354,
+        "quota_individuale": 0.8
+      },
+      {
+        "NOC": "COL",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.295836866004329,
+        "log_pil_procapite": 7.821640386442953,
+        "medaglie_individuali": 27,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 27,
+        "pil_procapite_medio": 2493.993166955571,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "CRO",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 3.4965075614664802,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 19,
+        "medaglie_squadra": 14,
+        "medaglie_totali": 33,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.5757575757575758
+      },
+      {
+        "NOC": "CUB",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.332718793265369,
+        "log_pil_procapite": 8.114291162643058,
+        "medaglie_individuali": 185,
+        "medaglie_squadra": 22,
+        "medaglie_totali": 207,
+        "pil_procapite_medio": 3341.8878894364275,
+        "quota_individuale": 0.893719806763285
+      },
+      {
+        "NOC": "CZE",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.9889840465642745,
+        "log_pil_procapite": 9.426795788532052,
+        "medaglie_individuali": 43,
+        "medaglie_squadra": 11,
+        "medaglie_totali": 54,
+        "pil_procapite_medio": 12416.677262960866,
+        "quota_individuale": 0.7962962962962963
+      },
+      {
+        "NOC": "DEN",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 4.499809670330265,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 43,
+        "medaglie_squadra": 47,
+        "medaglie_totali": 90,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.4777777777777778
+      },
+      {
+        "NOC": "DOM",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 1.9459101490553132,
+        "log_pil_procapite": 7.780377035734936,
+        "medaglie_individuali": 7,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 7,
+        "pil_procapite_medio": 2393.1769636919244,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "EGY",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.4849066497880004,
+        "log_pil_procapite": 6.953156345855954,
+        "medaglie_individuali": 12,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 12,
+        "pil_procapite_medio": 1046.447471172881,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "ESP",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 4.941642422609304,
+        "log_pil_procapite": 9.487716018388694,
+        "medaglie_individuali": 84,
+        "medaglie_squadra": 56,
+        "medaglie_totali": 140,
+        "pil_procapite_medio": 13196.620042353332,
+        "quota_individuale": 0.6
+      },
+      {
+        "NOC": "EST",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.5649493574615367,
+        "log_pil_procapite": 9.356708897853926,
+        "medaglie_individuali": 10,
+        "medaglie_squadra": 3,
+        "medaglie_totali": 13,
+        "pil_procapite_medio": 11576.22723381544,
+        "quota_individuale": 0.7692307692307693
+      },
+      {
+        "NOC": "ETH",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.9512437185814275,
+        "log_pil_procapite": 5.444113924186289,
+        "medaglie_individuali": 52,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 52,
+        "pil_procapite_medio": 231.3921578542295,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "EUN",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 4.718498871295094,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 92,
+        "medaglie_squadra": 20,
+        "medaglie_totali": 112,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.8214285714285714
+      },
+      {
+        "NOC": "FIN",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 4.248495242049359,
+        "log_pil_procapite": 9.993019176241495,
+        "medaglie_individuali": 64,
+        "medaglie_squadra": 6,
+        "medaglie_totali": 70,
+        "pil_procapite_medio": 21873.238368155446,
+        "quota_individuale": 0.9142857142857143
+      },
+      {
+        "NOC": "FRA",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.8998973535824915,
+        "log_pil_procapite": 9.890796148455292,
+        "medaglie_individuali": 261,
+        "medaglie_squadra": 104,
+        "medaglie_totali": 365,
+        "pil_procapite_medio": 19747.775843235682,
+        "quota_individuale": 0.7150684931506849
+      },
+      {
+        "NOC": "FRG",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.318119993844216,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 133,
+        "medaglie_squadra": 71,
+        "medaglie_totali": 204,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.6519607843137255
+      },
+      {
+        "NOC": "GBR",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 6.0330862217988015,
+        "log_pil_procapite": 9.916535506985559,
+        "medaglie_individuali": 284,
+        "medaglie_squadra": 133,
+        "medaglie_totali": 417,
+        "pil_procapite_medio": 20262.66900903458,
+        "quota_individuale": 0.6810551558752997
+      },
+      {
+        "NOC": "GDR",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 6.013715156042802,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 300,
+        "medaglie_squadra": 109,
+        "medaglie_totali": 409,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.7334963325183375
+      },
+      {
+        "NOC": "GEO",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.4657359027997265,
+        "log_pil_procapite": 7.694034035533276,
+        "medaglie_individuali": 32,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 32,
+        "pil_procapite_medio": 2195.2122887677506,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "GER",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 6.061456918928017,
+        "log_pil_procapite": 9.963924620350008,
+        "medaglie_individuali": 262,
+        "medaglie_squadra": 167,
+        "medaglie_totali": 429,
+        "pil_procapite_medio": 21246.014851172695,
+        "quota_individuale": 0.6107226107226107
+      },
+      {
+        "NOC": "GRE",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 4.0943445622221,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 50,
+        "medaglie_squadra": 10,
+        "medaglie_totali": 60,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.8333333333333334
+      },
+      {
+        "NOC": "HUN",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.683579767338681,
+        "log_pil_procapite": 8.726193996557603,
+        "medaglie_individuali": 211,
+        "medaglie_squadra": 83,
+        "medaglie_totali": 294,
+        "pil_procapite_medio": 6162.229954115516,
+        "quota_individuale": 0.717687074829932
+      },
+      {
+        "NOC": "INA",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 3.4011973816621555,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 20,
+        "medaglie_squadra": 10,
+        "medaglie_totali": 30,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.6666666666666666
+      },
+      {
+        "NOC": "IND",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.8903717578961645,
+        "log_pil_procapite": 6.310204268041343,
+        "medaglie_individuali": 14,
+        "medaglie_squadra": 4,
+        "medaglie_totali": 18,
+        "pil_procapite_medio": 550.1573168925963,
+        "quota_individuale": 0.7777777777777778
+      },
+      {
+        "NOC": "IOA",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 1.6094379124341003,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 5,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 5,
+        "pil_procapite_medio": null,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "IRI",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.9318256327243257,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 51,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 51,
+        "pil_procapite_medio": null,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "IRL",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.044522437723423,
+        "log_pil_procapite": 10.04511930903118,
+        "medaglie_individuali": 19,
+        "medaglie_squadra": 2,
+        "medaglie_totali": 21,
+        "pil_procapite_medio": 23043.045956184433,
+        "quota_individuale": 0.9047619047619048
+      },
+      {
+        "NOC": "ISR",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.1972245773362196,
+        "log_pil_procapite": 9.642350613684453,
+        "medaglie_individuali": 9,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 9,
+        "pil_procapite_medio": 15403.508909047994,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "ITA",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.823045895483019,
+        "log_pil_procapite": 9.741116728803735,
+        "medaglie_individuali": 239,
+        "medaglie_squadra": 99,
+        "medaglie_totali": 338,
+        "pil_procapite_medio": 17002.517984470902,
+        "quota_individuale": 0.7071005917159763
+      },
+      {
+        "NOC": "JAM",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 4.219507705176107,
+        "log_pil_procapite": 7.826851891934174,
+        "medaglie_individuali": 50,
+        "medaglie_squadra": 18,
+        "medaglie_totali": 68,
+        "pil_procapite_medio": 2507.0245531163655,
+        "quota_individuale": 0.7352941176470589
+      },
+      {
+        "NOC": "JPN",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.8522024797744745,
+        "log_pil_procapite": 10.022864237073462,
+        "medaglie_individuali": 288,
+        "medaglie_squadra": 60,
+        "medaglie_totali": 348,
+        "pil_procapite_medio": 22535.88568681873,
+        "quota_individuale": 0.8275862068965517
+      },
+      {
+        "NOC": "KAZ",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 4.248495242049359,
+        "log_pil_procapite": 8.510771519322759,
+        "medaglie_individuali": 70,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 70,
+        "pil_procapite_medio": 4967.994513887545,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "KEN",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 4.605170185988092,
+        "log_pil_procapite": 6.280944966229108,
+        "medaglie_individuali": 98,
+        "medaglie_squadra": 2,
+        "medaglie_totali": 100,
+        "pil_procapite_medio": 534.293314487721,
+        "quota_individuale": 0.98
+      },
+      {
+        "NOC": "KOR",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.54907608489522,
+        "log_pil_procapite": 9.246448171041473,
+        "medaglie_individuali": 197,
+        "medaglie_squadra": 60,
+        "medaglie_totali": 257,
+        "pil_procapite_medio": 10367.676030457222,
+        "quota_individuale": 0.7665369649805448
+      },
+      {
+        "NOC": "LAT",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.772588722239781,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 15,
+        "medaglie_squadra": 1,
+        "medaglie_totali": 16,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.9375
+      },
+      {
+        "NOC": "LTU",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 3.2188758248682006,
+        "log_pil_procapite": 9.124398648090247,
+        "medaglie_individuali": 18,
+        "medaglie_squadra": 7,
+        "medaglie_totali": 25,
+        "pil_procapite_medio": 9176.477066043892,
+        "quota_individuale": 0.72
+      },
+      {
+        "NOC": "MAR",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.091042453358316,
+        "log_pil_procapite": 7.262922601001812,
+        "medaglie_individuali": 22,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 22,
+        "pil_procapite_medio": 1426.419305674236,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "MAS",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 2.3978952727983707,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 6,
+        "medaglie_squadra": 5,
+        "medaglie_totali": 11,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.5454545454545454
+      },
+      {
+        "NOC": "MDA",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 1.9459101490553132,
+        "log_pil_procapite": 7.4112428377708905,
+        "medaglie_individuali": 6,
+        "medaglie_squadra": 1,
+        "medaglie_totali": 7,
+        "pil_procapite_medio": 1654.4813214774965,
+        "quota_individuale": 0.8571428571428571
+      },
+      {
+        "NOC": "MEX",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.9512437185814275,
+        "log_pil_procapite": 8.454894461672497,
+        "medaglie_individuali": 46,
+        "medaglie_squadra": 6,
+        "medaglie_totali": 52,
+        "pil_procapite_medio": 4698.010788751585,
+        "quota_individuale": 0.8846153846153846
+      },
+      {
+        "NOC": "MGL",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.258096538021482,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 26,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 26,
+        "pil_procapite_medio": null,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "NED",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.236441962829949,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 117,
+        "medaglie_squadra": 71,
+        "medaglie_totali": 188,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.6223404255319149
+      },
+      {
+        "NOC": "NGR",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 3.1780538303479458,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 13,
+        "medaglie_squadra": 11,
+        "medaglie_totali": 24,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.5416666666666666
+      },
+      {
+        "NOC": "NOR",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 4.143134726391533,
+        "log_pil_procapite": 10.467977957407708,
+        "medaglie_individuali": 39,
+        "medaglie_squadra": 24,
+        "medaglie_totali": 63,
+        "pil_procapite_medio": 35171.02810234521,
+        "quota_individuale": 0.6190476190476191
+      },
+      {
+        "NOC": "NZL",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 4.6443908991413725,
+        "log_pil_procapite": 9.676229114802243,
+        "medaglie_individuali": 64,
+        "medaglie_squadra": 40,
+        "medaglie_totali": 104,
+        "pil_procapite_medio": 15934.297089999623,
+        "quota_individuale": 0.6153846153846154
+      },
+      {
+        "NOC": "PAK",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 1.9459101490553132,
+        "log_pil_procapite": 6.260024549066203,
+        "medaglie_individuali": 1,
+        "medaglie_squadra": 6,
+        "medaglie_totali": 7,
+        "pil_procapite_medio": 523.2317848020618,
+        "quota_individuale": 0.14285714285714285
+      },
+      {
+        "NOC": "PHI",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 1.6094379124341003,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 5,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 5,
+        "pil_procapite_medio": null,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "POL",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.424950017481403,
+        "log_pil_procapite": 8.98661718616775,
+        "medaglie_individuali": 174,
+        "medaglie_squadra": 53,
+        "medaglie_totali": 227,
+        "pil_procapite_medio": 7995.364267691184,
+        "quota_individuale": 0.7665198237885462
+      },
+      {
+        "NOC": "POR",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.833213344056216,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 15,
+        "medaglie_squadra": 2,
+        "medaglie_totali": 17,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.8823529411764706
+      },
+      {
+        "NOC": "PRK",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.9889840465642745,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 52,
+        "medaglie_squadra": 2,
+        "medaglie_totali": 54,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.9629629629629629
+      },
+      {
+        "NOC": "PUR",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.0794415416798357,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 8,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 8,
+        "pil_procapite_medio": null,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "QAT",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 1.6094379124341003,
+        "log_pil_procapite": 10.43899925809436,
+        "medaglie_individuali": 5,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 5,
+        "pil_procapite_medio": 34166.443531792465,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "ROU",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 5.6131281063880705,
+        "log_pil_procapite": 8.490908952991687,
+        "medaglie_individuali": 190,
+        "medaglie_squadra": 84,
+        "medaglie_totali": 274,
+        "pil_procapite_medio": 4870.290927465765,
+        "quota_individuale": 0.6934306569343066
+      },
+      {
+        "NOC": "RSA",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.5553480614894135,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 29,
+        "medaglie_squadra": 6,
+        "medaglie_totali": 35,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.8285714285714286
+      },
+      {
+        "NOC": "RUS",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 6.113682179832232,
+        "log_pil_procapite": 8.792004179825405,
+        "medaglie_individuali": 360,
+        "medaglie_squadra": 92,
+        "medaglie_totali": 452,
+        "pil_procapite_medio": 6581.409294128419,
+        "quota_individuale": 0.7964601769911505
+      },
+      {
+        "NOC": "SCG",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 2.1972245773362196,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 4,
+        "medaglie_squadra": 5,
+        "medaglie_totali": 9,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.4444444444444444
+      },
+      {
+        "NOC": "SLO",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.1354942159291497,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 18,
+        "medaglie_squadra": 5,
+        "medaglie_totali": 23,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.782608695652174
+      },
+      {
+        "NOC": "SRB",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 2.70805020110221,
+        "log_pil_procapite": 8.432105298359385,
+        "medaglie_individuali": 8,
+        "medaglie_squadra": 7,
+        "medaglie_totali": 15,
+        "pil_procapite_medio": 4592.157785483809,
+        "quota_individuale": 0.5333333333333333
+      },
+      {
+        "NOC": "SUI",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 4.248495242049359,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 48,
+        "medaglie_squadra": 22,
+        "medaglie_totali": 70,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.6857142857142857
+      },
+      {
+        "NOC": "SVK",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 3.332204510175204,
+        "log_pil_procapite": 9.270094176012307,
+        "medaglie_individuali": 20,
+        "medaglie_squadra": 8,
+        "medaglie_totali": 28,
+        "pil_procapite_medio": 10615.75158850923,
+        "quota_individuale": 0.7142857142857143
+      },
+      {
+        "NOC": "SWE",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 4.927253685157205,
+        "log_pil_procapite": 10.168593556291007,
+        "medaglie_individuali": 94,
+        "medaglie_squadra": 44,
+        "medaglie_totali": 138,
+        "pil_procapite_medio": 26071.383033589595,
+        "quota_individuale": 0.6811594202898551
+      },
+      {
+        "NOC": "TCH",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 4.276666119016055,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 51,
+        "medaglie_squadra": 21,
+        "medaglie_totali": 72,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.7083333333333334
+      },
+      {
+        "NOC": "THA",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.4011973816621555,
+        "log_pil_procapite": 7.653217076331757,
+        "medaglie_individuali": 30,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 30,
+        "pil_procapite_medio": 2107.414408693579,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "TPE",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.1354942159291497,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 19,
+        "medaglie_squadra": 4,
+        "medaglie_totali": 23,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.8260869565217391
+      },
+      {
+        "NOC": "TTO",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.772588722239781,
+        "log_pil_procapite": 8.879014797455358,
+        "medaglie_individuali": 12,
+        "medaglie_squadra": 4,
+        "medaglie_totali": 16,
+        "pil_procapite_medio": 7179.713777971075,
+        "quota_individuale": 0.75
+      },
+      {
+        "NOC": "TUN",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.5649493574615367,
+        "log_pil_procapite": 7.528234948733946,
+        "medaglie_individuali": 13,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 13,
+        "pil_procapite_medio": 1859.8199272869376,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "TUR",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 4.127134385045092,
+        "log_pil_procapite": 8.293545256626627,
+        "medaglie_individuali": 62,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 62,
+        "pil_procapite_medio": 3997.9829748182465,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "UGA",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 1.9459101490553132,
+        "log_pil_procapite": 5.759422992347405,
+        "medaglie_individuali": 7,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 7,
+        "pil_procapite_medio": 317.1652693219994,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "UKR",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 4.836281906951478,
+        "log_pil_procapite": 7.561524224759831,
+        "medaglie_individuali": 105,
+        "medaglie_squadra": 21,
+        "medaglie_totali": 126,
+        "pil_procapite_medio": 1922.7740207248276,
+        "quota_individuale": 0.8333333333333334
+      },
+      {
+        "NOC": "URS",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 6.598509028614515,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 564,
+        "medaglie_squadra": 170,
+        "medaglie_totali": 734,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.7683923705722071
+      },
+      {
+        "NOC": "USA",
+        "cluster": 1,
+        "cluster_label": "Misti",
+        "log_medaglie_totali": 7.234898420314831,
+        "log_pil_procapite": 10.168549720407347,
+        "medaglie_individuali": 1062,
+        "medaglie_squadra": 325,
+        "medaglie_totali": 1387,
+        "pil_procapite_medio": 26070.24019652487,
+        "quota_individuale": 0.7656813266041816
+      },
+      {
+        "NOC": "UZB",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 3.4965075614664802,
+        "log_pil_procapite": 6.977083911552805,
+        "medaglie_individuali": 33,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 33,
+        "pil_procapite_medio": 1071.7883758476196,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "VEN",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.5649493574615367,
+        "log_pil_procapite": 8.252279720855624,
+        "medaglie_individuali": 13,
+        "medaglie_squadra": 0,
+        "medaglie_totali": 13,
+        "pil_procapite_medio": 3836.3616937442544,
+        "quota_individuale": 1.0
+      },
+      {
+        "NOC": "YUG",
+        "cluster": 0,
+        "cluster_label": "Specialisti squadra",
+        "log_medaglie_totali": 4.174387269895637,
+        "log_pil_procapite": null,
+        "medaglie_individuali": 39,
+        "medaglie_squadra": 26,
+        "medaglie_totali": 65,
+        "pil_procapite_medio": null,
+        "quota_individuale": 0.6
+      },
+      {
+        "NOC": "ZIM",
+        "cluster": 2,
+        "cluster_label": "Specialisti individuale",
+        "log_medaglie_totali": 2.0794415416798357,
+        "log_pil_procapite": 6.640839274740158,
+        "medaglie_individuali": 7,
+        "medaglie_squadra": 1,
+        "medaglie_totali": 8,
+        "pil_procapite_medio": 765.7373874565056,
+        "quota_individuale": 0.875
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "cluster_label",
+      "title": "Cluster",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "NOC",
+        "type": "nominal"
+      },
+      {
+        "field": "cluster_label",
+        "type": "nominal"
+      },
+      {
+        "field": "medaglie_totali",
+        "type": "quantitative"
+      },
+      {
+        "field": "quota_individuale",
+        "format": ".2f",
+        "type": "quantitative"
+      },
+      {
+        "field": "pil_procapite_medio",
+        "format": ",.0f",
+        "title": "PIL pro capite medio",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "quota_individuale",
+      "scale": {
+        "domain": [
+          0,
+          1
+        ]
+      },
+      "title": "Quota medaglie individuali",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "medaglie_totali",
+      "scale": {
+        "type": "log"
+      },
+      "title": "Medaglie totali (1964-2016)",
+      "type": "quantitative"
+    }
+  },
+  "height": 420,
+  "mark": {
+    "opacity": 0.75,
+    "size": 90,
+    "type": "circle"
+  },
+  "params": [
+    {
+      "bind": "scales",
+      "name": "param_1e9efca18e7a2868",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      }
+    }
+  ],
+  "title": "Profilo dei paesi: quota individuale vs volume di medaglie",
+  "width": "container"
+}

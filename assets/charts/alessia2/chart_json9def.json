@@ -1,0 +1,316 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "arc": {
+      "fill": "#1b2140"
+    },
+    "area": {
+      "fill": "#1b2140",
+      "fillOpacity": 0.15,
+      "line": true
+    },
+    "axis": {
+      "domainColor": "#e2ddd4",
+      "grid": true,
+      "gridColor": "#e2ddd4",
+      "gridWidth": 0.6,
+      "labelAngle": 0,
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 12,
+      "labelFontWeight": 400,
+      "labelPadding": 4,
+      "tickColor": "#e2ddd4",
+      "tickSize": 5,
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "axisBand": {
+      "grid": false
+    },
+    "background": "transparent",
+    "bar": {
+      "fill": "#1b2140"
+    },
+    "legend": {
+      "labelColor": "#1b2140",
+      "labelFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "labelFontSize": 11,
+      "padding": 4,
+      "symbolType": "circle",
+      "titleColor": "#1b2140",
+      "titleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "titleFontSize": 12
+    },
+    "line": {
+      "stroke": "#1b2140",
+      "strokeWidth": 2
+    },
+    "mark": {
+      "color": "#1b2140"
+    },
+    "path": {
+      "stroke": "#1b2140"
+    },
+    "point": {
+      "fill": "#1b2140",
+      "filled": true
+    },
+    "range": {
+      "category": [
+        "#1b2140",
+        "#ff8009",
+        "#9a0641",
+        "#ffe34a",
+        "#e7b6af",
+        "#0088b0",
+        "#e03830"
+      ]
+    },
+    "rect": {
+      "fill": "#1b2140"
+    },
+    "shape": {
+      "stroke": "#1b2140"
+    },
+    "symbol": {
+      "fill": "#1b2140"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#1b2140",
+      "font": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "subtitleColor": "#1b2140",
+      "subtitleFont": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400,
+      "fill": null,
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-574c2a3c2c36f365344f7dbe362ef3c3"
+  },
+  "datasets": {
+    "data-574c2a3c2c36f365344f7dbe362ef3c3": [
+      {
+        "importanza": 0.12761424381702782,
+        "indicatore": "gdp_per_capita",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.21212863171919252,
+        "indicatore": "life_expectancy",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.1673750946875208,
+        "indicatore": "urbanization_pct",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.08975009154329679,
+        "indicatore": "infant_mortality",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.40313193823296206,
+        "indicatore": "population",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.0781759728463222,
+        "indicatore": "gdp_per_capita",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.08531824505454796,
+        "indicatore": "life_expectancy",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.11834298228291251,
+        "indicatore": "urbanization_pct",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.2008681932628834,
+        "indicatore": "infant_mortality",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.5172946065533339,
+        "indicatore": "population",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Boxing"
+      },
+      {
+        "importanza": 0.020413610730840182,
+        "indicatore": "gdp_per_capita",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Archery"
+      },
+      {
+        "importanza": 0.02491692318840036,
+        "indicatore": "life_expectancy",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Archery"
+      },
+      {
+        "importanza": 0.10113280155657121,
+        "indicatore": "urbanization_pct",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Archery"
+      },
+      {
+        "importanza": 0.5906825794039635,
+        "indicatore": "infant_mortality",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Archery"
+      },
+      {
+        "importanza": 0.26285408512022473,
+        "indicatore": "population",
+        "metodo": "Logistica (|coef| normalizzato)",
+        "sport": "Archery"
+      },
+      {
+        "importanza": 0.12542822442019083,
+        "indicatore": "gdp_per_capita",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Archery"
+      },
+      {
+        "importanza": 0.08497620550507352,
+        "indicatore": "life_expectancy",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Archery"
+      },
+      {
+        "importanza": 0.08039751753256216,
+        "indicatore": "urbanization_pct",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Archery"
+      },
+      {
+        "importanza": 0.25026254827227973,
+        "indicatore": "infant_mortality",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Archery"
+      },
+      {
+        "importanza": 0.45893550426989377,
+        "indicatore": "population",
+        "metodo": "Gradient Boosting (importance)",
+        "sport": "Archery"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "metodo",
+      "legend": {
+        "orient": "bottom",
+        "title": "Metodo"
+      },
+      "sort": [
+        "Logistica (|coef| normalizzato)",
+        "Gradient Boosting (importance)"
+      ],
+      "type": "nominal"
+    },
+    "column": {
+      "field": "sport",
+      "header": {
+        "labelFontSize": 13,
+        "labelFontWeight": "bold"
+      },
+      "sort": [
+        "Boxing",
+        "Archery"
+      ],
+      "title": "",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "sport",
+        "title": "Sport",
+        "type": "nominal"
+      },
+      {
+        "field": "indicatore",
+        "title": "Indicatore",
+        "type": "nominal"
+      },
+      {
+        "field": "metodo",
+        "title": "Metodo",
+        "type": "nominal"
+      },
+      {
+        "field": "importanza",
+        "format": ".3f",
+        "title": "Importanza relativa",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "importanza",
+      "title": "Importanza relativa",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "indicatore",
+      "sort": [
+        "population",
+        "infant_mortality",
+        "urbanization_pct",
+        "life_expectancy",
+        "gdp_per_capita"
+      ],
+      "title": "",
+      "type": "nominal"
+    },
+    "yOffset": {
+      "field": "metodo",
+      "sort": [
+        "Logistica (|coef| normalizzato)",
+        "Gradient Boosting (importance)"
+      ],
+      "type": "nominal"
+    }
+  },
+  "height": 300,
+  "mark": {
+    "type": "bar"
+  },
+  "resolve": {
+    "scale": {
+      "x": "independent"
+    }
+  },
+  "title": {
+    "anchor": "middle",
+    "fontSize": 13,
+    "subtitle": "sinistra: sport con guadagno AUC maggiore dal non lineare \u2014 Boxing;  destra: sport pi\u00f9 stabile \u2014 Archery",
+    "subtitleFontSize": 10,
+    "text": "Importanza delle feature: regressione logistica vs Gradient Boosting"
+  },
+  "width": 320
+}
