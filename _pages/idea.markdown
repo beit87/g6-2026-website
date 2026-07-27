@@ -89,6 +89,10 @@ Questo significa che i sistemi sportivi nazionali cambiano lentissimamente e che
 
 L'esperienza insegna, però, che esiste anche un altro fattore in grado di influenzare positivamente i risultati di una delegazione olimpica: giocare in casa. In effetti, questa verità del senso comune appare confermata dai dati. Confrontando lo Score ottenuto da ogni nazione ospitante con la propria media storica nelle altre edizioni, il vantaggio emerge con chiarezza: su 12 Giochi analizzati, 11 nazioni hanno fatto meglio proprio nell'edizione di casa, in media quasi 50 medaglie in più rispetto al solito.
 
+<div class="full-width-chart-wrapper">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/g6/nb2_host_effect.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
 La Cina, a Pechino 2008, ha vissuto probabilmente l'esempio più eclatante: oltre 130 medaglie in più della propria media storica. Gli Stati Uniti nel 1996 e la Gran Bretagna a Londra 2012 raccontano una storia simile. Solo il Canada fa eccezione — l'unica nazione ospitante, nella storia dei Giochi, a non aver approfittato del proprio pubblico di casa.
 
 ## L’Italia e la scherma
