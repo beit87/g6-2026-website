@@ -56,20 +56,20 @@ navbar:
       child:
       - title: Sport Eventi Paesi
         url: /Sport_Eventi_Paesi.html
+      - title: La porta stretta dei poveri, il bivio dei ricchi
+        url: /la-porta-stretta.html
       - title: Due Olimpiadi parallele
         url: /due_olimpiadi_parallele.html
+      - title: Successo Maschile e Femminile
+        url: /successo_maschile_femminile3.html
       - title: Il prezzo dell'oro
         url: /notebook2.html
       - title: Chi salirà sul podio a Los Angeles?
         url: /notebook3.html
       - title: Pil, storico e boicottaggi
         url: /pil_storico_boicottaggi.html
-      - title: Successo Maschile e Femminile
-        url: /successo_maschile_femminile3.html
       - title: Perché l'Italia è una potenza nella scherma?
         url: /text_analysis.html
-      - title: La porta stretta dei poveri, il bivio dei ricchi
-        url: /la-porta-stretta.html
     - title: Intervista
       url: /interview.html
 
