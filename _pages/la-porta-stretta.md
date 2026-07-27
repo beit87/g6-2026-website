@@ -22,7 +22,6 @@ La domanda giusta non è quanti dollari servano, ma dove si colloca il paese pi�
 | 2016 | 243          | 0,0°                 | 71,1%             |
 | 2020 | 718          | 5,4°                 | 66,1%             |
 
-<p>------------</p>
 <br/>
 
 > **Nel 2004 e nel 2016, il paese più povero a vincere una medaglia era, letteralmente, il paese più povero al mondo quell'anno.**
@@ -57,7 +56,7 @@ A sinistra: ogni punto è un paese, posizionato secondo la quota di medaglie vin
 <vegachart schema-url="{{site.baseurl}}/assets/charts/Luisa/chart_quota_vs_pil.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 <div style="font-size: 12px; color: #666; margin-top: 2rem; margin-bottom: 1.5rem;">La stessa correlazione di Spearman (ρ = −0,422) vista paese per paese, con la linea tratteggiata a indicare il trend di regressione: più PIL, meno dipendenza dalle medaglie individuali.</div>
-<p>------------</p>
+
 <br/>
 
 > **I tre cluster non sono solo diversi nel modo di vincere: sono anche significativamente diversi nel PIL pro capite medio dei paesi che li compongono.**
