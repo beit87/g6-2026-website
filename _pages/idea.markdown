@@ -17,6 +17,10 @@ Il medagliere olimpico non racconta solo lo sport: ogni quattro anni, di fatto, 
 
 Ma innanzitutto “chi” sono i paesi che partecipano alle Olimpiadi? Come si differenziano l’uno dall’altro? La prima distinzione che si può fare è quella macroscopica fra “paesi ricchi” e “paesi poveri”. È un dato di fatto che il divario economico si traduca anche in un divario sportivo: i paesi più ricchi vincono circa 80 volte più medaglie per abitante dei più poveri. Senza contare che tale disparità dal 1964 a oggi non si è mai ridotta!
 
+<div class="full-width-chart-wrapper">
+<vegachart schema-url="{{site.baseurl}}/assets/charts/alessia/char_json1.json" style="width: 100%; height: 100%"></vegachart>
+</div>
+
 Questa differenza, poi, è amplificata dagli sport che richiedono equipaggiamenti più costosi o infrastrutture specifiche; discipline come il nuoto, l’equitazione e la vela, sono dominio quasi esclusivo dei paesi ricchi. Invece, le discipline più praticabili, che mettono al centro il corpo più che le infrastrutture, vedono i paesi meno ricchi emergere con maggior facilità: pensiamo alla boxe, alla lotta o all’atletica leggera.
 
 I dati supportano queste considerazioni; basandosi sulla distribuzione delle 36000 medaglie assegnate negli ultimi sessant’anni di Olimpiadi, un semplice test statistico mostra una fortissima correlazione fra il livello socioeconomico di un paese e le discipline in cui tende a vincere di più.
