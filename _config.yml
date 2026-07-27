@@ -56,10 +56,10 @@ navbar:
       child:
       - title: Sport Eventi Paesi
         url: /Sport_Eventi_Paesi.html
-      - title: La porta stretta dei poveri, il bivio dei ricchi
-        url: /la-porta-stretta.html
       - title: Due Olimpiadi parallele
         url: /due_olimpiadi_parallele.html
+      - title: La porta stretta dei poveri, il bivio dei ricchi
+        url: /la-porta-stretta.html
       - title: Successo Maschile e Femminile
         url: /successo_maschile_femminile3.html
       - title: Il prezzo dell'oro
